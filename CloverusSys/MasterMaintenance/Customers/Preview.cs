@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CloverusSys
+namespace CloverusSys.MasterMaintenance.Customers
 {
-    public partial class FrmMainMenu : Form
+    public partial class Preview : Form
     {
-        public FrmMainMenu()
+        public Preview()
         {
             InitializeComponent();
-        }
-
-        private void BtnCustomers_Click(object sender, EventArgs e)
-        {
-            var frm = new MasterMaintenance.Customers.Preview();
-            frm.ShowDialog();
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace CloverusSys
 {
-    partial class Form1
+    partial class FrmMainMenu
     {
         /// <summary>
         /// 必要なデザイナー変数です。
@@ -29,13 +29,37 @@ namespace CloverusSys
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.BtnCustomers = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // BtnCustomers
+            // 
+            this.BtnCustomers.Location = new System.Drawing.Point(49, 39);
+            this.BtnCustomers.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.BtnCustomers.Name = "BtnCustomers";
+            this.BtnCustomers.Size = new System.Drawing.Size(87, 34);
+            this.BtnCustomers.TabIndex = 0;
+            this.BtnCustomers.Text = "顧客";
+            this.BtnCustomers.UseVisualStyleBackColor = true;
+            this.BtnCustomers.Click += new System.EventHandler(this.BtnCustomers_Click);
+            // 
+            // FrmMainMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(749, 274);
+            this.Controls.Add(this.BtnCustomers);
+            this.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "FrmMainMenu";
+            this.Text = "メインメニュー";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button BtnCustomers;
     }
 }
 
