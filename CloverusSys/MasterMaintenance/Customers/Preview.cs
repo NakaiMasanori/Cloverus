@@ -15,6 +15,10 @@ namespace CloverusSys.MasterMaintenance.Customers
         public Preview()
         {
             InitializeComponent();
+            using (var db = new CloverusCommon.Database.SqlBase(CloverusCommon.Database.SqlBase.DatabaseKind.USER, CloverusCommon.Database.SqlBase.TransactionUse.No))
+            {
+
+            }
         }
     }
 }

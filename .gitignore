@@ -15,3 +15,13 @@ CloverusSys/obj/Debug/CloverusSys.Properties.Resources.resources
 CloverusSys/bin/Debug/CloverusSys.exe
 CloverusSys/bin/Debug/CloverusSys.exe.config
 CloverusSys/bin/Debug/CloverusSys.pdb
+CloverusCommon/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
+CloverusCommon/obj/Debug/CloverusCommon.csproj.AssemblyReference.cache
+CloverusCommon/obj/Debug/CloverusCommon.csproj.CoreCompileInputs.cache
+CloverusCommon/obj/Debug/CloverusCommon.csproj.FileListAbsolute.txt
+CloverusCommon/obj/Debug/CloverusCommon.dll
+CloverusCommon/obj/Debug/CloverusCommon.pdb
+CloverusCommon/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+CloverusSys/bin/Debug/CloverusCommon.dll
+CloverusSys/bin/Debug/CloverusCommon.pdb
+CloverusSys/obj/Debug/CloverusSys.csproj.CopyComplete

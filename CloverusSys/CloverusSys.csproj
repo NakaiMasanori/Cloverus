@@ -92,5 +92,11 @@
     <Folder Include="DailyWorks\" />
     <Folder Include="VariousReports\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CloverusCommon\CloverusCommon.csproj">
+      <Project>{16ee283a-c7a2-4171-bb02-2925f8b6480c}</Project>
+      <Name>CloverusCommon</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
