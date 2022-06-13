@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloverusSys", "CloverusSys.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CloverusCommon", "..\CloverusCommon\CloverusCommon.csproj", "{16EE283A-C7A2-4171-BB02-2925F8B6480C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprCommon", "..\SprCommon\SprCommon.csproj", "{9C36937C-373C-4931-BE32-B1799BBC5BD9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{16EE283A-C7A2-4171-BB02-2925F8B6480C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16EE283A-C7A2-4171-BB02-2925F8B6480C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16EE283A-C7A2-4171-BB02-2925F8B6480C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C36937C-373C-4931-BE32-B1799BBC5BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C36937C-373C-4931-BE32-B1799BBC5BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C36937C-373C-4931-BE32-B1799BBC5BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C36937C-373C-4931-BE32-B1799BBC5BD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

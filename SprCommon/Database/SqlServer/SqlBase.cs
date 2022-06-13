@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //
-//  システム名：宅食業 販売管理システム
+//  システム名：共通クラス
 //
 //  Copyright 株式会社スプレッド 2022 All rights reserved.
 //
@@ -19,13 +19,43 @@ using System.Data.SqlClient;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CloverusCommon.Database
+namespace SprCommon.Database.SqlServer
 {
-    /// <summary>
-    /// データベース処理クラス
-    /// </summary>
-    public class SqlBase : SprCommon.Database.SqlServer.SqlBase
+    public class SqlBase : IDisposable
     {
+        #region 定数
+        /// <summary>
+        /// トランザクション使用有無
+        /// </summary>
+        public enum TransactionUse
+        {
+            /// <summary>
+            /// トランザクションを使用する
+            /// </summary>
+            Yes,
+            /// <summary>
+            /// トランザクションを使用しない
+            /// </summary>
+            No
+        }
+
+        /// <summary>
+        /// データベース種別
+        /// </summary>
+        public enum DatabaseKind
+        {
+            /// <summary>
+            /// SYSTEM
+            /// </summary>
+            SYSTEM,
+            /// <summary>
+            /// USER
+            /// </summary>
+            USER,
+        }
+
+        private const int TIMEOUT_VALUE = 120;
+        #endregion
 
         #region メンバ変数
         private bool _disposed { get; set; } = false;
