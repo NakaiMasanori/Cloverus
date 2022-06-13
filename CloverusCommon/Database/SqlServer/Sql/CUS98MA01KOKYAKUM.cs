@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SprCommon.Database.SqlServer.Sql
+namespace CloverusCommon.Database.SqlServer.Sql
 {
-    class CUS98MA01KOKYAKUM
+    public class CUS98MA01KOKYAKUM
     {
     }
 }

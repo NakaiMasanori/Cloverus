@@ -41,9 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database\ParameterItem.cs" />
-    <Compile Include="Database\SqlBase.cs" />
-    <Compile Include="Database\Sql\CUS98MA01KOKYAKUM.cs" />
+    <Compile Include="Database\SqlServer\Sql\CUS98MA01KOKYAKUM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

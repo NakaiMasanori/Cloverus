@@ -44,3 +44,16 @@ CloverusSys/obj/Debug/CloverusSys.csproj.SuggestedBindingRedirects.cache
 SprCommon/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs
 SprCommon/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 SprCommon/obj/Debug/SprCommon.csproj.AssemblyReference.cache
+CloverusCommon/bin/Debug/CloverusCommon.dll
+CloverusCommon/bin/Debug/CloverusCommon.pdb
+CloverusCommon/bin/Debug/SprCommon.dll
+CloverusCommon/bin/Debug/SprCommon.pdb
+CloverusCommon/obj/Debug/CloverusCommon.csproj.CopyComplete
+CloverusSys/bin/Debug/SprCommon.dll
+CloverusSys/bin/Debug/SprCommon.pdb
+SprCommon/bin/Debug/SprCommon.dll
+SprCommon/bin/Debug/SprCommon.pdb
+SprCommon/obj/Debug/SprCommon.csproj.CoreCompileInputs.cache
+SprCommon/obj/Debug/SprCommon.csproj.FileListAbsolute.txt
+SprCommon/obj/Debug/SprCommon.dll
+SprCommon/obj/Debug/SprCommon.pdb

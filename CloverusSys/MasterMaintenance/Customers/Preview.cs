@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SprCommon.Database.SqlServer;
 
 namespace CloverusSys.MasterMaintenance.Customers
 {
@@ -15,7 +16,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         public Preview()
         {
             InitializeComponent();
-            using (var db = new CloverusCommon.Database.SqlBase(CloverusCommon.Database.SqlBase.DatabaseKind.USER, CloverusCommon.Database.SqlBase.TransactionUse.No))
+            using (var db = new SqlBase(SqlBase.DatabaseKind.USER, SqlBase.TransactionUse.No))
             {
 
             }
