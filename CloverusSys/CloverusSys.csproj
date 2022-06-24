@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyWorks\FrmClosing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyWorks\FrmClosing.Designer.cs">
+      <DependentUpon>FrmClosing.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -60,6 +72,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Base\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyWorks\FrmClosing.resx">
+      <DependentUpon>FrmClosing.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmMainMenu.resx">
       <DependentUpon>FrmMainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -89,7 +107,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DailyWorks\" />
     <Folder Include="VariousReports\" />
   </ItemGroup>
   <ItemGroup>

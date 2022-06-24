@@ -57,3 +57,11 @@ SprCommon/obj/Debug/SprCommon.csproj.CoreCompileInputs.cache
 SprCommon/obj/Debug/SprCommon.csproj.FileListAbsolute.txt
 SprCommon/obj/Debug/SprCommon.dll
 SprCommon/obj/Debug/SprCommon.pdb
+*.dll
+*.vsidx
+*.dll
+*.resources
+*.dll
+SprCommon/obj/Debug/_IsIncrementalBuild
+*.cache
+CloverusCommon/bin/Debug/CloverusCommon.dll
