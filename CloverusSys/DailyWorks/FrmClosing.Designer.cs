@@ -74,7 +74,6 @@
             this.DtpFromDate.Size = new System.Drawing.Size(172, 30);
             this.DtpFromDate.TabIndex = 4;
             this.DtpFromDate.Value = new System.DateTime(2022, 6, 24, 14, 11, 41, 692);
-            this.DtpFromDate.Load += new System.EventHandler(this.DtpFromDate_Load);
             // 
             // DtpTillDate
             // 
