@@ -22,5 +22,11 @@ namespace CloverusSys
             var frm = new MasterMaintenance.Customers.Preview();
             frm.ShowDialog();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var frm = new DailyWorks.FrmClosing();
+            frm.ShowDialog();
+        }
     }
 }

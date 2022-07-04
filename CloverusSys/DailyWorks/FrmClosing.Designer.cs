@@ -35,15 +35,15 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.ChkSalesGeneration = new System.Windows.Forms.CheckBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.ChkBeforeDocuments = new System.Windows.Forms.CheckBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.ChkAfterDocuments = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
@@ -74,6 +74,7 @@
             this.DtpFromDate.Size = new System.Drawing.Size(172, 30);
             this.DtpFromDate.TabIndex = 4;
             this.DtpFromDate.Value = new System.DateTime(2022, 6, 24, 14, 11, 41, 692);
+            this.DtpFromDate.Load += new System.EventHandler(this.DtpFromDate_Load);
             // 
             // DtpTillDate
             // 
@@ -125,15 +126,6 @@
             this.panel2.Size = new System.Drawing.Size(172, 40);
             this.panel2.TabIndex = 11;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Navy;
-            this.panel3.Controls.Add(this.ChkAfterDocuments);
-            this.panel3.Location = new System.Drawing.Point(21, 286);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(172, 40);
-            this.panel3.TabIndex = 12;
-            // 
             // ChkBeforeDocuments
             // 
             this.ChkBeforeDocuments.AutoSize = true;
@@ -146,6 +138,15 @@
             this.ChkBeforeDocuments.TabIndex = 9;
             this.ChkBeforeDocuments.Text = "ルート変更前帳票";
             this.ChkBeforeDocuments.UseVisualStyleBackColor = false;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Navy;
+            this.panel3.Controls.Add(this.ChkAfterDocuments);
+            this.panel3.Location = new System.Drawing.Point(21, 286);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(172, 40);
+            this.panel3.TabIndex = 12;
             // 
             // ChkAfterDocuments
             // 
@@ -172,36 +173,15 @@
             this.panel4.Size = new System.Drawing.Size(267, 113);
             this.panel4.TabIndex = 13;
             // 
-            // panel5
+            // checkBox4
             // 
-            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel5.Controls.Add(this.checkBox5);
-            this.panel5.Controls.Add(this.checkBox6);
-            this.panel5.Controls.Add(this.checkBox7);
-            this.panel5.Location = new System.Drawing.Point(197, 286);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(267, 90);
-            this.panel5.TabIndex = 14;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(6, 6);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(74, 27);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "配送表";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(6, 31);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(74, 27);
-            this.checkBox2.TabIndex = 15;
-            this.checkBox2.Text = "カード";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(6, 77);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(134, 27);
+            this.checkBox4.TabIndex = 17;
+            this.checkBox4.Text = "ごはん量集計表";
+            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
@@ -213,15 +193,36 @@
             this.checkBox3.Text = "種類別ルート別集計表";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // checkBox2
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(6, 77);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(134, 27);
-            this.checkBox4.TabIndex = 17;
-            this.checkBox4.Text = "ごはん量集計表";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(6, 31);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(74, 27);
+            this.checkBox2.TabIndex = 15;
+            this.checkBox2.Text = "カード";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(6, 6);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(74, 27);
+            this.checkBox1.TabIndex = 0;
+            this.checkBox1.Text = "配送表";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel5.Controls.Add(this.checkBox5);
+            this.panel5.Controls.Add(this.checkBox6);
+            this.panel5.Controls.Add(this.checkBox7);
+            this.panel5.Location = new System.Drawing.Point(197, 286);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(267, 90);
+            this.panel5.TabIndex = 14;
             // 
             // checkBox5
             // 
@@ -289,8 +290,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.DtpFromDate);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "FrmClosing";
-            this.Text = "FrmClosing";
+            this.Text = "日次締め処理";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

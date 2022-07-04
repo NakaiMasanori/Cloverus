@@ -15,6 +15,9 @@ namespace CloverusSys.DailyWorks
         public FrmClosing()
         {
             InitializeComponent();
+            DtpFromDate.Value = DateTime.Now;
+            DtpTillDate.Value = NextBusinessDay;
         }
+
     }
 }
