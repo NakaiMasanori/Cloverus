@@ -1,7 +1,6 @@
-﻿
-namespace CloverusSys.VariousReports.SideDishes
+﻿namespace CloverusSys.VariousReports.Client
 {
-    partial class SpreadSheet
+    partial class PreviewUriageNyuukin
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +30,13 @@ namespace CloverusSys.VariousReports.SideDishes
         {
             this.SuspendLayout();
             // 
-            // SpreadSheet
+            // UriageNyuukinPreview
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "SpreadSheet";
-            this.Text = "おかず量集計表";
+            this.Name = "UriageNyuukinPreview";
+            this.Text = "顧客別売上入金一覧表";
             this.ResumeLayout(false);
 
         }

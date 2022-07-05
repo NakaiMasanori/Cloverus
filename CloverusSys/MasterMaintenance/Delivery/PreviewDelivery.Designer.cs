@@ -1,7 +1,6 @@
-﻿
-namespace CloverusSys.VariousReports.SideDishes
+﻿namespace CloverusSys.MasterMaintenance.Delivery
 {
-    partial class SpreadSheet
+    partial class PreviewDelivery
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +30,13 @@ namespace CloverusSys.VariousReports.SideDishes
         {
             this.SuspendLayout();
             // 
-            // SpreadSheet
+            // PreviewDelivery
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "SpreadSheet";
-            this.Text = "おかず量集計表";
+            this.Name = "PreviewDelivery";
+            this.Text = "配達先マスター";
             this.ResumeLayout(false);
 
         }

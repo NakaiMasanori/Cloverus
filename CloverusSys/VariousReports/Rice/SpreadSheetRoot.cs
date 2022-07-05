@@ -7,7 +7,7 @@
 //-----------------------------------------------------------------------------
 //  変更履歴:
 //  Ver      日付        担当       コメント
-//  0.0      2022/12/31  A.Satou    新規作成
+//  0.0      2022/12/31  s.tai    新規作成
 #region 更新履歴
 #endregion
 //*****************************************************************************
@@ -22,21 +22,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SprCommon.Database.SqlServer;
 #endregion
 
-namespace CloverusSys.VariousReports.SideDishes
+namespace CloverusSys.VariousReports.Rice
 {
     /// <summary>
-    /// おかず量集計表
+    /// ご飯量集計表（ルート別）
     /// </summary>
-    public partial class SpreadSheet : Base.BaseForm
+    public partial class SpreadSheetRoot : Base.BaseForm
     {
         #region コンストラクタ
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public SpreadSheet()
+        public SpreadSheetRoot()
         {
             InitializeComponent();
         }

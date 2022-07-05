@@ -1,7 +1,6 @@
-﻿
-namespace CloverusSys.VariousReports.SideDishes
+﻿namespace CloverusSys.VariousReports.Rice
 {
-    partial class SpreadSheet
+    partial class SpreadSheetTypeB
     {
         /// <summary>
         /// Required designer variable.
@@ -31,13 +30,13 @@ namespace CloverusSys.VariousReports.SideDishes
         {
             this.SuspendLayout();
             // 
-            // SpreadSheet
+            // TypeBSpreadSheet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "SpreadSheet";
-            this.Text = "おかず量集計表";
+            this.Name = "TypeBSpreadSheet";
+            this.Text = "ご飯量集計表（タイプB）";
             this.ResumeLayout(false);
 
         }
