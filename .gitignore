@@ -65,3 +65,5 @@ SprCommon/obj/Debug/SprCommon.pdb
 SprCommon/obj/Debug/_IsIncrementalBuild
 *.cache
 CloverusCommon/bin/Debug/CloverusCommon.dll
+*.dll
+*.pdb

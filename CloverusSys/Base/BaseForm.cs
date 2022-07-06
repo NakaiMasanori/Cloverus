@@ -17,23 +17,19 @@ namespace CloverusSys.Base
             InitializeComponent();
         }
 
-        public DateTime NextBusinessDay
+        public DateTime NextBusinessDay(DateTime today)
         {
-            get
+            var nextday = today.AddDays(2);
+            switch (nextday.DayOfWeek)
             {
-                var today = DateTime.Today;
-                var nextday = today.AddDays(2);
-                switch (nextday.DayOfWeek)
-                {
-                    case DayOfWeek.Saturday:
-                        nextday = nextday.AddDays(2);
-                        break;
-                    case DayOfWeek.Sunday:
-                        nextday = nextday.AddDays(1);
-                        break;
-                }
-                return nextday;
+                case DayOfWeek.Saturday:
+                    nextday = nextday.AddDays(2);
+                    break;
+                case DayOfWeek.Sunday:
+                    nextday = nextday.AddDays(1);
+                    break;
             }
+            return nextday;
         }
     }
 }

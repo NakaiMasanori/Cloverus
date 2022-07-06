@@ -52,6 +52,12 @@
     <Compile Include="Base\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MenuPanel\MasterCreation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MasterCreation.Designer.cs">
+      <DependentUpon>MasterCreation.cs</DependentUpon>
+    </Compile>
     <Compile Include="DailyWorks\FrmClosing.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -224,6 +230,9 @@
     </Compile>
     <EmbeddedResource Include="Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MasterCreation.resx">
+      <DependentUpon>MasterCreation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailyWorks\FrmClosing.resx">
       <DependentUpon>FrmClosing.cs</DependentUpon>

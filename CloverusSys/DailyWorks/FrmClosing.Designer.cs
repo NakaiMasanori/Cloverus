@@ -47,7 +47,7 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox6 = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LblArert = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -253,16 +253,15 @@
             this.checkBox7.Text = "種類別集計表";
             this.checkBox7.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // LblArert
             // 
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(21, 61);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(443, 51);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "日付の範囲が3日を超えている為、実行時にパスワード入力が必要となります。";
+            this.LblArert.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.LblArert.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblArert.ForeColor = System.Drawing.Color.Red;
+            this.LblArert.Location = new System.Drawing.Point(21, 61);
+            this.LblArert.Name = "LblArert";
+            this.LblArert.Size = new System.Drawing.Size(443, 51);
+            this.LblArert.TabIndex = 15;
             // 
             // button1
             // 
@@ -279,7 +278,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(493, 441);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LblArert);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -327,7 +326,7 @@
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox6;
         private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LblArert;
         private System.Windows.Forms.Button button1;
     }
 }

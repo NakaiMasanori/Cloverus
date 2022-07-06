@@ -40,11 +40,23 @@ namespace CloverusSys
             var frm = new MasterMaintenance.Customers.Preview();
             frm.ShowDialog();
         }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnSalesCreation_Click(object sender, EventArgs e)
         {
+
             var frm = new DailyWorks.FrmClosing();
             frm.ShowDialog();
+        }
+        #endregion
+
+        #region private functions
+        /// <summary>
+        /// ダイアログ初期化
+        /// </summary>
+        private void InitializeForm()
+        {
+            // イベント登録
+            this.BtnCustomers.Click += new EventHandler(this.BtnCustomers_Click);
+            this.BtnSalesCreation.Click += new EventHandler(this.BtnSalesCreation_Click);
         }
         #endregion
     }

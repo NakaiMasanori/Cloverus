@@ -1,6 +1,6 @@
-﻿namespace SprCommon.Controls
+﻿namespace CloverusSys.Controls.MenuPanel
 {
-    partial class SprDateTimePicker
+    partial class MasterCreation
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -28,35 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.DatePicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
-            // DatePicker
-            // 
-            this.DatePicker.CustomFormat = "yyyy/MM/dd（ddd）";
-            this.DatePicker.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DatePicker.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.DatePicker.ImeMode = System.Windows.Forms.ImeMode.Off;
-            this.DatePicker.Location = new System.Drawing.Point(0, 0);
-            this.DatePicker.Name = "DatePicker";
-            this.DatePicker.Size = new System.Drawing.Size(172, 30);
-            this.DatePicker.TabIndex = 1;
-            this.DatePicker.ValueChanged += new System.EventHandler(this.DatePicker_ValueChanged);
-            // 
-            // SprDateTimePicker
+            // MasterCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.DatePicker);
-            this.Name = "SprDateTimePicker";
-            this.Size = new System.Drawing.Size(172, 30);
+            this.Name = "MasterCreation";
+            this.Size = new System.Drawing.Size(1596, 991);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DateTimePicker DatePicker;
     }
 }

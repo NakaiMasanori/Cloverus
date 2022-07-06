@@ -85,6 +85,10 @@ namespace SprCommon.Controls
         }
         #endregion
 
+        #region イベント定義
+        public event EventHandler ValueChanged;
+        #endregion
+
         #region コンストラクタ
         /// <summary>
         /// コンストラクタ
@@ -95,5 +99,14 @@ namespace SprCommon.Controls
         }
         #endregion
 
+        #region イベント
+        private void DatePicker_ValueChanged(object sender, EventArgs e)
+        {
+            if (this.ValueChanged != null)
+            {
+                ValueChanged(this, e);
+            }
+        }
+        #endregion
     }
 }
