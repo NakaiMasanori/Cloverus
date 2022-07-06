@@ -31,6 +31,7 @@ namespace CloverusSys
         public FrmMainMenu()
         {
             InitializeComponent();
+            InitializeForm();
         }
         #endregion
 
