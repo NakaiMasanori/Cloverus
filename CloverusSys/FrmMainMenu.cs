@@ -60,5 +60,10 @@ namespace CloverusSys
             this.BtnSalesCreation.Click += new EventHandler(this.BtnSalesCreation_Click);
         }
         #endregion
+
+        private void MainMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

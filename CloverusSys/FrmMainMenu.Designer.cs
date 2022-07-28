@@ -29,6 +29,7 @@ namespace CloverusSys
         /// </summary>
         private void InitializeComponent()
         {
+            this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.PnlMenu1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.button12 = new System.Windows.Forms.Button();
@@ -63,6 +64,13 @@ namespace CloverusSys
             this.button19 = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.PnlMenu4 = new System.Windows.Forms.Panel();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.button47 = new System.Windows.Forms.Button();
+            this.button39 = new System.Windows.Forms.Button();
+            this.button38 = new System.Windows.Forms.Button();
+            this.button37 = new System.Windows.Forms.Button();
+            this.button48 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.button46 = new System.Windows.Forms.Button();
             this.button45 = new System.Windows.Forms.Button();
@@ -82,13 +90,16 @@ namespace CloverusSys
             this.button30 = new System.Windows.Forms.Button();
             this.button22 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.PnlMenu4 = new System.Windows.Forms.Panel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button47 = new System.Windows.Forms.Button();
-            this.button39 = new System.Windows.Forms.Button();
-            this.button38 = new System.Windows.Forms.Button();
-            this.button37 = new System.Windows.Forms.Button();
-            this.button48 = new System.Windows.Forms.Button();
+            this.マスター作成ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.顧客マスターToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ルートマスターToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.サブルートマスターToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.顧客分類マスターToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.基本設定ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.種類マスターToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.郵送記号マスターToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.金融機関マスターToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MainMenuStrip.SuspendLayout();
             this.PnlMenu1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -96,20 +107,33 @@ namespace CloverusSys
             this.groupBox3.SuspendLayout();
             this.PnlMenu3.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            this.groupBox7.SuspendLayout();
             this.PnlMenu4.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // MainMenuStrip
+            // 
+            this.MainMenuStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.MainMenuStrip.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.MainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.マスター作成ToolStripMenuItem,
+            this.基本設定ToolStripMenuItem});
+            this.MainMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.MainMenuStrip.Name = "MainMenuStrip";
+            this.MainMenuStrip.Size = new System.Drawing.Size(1894, 28);
+            this.MainMenuStrip.TabIndex = 14;
+            this.MainMenuStrip.Text = "マスター作成(&M)";
             // 
             // PnlMenu1
             // 
             this.PnlMenu1.Controls.Add(this.groupBox2);
             this.PnlMenu1.Controls.Add(this.groupBox1);
             this.PnlMenu1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlMenu1.Location = new System.Drawing.Point(0, 0);
+            this.PnlMenu1.Location = new System.Drawing.Point(0, 28);
             this.PnlMenu1.Name = "PnlMenu1";
-            this.PnlMenu1.Size = new System.Drawing.Size(378, 991);
-            this.PnlMenu1.TabIndex = 2;
+            this.PnlMenu1.Size = new System.Drawing.Size(378, 963);
+            this.PnlMenu1.TabIndex = 15;
             // 
             // groupBox2
             // 
@@ -258,10 +282,10 @@ namespace CloverusSys
             // 
             this.PnlMenu2.Controls.Add(this.groupBox3);
             this.PnlMenu2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlMenu2.Location = new System.Drawing.Point(378, 0);
+            this.PnlMenu2.Location = new System.Drawing.Point(378, 28);
             this.PnlMenu2.Name = "PnlMenu2";
-            this.PnlMenu2.Size = new System.Drawing.Size(378, 991);
-            this.PnlMenu2.TabIndex = 3;
+            this.PnlMenu2.Size = new System.Drawing.Size(378, 963);
+            this.PnlMenu2.TabIndex = 16;
             // 
             // groupBox3
             // 
@@ -384,10 +408,10 @@ namespace CloverusSys
             // 
             this.PnlMenu3.Controls.Add(this.groupBox5);
             this.PnlMenu3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlMenu3.Location = new System.Drawing.Point(756, 0);
+            this.PnlMenu3.Location = new System.Drawing.Point(756, 28);
             this.PnlMenu3.Name = "PnlMenu3";
-            this.PnlMenu3.Size = new System.Drawing.Size(378, 991);
-            this.PnlMenu3.TabIndex = 4;
+            this.PnlMenu3.Size = new System.Drawing.Size(378, 963);
+            this.PnlMenu3.TabIndex = 17;
             // 
             // groupBox5
             // 
@@ -531,6 +555,94 @@ namespace CloverusSys
             this.button4.TabIndex = 9;
             this.button4.Text = "請求入金処理";
             this.button4.UseVisualStyleBackColor = true;
+            // 
+            // PnlMenu4
+            // 
+            this.PnlMenu4.Controls.Add(this.groupBox4);
+            this.PnlMenu4.Controls.Add(this.groupBox7);
+            this.PnlMenu4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PnlMenu4.Location = new System.Drawing.Point(1134, 28);
+            this.PnlMenu4.Name = "PnlMenu4";
+            this.PnlMenu4.Size = new System.Drawing.Size(760, 963);
+            this.PnlMenu4.TabIndex = 18;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox4.Controls.Add(this.button47);
+            this.groupBox4.Controls.Add(this.button39);
+            this.groupBox4.Controls.Add(this.button38);
+            this.groupBox4.Controls.Add(this.button37);
+            this.groupBox4.Controls.Add(this.button48);
+            this.groupBox4.Font = new System.Drawing.Font("メイリオ", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.groupBox4.Location = new System.Drawing.Point(8, 683);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(741, 281);
+            this.groupBox4.TabIndex = 14;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "基本設定";
+            // 
+            // button47
+            // 
+            this.button47.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button47.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button47.Location = new System.Drawing.Point(388, 40);
+            this.button47.Name = "button47";
+            this.button47.Size = new System.Drawing.Size(344, 55);
+            this.button47.TabIndex = 14;
+            this.button47.Text = "予定売上連番管理コントロール";
+            this.button47.UseVisualStyleBackColor = true;
+            // 
+            // button39
+            // 
+            this.button39.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button39.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button39.Location = new System.Drawing.Point(9, 105);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(344, 55);
+            this.button39.TabIndex = 13;
+            this.button39.Text = "売上リスト";
+            this.button39.UseVisualStyleBackColor = true;
+            // 
+            // button38
+            // 
+            this.button38.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button38.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button38.Location = new System.Drawing.Point(9, 170);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(344, 55);
+            this.button38.TabIndex = 12;
+            this.button38.Text = "定期パターンリスト";
+            this.button38.UseVisualStyleBackColor = true;
+            // 
+            // button37
+            // 
+            this.button37.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button37.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button37.Location = new System.Drawing.Point(388, 105);
+            this.button37.Name = "button37";
+            this.button37.Size = new System.Drawing.Size(344, 55);
+            this.button37.TabIndex = 11;
+            this.button37.Text = "休日設定処理";
+            this.button37.UseVisualStyleBackColor = true;
+            // 
+            // button48
+            // 
+            this.button48.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.button48.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.button48.Location = new System.Drawing.Point(9, 40);
+            this.button48.Name = "button48";
+            this.button48.Size = new System.Drawing.Size(344, 55);
+            this.button48.TabIndex = 10;
+            this.button48.Text = "予定明細確認リスト";
+            this.button48.UseVisualStyleBackColor = true;
             // 
             // groupBox7
             // 
@@ -779,93 +891,68 @@ namespace CloverusSys
             this.button5.Text = "おかず量集計表";
             this.button5.UseVisualStyleBackColor = true;
             // 
-            // PnlMenu4
+            // マスター作成ToolStripMenuItem
             // 
-            this.PnlMenu4.Controls.Add(this.groupBox4);
-            this.PnlMenu4.Controls.Add(this.groupBox7);
-            this.PnlMenu4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlMenu4.Location = new System.Drawing.Point(1134, 0);
-            this.PnlMenu4.Name = "PnlMenu4";
-            this.PnlMenu4.Size = new System.Drawing.Size(760, 991);
-            this.PnlMenu4.TabIndex = 5;
+            this.マスター作成ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.顧客マスターToolStripMenuItem,
+            this.ルートマスターToolStripMenuItem,
+            this.サブルートマスターToolStripMenuItem,
+            this.顧客分類マスターToolStripMenuItem});
+            this.マスター作成ToolStripMenuItem.Name = "マスター作成ToolStripMenuItem";
+            this.マスター作成ToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.マスター作成ToolStripMenuItem.Text = "マスター作成(&M)";
             // 
-            // groupBox4
+            // 顧客マスターToolStripMenuItem
             // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox4.Controls.Add(this.button47);
-            this.groupBox4.Controls.Add(this.button39);
-            this.groupBox4.Controls.Add(this.button38);
-            this.groupBox4.Controls.Add(this.button37);
-            this.groupBox4.Controls.Add(this.button48);
-            this.groupBox4.Font = new System.Drawing.Font("メイリオ", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.groupBox4.Location = new System.Drawing.Point(8, 683);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(741, 281);
-            this.groupBox4.TabIndex = 14;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "基本設定";
+            this.顧客マスターToolStripMenuItem.Name = "顧客マスターToolStripMenuItem";
+            this.顧客マスターToolStripMenuItem.Size = new System.Drawing.Size(215, 24);
+            this.顧客マスターToolStripMenuItem.Text = "顧客マスター(&C)";
             // 
-            // button47
+            // ルートマスターToolStripMenuItem
             // 
-            this.button47.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button47.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button47.Location = new System.Drawing.Point(388, 40);
-            this.button47.Name = "button47";
-            this.button47.Size = new System.Drawing.Size(344, 55);
-            this.button47.TabIndex = 14;
-            this.button47.Text = "予定売上連番管理コントロール";
-            this.button47.UseVisualStyleBackColor = true;
+            this.ルートマスターToolStripMenuItem.Name = "ルートマスターToolStripMenuItem";
+            this.ルートマスターToolStripMenuItem.Size = new System.Drawing.Size(215, 24);
+            this.ルートマスターToolStripMenuItem.Text = "ルートマスター(&R)";
             // 
-            // button39
+            // サブルートマスターToolStripMenuItem
             // 
-            this.button39.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button39.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button39.Location = new System.Drawing.Point(9, 105);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(344, 55);
-            this.button39.TabIndex = 13;
-            this.button39.Text = "売上リスト";
-            this.button39.UseVisualStyleBackColor = true;
+            this.サブルートマスターToolStripMenuItem.Name = "サブルートマスターToolStripMenuItem";
+            this.サブルートマスターToolStripMenuItem.Size = new System.Drawing.Size(215, 24);
+            this.サブルートマスターToolStripMenuItem.Text = "サブルートマスター(&S)";
             // 
-            // button38
+            // 顧客分類マスターToolStripMenuItem
             // 
-            this.button38.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button38.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button38.Location = new System.Drawing.Point(9, 170);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(344, 55);
-            this.button38.TabIndex = 12;
-            this.button38.Text = "定期パターンリスト";
-            this.button38.UseVisualStyleBackColor = true;
+            this.顧客分類マスターToolStripMenuItem.Name = "顧客分類マスターToolStripMenuItem";
+            this.顧客分類マスターToolStripMenuItem.Size = new System.Drawing.Size(215, 24);
+            this.顧客分類マスターToolStripMenuItem.Text = "顧客分類マスター(&K)";
             // 
-            // button37
+            // 基本設定ToolStripMenuItem
             // 
-            this.button37.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button37.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button37.Location = new System.Drawing.Point(388, 105);
-            this.button37.Name = "button37";
-            this.button37.Size = new System.Drawing.Size(344, 55);
-            this.button37.TabIndex = 11;
-            this.button37.Text = "休日設定処理";
-            this.button37.UseVisualStyleBackColor = true;
+            this.基本設定ToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.種類マスターToolStripMenuItem,
+            this.郵送記号マスターToolStripMenuItem,
+            this.金融機関マスターToolStripMenuItem});
+            this.基本設定ToolStripMenuItem.Name = "基本設定ToolStripMenuItem";
+            this.基本設定ToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.基本設定ToolStripMenuItem.Text = "基本設定";
             // 
-            // button48
+            // 種類マスターToolStripMenuItem
             // 
-            this.button48.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button48.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button48.Location = new System.Drawing.Point(9, 40);
-            this.button48.Name = "button48";
-            this.button48.Size = new System.Drawing.Size(344, 55);
-            this.button48.TabIndex = 10;
-            this.button48.Text = "予定明細確認リスト";
-            this.button48.UseVisualStyleBackColor = true;
+            this.種類マスターToolStripMenuItem.Name = "種類マスターToolStripMenuItem";
+            this.種類マスターToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.種類マスターToolStripMenuItem.Text = "種類マスター";
+            // 
+            // 郵送記号マスターToolStripMenuItem
+            // 
+            this.郵送記号マスターToolStripMenuItem.Name = "郵送記号マスターToolStripMenuItem";
+            this.郵送記号マスターToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.郵送記号マスターToolStripMenuItem.Text = "郵送記号マスター";
+            // 
+            // 金融機関マスターToolStripMenuItem
+            // 
+            this.金融機関マスターToolStripMenuItem.Name = "金融機関マスターToolStripMenuItem";
+            this.金融機関マスターToolStripMenuItem.Size = new System.Drawing.Size(182, 24);
+            this.金融機関マスターToolStripMenuItem.Text = "金融機関マスター";
             // 
             // FrmMainMenu
             // 
@@ -876,11 +963,14 @@ namespace CloverusSys
             this.Controls.Add(this.PnlMenu3);
             this.Controls.Add(this.PnlMenu2);
             this.Controls.Add(this.PnlMenu1);
+            this.Controls.Add(this.MainMenuStrip);
             this.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmMainMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "メインメニュー";
+            this.MainMenuStrip.ResumeLayout(false);
+            this.MainMenuStrip.PerformLayout();
             this.PnlMenu1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -888,18 +978,27 @@ namespace CloverusSys
             this.groupBox3.ResumeLayout(false);
             this.PnlMenu3.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            this.groupBox7.ResumeLayout(false);
             this.PnlMenu4.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
+            this.groupBox7.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip MainMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem マスター作成ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 顧客マスターToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ルートマスターToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem サブルートマスターToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 顧客分類マスターToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 基本設定ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 種類マスターToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 郵送記号マスターToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 金融機関マスターToolStripMenuItem;
         private System.Windows.Forms.Panel PnlMenu1;
-        private System.Windows.Forms.Panel PnlMenu2;
-        private System.Windows.Forms.Panel PnlMenu3;
-        private System.Windows.Forms.Panel PnlMenu4;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
@@ -911,11 +1010,8 @@ namespace CloverusSys
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button BtnCustomers;
+        private System.Windows.Forms.Panel PnlMenu2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button BtnDummy01;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button17;
         private System.Windows.Forms.Button button11;
         private System.Windows.Forms.Button BtnSalesCreation;
@@ -923,7 +1019,11 @@ namespace CloverusSys
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnDummy01;
+        private System.Windows.Forms.Panel PnlMenu3;
+        private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Button button28;
+        private System.Windows.Forms.Button button27;
         private System.Windows.Forms.Button button26;
         private System.Windows.Forms.Button button25;
         private System.Windows.Forms.Button button24;
@@ -931,9 +1031,15 @@ namespace CloverusSys
         private System.Windows.Forms.Button button20;
         private System.Windows.Forms.Button button19;
         private System.Windows.Forms.Button button18;
-        private System.Windows.Forms.Button button27;
-        private System.Windows.Forms.Button button22;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Panel PnlMenu4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.Button button47;
+        private System.Windows.Forms.Button button39;
+        private System.Windows.Forms.Button button38;
+        private System.Windows.Forms.Button button37;
+        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.Button button46;
         private System.Windows.Forms.Button button45;
         private System.Windows.Forms.Button button44;
@@ -950,12 +1056,8 @@ namespace CloverusSys
         private System.Windows.Forms.Button button32;
         private System.Windows.Forms.Button button31;
         private System.Windows.Forms.Button button30;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button47;
-        private System.Windows.Forms.Button button39;
-        private System.Windows.Forms.Button button38;
-        private System.Windows.Forms.Button button37;
-        private System.Windows.Forms.Button button48;
+        private System.Windows.Forms.Button button22;
+        private System.Windows.Forms.Button button5;
     }
 }
 
