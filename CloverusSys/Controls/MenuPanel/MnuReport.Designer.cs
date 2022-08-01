@@ -1,6 +1,6 @@
 ﻿namespace CloverusSys.Controls.MenuPanel
 {
-    partial class MasterCreation
+    partial class MnuReport
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -30,12 +30,15 @@
         {
             this.SuspendLayout();
             // 
-            // MasterCreation
+            // MnuReport
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Name = "MasterCreation";
-            this.Size = new System.Drawing.Size(1596, 991);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.Name = "MnuReport";
+            this.Size = new System.Drawing.Size(1644, 991);
             this.ResumeLayout(false);
 
         }

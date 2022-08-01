@@ -22,7 +22,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using SprCommon.Database.SqlServer;
+using Sql = CloverusCommon.Database.SqlServer.Sql;
+using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
 #endregion
 
 namespace CloverusSys.MasterMaintenance.Customers
@@ -30,18 +31,23 @@ namespace CloverusSys.MasterMaintenance.Customers
     /// <summary>
     /// 顧客マスター
     /// </summary>
-    public partial class Preview : Form
+    public partial class Edit : Form
     {
         #region コンストラクタ
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public Preview()
+        public Edit(int customerCode)
         {
             InitializeComponent();
-            using (var db = new SqlBase(SqlBase.DatabaseKind.USER, SqlBase.TransactionUse.No))
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
             {
-
+                var data = db.Select(Sql.CUS98MA01KOKYAKUM.GetForEditor(customerCode));
+                if (data.Rows.Count > 0)
+                {
+                    label2.Text = data.Rows[0][0].ToString();
+                    label3.Text = data.Rows[0][1].ToString();
+                }
             }
         }
         #endregion

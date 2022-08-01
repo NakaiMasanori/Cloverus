@@ -52,11 +52,29 @@
     <Compile Include="Base\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MenuPanel\MasterCreation.cs">
+    <Compile Include="Controls\MenuPanel\MenuAdministrativeTask.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\MenuPanel\MasterCreation.Designer.cs">
-      <DependentUpon>MasterCreation.cs</DependentUpon>
+    <Compile Include="Controls\MenuPanel\MenuAdministrativeTask.Designer.cs">
+      <DependentUpon>MenuAdministrativeTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBasicBusiness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBasicBusiness.Designer.cs">
+      <DependentUpon>MenuBasicBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBillingBusiness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBillingBusiness.Designer.cs">
+      <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MnuReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MnuReport.Designer.cs">
+      <DependentUpon>MnuReport.cs</DependentUpon>
     </Compile>
     <Compile Include="DailyWorks\FrmClosing.cs">
       <SubType>Form</SubType>
@@ -64,17 +82,17 @@
     <Compile Include="DailyWorks\FrmClosing.Designer.cs">
       <DependentUpon>FrmClosing.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmMainMenu.cs">
+    <Compile Include="FrmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmMainMenu.Designer.cs">
-      <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Customers\Preview.cs">
+    <Compile Include="MasterMaintenance\Customers\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Customers\Preview.Designer.cs">
-      <DependentUpon>Preview.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\Customers\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.cs">
       <SubType>Form</SubType>
@@ -231,17 +249,26 @@
     <EmbeddedResource Include="Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\MenuPanel\MasterCreation.resx">
-      <DependentUpon>MasterCreation.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuAdministrativeTask.resx">
+      <DependentUpon>MenuAdministrativeTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuBasicBusiness.resx">
+      <DependentUpon>MenuBasicBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuBillingBusiness.resx">
+      <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MnuReport.resx">
+      <DependentUpon>MnuReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailyWorks\FrmClosing.resx">
       <DependentUpon>FrmClosing.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmMainMenu.resx">
-      <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Customers\Preview.resx">
-      <DependentUpon>Preview.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\Customers\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterMaintenance\Delivery\PreviewDelivery.resx">
       <DependentUpon>PreviewDelivery.cs</DependentUpon>
