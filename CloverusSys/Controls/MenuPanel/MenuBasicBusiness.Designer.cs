@@ -43,7 +43,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtKeyword = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCustomer)).BeginInit();
             this.SuspendLayout();
@@ -197,19 +197,20 @@
             this.label3.TabIndex = 13;
             this.label3.Text = "キーワード検索：";
             // 
-            // textBox1
+            // TxtKeyword
             // 
-            this.textBox1.Location = new System.Drawing.Point(949, 9);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(679, 31);
-            this.textBox1.TabIndex = 14;
+            this.TxtKeyword.Location = new System.Drawing.Point(949, 9);
+            this.TxtKeyword.Name = "TxtKeyword";
+            this.TxtKeyword.Size = new System.Drawing.Size(679, 31);
+            this.TxtKeyword.TabIndex = 14;
+            this.TxtKeyword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtKeyword_KeyDown);
             // 
             // MenuBasicBusiness
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtKeyword);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
@@ -252,6 +253,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtKeyword;
     }
 }

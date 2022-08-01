@@ -22,13 +22,25 @@ namespace CloverusSys.Controls.MenuPanel
 
         public void Preview()
         {
+            PreviewKokyaku();
+        }
+
+        private void TxtKeyword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (!string.IsNullOrEmpty(TxtKeyword.Text.Trim()) && e.KeyCode == Keys.Enter)
+            {
+                PreviewKokyaku();
+            }
+        }
+
+        private void PreviewKokyaku()
+        {
             using (var db = new SqlBase(CloverusCommon.Database.SqlServer.SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
             {
-                var sql = CUS98MA01KOKYAKUM.GetPreviewForMenu();
+                var sql = CUS98MA01KOKYAKUM.GetPreviewForMenu(TxtKeyword.Text.Trim());
                 var data = db.Select(sql);
                 DgvCustomer.DataSource = data;
             }
         }
-
     }
 }
