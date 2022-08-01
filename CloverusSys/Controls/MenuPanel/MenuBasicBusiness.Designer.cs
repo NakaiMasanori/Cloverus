@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.BtnEditCustomer = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -56,7 +56,7 @@
             this.BtnEditCustomer.Location = new System.Drawing.Point(24, 48);
             this.BtnEditCustomer.Name = "BtnEditCustomer";
             this.BtnEditCustomer.Size = new System.Drawing.Size(767, 69);
-            this.BtnEditCustomer.TabIndex = 0;
+            this.BtnEditCustomer.TabIndex = 2;
             this.BtnEditCustomer.Text = "顧客マスター";
             this.BtnEditCustomer.UseVisualStyleBackColor = true;
             // 
@@ -66,7 +66,7 @@
             this.button2.Location = new System.Drawing.Point(424, 218);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(367, 69);
-            this.button2.TabIndex = 1;
+            this.button2.TabIndex = 5;
             this.button2.Text = "定期売上パターンマスター";
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -76,7 +76,7 @@
             this.button3.Location = new System.Drawing.Point(24, 218);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(367, 69);
-            this.button3.TabIndex = 2;
+            this.button3.TabIndex = 4;
             this.button3.Text = "売上予定登録";
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -95,7 +95,7 @@
             this.button4.Location = new System.Drawing.Point(424, 306);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(367, 69);
-            this.button4.TabIndex = 4;
+            this.button4.TabIndex = 6;
             this.button4.Text = "売上予定生成（個別）";
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -105,7 +105,7 @@
             this.button5.Location = new System.Drawing.Point(24, 392);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(767, 69);
-            this.button5.TabIndex = 5;
+            this.button5.TabIndex = 7;
             this.button5.Text = "売上予定修正・確認";
             this.button5.UseVisualStyleBackColor = true;
             // 
@@ -124,17 +124,17 @@
             this.DgvCustomer.AllowUserToDeleteRows = false;
             this.DgvCustomer.AllowUserToResizeColumns = false;
             this.DgvCustomer.AllowUserToResizeRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvCustomer.GridColor = System.Drawing.SystemColors.Control;
@@ -154,7 +154,7 @@
             this.label2.Location = new System.Drawing.Point(24, 676);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 24);
-            this.label2.TabIndex = 7;
+            this.label2.TabIndex = 8;
             this.label2.Text = "《 その他 》";
             // 
             // button6
@@ -163,7 +163,7 @@
             this.button6.Location = new System.Drawing.Point(24, 705);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(367, 69);
-            this.button6.TabIndex = 8;
+            this.button6.TabIndex = 9;
             this.button6.Text = "予定金額集計表";
             this.button6.UseVisualStyleBackColor = true;
             // 
@@ -173,7 +173,7 @@
             this.button7.Location = new System.Drawing.Point(24, 797);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(367, 69);
-            this.button7.TabIndex = 9;
+            this.button7.TabIndex = 11;
             this.button7.Text = "売上生成処理";
             this.button7.UseVisualStyleBackColor = true;
             // 
@@ -183,7 +183,7 @@
             this.button8.Location = new System.Drawing.Point(24, 888);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(367, 69);
-            this.button8.TabIndex = 10;
+            this.button8.TabIndex = 13;
             this.button8.Text = "予定・売上差額チェックリスト";
             this.button8.UseVisualStyleBackColor = true;
             // 
@@ -193,7 +193,7 @@
             this.button9.Location = new System.Drawing.Point(424, 705);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(367, 69);
-            this.button9.TabIndex = 11;
+            this.button9.TabIndex = 10;
             this.button9.Text = "予定明細確認リスト";
             this.button9.UseVisualStyleBackColor = true;
             // 
@@ -213,7 +213,7 @@
             this.label3.Location = new System.Drawing.Point(815, 13);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(138, 24);
-            this.label3.TabIndex = 13;
+            this.label3.TabIndex = 1;
             this.label3.Text = "キーワード検索：";
             // 
             // TxtKeyword
@@ -222,7 +222,7 @@
             this.TxtKeyword.Location = new System.Drawing.Point(949, 9);
             this.TxtKeyword.Name = "TxtKeyword";
             this.TxtKeyword.Size = new System.Drawing.Size(679, 31);
-            this.TxtKeyword.TabIndex = 14;
+            this.TxtKeyword.TabIndex = 0;
             // 
             // MenuBasicBusiness
             // 

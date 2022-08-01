@@ -19,6 +19,12 @@ namespace CloverusSys.Controls.MenuPanel
         {
             get { return this.DgvCustomer; }
         }
+
+        public TextBox CustomerSearchKeyword
+        {
+            get { return this.TxtKeyword; }
+        }
+
         public MenuBasicBusiness()
         {
             InitializeComponent();
@@ -56,6 +62,7 @@ namespace CloverusSys.Controls.MenuPanel
             gv.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             gv.Columns[1].Width = 240;
             gv.Columns[2].Width = 420;
+            TxtKeyword.Focus();
         }
 
         private void BtnEditCustomer_Click(object sender, EventArgs e)
