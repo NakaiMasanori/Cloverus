@@ -38,7 +38,7 @@ namespace CloverusSys
         #region イベント
         private void BtnCustomers_Click(object sender, EventArgs e)
         {
-            var frm = new MasterMaintenance.Customers.Preview();
+            var frm = new MasterMaintenance.Customers.Edit();
             frm.ShowDialog();
         }
         private void BtnSalesCreation_Click(object sender, EventArgs e)

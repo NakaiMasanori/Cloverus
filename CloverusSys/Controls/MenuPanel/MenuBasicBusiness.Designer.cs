@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button1 = new System.Windows.Forms.Button();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.BtnEditCustomer = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,15 +50,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.DgvCustomer)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // BtnEditCustomer
             // 
-            this.button1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(24, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(767, 69);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "顧客マスター";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnEditCustomer.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BtnEditCustomer.Location = new System.Drawing.Point(24, 48);
+            this.BtnEditCustomer.Name = "BtnEditCustomer";
+            this.BtnEditCustomer.Size = new System.Drawing.Size(767, 69);
+            this.BtnEditCustomer.TabIndex = 0;
+            this.BtnEditCustomer.Text = "顧客マスター";
+            this.BtnEditCustomer.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -124,17 +124,17 @@
             this.DgvCustomer.AllowUserToDeleteRows = false;
             this.DgvCustomer.AllowUserToResizeColumns = false;
             this.DgvCustomer.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.DgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvCustomer.GridColor = System.Drawing.SystemColors.Control;
@@ -146,6 +146,7 @@
             this.DgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DgvCustomer.Size = new System.Drawing.Size(808, 924);
             this.DgvCustomer.TabIndex = 0;
+            this.DgvCustomer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DgvCustomer_KeyDown);
             // 
             // label2
             // 
@@ -217,6 +218,7 @@
             // 
             // TxtKeyword
             // 
+            this.TxtKeyword.ImeMode = System.Windows.Forms.ImeMode.On;
             this.TxtKeyword.Location = new System.Drawing.Point(949, 9);
             this.TxtKeyword.Name = "TxtKeyword";
             this.TxtKeyword.Size = new System.Drawing.Size(679, 31);
@@ -241,7 +243,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BtnEditCustomer);
             this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "MenuBasicBusiness";
@@ -255,7 +257,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnEditCustomer;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label1;

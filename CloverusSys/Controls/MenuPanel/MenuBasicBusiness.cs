@@ -8,8 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CloverusCommon.Database;
-using CloverusCommon.Database.SqlServer;
-using CloverusCommon.Database.SqlServer.Sql;
+using Sql = CloverusCommon.Database.SqlServer.Sql;
+using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
 
 namespace CloverusSys.Controls.MenuPanel
 {
@@ -24,6 +24,8 @@ namespace CloverusSys.Controls.MenuPanel
             InitializeComponent();
             this.TxtKeyword.KeyDown += new KeyEventHandler(this.TxtKeyword_KeyDown);
             this.DgvCustomer.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(this.DgvCustomer_DataBindingComplete);
+            this.DgvCustomer.DoubleClick += new EventHandler(this.DgvCustomer_DoubleClick);
+            this.BtnEditCustomer.Click += new EventHandler(this.BtnEditCustomer_Click);
         }
 
         public void Preview()
@@ -41,9 +43,9 @@ namespace CloverusSys.Controls.MenuPanel
 
         private void PreviewKokyaku()
         {
-            using (var db = new CloverusCommon.Database.SqlServer.SqlBase(CloverusCommon.Database.SqlServer.SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
             {
-                DgvCustomer.DataSource = db.Select(CUS98MA01KOKYAKUM.GetPreviewForMenu(TxtKeyword.Text.Trim()));
+                DgvCustomer.DataSource = db.Select(Sql.CUS98MA01KOKYAKUM.GetPreviewForMenu(TxtKeyword.Text.Trim()));
             }
         }
 
@@ -54,6 +56,32 @@ namespace CloverusSys.Controls.MenuPanel
             gv.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             gv.Columns[1].Width = 240;
             gv.Columns[2].Width = 420;
+        }
+
+        private void BtnEditCustomer_Click(object sender, EventArgs e)
+        {
+            ShowCustomerEdit();
+        }
+
+        private void DgvCustomer_DoubleClick(object sender, EventArgs e)
+        {
+            ShowCustomerEdit();
+        }
+
+        private void ShowCustomerEdit()
+        {
+            int.TryParse(this.DgvCustomer.SelectedRows[0].Cells[0].Value.ToString(), out int customerCode);
+            var frm = new MasterMaintenance.Customers.Edit(customerCode);
+            frm.ShowDialog();
+        }
+
+        private void DgvCustomer_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                e.Handled = true;
+                ShowCustomerEdit();
+            }
         }
     }
 }
