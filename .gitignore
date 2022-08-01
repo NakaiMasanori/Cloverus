@@ -72,3 +72,6 @@ CloverusCommon/bin/Debug/CloverusCommon.pdb
 CloverusCommon/bin/Debug/CloverusCommon.dll
 CloverusCommon/bin/Debug/CloverusCommon.dll
 CloverusCommon/bin/Debug/CloverusCommon.pdb
+CloverusCommon/bin/Debug/CloverusCommon.dll
+CloverusCommon/bin/Debug/CloverusCommon.pdb
+*.pdb

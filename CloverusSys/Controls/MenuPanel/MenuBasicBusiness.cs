@@ -15,9 +15,15 @@ namespace CloverusSys.Controls.MenuPanel
 {
     public partial class MenuBasicBusiness : UserControl
     {
+        public DataGridView PreviewCustomer
+        {
+            get { return this.DgvCustomer; }
+        }
         public MenuBasicBusiness()
         {
             InitializeComponent();
+            this.TxtKeyword.KeyDown += new KeyEventHandler(this.TxtKeyword_KeyDown);
+            this.DgvCustomer.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(this.DgvCustomer_DataBindingComplete);
         }
 
         public void Preview()
@@ -35,12 +41,19 @@ namespace CloverusSys.Controls.MenuPanel
 
         private void PreviewKokyaku()
         {
-            using (var db = new SqlBase(CloverusCommon.Database.SqlServer.SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
+            using (var db = new CloverusCommon.Database.SqlServer.SqlBase(CloverusCommon.Database.SqlServer.SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
             {
-                var sql = CUS98MA01KOKYAKUM.GetPreviewForMenu(TxtKeyword.Text.Trim());
-                var data = db.Select(sql);
-                DgvCustomer.DataSource = data;
+                DgvCustomer.DataSource = db.Select(CUS98MA01KOKYAKUM.GetPreviewForMenu(TxtKeyword.Text.Trim()));
             }
+        }
+
+        private void DgvCustomer_DataBindingComplete(object sender, DataGridViewBindingCompleteEventArgs e)
+        {
+            var gv = (DataGridView)sender;
+            gv.Columns[0].Width = 120;
+            gv.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            gv.Columns[1].Width = 240;
+            gv.Columns[2].Width = 420;
         }
     }
 }

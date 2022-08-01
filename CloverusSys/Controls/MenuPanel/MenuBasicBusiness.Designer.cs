@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -109,6 +111,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.DgvCustomer);
             this.panel1.Location = new System.Drawing.Point(818, 48);
             this.panel1.Name = "panel1";
@@ -119,14 +122,29 @@
             // 
             this.DgvCustomer.AllowUserToAddRows = false;
             this.DgvCustomer.AllowUserToDeleteRows = false;
+            this.DgvCustomer.AllowUserToResizeColumns = false;
+            this.DgvCustomer.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DgvCustomer.GridColor = System.Drawing.SystemColors.Control;
             this.DgvCustomer.Location = new System.Drawing.Point(0, 0);
             this.DgvCustomer.Name = "DgvCustomer";
             this.DgvCustomer.ReadOnly = true;
             this.DgvCustomer.RowHeadersVisible = false;
             this.DgvCustomer.RowTemplate.Height = 21;
-            this.DgvCustomer.Size = new System.Drawing.Size(810, 926);
+            this.DgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DgvCustomer.Size = new System.Drawing.Size(808, 924);
             this.DgvCustomer.TabIndex = 0;
             // 
             // label2
@@ -203,7 +221,6 @@
             this.TxtKeyword.Name = "TxtKeyword";
             this.TxtKeyword.Size = new System.Drawing.Size(679, 31);
             this.TxtKeyword.TabIndex = 14;
-            this.TxtKeyword.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtKeyword_KeyDown);
             // 
             // MenuBasicBusiness
             // 
