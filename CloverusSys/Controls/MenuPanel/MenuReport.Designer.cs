@@ -1,6 +1,6 @@
 ﻿namespace CloverusSys.Controls.MenuPanel
 {
-    partial class MnuReport
+    partial class MenuReport
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -41,7 +41,7 @@
             this.button4.Text = "配送表";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // MnuReport
+            // MenuReport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -49,7 +49,7 @@
             this.Controls.Add(this.button4);
             this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.Name = "MnuReport";
+            this.Name = "MenuReport";
             this.Size = new System.Drawing.Size(1644, 991);
             this.ResumeLayout(false);
 
