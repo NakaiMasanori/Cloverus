@@ -52,12 +52,17 @@
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Settings\JsonInterface.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\SprDateTimePicker.resx">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SprSettings\SprSettings.csproj">
+      <Project>{f5e25960-c859-40d5-bbd3-993e23b24a9b}</Project>
+      <Name>SprSettings</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
