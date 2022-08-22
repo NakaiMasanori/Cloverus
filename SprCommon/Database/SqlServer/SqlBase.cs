@@ -92,9 +92,9 @@ namespace SprCommon.Database.SqlServer
             //        catalog = settings.Database.SuperVisor;
             //        break;
             //}
-            var catalog = "Password=cps_pwd2000;Persist Security Info=True;User ID=sa;Initial Catalog=SMILEX1001;Data Source=NOTEPC-SATOU,1433";
+            var sprSetting = new SprSettings.Interface();
             // コネクションを開く
-            _connection = new SqlConnection(catalog);
+            _connection = new SqlConnection(sprSetting.Setting.Database.ConnectionString);
             _connection.Open();
             if (transatctionUse == TransactionUse.Yes)
             {

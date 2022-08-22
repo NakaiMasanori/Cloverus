@@ -377,6 +377,10 @@
       <Project>{9c36937c-373c-4931-be32-b1799bbc5bd9}</Project>
       <Name>SprCommon</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SprSettings\SprSettings.csproj">
+      <Project>{f5e25960-c859-40d5-bbd3-993e23b24a9b}</Project>
+      <Name>SprSettings</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
