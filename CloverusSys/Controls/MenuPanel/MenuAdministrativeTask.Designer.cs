@@ -74,7 +74,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(367, 69);
             this.button2.TabIndex = 7;
-            this.button2.Text = "売上リスト";
+            this.button2.Text = "未請求チェック";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button4

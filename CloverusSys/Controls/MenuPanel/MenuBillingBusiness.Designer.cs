@@ -54,6 +54,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // button3
@@ -83,7 +84,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(367, 69);
             this.button2.TabIndex = 5;
-            this.button2.Text = "予定修正・確認";
+            this.button2.Text = "予定生成（個別）";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button4
@@ -94,7 +95,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(367, 69);
             this.button4.TabIndex = 6;
-            this.button4.Text = "予定修正・確認";
+            this.button4.Text = "請求先設定";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // label1
@@ -141,7 +142,7 @@
             // 
             this.button7.BackColor = System.Drawing.Color.LightGreen;
             this.button7.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button7.Location = new System.Drawing.Point(824, 42);
+            this.button7.Location = new System.Drawing.Point(866, 42);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(367, 69);
             this.button7.TabIndex = 12;
@@ -151,7 +152,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(824, 14);
+            this.label3.Location = new System.Drawing.Point(866, 14);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(116, 24);
             this.label3.TabIndex = 11;
@@ -160,7 +161,7 @@
             // button8
             // 
             this.button8.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button8.Location = new System.Drawing.Point(824, 118);
+            this.button8.Location = new System.Drawing.Point(866, 118);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(367, 69);
             this.button8.TabIndex = 13;
@@ -170,7 +171,7 @@
             // button9
             // 
             this.button9.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button9.Location = new System.Drawing.Point(824, 371);
+            this.button9.Location = new System.Drawing.Point(866, 371);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(367, 69);
             this.button9.TabIndex = 16;
@@ -180,7 +181,7 @@
             // button10
             // 
             this.button10.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button10.Location = new System.Drawing.Point(824, 296);
+            this.button10.Location = new System.Drawing.Point(866, 296);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(367, 69);
             this.button10.TabIndex = 15;
@@ -190,7 +191,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(824, 268);
+            this.label4.Location = new System.Drawing.Point(866, 268);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(132, 24);
             this.label4.TabIndex = 14;
@@ -199,7 +200,7 @@
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button11.Location = new System.Drawing.Point(824, 711);
+            this.button11.Location = new System.Drawing.Point(866, 691);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(367, 69);
             this.button11.TabIndex = 19;
@@ -209,7 +210,7 @@
             // button12
             // 
             this.button12.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button12.Location = new System.Drawing.Point(824, 636);
+            this.button12.Location = new System.Drawing.Point(866, 616);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(367, 69);
             this.button12.TabIndex = 18;
@@ -219,7 +220,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(824, 609);
+            this.label5.Location = new System.Drawing.Point(866, 589);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(196, 24);
             this.label5.TabIndex = 17;
@@ -317,11 +318,20 @@
             this.label9.TabIndex = 28;
             this.label9.Text = "※更新前に請求書をPDF保存！";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.Location = new System.Drawing.Point(826, -16);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1, 1001);
+            this.panel1.TabIndex = 29;
+            // 
             // MenuBillingBusiness
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
@@ -385,5 +395,6 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Panel panel1;
     }
 }
