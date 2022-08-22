@@ -64,7 +64,7 @@
             this.BtnReport.Name = "BtnReport";
             this.BtnReport.Size = new System.Drawing.Size(238, 50);
             this.BtnReport.TabIndex = 3;
-            this.BtnReport.Text = "帳票出力";
+            this.BtnReport.Text = "閉店業務";
             this.BtnReport.UseVisualStyleBackColor = true;
             // 
             // BtnAdministrativeTask

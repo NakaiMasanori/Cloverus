@@ -64,7 +64,7 @@ namespace CloverusCommon.Database.SqlServer
             // iniファイルからデータベース接続文字列を取得する
             //var settings = new IniFile.Settings();
             // データベースを切り替える
-            var catalog = @"Password=cps_pwd2000;Persist Security Info=True;User ID=sa;Initial Catalog=SMILEX1001;Data Source=PC-ASAHINA,1432";
+            var catalog = @"Password=cps_pwd2000;Persist Security Info=True;User ID=sa;Initial Catalog=SMILEX1001;Data Source=NOTEPC-SATOU,1433";
             // コネクションを開く
             _connection = new SqlConnection(catalog);
             _connection.Open();
