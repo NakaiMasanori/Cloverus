@@ -72,7 +72,7 @@
   <ItemGroup>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
-    <Compile Include="Database\SqlServer\Sql\CUS98MA01KOKYAKUM.cs" />
+    <Compile Include="Database\SqlServer\Sql\M_CUSTOMER.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

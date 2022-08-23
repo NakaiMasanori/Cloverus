@@ -50,6 +50,24 @@
     <Compile Include="Controls\SprAddressBox.Designer.cs">
       <DependentUpon>SprAddressBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SprCheckBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprCheckBox.Designer.cs">
+      <DependentUpon>SprCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SprDateText.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprDateText.Designer.cs">
+      <DependentUpon>SprDateText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SprDateTextArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprDateTextArea.Designer.cs">
+      <DependentUpon>SprDateTextArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SprDateTimePicker.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -74,6 +92,18 @@
     <Compile Include="Controls\SprTextBox.Designer.cs">
       <DependentUpon>SprTextBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SprTreeItemsRadioButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprTreeItemsRadioButton.Designer.cs">
+      <DependentUpon>SprTreeItemsRadioButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SprYearMonth.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprYearMonth.Designer.cs">
+      <DependentUpon>SprYearMonth.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
     <Compile Include="Func\Com.cs" />
@@ -82,6 +112,15 @@
   <ItemGroup>
     <EmbeddedResource Include="Controls\SprAddressBox.resx">
       <DependentUpon>SprAddressBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprCheckBox.resx">
+      <DependentUpon>SprCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprDateText.resx">
+      <DependentUpon>SprDateText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprDateTextArea.resx">
+      <DependentUpon>SprDateTextArea.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDateTimePicker.resx">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
@@ -94,6 +133,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprTextBox.resx">
       <DependentUpon>SprTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprTreeItemsRadioButton.resx">
+      <DependentUpon>SprTreeItemsRadioButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprYearMonth.resx">
+      <DependentUpon>SprYearMonth.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
