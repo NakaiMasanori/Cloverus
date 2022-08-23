@@ -58,6 +58,5 @@ namespace CloverusSys.MasterMaintenance.Customers
 
         #region private function
         #endregion
-
     }
 }
