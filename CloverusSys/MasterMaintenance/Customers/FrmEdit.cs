@@ -43,7 +43,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             InitializeComponent();
             using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
             {
-                var data = db.Select(Sql.CUS98MA01KOKYAKUM.GetForEditor(customerCode));
+                var data = db.Select(Sql.M_CUSTOMER.GetForEditor(customerCode));
                 if (data.Rows.Count > 0)
                 {
                     //label2.Text = data.Rows[0][0].ToString();

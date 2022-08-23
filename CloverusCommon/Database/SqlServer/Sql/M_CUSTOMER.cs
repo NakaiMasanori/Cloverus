@@ -10,8 +10,9 @@ using SprCommon.Func;
 
 namespace CloverusCommon.Database.SqlServer.Sql
 {
-    public class CUS98MA01KOKYAKUM
+    public class M_CUSTOMER
     {
+        #region 定数
         private static readonly List<string> Columns = new List<string>()
         {
              "CUSMA01001"
@@ -114,6 +115,9 @@ namespace CloverusCommon.Database.SqlServer.Sql
             ,"CUSMA01097"
         };
 
+        private const string TABLE_NAME = nameof(M_CUSTOMER);
+
+        #endregion
 
         public static string GetPreviewForMenu(string keyWords)
         {
@@ -139,7 +143,7 @@ namespace CloverusCommon.Database.SqlServer.Sql
             sql.Append($"  CUSMA01001 AS 顧客コード ");
             sql.Append($" ,CUSMA01002 AS 顧客名 ");
             sql.Append($" ,CUSMA01007 AS 住所 ");
-            sql.Append($"FROM CUS98MA01KOKYAKUM ");
+            sql.Append($"FROM {TABLE_NAME} ");
             if (conditions.Any())
             {
                 sql.Append($"WHERE ");
@@ -155,7 +159,7 @@ namespace CloverusCommon.Database.SqlServer.Sql
             sql.Append($"  CUSMA01001 AS 顧客コード ");
             sql.Append($" ,CUSMA01002 AS 顧客名 ");
             sql.Append($" ,CUSMA01007 AS 住所 ");
-            sql.Append($"FROM CUS98MA01KOKYAKUM ");
+            sql.Append($"FROM {TABLE_NAME} ");
             sql.Append($"WHERE CUSMA01001 = {code} ");
             return sql.ToString();
         }

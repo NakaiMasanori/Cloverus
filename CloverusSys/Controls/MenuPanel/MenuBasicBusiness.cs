@@ -51,7 +51,7 @@ namespace CloverusSys.Controls.MenuPanel
         {
             using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
             {
-                DgvCustomer.DataSource = db.Select(Sql.CUS98MA01KOKYAKUM.GetPreviewForMenu(TxtKeyword.Text.Trim()));
+                DgvCustomer.DataSource = db.Select(Sql.M_CUSTOMER.GetPreviewForMenu(TxtKeyword.Text.Trim()));
             }
         }
 

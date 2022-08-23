@@ -52,6 +52,12 @@
     <Compile Include="Base\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Form\ClvsRouteSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Form\ClvsRouteSelect.Designer.cs">
+      <DependentUpon>ClvsRouteSelect.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\MenuPanel\MenuAdministrativeTask.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -248,6 +254,9 @@
     </Compile>
     <EmbeddedResource Include="Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\Form\ClvsRouteSelect.resx">
+      <DependentUpon>ClvsRouteSelect.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MenuPanel\MenuAdministrativeTask.resx">
       <DependentUpon>MenuAdministrativeTask.cs</DependentUpon>
