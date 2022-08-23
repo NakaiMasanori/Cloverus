@@ -292,3 +292,6 @@ SprSettings/obj/Debug/SprSettings.csproj.FileListAbsolute.txt
 CloverusCommon/bin/Debug/CloverusCommon.dll
 CloverusCommon/bin/Debug/CloverusCommon.pdb
 SprSettings/obj/Debug/_IsIncrementalBuild
+CloverusCommon/obj/Debug/build.force
+CloverusCommon/obj/Debug/build.force
+CloverusCommon/bin/Debug/CloverusCommon.dll

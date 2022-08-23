@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -43,11 +44,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\SprAddressBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprAddressBox.Designer.cs">
+      <DependentUpon>SprAddressBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SprDateTimePicker.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\SprDateTimePicker.Designer.cs">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SprDropdown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprDropdown.Designer.cs">
+      <DependentUpon>SprDropdown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SprMultiTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprMultiTextBox.Designer.cs">
+      <DependentUpon>SprMultiTextBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Controls\SprTextBox.cs">
       <SubType>UserControl</SubType>
@@ -57,11 +76,21 @@
     </Compile>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
+    <Compile Include="Func\Com.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Controls\SprAddressBox.resx">
+      <DependentUpon>SprAddressBox.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDateTimePicker.resx">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprDropdown.resx">
+      <DependentUpon>SprDropdown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprMultiTextBox.resx">
+      <DependentUpon>SprMultiTextBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprTextBox.resx">
       <DependentUpon>SprTextBox.cs</DependentUpon>

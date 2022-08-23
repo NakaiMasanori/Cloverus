@@ -1,6 +1,6 @@
 ﻿namespace SprCommon.Controls
 {
-    partial class SprTextBox
+    partial class SprMultiTextBox
     {
         /// <summary> 
         /// 必要なデザイナー変数です。
@@ -28,44 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.LblTitle = new System.Windows.Forms.Label();
             this.TxtData = new System.Windows.Forms.TextBox();
+            this.LblTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // TxtData
+            // 
+            this.TxtData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TxtData.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtData.Location = new System.Drawing.Point(122, 0);
+            this.TxtData.Multiline = true;
+            this.TxtData.Name = "TxtData";
+            this.TxtData.Size = new System.Drawing.Size(346, 55);
+            this.TxtData.TabIndex = 3;
             // 
             // LblTitle
             // 
             this.LblTitle.BackColor = System.Drawing.Color.Navy;
-            this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.LblTitle.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitle.ForeColor = System.Drawing.Color.White;
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Name = "LblTitle";
             this.LblTitle.Size = new System.Drawing.Size(122, 27);
-            this.LblTitle.TabIndex = 0;
+            this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // TxtData
-            // 
-            this.TxtData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TxtData.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtData.Location = new System.Drawing.Point(122, 0);
-            this.TxtData.Name = "TxtData";
-            this.TxtData.Size = new System.Drawing.Size(346, 27);
-            this.TxtData.TabIndex = 1;
-            this.TxtData.TextChanged += new System.EventHandler(this.TxtData_TextChanged);
-            this.TxtData.DoubleClick += new System.EventHandler(this.TxtData_DoubleClick);
-            this.TxtData.Enter += new System.EventHandler(this.TxtData_Enter);
-            // 
-            // SprTextBox
+            // SprMultiTextBox
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.TxtData);
             this.Controls.Add(this.LblTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "SprTextBox";
-            this.Size = new System.Drawing.Size(468, 27);
+            this.Name = "SprMultiTextBox";
+            this.Size = new System.Drawing.Size(468, 55);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -73,7 +70,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label LblTitle;
         private System.Windows.Forms.TextBox TxtData;
+        private System.Windows.Forms.Label LblTitle;
     }
 }

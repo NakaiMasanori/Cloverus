@@ -13,6 +13,7 @@
 //*****************************************************************************
 
 #region using defines
+using CloverusSys.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -31,7 +32,7 @@ namespace CloverusSys.MasterMaintenance.Customers
     /// <summary>
     /// 顧客マスター
     /// </summary>
-    public partial class FrmEdit : Form
+    public partial class FrmEdit : BaseForm
     {
         #region コンストラクタ
         /// <summary>
