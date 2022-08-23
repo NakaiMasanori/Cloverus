@@ -45,7 +45,7 @@ namespace SprCommon.Controls
         /// <summary>
         /// タイトル
         /// </summary>
-        public string Title
+        public string TitleText
         {
             get
             {
@@ -59,7 +59,7 @@ namespace SprCommon.Controls
         /// <summary>
         /// 値
         /// </summary>
-        public string Value
+        public string TextValue
         {
             get
             {
@@ -68,6 +68,20 @@ namespace SprCommon.Controls
             set
             {
                 TxtData.Text = value;
+            }
+        }
+        /// <summary>
+        /// テキストボックス部の幅
+        /// </summary>
+        public int TextBoxWidth
+        {
+            get
+            {
+                return TxtData.Width;
+            }
+            set
+            {
+                TxtData.Width = value;
             }
         }
         #endregion
