@@ -1,4 +1,13 @@
-﻿using System;
+﻿//*****************************************************************************
+//
+//  システム名：オリジナル販売管理システム
+//
+//  Copyright 株式会社クローバス 2022 All rights reserved.
+//
+//*****************************************************************************
+
+#region using defines
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +16,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+#endregion
 
 namespace CloverusSys
 {

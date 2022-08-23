@@ -34,7 +34,7 @@
             this.BtnBillingBusiness = new System.Windows.Forms.Button();
             this.BtnBasicBusiness = new System.Windows.Forms.Button();
             this.PnlSubMenu = new System.Windows.Forms.Panel();
-            this.PnlReport = new CloverusSys.Controls.MenuPanel.MnuReport();
+            this.PnlReport = new CloverusSys.Controls.MenuPanel.MenuReport();
             this.PnlAdministrativeTask = new CloverusSys.Controls.MenuPanel.MenuAdministrativeTask();
             this.PnlBillingBusiness = new CloverusSys.Controls.MenuPanel.MenuBillingBusiness();
             this.PnlBasicBusiness = new CloverusSys.Controls.MenuPanel.MenuBasicBusiness();
@@ -183,7 +183,7 @@
         private System.Windows.Forms.Panel PnlSubMenu;
         private Controls.MenuPanel.MenuBasicBusiness PnlBasicBusiness;
         private Controls.MenuPanel.MenuBillingBusiness PnlBillingBusiness;
-        private Controls.MenuPanel.MnuReport PnlReport;
+        private Controls.MenuPanel.MenuReport PnlReport;
         private Controls.MenuPanel.MenuAdministrativeTask PnlAdministrativeTask;
     }
 }

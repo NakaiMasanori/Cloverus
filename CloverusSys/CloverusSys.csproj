@@ -70,11 +70,11 @@
     <Compile Include="Controls\MenuPanel\MenuBillingBusiness.Designer.cs">
       <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MenuPanel\MnuReport.cs">
+    <Compile Include="Controls\MenuPanel\MenuReport.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\MenuPanel\MnuReport.Designer.cs">
-      <DependentUpon>MnuReport.cs</DependentUpon>
+    <Compile Include="Controls\MenuPanel\MenuReport.Designer.cs">
+      <DependentUpon>MenuReport.cs</DependentUpon>
     </Compile>
     <Compile Include="DailyWorks\FrmClosing.cs">
       <SubType>Form</SubType>
@@ -88,11 +88,11 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Customers\Edit.cs">
+    <Compile Include="MasterMaintenance\Customers\FrmEdit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Customers\Edit.Designer.cs">
-      <DependentUpon>Edit.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\Customers\FrmEdit.Designer.cs">
+      <DependentUpon>FrmEdit.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.cs">
       <SubType>Form</SubType>
@@ -258,8 +258,8 @@
     <EmbeddedResource Include="Controls\MenuPanel\MenuBillingBusiness.resx">
       <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\MenuPanel\MnuReport.resx">
-      <DependentUpon>MnuReport.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuReport.resx">
+      <DependentUpon>MenuReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailyWorks\FrmClosing.resx">
       <DependentUpon>FrmClosing.cs</DependentUpon>
@@ -267,8 +267,8 @@
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Customers\Edit.resx">
-      <DependentUpon>Edit.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\Customers\FrmEdit.resx">
+      <DependentUpon>FrmEdit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterMaintenance\Delivery\PreviewDelivery.resx">
       <DependentUpon>PreviewDelivery.cs</DependentUpon>
