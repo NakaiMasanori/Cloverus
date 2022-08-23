@@ -61,9 +61,14 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox2 = new SprCommon.Controls.SprTextBox();
             this.TabPayment = new System.Windows.Forms.TabPage();
             this.TabClaim = new System.Windows.Forms.TabPage();
+            this.sprTextBox4 = new SprCommon.Controls.SprTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sprTextBox17 = new SprCommon.Controls.SprTextBox();
             this.PnlData.SuspendLayout();
             this.TabData.SuspendLayout();
             this.TabBasic.SuspendLayout();
+            this.TabPayment.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlHeader
@@ -418,6 +423,9 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // TabPayment
             // 
+            this.TabPayment.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPayment.Controls.Add(this.groupBox1);
+            this.TabPayment.Controls.Add(this.sprTextBox4);
             this.TabPayment.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.TabPayment.Location = new System.Drawing.Point(4, 32);
             this.TabPayment.Name = "TabPayment";
@@ -425,16 +433,49 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabPayment.Size = new System.Drawing.Size(1106, 603);
             this.TabPayment.TabIndex = 1;
             this.TabPayment.Text = "支払方法他";
-            this.TabPayment.UseVisualStyleBackColor = true;
             // 
             // TabClaim
             // 
+            this.TabClaim.BackColor = System.Drawing.SystemColors.Control;
             this.TabClaim.Location = new System.Drawing.Point(4, 32);
             this.TabClaim.Name = "TabClaim";
             this.TabClaim.Size = new System.Drawing.Size(1106, 603);
             this.TabClaim.TabIndex = 2;
             this.TabClaim.Text = "請求締関連";
-            this.TabClaim.UseVisualStyleBackColor = true;
+            // 
+            // sprTextBox4
+            // 
+            this.sprTextBox4.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprTextBox4.Location = new System.Drawing.Point(14, 15);
+            this.sprTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sprTextBox4.Name = "sprTextBox4";
+            this.sprTextBox4.Size = new System.Drawing.Size(523, 27);
+            this.sprTextBox4.TabIndex = 2;
+            this.sprTextBox4.TextBoxWidth = 401;
+            this.sprTextBox4.TextValue = "";
+            this.sprTextBox4.TitleText = "ブランド";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.sprTextBox17);
+            this.groupBox1.Location = new System.Drawing.Point(14, 128);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(523, 149);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "郵貯";
+            // 
+            // sprTextBox17
+            // 
+            this.sprTextBox17.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprTextBox17.Location = new System.Drawing.Point(8, 30);
+            this.sprTextBox17.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sprTextBox17.Name = "sprTextBox17";
+            this.sprTextBox17.Size = new System.Drawing.Size(507, 27);
+            this.sprTextBox17.TabIndex = 3;
+            this.sprTextBox17.TextBoxWidth = 385;
+            this.sprTextBox17.TextValue = "";
+            this.sprTextBox17.TitleText = "ブランド";
             // 
             // FrmEdit
             // 
@@ -452,6 +493,8 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.PnlData.ResumeLayout(false);
             this.TabData.ResumeLayout(false);
             this.TabBasic.ResumeLayout(false);
+            this.TabPayment.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -489,5 +532,8 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprMultiTextBox sprMultiTextBox1;
         private SprCommon.Controls.SprMultiTextBox sprMultiTextBox3;
         private SprCommon.Controls.SprMultiTextBox sprMultiTextBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private SprCommon.Controls.SprTextBox sprTextBox17;
+        private SprCommon.Controls.SprTextBox sprTextBox4;
     }
 }
