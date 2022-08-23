@@ -78,8 +78,8 @@ namespace CloverusSys.Controls.MenuPanel
         private void ShowCustomerEdit()
         {
             int.TryParse(this.DgvCustomer.SelectedRows[0].Cells[0].Value.ToString(), out int customerCode);
-            var frm = new MasterMaintenance.Customers.Edit(customerCode);
-            frm.ShowDialog();
+            var frm = new MasterMaintenance.Customers.FrmEdit(customerCode);
+            frm.Show();
         }
 
         private void DgvCustomer_KeyDown(object sender, KeyEventArgs e)

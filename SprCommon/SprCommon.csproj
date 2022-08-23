@@ -49,6 +49,12 @@
     <Compile Include="Controls\SprDateTimePicker.Designer.cs">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SprTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprTextBox.Designer.cs">
+      <DependentUpon>SprTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -56,6 +62,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Controls\SprDateTimePicker.resx">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprTextBox.resx">
+      <DependentUpon>SprTextBox.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

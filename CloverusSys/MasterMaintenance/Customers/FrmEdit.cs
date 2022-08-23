@@ -31,13 +31,13 @@ namespace CloverusSys.MasterMaintenance.Customers
     /// <summary>
     /// 顧客マスター
     /// </summary>
-    public partial class Edit : Form
+    public partial class FrmEdit : Form
     {
         #region コンストラクタ
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public Edit(int customerCode)
+        public FrmEdit(int customerCode)
         {
             InitializeComponent();
             using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
@@ -45,8 +45,8 @@ namespace CloverusSys.MasterMaintenance.Customers
                 var data = db.Select(Sql.CUS98MA01KOKYAKUM.GetForEditor(customerCode));
                 if (data.Rows.Count > 0)
                 {
-                    label2.Text = data.Rows[0][0].ToString();
-                    label3.Text = data.Rows[0][1].ToString();
+                    //label2.Text = data.Rows[0][0].ToString();
+                    //label3.Text = data.Rows[0][1].ToString();
                 }
             }
         }
