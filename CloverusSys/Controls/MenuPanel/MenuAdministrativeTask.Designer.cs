@@ -221,6 +221,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button16);
@@ -241,7 +242,7 @@
             this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "MenuAdministrativeTask";
-            this.Size = new System.Drawing.Size(1644, 991);
+            this.Size = new System.Drawing.Size(1642, 989);
             this.ResumeLayout(false);
             this.PerformLayout();
 
