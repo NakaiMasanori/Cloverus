@@ -76,11 +76,11 @@
     <Compile Include="Controls\MenuPanel\MenuBillingBusiness.Designer.cs">
       <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MenuPanel\MenuReport.cs">
+    <Compile Include="Controls\MenuPanel\MenuClosingBusiness.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\MenuPanel\MenuReport.Designer.cs">
-      <DependentUpon>MenuReport.cs</DependentUpon>
+    <Compile Include="Controls\MenuPanel\MenuClosingBusiness.Designer.cs">
+      <DependentUpon>MenuClosingBusiness.cs</DependentUpon>
     </Compile>
     <Compile Include="DailyWorks\FrmClosing.cs">
       <SubType>Form</SubType>
@@ -267,8 +267,8 @@
     <EmbeddedResource Include="Controls\MenuPanel\MenuBillingBusiness.resx">
       <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\MenuPanel\MenuReport.resx">
-      <DependentUpon>MenuReport.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuClosingBusiness.resx">
+      <DependentUpon>MenuClosingBusiness.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DailyWorks\FrmClosing.resx">
       <DependentUpon>FrmClosing.cs</DependentUpon>

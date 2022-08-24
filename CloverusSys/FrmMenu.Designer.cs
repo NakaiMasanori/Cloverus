@@ -33,8 +33,9 @@
             this.BtnAdministrativeTask = new System.Windows.Forms.Button();
             this.BtnBillingBusiness = new System.Windows.Forms.Button();
             this.BtnBasicBusiness = new System.Windows.Forms.Button();
+            this.pnlSplit = new System.Windows.Forms.Panel();
             this.PnlSubMenu = new System.Windows.Forms.Panel();
-            this.PnlReport = new CloverusSys.Controls.MenuPanel.MenuReport();
+            this.PnlReport = new CloverusSys.Controls.MenuPanel.MenuClosingBusiness();
             this.PnlAdministrativeTask = new CloverusSys.Controls.MenuPanel.MenuAdministrativeTask();
             this.PnlBillingBusiness = new CloverusSys.Controls.MenuPanel.MenuBillingBusiness();
             this.PnlBasicBusiness = new CloverusSys.Controls.MenuPanel.MenuBasicBusiness();
@@ -103,6 +104,14 @@
             this.BtnBasicBusiness.Text = "基本業務";
             this.BtnBasicBusiness.UseVisualStyleBackColor = true;
             // 
+            // pnlSplit
+            // 
+            this.pnlSplit.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlSplit.Location = new System.Drawing.Point(260, 0);
+            this.pnlSplit.Name = "pnlSplit";
+            this.pnlSplit.Size = new System.Drawing.Size(2, 991);
+            this.pnlSplit.TabIndex = 1;
+            // 
             // PnlSubMenu
             // 
             this.PnlSubMenu.Controls.Add(this.PnlReport);
@@ -110,14 +119,15 @@
             this.PnlSubMenu.Controls.Add(this.PnlBillingBusiness);
             this.PnlSubMenu.Controls.Add(this.PnlBasicBusiness);
             this.PnlSubMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlSubMenu.Location = new System.Drawing.Point(260, 0);
+            this.PnlSubMenu.Location = new System.Drawing.Point(262, 0);
             this.PnlSubMenu.Name = "PnlSubMenu";
-            this.PnlSubMenu.Size = new System.Drawing.Size(1644, 991);
-            this.PnlSubMenu.TabIndex = 1;
+            this.PnlSubMenu.Size = new System.Drawing.Size(1642, 991);
+            this.PnlSubMenu.TabIndex = 2;
             // 
             // PnlReport
             // 
-            this.PnlReport.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.PnlReport.BackColor = System.Drawing.SystemColors.Control;
+            this.PnlReport.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlReport.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.PnlReport.Location = new System.Drawing.Point(1109, 15);
             this.PnlReport.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -128,6 +138,7 @@
             // PnlAdministrativeTask
             // 
             this.PnlAdministrativeTask.BackColor = System.Drawing.SystemColors.Control;
+            this.PnlAdministrativeTask.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlAdministrativeTask.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.PnlAdministrativeTask.Location = new System.Drawing.Point(718, 432);
             this.PnlAdministrativeTask.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -148,6 +159,7 @@
             // PnlBasicBusiness
             // 
             this.PnlBasicBusiness.BackColor = System.Drawing.SystemColors.Control;
+            this.PnlBasicBusiness.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PnlBasicBusiness.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.PnlBasicBusiness.Location = new System.Drawing.Point(61, 84);
             this.PnlBasicBusiness.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
@@ -161,6 +173,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 991);
             this.Controls.Add(this.PnlSubMenu);
+            this.Controls.Add(this.pnlSplit);
             this.Controls.Add(this.PnlMainMenu);
             this.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -180,10 +193,11 @@
         private System.Windows.Forms.Button BtnAdministrativeTask;
         private System.Windows.Forms.Button BtnBillingBusiness;
         private System.Windows.Forms.Button BtnBasicBusiness;
+        private System.Windows.Forms.Panel pnlSplit;
         private System.Windows.Forms.Panel PnlSubMenu;
-        private Controls.MenuPanel.MenuBasicBusiness PnlBasicBusiness;
-        private Controls.MenuPanel.MenuBillingBusiness PnlBillingBusiness;
-        private Controls.MenuPanel.MenuReport PnlReport;
+        private Controls.MenuPanel.MenuClosingBusiness PnlReport;
         private Controls.MenuPanel.MenuAdministrativeTask PnlAdministrativeTask;
+        private Controls.MenuPanel.MenuBillingBusiness PnlBillingBusiness;
+        private Controls.MenuPanel.MenuBasicBusiness PnlBasicBusiness;
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CloverusSys.Controls.MenuPanel
 {
-    public partial class MenuReport : UserControl
+    public partial class MenuClosingBusiness : UserControl
     {
-        public MenuReport()
+        public MenuClosingBusiness()
         {
             InitializeComponent();
         }
