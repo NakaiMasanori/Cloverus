@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -58,6 +59,13 @@
     <Compile Include="Controls\Form\ClvsRouteSelect.Designer.cs">
       <DependentUpon>ClvsRouteSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\MenuPanel\ClvsMenuButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\ClvsMenuButton.Designer.cs">
+      <DependentUpon>ClvsMenuButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuControl.cs" />
     <Compile Include="Controls\MenuPanel\MenuAdministrativeTask.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -257,6 +265,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\Form\ClvsRouteSelect.resx">
       <DependentUpon>ClvsRouteSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\ClvsMenuButton.resx">
+      <DependentUpon>ClvsMenuButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\MenuPanel\MenuAdministrativeTask.resx">
       <DependentUpon>MenuAdministrativeTask.cs</DependentUpon>
