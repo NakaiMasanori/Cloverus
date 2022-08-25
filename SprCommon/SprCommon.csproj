@@ -106,6 +106,7 @@
     </Compile>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
+    <Compile Include="EnumExtensions.cs" />
     <Compile Include="Func\Com.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

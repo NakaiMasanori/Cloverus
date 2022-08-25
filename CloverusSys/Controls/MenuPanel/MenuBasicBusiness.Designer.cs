@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.BtnEditCustomer = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -49,20 +48,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.clvsMenuButton1 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.BtnScheduleChange = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.BtnCustomerMaster = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DgvCustomer)).BeginInit();
             this.SuspendLayout();
-            // 
-            // BtnEditCustomer
-            // 
-            this.BtnEditCustomer.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.BtnEditCustomer.Location = new System.Drawing.Point(24, 48);
-            this.BtnEditCustomer.Name = "BtnEditCustomer";
-            this.BtnEditCustomer.Size = new System.Drawing.Size(767, 69);
-            this.BtnEditCustomer.TabIndex = 2;
-            this.BtnEditCustomer.Text = "顧客マスター";
-            this.BtnEditCustomer.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
@@ -259,16 +249,25 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "↓";
             // 
-            // clvsMenuButton1
+            // BtnScheduleChange
             // 
-            this.clvsMenuButton1.ButtonText = "予定修正・確認";
-            this.clvsMenuButton1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.clvsMenuButton1.Location = new System.Drawing.Point(24, 472);
-            this.clvsMenuButton1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.clvsMenuButton1.MenuItem = CloverusSys.Controls.MenuPanel.MenuControl.MenuItems.ScheduleChange;
-            this.clvsMenuButton1.Name = "clvsMenuButton1";
-            this.clvsMenuButton1.Size = new System.Drawing.Size(767, 69);
-            this.clvsMenuButton1.TabIndex = 19;
+            this.BtnScheduleChange.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BtnScheduleChange.Location = new System.Drawing.Point(24, 472);
+            this.BtnScheduleChange.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.BtnScheduleChange.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ScheduleChange;
+            this.BtnScheduleChange.Name = "BtnScheduleChange";
+            this.BtnScheduleChange.Size = new System.Drawing.Size(767, 69);
+            this.BtnScheduleChange.TabIndex = 19;
+            // 
+            // BtnCustomerMaster
+            // 
+            this.BtnCustomerMaster.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BtnCustomerMaster.Location = new System.Drawing.Point(24, 48);
+            this.BtnCustomerMaster.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.BtnCustomerMaster.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.CustomerMaster;
+            this.BtnCustomerMaster.Name = "BtnCustomerMaster";
+            this.BtnCustomerMaster.Size = new System.Drawing.Size(767, 69);
+            this.BtnCustomerMaster.TabIndex = 20;
             // 
             // MenuBasicBusiness
             // 
@@ -276,7 +275,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Controls.Add(this.clvsMenuButton1);
+            this.Controls.Add(this.BtnCustomerMaster);
+            this.Controls.Add(this.BtnScheduleChange);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -294,7 +294,6 @@
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.BtnEditCustomer);
             this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "MenuBasicBusiness";
@@ -307,8 +306,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button BtnEditCustomer;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
@@ -327,6 +324,7 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private ClvsMenuButton clvsMenuButton1;
+        private ClvsMenuButton BtnScheduleChange;
+        private ClvsMenuButton BtnCustomerMaster;
     }
 }

@@ -93,6 +93,7 @@ namespace CloverusSys
         /// </summary>
         private void InitializeForm()
         {
+            CloverusSys.Controls.Func.InitControls(this.Controls);
             // サブメニューをパネルいっぱいに表示
             PnlBasicBusiness.Dock = DockStyle.Fill;
             PnlBillingBusiness.Dock = DockStyle.Fill;
@@ -101,10 +102,10 @@ namespace CloverusSys
             // 基本業務を選んだ状態で開く
             MainMenuChanged(MainMenuType.BasicBusiness);
             // イベント登録
-            this.BtnBasicBusiness.Click += new System.EventHandler(this.BtnBasicBusiness_Click);
-            this.BtnBillingBusiness.Click += new System.EventHandler(this.BtnBillingBusiness_Click);
-            this.BtnAdministrativeTask.Click += new System.EventHandler(this.BtnAdministrativeTask_Click);
-            this.BtnReport.Click += new System.EventHandler(this.BtnReport_Click);
+            this.BtnBasicBusiness.Click += new EventHandler(this.BtnBasicBusiness_Click);
+            this.BtnBillingBusiness.Click += new EventHandler(this.BtnBillingBusiness_Click);
+            this.BtnAdministrativeTask.Click += new EventHandler(this.BtnAdministrativeTask_Click);
+            this.BtnReport.Click += new EventHandler(this.BtnReport_Click);
         }
         /// <summary>
         /// メインメニュー選択処理

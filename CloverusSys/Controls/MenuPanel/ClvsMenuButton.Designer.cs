@@ -39,7 +39,7 @@
             this.BtnItem.Name = "BtnItem";
             this.BtnItem.Size = new System.Drawing.Size(367, 69);
             this.BtnItem.TabIndex = 13;
-            this.BtnItem.Text = "配送表";
+            this.BtnItem.Text = "メニューボタン";
             this.BtnItem.UseVisualStyleBackColor = true;
             this.BtnItem.Click += new System.EventHandler(this.BtnItem_Click);
             // 

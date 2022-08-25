@@ -59,13 +59,13 @@
     <Compile Include="Controls\Form\ClvsRouteSelect.Designer.cs">
       <DependentUpon>ClvsRouteSelect.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\Func.cs" />
     <Compile Include="Controls\MenuPanel\ClvsMenuButton.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\MenuPanel\ClvsMenuButton.Designer.cs">
       <DependentUpon>ClvsMenuButton.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\MenuPanel\MenuControl.cs" />
     <Compile Include="Controls\MenuPanel\MenuAdministrativeTask.cs">
       <SubType>UserControl</SubType>
     </Compile>
