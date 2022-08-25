@@ -31,7 +31,6 @@ namespace CloverusSys.Controls.MenuPanel
             this.TxtKeyword.KeyDown += new KeyEventHandler(this.TxtKeyword_KeyDown);
             this.DgvCustomer.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(this.DgvCustomer_DataBindingComplete);
             this.DgvCustomer.DoubleClick += new EventHandler(this.DgvCustomer_DoubleClick);
-            this.BtnEditCustomer.Click += new EventHandler(this.BtnEditCustomer_Click);
         }
 
         public void Preview()
