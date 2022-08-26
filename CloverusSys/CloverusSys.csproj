@@ -102,11 +102,17 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Customers\FrmEdit.cs">
+    <Compile Include="MasterMaintenance\Customers\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Customers\FrmEdit.Designer.cs">
-      <DependentUpon>FrmEdit.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\Customers\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Customers\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Customers\Preview.Designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.cs">
       <SubType>Form</SubType>
@@ -287,8 +293,11 @@
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Customers\FrmEdit.resx">
-      <DependentUpon>FrmEdit.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\Customers\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Customers\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterMaintenance\Delivery\PreviewDelivery.resx">
       <DependentUpon>PreviewDelivery.cs</DependentUpon>

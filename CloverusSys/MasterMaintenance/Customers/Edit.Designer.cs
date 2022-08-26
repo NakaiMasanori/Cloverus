@@ -1,7 +1,7 @@
 ﻿
 namespace CloverusSys.MasterMaintenance.Customers
 {
-    partial class FrmEdit
+    partial class Edit
     {
         /// <summary>
         /// Required designer variable.
@@ -69,6 +69,8 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox3 = new SprCommon.Controls.SprTextBox();
             this.sprTextBox2 = new SprCommon.Controls.SprTextBox();
             this.TabPayment = new System.Windows.Forms.TabPage();
+            this.sprYearMonth2 = new SprCommon.Controls.SprYearMonth();
+            this.sprYearMonth1 = new SprCommon.Controls.SprYearMonth();
             this.sprDropdown6 = new SprCommon.Controls.SprDropdown();
             this.sprTreeItemsRadioButton1 = new SprCommon.Controls.SprTreeItemsRadioButton();
             this.sprAddressBox2 = new SprCommon.Controls.SprAddressBox();
@@ -99,8 +101,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox51 = new SprCommon.Controls.SprTextBox();
             this.sprDropdown3 = new SprCommon.Controls.SprDropdown();
             this.sprTextBox50 = new SprCommon.Controls.SprTextBox();
-            this.sprYearMonth1 = new SprCommon.Controls.SprYearMonth();
-            this.sprYearMonth2 = new SprCommon.Controls.SprYearMonth();
             this.PnlData.SuspendLayout();
             this.TabData.SuspendLayout();
             this.TabBasic.SuspendLayout();
@@ -571,6 +571,22 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabPayment.TabIndex = 1;
             this.TabPayment.Text = "支払方法他";
             // 
+            // sprYearMonth2
+            // 
+            this.sprYearMonth2.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprYearMonth2.Location = new System.Drawing.Point(14, 364);
+            this.sprYearMonth2.Name = "sprYearMonth2";
+            this.sprYearMonth2.Size = new System.Drawing.Size(523, 27);
+            this.sprYearMonth2.TabIndex = 19;
+            // 
+            // sprYearMonth1
+            // 
+            this.sprYearMonth1.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprYearMonth1.Location = new System.Drawing.Point(14, 333);
+            this.sprYearMonth1.Name = "sprYearMonth1";
+            this.sprYearMonth1.Size = new System.Drawing.Size(523, 27);
+            this.sprYearMonth1.TabIndex = 18;
+            // 
             // sprDropdown6
             // 
             this.sprDropdown6.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -923,22 +939,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox50.TextValue = "";
             this.sprTextBox50.TitleText = "締日";
             // 
-            // sprYearMonth1
-            // 
-            this.sprYearMonth1.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sprYearMonth1.Location = new System.Drawing.Point(14, 333);
-            this.sprYearMonth1.Name = "sprYearMonth1";
-            this.sprYearMonth1.Size = new System.Drawing.Size(523, 27);
-            this.sprYearMonth1.TabIndex = 18;
-            // 
-            // sprYearMonth2
-            // 
-            this.sprYearMonth2.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sprYearMonth2.Location = new System.Drawing.Point(14, 364);
-            this.sprYearMonth2.Name = "sprYearMonth2";
-            this.sprYearMonth2.Size = new System.Drawing.Size(523, 27);
-            this.sprYearMonth2.TabIndex = 19;
-            // 
             // FrmEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
@@ -948,10 +948,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.Controls.Add(this.PnlFooter);
             this.Controls.Add(this.PnlHeader);
             this.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "FrmEdit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "顧客マスター";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmEdit_KeyDown);
             this.PnlData.ResumeLayout(false);
             this.TabData.ResumeLayout(false);
             this.TabBasic.ResumeLayout(false);
