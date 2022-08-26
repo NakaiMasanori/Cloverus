@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.clvsMenuButton2 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton1 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.clvsMenuButton4 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton3 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button13 = new System.Windows.Forms.Button();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button14 = new System.Windows.Forms.Button();
+            this.clvsMenuButton5 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton6 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton7 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton8 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton9 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton10 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton11 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton12 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton13 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton14 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -54,21 +54,10 @@
             this.groupBox5.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.SystemColors.Control;
-            this.button4.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(78, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(367, 69);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "売上生成（全件）";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.clvsMenuButton2);
+            this.groupBox1.Controls.Add(this.clvsMenuButton1);
             this.groupBox1.Location = new System.Drawing.Point(29, 42);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(524, 184);
@@ -76,24 +65,35 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "夜間業務";
             // 
-            // button1
+            // clvsMenuButton2
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.Control;
-            this.button1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button1.Location = new System.Drawing.Point(78, 95);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(367, 69);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "ルート変更";
-            this.button1.UseVisualStyleBackColor = false;
+            this.clvsMenuButton2.Caption = "メニューボタン";
+            this.clvsMenuButton2.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton2.Location = new System.Drawing.Point(78, 95);
+            this.clvsMenuButton2.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton2.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ChangeRoot;
+            this.clvsMenuButton2.Name = "clvsMenuButton2";
+            this.clvsMenuButton2.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton2.TabIndex = 15;
+            // 
+            // clvsMenuButton1
+            // 
+            this.clvsMenuButton1.Caption = "メニューボタン";
+            this.clvsMenuButton1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton1.Location = new System.Drawing.Point(78, 20);
+            this.clvsMenuButton1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton1.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.SalesGenerationAll;
+            this.clvsMenuButton1.Name = "clvsMenuButton1";
+            this.clvsMenuButton1.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton1.TabIndex = 14;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button7);
-            this.groupBox2.Controls.Add(this.button8);
-            this.groupBox2.Controls.Add(this.button9);
-            this.groupBox2.Controls.Add(this.button10);
+            this.groupBox2.Controls.Add(this.clvsMenuButton5);
+            this.groupBox2.Controls.Add(this.clvsMenuButton7);
+            this.groupBox2.Controls.Add(this.clvsMenuButton4);
+            this.groupBox2.Controls.Add(this.clvsMenuButton6);
+            this.groupBox2.Controls.Add(this.clvsMenuButton3);
             this.groupBox2.Location = new System.Drawing.Point(29, 246);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(524, 409);
@@ -101,64 +101,31 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "翌日分";
             // 
-            // button6
+            // clvsMenuButton4
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.Control;
-            this.button6.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button6.Location = new System.Drawing.Point(78, 320);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(367, 69);
-            this.button6.TabIndex = 11;
-            this.button6.Text = "おかず量集計表";
-            this.button6.UseVisualStyleBackColor = false;
+            this.clvsMenuButton4.Caption = "メニューボタン";
+            this.clvsMenuButton4.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton4.Location = new System.Drawing.Point(78, 95);
+            this.clvsMenuButton4.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton4.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.Card;
+            this.clvsMenuButton4.Name = "clvsMenuButton4";
+            this.clvsMenuButton4.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton4.TabIndex = 17;
             // 
-            // button7
+            // clvsMenuButton3
             // 
-            this.button7.BackColor = System.Drawing.SystemColors.Control;
-            this.button7.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button7.Location = new System.Drawing.Point(78, 245);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(367, 69);
-            this.button7.TabIndex = 10;
-            this.button7.Text = "ごはん量集計表（ルート別、集計表）";
-            this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.SystemColors.Control;
-            this.button8.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button8.Location = new System.Drawing.Point(78, 170);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(367, 69);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "種類別ルート別集計表";
-            this.button8.UseVisualStyleBackColor = false;
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.SystemColors.Control;
-            this.button9.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button9.Location = new System.Drawing.Point(78, 95);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(367, 69);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "カード";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.SystemColors.Control;
-            this.button10.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button10.Location = new System.Drawing.Point(78, 20);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(367, 69);
-            this.button10.TabIndex = 7;
-            this.button10.Text = "配送表";
-            this.button10.UseVisualStyleBackColor = false;
+            this.clvsMenuButton3.Caption = "メニューボタン";
+            this.clvsMenuButton3.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton3.Location = new System.Drawing.Point(78, 20);
+            this.clvsMenuButton3.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton3.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ShippingTable;
+            this.clvsMenuButton3.Name = "clvsMenuButton3";
+            this.clvsMenuButton3.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton3.TabIndex = 16;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button3);
+            this.groupBox3.Controls.Add(this.clvsMenuButton8);
             this.groupBox3.Location = new System.Drawing.Point(29, 675);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(524, 109);
@@ -166,23 +133,12 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "翌日、翌々日分";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.Control;
-            this.button3.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(78, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(367, 69);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "種類別集計表（容器数）";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.button5);
-            this.groupBox4.Controls.Add(this.button11);
-            this.groupBox4.Controls.Add(this.button12);
-            this.groupBox4.Controls.Add(this.button13);
+            this.groupBox4.Controls.Add(this.clvsMenuButton13);
+            this.groupBox4.Controls.Add(this.clvsMenuButton14);
+            this.groupBox4.Controls.Add(this.clvsMenuButton12);
+            this.groupBox4.Controls.Add(this.clvsMenuButton9);
             this.groupBox4.Location = new System.Drawing.Point(582, 42);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(524, 334);
@@ -190,54 +146,10 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "翌々日分";
             // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.SystemColors.Control;
-            this.button5.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button5.Location = new System.Drawing.Point(78, 245);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(367, 69);
-            this.button5.TabIndex = 10;
-            this.button5.Text = "ごはん量集計表（釜数シミュレーション）";
-            this.button5.UseVisualStyleBackColor = false;
-            // 
-            // button11
-            // 
-            this.button11.BackColor = System.Drawing.SystemColors.Control;
-            this.button11.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button11.Location = new System.Drawing.Point(78, 170);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(367, 69);
-            this.button11.TabIndex = 9;
-            this.button11.Text = "ムース食一覧";
-            this.button11.UseVisualStyleBackColor = false;
-            // 
-            // button12
-            // 
-            this.button12.BackColor = System.Drawing.SystemColors.Control;
-            this.button12.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button12.Location = new System.Drawing.Point(78, 95);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(367, 69);
-            this.button12.TabIndex = 8;
-            this.button12.Text = "たんぱく食一覧";
-            this.button12.UseVisualStyleBackColor = false;
-            // 
-            // button13
-            // 
-            this.button13.BackColor = System.Drawing.SystemColors.Control;
-            this.button13.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button13.Location = new System.Drawing.Point(78, 20);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(367, 69);
-            this.button13.TabIndex = 7;
-            this.button13.Text = "カロリー調整表";
-            this.button13.UseVisualStyleBackColor = false;
-            // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Controls.Add(this.button14);
+            this.groupBox5.Controls.Add(this.clvsMenuButton10);
+            this.groupBox5.Controls.Add(this.clvsMenuButton11);
             this.groupBox5.Location = new System.Drawing.Point(582, 396);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(524, 184);
@@ -245,27 +157,115 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "その他";
             // 
-            // button2
+            // clvsMenuButton5
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.Control;
-            this.button2.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(78, 95);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(367, 69);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "予定数量集計表";
-            this.button2.UseVisualStyleBackColor = false;
+            this.clvsMenuButton5.Caption = "メニューボタン";
+            this.clvsMenuButton5.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton5.Location = new System.Drawing.Point(78, 320);
+            this.clvsMenuButton5.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton5.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.DishQuantityList;
+            this.clvsMenuButton5.Name = "clvsMenuButton5";
+            this.clvsMenuButton5.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton5.TabIndex = 18;
             // 
-            // button14
+            // clvsMenuButton6
             // 
-            this.button14.BackColor = System.Drawing.SystemColors.Control;
-            this.button14.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button14.Location = new System.Drawing.Point(78, 20);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(367, 69);
-            this.button14.TabIndex = 7;
-            this.button14.Text = "予定金額集計表";
-            this.button14.UseVisualStyleBackColor = false;
+            this.clvsMenuButton6.Caption = "メニューボタン";
+            this.clvsMenuButton6.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton6.Location = new System.Drawing.Point(78, 170);
+            this.clvsMenuButton6.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton6.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.KindRootList;
+            this.clvsMenuButton6.Name = "clvsMenuButton6";
+            this.clvsMenuButton6.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton6.TabIndex = 19;
+            // 
+            // clvsMenuButton7
+            // 
+            this.clvsMenuButton7.Caption = "メニューボタン";
+            this.clvsMenuButton7.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton7.Location = new System.Drawing.Point(78, 245);
+            this.clvsMenuButton7.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton7.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.RiceQuantityRootList;
+            this.clvsMenuButton7.Name = "clvsMenuButton7";
+            this.clvsMenuButton7.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton7.TabIndex = 20;
+            // 
+            // clvsMenuButton8
+            // 
+            this.clvsMenuButton8.Caption = "メニューボタン";
+            this.clvsMenuButton8.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton8.Location = new System.Drawing.Point(78, 20);
+            this.clvsMenuButton8.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton8.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.KindList;
+            this.clvsMenuButton8.Name = "clvsMenuButton8";
+            this.clvsMenuButton8.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton8.TabIndex = 21;
+            // 
+            // clvsMenuButton9
+            // 
+            this.clvsMenuButton9.Caption = "メニューボタン";
+            this.clvsMenuButton9.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton9.Location = new System.Drawing.Point(78, 20);
+            this.clvsMenuButton9.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton9.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.CalorieList;
+            this.clvsMenuButton9.Name = "clvsMenuButton9";
+            this.clvsMenuButton9.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton9.TabIndex = 21;
+            // 
+            // clvsMenuButton10
+            // 
+            this.clvsMenuButton10.Caption = "メニューボタン";
+            this.clvsMenuButton10.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton10.Location = new System.Drawing.Point(78, 95);
+            this.clvsMenuButton10.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton10.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ScheduledAggregationQuantityList;
+            this.clvsMenuButton10.Name = "clvsMenuButton10";
+            this.clvsMenuButton10.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton10.TabIndex = 22;
+            // 
+            // clvsMenuButton11
+            // 
+            this.clvsMenuButton11.Caption = "メニューボタン";
+            this.clvsMenuButton11.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton11.Location = new System.Drawing.Point(78, 20);
+            this.clvsMenuButton11.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton11.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ScheduledAggregationMoneyList;
+            this.clvsMenuButton11.Name = "clvsMenuButton11";
+            this.clvsMenuButton11.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton11.TabIndex = 23;
+            // 
+            // clvsMenuButton12
+            // 
+            this.clvsMenuButton12.Caption = "メニューボタン";
+            this.clvsMenuButton12.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton12.Location = new System.Drawing.Point(78, 95);
+            this.clvsMenuButton12.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton12.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.Protein;
+            this.clvsMenuButton12.Name = "clvsMenuButton12";
+            this.clvsMenuButton12.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton12.TabIndex = 24;
+            // 
+            // clvsMenuButton13
+            // 
+            this.clvsMenuButton13.Caption = "メニューボタン";
+            this.clvsMenuButton13.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton13.Location = new System.Drawing.Point(78, 245);
+            this.clvsMenuButton13.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton13.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.RiceQuantityCauldronList;
+            this.clvsMenuButton13.Name = "clvsMenuButton13";
+            this.clvsMenuButton13.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton13.TabIndex = 25;
+            // 
+            // clvsMenuButton14
+            // 
+            this.clvsMenuButton14.Caption = "メニューボタン";
+            this.clvsMenuButton14.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton14.Location = new System.Drawing.Point(78, 170);
+            this.clvsMenuButton14.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton14.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.Mousse;
+            this.clvsMenuButton14.Name = "clvsMenuButton14";
+            this.clvsMenuButton14.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton14.TabIndex = 26;
             // 
             // MenuClosingBusiness
             // 
@@ -292,25 +292,24 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button13;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button14;
+        private ClvsMenuButton clvsMenuButton1;
+        private ClvsMenuButton clvsMenuButton2;
+        private ClvsMenuButton clvsMenuButton3;
+        private ClvsMenuButton clvsMenuButton4;
+        private ClvsMenuButton clvsMenuButton5;
+        private ClvsMenuButton clvsMenuButton6;
+        private ClvsMenuButton clvsMenuButton7;
+        private ClvsMenuButton clvsMenuButton8;
+        private ClvsMenuButton clvsMenuButton9;
+        private ClvsMenuButton clvsMenuButton10;
+        private ClvsMenuButton clvsMenuButton11;
+        private ClvsMenuButton clvsMenuButton12;
+        private ClvsMenuButton clvsMenuButton13;
+        private ClvsMenuButton clvsMenuButton14;
     }
 }

@@ -290,6 +290,60 @@ namespace CloverusSys.Controls.MenuPanel
             /// </summary>
             [Display(Description = "予定明細確認リスト")]
             ScheduledItemList,
+
+            /// <summary>
+            /// カード
+            /// </summary>
+            [Display(Description = "カード")]
+            Card,
+
+            /// <summary>
+            /// 種類別ルート別集計表
+            /// </summary>
+            [Display(Description = "種類別ルート別集計表")]
+            KindRootList,
+
+            /// <summary>
+            /// ごはん量集計表（ルート別、集計表）
+            /// </summary>
+            [Display(Description = "ごはん量集計表（ルート別、集計表）")]
+            RiceQuantityRootList,
+
+            /// <summary>
+            /// おかず量集計表
+            /// </summary>
+            [Display(Description = "おかず量集計表")]
+            DishQuantityList,
+
+            /// <summary>
+            /// 種類別集計表（容器数）
+            /// </summary>
+            [Display(Description = "種類別集計表（容器数）")]
+            KindList,
+
+            /// <summary>
+            /// カロリー調整表
+            /// </summary>
+            [Display(Description = "カロリー調整表")]
+            CalorieList,
+
+            /// <summary>
+            /// たんぱく食一覧
+            /// </summary>
+            [Display(Description = "たんぱく食一覧")]
+            Protein,
+
+            /// <summary>
+            /// ムース食一覧
+            /// </summary>
+            [Display(Description = "ムース食一覧")]
+            Mousse,
+
+            /// <summary>
+            /// ごはん量集計表（釜数シミュレーション）
+            /// </summary>
+            [Display(Description = "ごはん量集計表（釜数シミュレーション）")]
+            RiceQuantityCauldronList,
         }
         #endregion
 
@@ -297,10 +351,21 @@ namespace CloverusSys.Controls.MenuPanel
 
         #region プロパティ
         public MenuItems MenuItem { get; set; }
+        /// <summary>
+        /// ボタン文字
+        /// </summary>
         public string Caption
         {
             get { return BtnItem.Text; }
             set { BtnItem.Text = value; }
+        }
+        /// <summary>
+        /// 背景色
+        /// </summary>
+        public Color ButtonBackColor
+        {
+            get { return BtnItem.BackColor; }
+            set { BtnItem.BackColor = value; }
         }
         #endregion
 
