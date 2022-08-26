@@ -56,6 +56,7 @@
             this.TxtData.TextChanged += new System.EventHandler(this.TxtData_TextChanged);
             this.TxtData.DoubleClick += new System.EventHandler(this.TxtData_DoubleClick);
             this.TxtData.Enter += new System.EventHandler(this.TxtData_Enter);
+            this.TxtData.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TxtData_KeyDown);
             // 
             // SprTextBox
             // 

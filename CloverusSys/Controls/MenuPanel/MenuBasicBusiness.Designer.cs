@@ -28,21 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.DgvCustomer = new System.Windows.Forms.DataGridView();
             this.label2 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TxtKeyword = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,8 +45,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.BtnScheduleChange = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
             this.BtnCustomerMaster = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvCustomer)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
@@ -87,41 +80,10 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.DgvCustomer);
             this.panel1.Location = new System.Drawing.Point(818, 48);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(810, 926);
             this.panel1.TabIndex = 6;
-            // 
-            // DgvCustomer
-            // 
-            this.DgvCustomer.AllowUserToAddRows = false;
-            this.DgvCustomer.AllowUserToDeleteRows = false;
-            this.DgvCustomer.AllowUserToResizeColumns = false;
-            this.DgvCustomer.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DgvCustomer.GridColor = System.Drawing.SystemColors.Control;
-            this.DgvCustomer.Location = new System.Drawing.Point(0, 0);
-            this.DgvCustomer.Name = "DgvCustomer";
-            this.DgvCustomer.ReadOnly = true;
-            this.DgvCustomer.RowHeadersVisible = false;
-            this.DgvCustomer.RowTemplate.Height = 21;
-            this.DgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvCustomer.Size = new System.Drawing.Size(808, 924);
-            this.DgvCustomer.TabIndex = 0;
-            this.DgvCustomer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DgvCustomer_KeyDown);
             // 
             // label2
             // 
@@ -182,23 +144,6 @@
             this.button10.Text = "配送表";
             this.button10.UseVisualStyleBackColor = true;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(815, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(138, 24);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "キーワード検索：";
-            // 
-            // TxtKeyword
-            // 
-            this.TxtKeyword.ImeMode = System.Windows.Forms.ImeMode.On;
-            this.TxtKeyword.Location = new System.Drawing.Point(949, 9);
-            this.TxtKeyword.Name = "TxtKeyword";
-            this.TxtKeyword.Size = new System.Drawing.Size(679, 31);
-            this.TxtKeyword.TabIndex = 0;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -251,6 +196,7 @@
             // 
             // BtnScheduleChange
             // 
+            this.BtnScheduleChange.Caption = "メニューボタン";
             this.BtnScheduleChange.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BtnScheduleChange.Location = new System.Drawing.Point(24, 472);
             this.BtnScheduleChange.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
@@ -261,6 +207,7 @@
             // 
             // BtnCustomerMaster
             // 
+            this.BtnCustomerMaster.Caption = "メニューボタン";
             this.BtnCustomerMaster.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.BtnCustomerMaster.Location = new System.Drawing.Point(24, 48);
             this.BtnCustomerMaster.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
@@ -282,8 +229,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.TxtKeyword);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -298,8 +243,6 @@
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "MenuBasicBusiness";
             this.Size = new System.Drawing.Size(1642, 989);
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.DgvCustomer)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,15 +253,12 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView DgvCustomer;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox TxtKeyword;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;

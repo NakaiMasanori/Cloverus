@@ -74,6 +74,12 @@
     <Compile Include="Controls\SprDateTimePicker.Designer.cs">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SprDialogButtonsOkCancel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprDialogButtonsOkCancel.Designer.cs">
+      <DependentUpon>SprDialogButtonsOkCancel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SprDropdown.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -125,6 +131,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDateTimePicker.resx">
       <DependentUpon>SprDateTimePicker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprDialogButtonsOkCancel.resx">
+      <DependentUpon>SprDialogButtonsOkCancel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDropdown.resx">
       <DependentUpon>SprDropdown.cs</DependentUpon>

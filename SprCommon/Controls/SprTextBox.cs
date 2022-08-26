@@ -1,9 +1,15 @@
 ﻿//*****************************************************************************
 //
-//  システム名：共通コントロール
+//  システム名：汎用ライブラリ SprCommon
 //
 //  Copyright 株式会社スプレッド 2022 All rights reserved.
 //
+//-----------------------------------------------------------------------------
+//  変更履歴:
+//  Ver      日付        担当       コメント
+//  0.0      2022/12/31  A.Satou    新規作成
+#region 更新履歴
+#endregion
 //*****************************************************************************
 
 #region using defines
@@ -29,6 +35,7 @@ namespace SprCommon.Controls
         public event EventHandler DblClickValueText;
         public event EventHandler ValueChanged;
         public event EventHandler EnterValueText;
+        public event KeyEventHandler ValueKeyDown;
         #endregion
 
         #region コンストラクタ
@@ -47,43 +54,42 @@ namespace SprCommon.Controls
         /// </summary>
         public string TitleText
         {
-            get
-            {
-                return LblTitle.Text;
-            }
-            set
-            {
-                LblTitle.Text = value;
-            }
+            get { return LblTitle.Text; }
+            set { LblTitle.Text = value; }
+        }
+        /// <summary>
+        /// タイトル部の幅
+        /// </summary>
+        public int TitleWidth
+        {
+            get { return LblTitle.Width; }
+            set { LblTitle.Width = value; }
         }
         /// <summary>
         /// 値
         /// </summary>
         public string TextValue
         {
-            get
-            {
-                return TxtData.Text;
-            }
-            set
-            {
-                TxtData.Text = value;
-            }
+            get { return TxtData.Text; }
+            set { TxtData.Text = value; }
         }
         /// <summary>
         /// テキストボックス部の幅
         /// </summary>
         public int TextBoxWidth
         {
-            get
-            {
-                return TxtData.Width;
-            }
-            set
-            {
-                TxtData.Width = value;
-            }
+            get { return TxtData.Width; }
+            set { TxtData.Width = value; }
         }
+        /// <summary>
+        /// IMEモード
+        /// </summary>
+        public ImeMode TextImeMode
+        {
+            get { return TxtData.ImeMode; }
+            set { TxtData.ImeMode = value; }
+        }
+
         #endregion
 
         #region イベント発生処理
@@ -126,6 +132,20 @@ namespace SprCommon.Controls
             }
             DblClickValueText(this, e);
         }
+        /// <summary>
+        /// キー押下
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void TxtData_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (ValueKeyDown == null)
+            {
+                return;
+            }
+            ValueKeyDown(this, e);
+        }
         #endregion
+
     }
 }

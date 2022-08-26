@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //
-//  システム名：宅食業販売管理システム
+//  システム名：宅食業販売管理システム CloverusSys
 //
 //  Copyright 株式会社スプレッド 2022 All rights reserved.
 //
@@ -13,7 +13,6 @@
 //*****************************************************************************
 
 #region using defines
-using CloverusSys.Base;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,16 +31,16 @@ namespace CloverusSys.MasterMaintenance.Customers
     /// <summary>
     /// 顧客マスター
     /// </summary>
-    public partial class FrmEdit : BaseForm
+    public partial class Edit : Base.BaseForm
     {
         #region コンストラクタ
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public FrmEdit(int customerCode)
+        public Edit(int customerCode)
         {
             InitializeComponent();
-            using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.OrderManager))
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.CloverusSys))
             {
                 var data = db.Select(Sql.M_CUSTOMER.GetForEditor(customerCode));
                 if (data.Rows.Count > 0)
@@ -54,9 +53,27 @@ namespace CloverusSys.MasterMaintenance.Customers
         #endregion
 
         #region イベント
+        private void FrmEdit_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.F3:
+                        var frmSearch = new Preview();
+                        frmSearch.ShowDialog();
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                PutLog(ex);
+            }
+        }
         #endregion
 
         #region private function
         #endregion
+
     }
 }

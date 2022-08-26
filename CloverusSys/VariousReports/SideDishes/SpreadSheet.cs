@@ -1,6 +1,6 @@
 ﻿//*****************************************************************************
 //
-//  システム名：宅食業販売管理システム
+//  システム名：宅食業販売管理システム CloverusSys
 //
 //  Copyright 株式会社スプレッド 2022 All rights reserved.
 //
@@ -13,16 +13,6 @@
 //*****************************************************************************
 
 #region using defines
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using SprCommon.Database.SqlServer;
 #endregion
 
 namespace CloverusSys.VariousReports.SideDishes
