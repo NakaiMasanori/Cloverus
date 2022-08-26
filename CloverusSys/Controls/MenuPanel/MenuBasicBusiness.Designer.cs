@@ -28,54 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.BtnScheduleChange = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton7 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton6 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton5 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton4 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton3 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton2 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton1 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
             this.BtnCustomerMaster = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.BtnScheduleChange = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
+            this.clvsMenuButton8 = new CloverusSys.Controls.MenuPanel.ClvsMenuButton();
             this.SuspendLayout();
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button2.Location = new System.Drawing.Point(424, 218);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(367, 69);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "定期パターンマスター";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button3.Location = new System.Drawing.Point(24, 218);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(367, 69);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "予定登録";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button4.Location = new System.Drawing.Point(424, 345);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(367, 69);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "予定生成（個別）";
-            this.button4.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -93,56 +63,6 @@
             this.label2.Size = new System.Drawing.Size(100, 24);
             this.label2.TabIndex = 8;
             this.label2.Text = "《 その他 》";
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button6.Location = new System.Drawing.Point(24, 705);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(367, 69);
-            this.button6.TabIndex = 9;
-            this.button6.Text = "予定金額集計表";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button7.Location = new System.Drawing.Point(24, 797);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(367, 69);
-            this.button7.TabIndex = 11;
-            this.button7.Text = "売上生成処理（個別）";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button8.Location = new System.Drawing.Point(24, 888);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(367, 69);
-            this.button8.TabIndex = 13;
-            this.button8.Text = "予定・売上差額チェックリスト";
-            this.button8.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button9.Location = new System.Drawing.Point(424, 705);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(367, 69);
-            this.button9.TabIndex = 10;
-            this.button9.Text = "予定明細確認リスト";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.button10.Location = new System.Drawing.Point(424, 797);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(367, 69);
-            this.button10.TabIndex = 12;
-            this.button10.Text = "配送表";
-            this.button10.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -194,16 +114,82 @@
             this.label8.TabIndex = 18;
             this.label8.Text = "↓";
             // 
-            // BtnScheduleChange
+            // clvsMenuButton7
             // 
-            this.BtnScheduleChange.Caption = "メニューボタン";
-            this.BtnScheduleChange.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.BtnScheduleChange.Location = new System.Drawing.Point(24, 472);
-            this.BtnScheduleChange.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
-            this.BtnScheduleChange.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ScheduleChange;
-            this.BtnScheduleChange.Name = "BtnScheduleChange";
-            this.BtnScheduleChange.Size = new System.Drawing.Size(767, 69);
-            this.BtnScheduleChange.TabIndex = 19;
+            this.clvsMenuButton7.Caption = "メニューボタン";
+            this.clvsMenuButton7.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton7.Location = new System.Drawing.Point(424, 797);
+            this.clvsMenuButton7.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton7.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ShippingTable;
+            this.clvsMenuButton7.Name = "clvsMenuButton7";
+            this.clvsMenuButton7.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton7.TabIndex = 27;
+            // 
+            // clvsMenuButton6
+            // 
+            this.clvsMenuButton6.Caption = "メニューボタン";
+            this.clvsMenuButton6.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton6.Location = new System.Drawing.Point(24, 797);
+            this.clvsMenuButton6.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton6.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.SalesGenerationIndividual;
+            this.clvsMenuButton6.Name = "clvsMenuButton6";
+            this.clvsMenuButton6.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton6.TabIndex = 26;
+            // 
+            // clvsMenuButton5
+            // 
+            this.clvsMenuButton5.Caption = "メニューボタン";
+            this.clvsMenuButton5.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton5.Location = new System.Drawing.Point(424, 705);
+            this.clvsMenuButton5.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton5.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ScheduledItemList;
+            this.clvsMenuButton5.Name = "clvsMenuButton5";
+            this.clvsMenuButton5.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton5.TabIndex = 25;
+            // 
+            // clvsMenuButton4
+            // 
+            this.clvsMenuButton4.Caption = "メニューボタン";
+            this.clvsMenuButton4.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton4.Location = new System.Drawing.Point(24, 705);
+            this.clvsMenuButton4.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton4.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ScheduledAggregationMoneyList;
+            this.clvsMenuButton4.Name = "clvsMenuButton4";
+            this.clvsMenuButton4.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton4.TabIndex = 24;
+            // 
+            // clvsMenuButton3
+            // 
+            this.clvsMenuButton3.Caption = "メニューボタン";
+            this.clvsMenuButton3.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton3.Location = new System.Drawing.Point(424, 345);
+            this.clvsMenuButton3.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton3.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.SchedulingIndividual;
+            this.clvsMenuButton3.Name = "clvsMenuButton3";
+            this.clvsMenuButton3.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton3.TabIndex = 23;
+            // 
+            // clvsMenuButton2
+            // 
+            this.clvsMenuButton2.Caption = "メニューボタン";
+            this.clvsMenuButton2.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton2.Location = new System.Drawing.Point(424, 218);
+            this.clvsMenuButton2.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton2.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.RegularPatternMaster;
+            this.clvsMenuButton2.Name = "clvsMenuButton2";
+            this.clvsMenuButton2.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton2.TabIndex = 22;
+            // 
+            // clvsMenuButton1
+            // 
+            this.clvsMenuButton1.Caption = "メニューボタン";
+            this.clvsMenuButton1.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton1.Location = new System.Drawing.Point(24, 218);
+            this.clvsMenuButton1.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton1.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.EntrySchedule;
+            this.clvsMenuButton1.Name = "clvsMenuButton1";
+            this.clvsMenuButton1.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton1.TabIndex = 21;
             // 
             // BtnCustomerMaster
             // 
@@ -216,12 +202,42 @@
             this.BtnCustomerMaster.Size = new System.Drawing.Size(767, 69);
             this.BtnCustomerMaster.TabIndex = 20;
             // 
+            // BtnScheduleChange
+            // 
+            this.BtnScheduleChange.Caption = "メニューボタン";
+            this.BtnScheduleChange.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.BtnScheduleChange.Location = new System.Drawing.Point(24, 472);
+            this.BtnScheduleChange.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.BtnScheduleChange.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.ScheduleChange;
+            this.BtnScheduleChange.Name = "BtnScheduleChange";
+            this.BtnScheduleChange.Size = new System.Drawing.Size(767, 69);
+            this.BtnScheduleChange.TabIndex = 19;
+            // 
+            // clvsMenuButton8
+            // 
+            this.clvsMenuButton8.Caption = "メニューボタン";
+            this.clvsMenuButton8.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsMenuButton8.Location = new System.Drawing.Point(24, 888);
+            this.clvsMenuButton8.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
+            this.clvsMenuButton8.MenuItem = CloverusSys.Controls.MenuPanel.ClvsMenuButton.MenuItems.DifferenceCheckList;
+            this.clvsMenuButton8.Name = "clvsMenuButton8";
+            this.clvsMenuButton8.Size = new System.Drawing.Size(367, 69);
+            this.clvsMenuButton8.TabIndex = 28;
+            // 
             // MenuBasicBusiness
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Controls.Add(this.clvsMenuButton8);
+            this.Controls.Add(this.clvsMenuButton7);
+            this.Controls.Add(this.clvsMenuButton6);
+            this.Controls.Add(this.clvsMenuButton5);
+            this.Controls.Add(this.clvsMenuButton4);
+            this.Controls.Add(this.clvsMenuButton3);
+            this.Controls.Add(this.clvsMenuButton2);
+            this.Controls.Add(this.clvsMenuButton1);
             this.Controls.Add(this.BtnCustomerMaster);
             this.Controls.Add(this.BtnScheduleChange);
             this.Controls.Add(this.label8);
@@ -229,16 +245,8 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button9);
-            this.Controls.Add(this.button8);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Font = new System.Drawing.Font("メイリオ", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "MenuBasicBusiness";
@@ -249,16 +257,8 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -266,5 +266,13 @@
         private System.Windows.Forms.Label label8;
         private ClvsMenuButton BtnScheduleChange;
         private ClvsMenuButton BtnCustomerMaster;
+        private ClvsMenuButton clvsMenuButton1;
+        private ClvsMenuButton clvsMenuButton2;
+        private ClvsMenuButton clvsMenuButton3;
+        private ClvsMenuButton clvsMenuButton4;
+        private ClvsMenuButton clvsMenuButton5;
+        private ClvsMenuButton clvsMenuButton6;
+        private ClvsMenuButton clvsMenuButton7;
+        private ClvsMenuButton clvsMenuButton8;
     }
 }
