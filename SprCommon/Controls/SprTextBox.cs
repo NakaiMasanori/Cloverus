@@ -50,6 +50,14 @@ namespace SprCommon.Controls
 
         #region プロパティ
         /// <summary>
+        /// コントロールと紐づくデータベースのカラム
+        /// </summary>
+        public string TableColumn
+        {
+            get;
+            set;
+        }
+        /// <summary>
         /// タイトル
         /// </summary>
         public string TitleText

@@ -135,6 +135,14 @@ namespace CloverusCommon.Database.SqlServer.Sql
 
         #endregion
 
+        #region public static function
+
+        #region 一覧表示
+        /// <summary>
+        /// 一覧表示
+        /// </summary>
+        /// <param name="keyWords"></param>
+        /// <returns></returns>
         public static string GetPreviewForMenu(string keyWords)
         {
             var conditions = new List<string>();
@@ -167,19 +175,34 @@ namespace CloverusCommon.Database.SqlServer.Sql
             }
             return sql.ToString();
         }
+        #endregion
 
+        #region 編集画面表示
+        /// <summary>
+        /// 編集画面表示
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
         public static string GetForEditor(int code)
         {
             var sql = new StringBuilder();
-            sql.Append($"SELECT ");
-            sql.Append($"  CUSMA01001 AS 顧客コード ");
-            sql.Append($" ,CUSMA01002 AS 顧客名 ");
-            sql.Append($" ,CUSMA01007 AS 住所 ");
+            sql.Append($"SELECT {string.Join(" ,", Columns)} ");
             sql.Append($"FROM {TABLE_NAME} ");
             sql.Append($"WHERE CUSMA01001 = {code} ");
             return sql.ToString();
         }
+        #endregion
 
+        #endregion
+
+        #region private static functions
+
+        #region 検索キーワードの作成
+        /// <summary>
+        /// 検索キーワードの作成
+        /// </summary>
+        /// <param name="keyWord"></param>
+        /// <returns></returns>
         private static List<string> ToValues(string keyWord)
         {
             var values = new List<string>();
@@ -196,5 +219,8 @@ namespace CloverusCommon.Database.SqlServer.Sql
             }
             return values;
         }
+        #endregion
+
+        #endregion
     }
 }

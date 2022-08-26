@@ -66,7 +66,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox11 = new SprCommon.Controls.SprTextBox();
             this.sprTextBox10 = new SprCommon.Controls.SprTextBox();
             this.sprTextBox5 = new SprCommon.Controls.SprTextBox();
-            this.sprTextBox3 = new SprCommon.Controls.SprTextBox();
+            this.TxtName = new SprCommon.Controls.SprTextBox();
             this.sprTextBox2 = new SprCommon.Controls.SprTextBox();
             this.TabPayment = new System.Windows.Forms.TabPage();
             this.sprYearMonth2 = new SprCommon.Controls.SprYearMonth();
@@ -185,7 +185,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.Controls.Add(this.sprTextBox11);
             this.TabBasic.Controls.Add(this.sprTextBox10);
             this.TabBasic.Controls.Add(this.sprTextBox5);
-            this.TabBasic.Controls.Add(this.sprTextBox3);
+            this.TabBasic.Controls.Add(this.TxtName);
             this.TabBasic.Controls.Add(this.sprTextBox2);
             this.TabBasic.Location = new System.Drawing.Point(4, 32);
             this.TabBasic.Name = "TabBasic";
@@ -258,9 +258,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox27.Name = "sprTextBox27";
             this.sprTextBox27.Size = new System.Drawing.Size(468, 27);
             this.sprTextBox27.TabIndex = 30;
+            this.sprTextBox27.TableColumn = null;
             this.sprTextBox27.TextBoxWidth = 346;
+            this.sprTextBox27.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox27.TextValue = "";
             this.sprTextBox27.TitleText = "初回無料回数";
+            this.sprTextBox27.TitleWidth = 122;
             // 
             // sprTextBox25
             // 
@@ -270,9 +273,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox25.Name = "sprTextBox25";
             this.sprTextBox25.Size = new System.Drawing.Size(468, 27);
             this.sprTextBox25.TabIndex = 28;
+            this.sprTextBox25.TableColumn = null;
             this.sprTextBox25.TextBoxWidth = 346;
+            this.sprTextBox25.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox25.TextValue = "";
             this.sprTextBox25.TitleText = "減額型";
+            this.sprTextBox25.TitleWidth = 122;
             // 
             // sprMultiTextBox3
             // 
@@ -303,9 +309,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox1.Name = "sprTextBox1";
             this.sprTextBox1.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox1.TabIndex = 18;
+            this.sprTextBox1.TableColumn = null;
             this.sprTextBox1.TextBoxWidth = 135;
+            this.sprTextBox1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox1.TextValue = "";
             this.sprTextBox1.TitleText = "注文者その他";
+            this.sprTextBox1.TitleWidth = 122;
             // 
             // sprDropdown2
             // 
@@ -333,9 +342,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox8.Name = "sprTextBox8";
             this.sprTextBox8.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox8.TabIndex = 14;
+            this.sprTextBox8.TableColumn = null;
             this.sprTextBox8.TextBoxWidth = 135;
+            this.sprTextBox8.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox8.TextValue = "";
             this.sprTextBox8.TitleText = "緊急連絡先名４";
+            this.sprTextBox8.TitleWidth = 122;
             // 
             // sprTextBox9
             // 
@@ -345,9 +357,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox9.Name = "sprTextBox9";
             this.sprTextBox9.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox9.TabIndex = 12;
+            this.sprTextBox9.TableColumn = null;
             this.sprTextBox9.TextBoxWidth = 135;
+            this.sprTextBox9.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox9.TextValue = "";
             this.sprTextBox9.TitleText = "緊急連絡先名３";
+            this.sprTextBox9.TitleWidth = 122;
             // 
             // sprTextBox20
             // 
@@ -357,9 +372,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox20.Name = "sprTextBox20";
             this.sprTextBox20.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox20.TabIndex = 10;
+            this.sprTextBox20.TableColumn = null;
             this.sprTextBox20.TextBoxWidth = 135;
+            this.sprTextBox20.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox20.TextValue = "";
             this.sprTextBox20.TitleText = "緊急連絡先名２";
+            this.sprTextBox20.TitleWidth = 122;
             // 
             // sprTextBox21
             // 
@@ -369,9 +387,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox21.Name = "sprTextBox21";
             this.sprTextBox21.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox21.TabIndex = 8;
+            this.sprTextBox21.TableColumn = null;
             this.sprTextBox21.TextBoxWidth = 135;
+            this.sprTextBox21.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox21.TextValue = "";
             this.sprTextBox21.TitleText = "緊急連絡先名１";
+            this.sprTextBox21.TitleWidth = 122;
             // 
             // sprTextBox7
             // 
@@ -381,9 +402,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox7.Name = "sprTextBox7";
             this.sprTextBox7.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox7.TabIndex = 21;
+            this.sprTextBox7.TableColumn = null;
             this.sprTextBox7.TextBoxWidth = 401;
+            this.sprTextBox7.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox7.TextValue = "";
             this.sprTextBox7.TitleText = "配達時間";
+            this.sprTextBox7.TitleWidth = 122;
             // 
             // sprTextBox6
             // 
@@ -393,9 +417,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox6.Name = "sprTextBox6";
             this.sprTextBox6.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox6.TabIndex = 6;
+            this.sprTextBox6.TableColumn = null;
             this.sprTextBox6.TextBoxWidth = 135;
+            this.sprTextBox6.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox6.TextValue = "";
             this.sprTextBox6.TitleText = "顧客TEL１";
+            this.sprTextBox6.TitleWidth = 122;
             // 
             // sprAddressBox1
             // 
@@ -413,9 +440,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox19.Name = "sprTextBox19";
             this.sprTextBox19.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox19.TabIndex = 20;
+            this.sprTextBox19.TableColumn = null;
             this.sprTextBox19.TextBoxWidth = 135;
+            this.sprTextBox19.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox19.TextValue = "";
             this.sprTextBox19.TitleText = "事業所TEL";
+            this.sprTextBox19.TitleWidth = 122;
             // 
             // sprTextBox18
             // 
@@ -425,9 +455,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox18.Name = "sprTextBox18";
             this.sprTextBox18.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox18.TabIndex = 19;
+            this.sprTextBox18.TableColumn = null;
             this.sprTextBox18.TextBoxWidth = 135;
+            this.sprTextBox18.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox18.TextValue = "";
             this.sprTextBox18.TitleText = "注文者TEL";
+            this.sprTextBox18.TitleWidth = 122;
             // 
             // sprTextBox16
             // 
@@ -437,9 +470,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox16.Name = "sprTextBox16";
             this.sprTextBox16.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox16.TabIndex = 16;
+            this.sprTextBox16.TableColumn = null;
             this.sprTextBox16.TextBoxWidth = 401;
+            this.sprTextBox16.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox16.TextValue = "";
             this.sprTextBox16.TitleText = "ケアマネジャー";
+            this.sprTextBox16.TitleWidth = 122;
             // 
             // sprTextBox15
             // 
@@ -449,9 +485,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox15.Name = "sprTextBox15";
             this.sprTextBox15.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox15.TabIndex = 15;
+            this.sprTextBox15.TableColumn = null;
             this.sprTextBox15.TextBoxWidth = 401;
+            this.sprTextBox15.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox15.TextValue = "";
             this.sprTextBox15.TitleText = "事業所";
+            this.sprTextBox15.TitleWidth = 122;
             // 
             // sprTextBox14
             // 
@@ -461,9 +500,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox14.Name = "sprTextBox14";
             this.sprTextBox14.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox14.TabIndex = 13;
+            this.sprTextBox14.TableColumn = null;
             this.sprTextBox14.TextBoxWidth = 135;
+            this.sprTextBox14.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox14.TextValue = "";
             this.sprTextBox14.TitleText = "緊急連絡先名４";
+            this.sprTextBox14.TitleWidth = 122;
             // 
             // sprTextBox13
             // 
@@ -473,9 +515,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox13.Name = "sprTextBox13";
             this.sprTextBox13.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox13.TabIndex = 11;
+            this.sprTextBox13.TableColumn = null;
             this.sprTextBox13.TextBoxWidth = 135;
+            this.sprTextBox13.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox13.TextValue = "";
             this.sprTextBox13.TitleText = "緊急連絡先名３";
+            this.sprTextBox13.TitleWidth = 122;
             // 
             // sprTextBox12
             // 
@@ -485,9 +530,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox12.Name = "sprTextBox12";
             this.sprTextBox12.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox12.TabIndex = 9;
+            this.sprTextBox12.TableColumn = null;
             this.sprTextBox12.TextBoxWidth = 135;
+            this.sprTextBox12.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox12.TextValue = "";
             this.sprTextBox12.TitleText = "緊急連絡先名２";
+            this.sprTextBox12.TitleWidth = 122;
             // 
             // sprTextBox11
             // 
@@ -497,9 +545,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox11.Name = "sprTextBox11";
             this.sprTextBox11.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox11.TabIndex = 7;
+            this.sprTextBox11.TableColumn = null;
             this.sprTextBox11.TextBoxWidth = 135;
+            this.sprTextBox11.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox11.TextValue = "";
             this.sprTextBox11.TitleText = "緊急連絡先名１";
+            this.sprTextBox11.TitleWidth = 122;
             // 
             // sprTextBox10
             // 
@@ -509,9 +560,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox10.Name = "sprTextBox10";
             this.sprTextBox10.Size = new System.Drawing.Size(257, 27);
             this.sprTextBox10.TabIndex = 5;
+            this.sprTextBox10.TableColumn = null;
             this.sprTextBox10.TextBoxWidth = 135;
+            this.sprTextBox10.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox10.TextValue = "";
             this.sprTextBox10.TitleText = "顧客TEL１";
+            this.sprTextBox10.TitleWidth = 122;
             // 
             // sprTextBox5
             // 
@@ -521,21 +575,27 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox5.Name = "sprTextBox5";
             this.sprTextBox5.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox5.TabIndex = 3;
+            this.sprTextBox5.TableColumn = "";
             this.sprTextBox5.TextBoxWidth = 401;
+            this.sprTextBox5.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox5.TextValue = "";
             this.sprTextBox5.TitleText = "顧客名カナ";
+            this.sprTextBox5.TitleWidth = 122;
             // 
-            // sprTextBox3
+            // TxtName
             // 
-            this.sprTextBox3.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sprTextBox3.Location = new System.Drawing.Point(14, 76);
-            this.sprTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sprTextBox3.Name = "sprTextBox3";
-            this.sprTextBox3.Size = new System.Drawing.Size(523, 27);
-            this.sprTextBox3.TabIndex = 2;
-            this.sprTextBox3.TextBoxWidth = 401;
-            this.sprTextBox3.TextValue = "";
-            this.sprTextBox3.TitleText = "顧客名";
+            this.TxtName.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtName.Location = new System.Drawing.Point(14, 76);
+            this.TxtName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(523, 27);
+            this.TxtName.TabIndex = 2;
+            this.TxtName.TableColumn = "CUSMA01002";
+            this.TxtName.TextBoxWidth = 401;
+            this.TxtName.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TxtName.TextValue = "";
+            this.TxtName.TitleText = "顧客名";
+            this.TxtName.TitleWidth = 122;
             // 
             // sprTextBox2
             // 
@@ -545,9 +605,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox2.Name = "sprTextBox2";
             this.sprTextBox2.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox2.TabIndex = 1;
+            this.sprTextBox2.TableColumn = null;
             this.sprTextBox2.TextBoxWidth = 401;
+            this.sprTextBox2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox2.TextValue = "";
             this.sprTextBox2.TitleText = "ブランド";
+            this.sprTextBox2.TitleWidth = 122;
             // 
             // TabPayment
             // 
@@ -620,9 +683,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox49.Name = "sprTextBox49";
             this.sprTextBox49.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox49.TabIndex = 14;
+            this.sprTextBox49.TableColumn = null;
             this.sprTextBox49.TextBoxWidth = 401;
+            this.sprTextBox49.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox49.TextValue = "";
             this.sprTextBox49.TitleText = "ﾏｽﾀｰ検索時表示";
+            this.sprTextBox49.TitleWidth = 122;
             // 
             // sprMultiTextBox6
             // 
@@ -663,9 +729,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox48.Name = "sprTextBox48";
             this.sprTextBox48.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox48.TabIndex = 9;
+            this.sprTextBox48.TableColumn = null;
             this.sprTextBox48.TextBoxWidth = 385;
+            this.sprTextBox48.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox48.TextValue = "";
             this.sprTextBox48.TitleText = "口座名義人名";
+            this.sprTextBox48.TitleWidth = 122;
             // 
             // sprTextBox47
             // 
@@ -675,9 +744,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox47.Name = "sprTextBox47";
             this.sprTextBox47.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox47.TabIndex = 8;
+            this.sprTextBox47.TableColumn = null;
             this.sprTextBox47.TextBoxWidth = 385;
+            this.sprTextBox47.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox47.TextValue = "";
             this.sprTextBox47.TitleText = "口座名義人カナ";
+            this.sprTextBox47.TitleWidth = 122;
             // 
             // sprTextBox42
             // 
@@ -687,9 +759,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox42.Name = "sprTextBox42";
             this.sprTextBox42.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox42.TabIndex = 7;
+            this.sprTextBox42.TableColumn = null;
             this.sprTextBox42.TextBoxWidth = 385;
+            this.sprTextBox42.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox42.TextValue = "";
             this.sprTextBox42.TitleText = "金融機関支店ｺｰﾄﾞ";
+            this.sprTextBox42.TitleWidth = 122;
             // 
             // sprTextBox43
             // 
@@ -699,9 +774,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox43.Name = "sprTextBox43";
             this.sprTextBox43.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox43.TabIndex = 6;
+            this.sprTextBox43.TableColumn = null;
             this.sprTextBox43.TextBoxWidth = 385;
+            this.sprTextBox43.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox43.TextValue = "";
             this.sprTextBox43.TitleText = "顧客番号";
+            this.sprTextBox43.TitleWidth = 122;
             // 
             // sprTextBox44
             // 
@@ -711,9 +789,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox44.Name = "sprTextBox44";
             this.sprTextBox44.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox44.TabIndex = 5;
+            this.sprTextBox44.TableColumn = null;
             this.sprTextBox44.TextBoxWidth = 385;
+            this.sprTextBox44.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox44.TextValue = "";
             this.sprTextBox44.TitleText = "口座番号";
+            this.sprTextBox44.TitleWidth = 122;
             // 
             // sprTextBox46
             // 
@@ -723,9 +804,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox46.Name = "sprTextBox46";
             this.sprTextBox46.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox46.TabIndex = 3;
+            this.sprTextBox46.TableColumn = null;
             this.sprTextBox46.TextBoxWidth = 385;
+            this.sprTextBox46.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox46.TextValue = "";
             this.sprTextBox46.TitleText = "金融機関コード";
+            this.sprTextBox46.TitleWidth = 122;
             // 
             // sprTextBox37
             // 
@@ -735,9 +819,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox37.Name = "sprTextBox37";
             this.sprTextBox37.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox37.TabIndex = 8;
+            this.sprTextBox37.TableColumn = null;
             this.sprTextBox37.TextBoxWidth = 401;
+            this.sprTextBox37.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox37.TextValue = "";
             this.sprTextBox37.TitleText = "項目名４５６７";
+            this.sprTextBox37.TitleWidth = 122;
             // 
             // sprTextBox36
             // 
@@ -747,9 +834,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox36.Name = "sprTextBox36";
             this.sprTextBox36.Size = new System.Drawing.Size(523, 27);
             this.sprTextBox36.TabIndex = 7;
+            this.sprTextBox36.TableColumn = null;
             this.sprTextBox36.TextBoxWidth = 401;
+            this.sprTextBox36.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox36.TextValue = "";
             this.sprTextBox36.TitleText = "請求書宛名";
+            this.sprTextBox36.TitleWidth = 122;
             // 
             // groupBox1
             // 
@@ -775,9 +865,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox33.Name = "sprTextBox33";
             this.sprTextBox33.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox33.TabIndex = 7;
+            this.sprTextBox33.TableColumn = null;
             this.sprTextBox33.TextBoxWidth = 385;
+            this.sprTextBox33.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox33.TextValue = "";
             this.sprTextBox33.TitleText = "ブランド";
+            this.sprTextBox33.TitleWidth = 122;
             // 
             // sprTextBox32
             // 
@@ -789,9 +882,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox32.Name = "sprTextBox32";
             this.sprTextBox32.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox32.TabIndex = 6;
+            this.sprTextBox32.TableColumn = null;
             this.sprTextBox32.TextBoxWidth = 385;
+            this.sprTextBox32.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox32.TextValue = "";
             this.sprTextBox32.TitleText = "ブランド";
+            this.sprTextBox32.TitleWidth = 122;
             // 
             // sprTextBox31
             // 
@@ -803,9 +899,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox31.Name = "sprTextBox31";
             this.sprTextBox31.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox31.TabIndex = 5;
+            this.sprTextBox31.TableColumn = null;
             this.sprTextBox31.TextBoxWidth = 385;
+            this.sprTextBox31.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox31.TextValue = "";
             this.sprTextBox31.TitleText = "ブランド";
+            this.sprTextBox31.TitleWidth = 122;
             // 
             // sprTextBox30
             // 
@@ -817,9 +916,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox30.Name = "sprTextBox30";
             this.sprTextBox30.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox30.TabIndex = 4;
+            this.sprTextBox30.TableColumn = null;
             this.sprTextBox30.TextBoxWidth = 385;
+            this.sprTextBox30.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox30.TextValue = "";
             this.sprTextBox30.TitleText = "ブランド";
+            this.sprTextBox30.TitleWidth = 122;
             // 
             // sprTextBox17
             // 
@@ -831,9 +933,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox17.Name = "sprTextBox17";
             this.sprTextBox17.Size = new System.Drawing.Size(507, 27);
             this.sprTextBox17.TabIndex = 3;
+            this.sprTextBox17.TableColumn = null;
             this.sprTextBox17.TextBoxWidth = 385;
+            this.sprTextBox17.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox17.TextValue = "";
             this.sprTextBox17.TitleText = "ブランド";
+            this.sprTextBox17.TitleWidth = 122;
             // 
             // TabClaim
             // 
@@ -860,9 +965,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox54.Name = "sprTextBox54";
             this.sprTextBox54.Size = new System.Drawing.Size(468, 27);
             this.sprTextBox54.TabIndex = 7;
+            this.sprTextBox54.TableColumn = null;
             this.sprTextBox54.TextBoxWidth = 346;
+            this.sprTextBox54.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox54.TextValue = "";
             this.sprTextBox54.TitleText = "郵送記号";
+            this.sprTextBox54.TitleWidth = 122;
             // 
             // sprTextBox53
             // 
@@ -872,9 +980,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox53.Name = "sprTextBox53";
             this.sprTextBox53.Size = new System.Drawing.Size(468, 27);
             this.sprTextBox53.TabIndex = 6;
+            this.sprTextBox53.TableColumn = null;
             this.sprTextBox53.TextBoxWidth = 346;
+            this.sprTextBox53.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox53.TextValue = "";
             this.sprTextBox53.TitleText = "郵送区分";
+            this.sprTextBox53.TitleWidth = 122;
             // 
             // sprDropdown5
             // 
@@ -893,9 +1004,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox52.Name = "sprTextBox52";
             this.sprTextBox52.Size = new System.Drawing.Size(468, 27);
             this.sprTextBox52.TabIndex = 4;
+            this.sprTextBox52.TableColumn = null;
             this.sprTextBox52.TextBoxWidth = 346;
+            this.sprTextBox52.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox52.TextValue = "";
             this.sprTextBox52.TitleText = "前回請求残高";
+            this.sprTextBox52.TitleWidth = 122;
             // 
             // sprDropdown4
             // 
@@ -914,9 +1028,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox51.Name = "sprTextBox51";
             this.sprTextBox51.Size = new System.Drawing.Size(468, 27);
             this.sprTextBox51.TabIndex = 2;
+            this.sprTextBox51.TableColumn = null;
             this.sprTextBox51.TextBoxWidth = 346;
+            this.sprTextBox51.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox51.TextValue = "";
             this.sprTextBox51.TitleText = "入金日";
+            this.sprTextBox51.TitleWidth = 122;
             // 
             // sprDropdown3
             // 
@@ -935,11 +1052,14 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTextBox50.Name = "sprTextBox50";
             this.sprTextBox50.Size = new System.Drawing.Size(468, 27);
             this.sprTextBox50.TabIndex = 0;
+            this.sprTextBox50.TableColumn = null;
             this.sprTextBox50.TextBoxWidth = 346;
+            this.sprTextBox50.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.sprTextBox50.TextValue = "";
             this.sprTextBox50.TitleText = "締日";
+            this.sprTextBox50.TitleWidth = 122;
             // 
-            // FrmEdit
+            // Edit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -950,7 +1070,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.Font = new System.Drawing.Font("メイリオ", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.KeyPreview = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "FrmEdit";
+            this.Name = "Edit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "顧客マスター";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmEdit_KeyDown);
@@ -981,7 +1101,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprTextBox sprTextBox11;
         private SprCommon.Controls.SprTextBox sprTextBox10;
         private SprCommon.Controls.SprTextBox sprTextBox5;
-        private SprCommon.Controls.SprTextBox sprTextBox3;
+        private SprCommon.Controls.SprTextBox TxtName;
         private SprCommon.Controls.SprTextBox sprTextBox2;
         private System.Windows.Forms.TabPage TabPayment;
         private System.Windows.Forms.TabPage TabClaim;
