@@ -83,45 +83,6 @@ namespace SprCommon.Func
             ((TextBox)sender).SelectAll();
         }
 
-        #region データベースから読み込んだ値を画面のコントロールへ反映する
-        /// <summary>
-        /// データベースから読み込んだ値を画面のコントロールへ反映する
-        /// </summary>
-        /// <param name="row"></param>
-        /// <param name="controls"></param>
-        public static void DataRowToControl(DataRow row, Control.ControlCollection controls)
-        {
-            foreach (Control control in controls)
-            {
-                switch (control)
-                {
-                    case Controls.SprTextBox textBox:
-                        if (textBox.Name == "TxtName")
-                        {
-                            var x = 0;
-                        }
-                        if (!string.IsNullOrEmpty(textBox.TableColumn) && row.Table.Columns.Contains(textBox.TableColumn))
-                        {
-                            textBox.TextValue = row[textBox.TableColumn].ToString();
-                        }
-                        break;
-                    case Controls.SprMultiTextBox textBox:
-                        if (!string.IsNullOrEmpty(textBox.TableColumn) && row.Table.Columns.Contains(textBox.TableColumn))
-                        {
-                            textBox.TextValue = row[textBox.TableColumn].ToString();
-                        }
-                        break;
-                    default:
-                        break;
-                }
-                if (control.Controls != null)
-                {
-                    DataRowToControl(row, control.Controls);
-                }
-            }
-        }
-        #endregion
-
         #endregion
 
     }

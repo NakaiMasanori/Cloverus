@@ -1,4 +1,4 @@
-﻿namespace SprCommon.Controls
+﻿namespace CloverusCommon.Controls
 {
     partial class SprAddressBox
     {
@@ -31,13 +31,13 @@
             this.PnlPost = new System.Windows.Forms.Panel();
             this.BtnPreviewAddress = new System.Windows.Forms.Button();
             this.TxtPostCode = new System.Windows.Forms.TextBox();
-            this.LblTitle = new System.Windows.Forms.Label();
+            this.LblTitlePost = new System.Windows.Forms.Label();
             this.PnlSplit = new System.Windows.Forms.Panel();
             this.PnlAddress = new System.Windows.Forms.Panel();
             this.TxtTownArea = new System.Windows.Forms.TextBox();
             this.TxtMunicipalities = new System.Windows.Forms.TextBox();
             this.TxtPrefectures = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LblTitleAddress = new System.Windows.Forms.Label();
             this.PnlPost.SuspendLayout();
             this.PnlAddress.SuspendLayout();
             this.SuspendLayout();
@@ -46,7 +46,7 @@
             // 
             this.PnlPost.Controls.Add(this.BtnPreviewAddress);
             this.PnlPost.Controls.Add(this.TxtPostCode);
-            this.PnlPost.Controls.Add(this.LblTitle);
+            this.PnlPost.Controls.Add(this.LblTitlePost);
             this.PnlPost.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlPost.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.PnlPost.Location = new System.Drawing.Point(0, 0);
@@ -73,18 +73,18 @@
             this.TxtPostCode.Size = new System.Drawing.Size(135, 27);
             this.TxtPostCode.TabIndex = 1;
             // 
-            // LblTitle
+            // LblTitlePost
             // 
-            this.LblTitle.BackColor = System.Drawing.Color.Navy;
-            this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.LblTitle.ForeColor = System.Drawing.Color.White;
-            this.LblTitle.Location = new System.Drawing.Point(0, 0);
-            this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 27);
-            this.LblTitle.TabIndex = 0;
-            this.LblTitle.Text = "項目名４５６７";
-            this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblTitlePost.BackColor = System.Drawing.Color.Navy;
+            this.LblTitlePost.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LblTitlePost.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitlePost.ForeColor = System.Drawing.Color.White;
+            this.LblTitlePost.Location = new System.Drawing.Point(0, 0);
+            this.LblTitlePost.Name = "LblTitlePost";
+            this.LblTitlePost.Size = new System.Drawing.Size(122, 27);
+            this.LblTitlePost.TabIndex = 0;
+            this.LblTitlePost.Text = "項目名４５６７";
+            this.LblTitlePost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // PnlSplit
             // 
@@ -99,11 +99,11 @@
             this.PnlAddress.Controls.Add(this.TxtTownArea);
             this.PnlAddress.Controls.Add(this.TxtMunicipalities);
             this.PnlAddress.Controls.Add(this.TxtPrefectures);
-            this.PnlAddress.Controls.Add(this.label1);
+            this.PnlAddress.Controls.Add(this.LblTitleAddress);
             this.PnlAddress.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlAddress.Location = new System.Drawing.Point(0, 31);
             this.PnlAddress.Name = "PnlAddress";
-            this.PnlAddress.Size = new System.Drawing.Size(468, 87);
+            this.PnlAddress.Size = new System.Drawing.Size(468, 88);
             this.PnlAddress.TabIndex = 6;
             // 
             // TxtTownArea
@@ -133,17 +133,17 @@
             this.TxtPrefectures.Size = new System.Drawing.Size(345, 27);
             this.TxtPrefectures.TabIndex = 1;
             // 
-            // label1
+            // LblTitleAddress
             // 
-            this.label1.BackColor = System.Drawing.Color.Navy;
-            this.label1.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(122, 27);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "項目名４５６７";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblTitleAddress.BackColor = System.Drawing.Color.Navy;
+            this.LblTitleAddress.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitleAddress.ForeColor = System.Drawing.Color.White;
+            this.LblTitleAddress.Location = new System.Drawing.Point(0, 0);
+            this.LblTitleAddress.Name = "LblTitleAddress";
+            this.LblTitleAddress.Size = new System.Drawing.Size(122, 27);
+            this.LblTitleAddress.TabIndex = 0;
+            this.LblTitleAddress.Text = "項目名４５６７";
+            this.LblTitleAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // SprAddressBox
             // 
@@ -153,7 +153,7 @@
             this.Controls.Add(this.PnlPost);
             this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprAddressBox";
-            this.Size = new System.Drawing.Size(468, 118);
+            this.Size = new System.Drawing.Size(468, 119);
             this.PnlPost.ResumeLayout(false);
             this.PnlPost.PerformLayout();
             this.PnlAddress.ResumeLayout(false);
@@ -166,13 +166,13 @@
 
         private System.Windows.Forms.Panel PnlPost;
         private System.Windows.Forms.TextBox TxtPostCode;
-        private System.Windows.Forms.Label LblTitle;
+        private System.Windows.Forms.Label LblTitlePost;
         private System.Windows.Forms.Button BtnPreviewAddress;
         private System.Windows.Forms.Panel PnlSplit;
         private System.Windows.Forms.Panel PnlAddress;
         private System.Windows.Forms.TextBox TxtTownArea;
         private System.Windows.Forms.TextBox TxtMunicipalities;
         private System.Windows.Forms.TextBox TxtPrefectures;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LblTitleAddress;
     }
 }

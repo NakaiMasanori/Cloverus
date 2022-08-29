@@ -55,7 +55,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact1 = new SprCommon.Controls.SprTextBox();
             this.deliveryTime = new SprCommon.Controls.SprTextBox();
             this.customerTel2 = new SprCommon.Controls.SprTextBox();
-            this.sprAddressBox1 = new SprCommon.Controls.SprAddressBox();
+            this.sprAddressBox1 = new CloverusCommon.Controls.SprAddressBox();
             this.officeTel = new SprCommon.Controls.SprTextBox();
             this.ordererTel = new SprCommon.Controls.SprTextBox();
             this.careManager = new SprCommon.Controls.SprTextBox();
@@ -73,7 +73,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.withdrawalStartDate = new SprCommon.Controls.SprYearMonth();
             this.paymentMethod = new SprCommon.Controls.SprDropdown();
             this.selectFinancialInstitution = new SprCommon.Controls.SprTreeItemsRadioButton();
-            this.sprAddressBox2 = new SprCommon.Controls.SprAddressBox();
+            this.sprAddressBox2 = new CloverusCommon.Controls.SprAddressBox();
             this.masterSearch = new SprCommon.Controls.SprTextBox();
             this.paymentMethodRemarks = new SprCommon.Controls.SprMultiTextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -446,7 +446,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprAddressBox1.Size = new System.Drawing.Size(525, 118);
             this.sprAddressBox1.TabIndex = 4;
             this.sprAddressBox1.TableColumnPost = "CUSMA01006";
-            this.sprAddressBox1.TitleText = "顧客郵便番号";
+            this.sprAddressBox1.PostTitleText = "顧客郵便番号";
             // 
             // officeTel
             // 
@@ -696,7 +696,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprAddressBox2.Size = new System.Drawing.Size(468, 118);
             this.sprAddressBox2.TabIndex = 15;
             this.sprAddressBox2.TableColumnPost = null;
-            this.sprAddressBox2.TitleText = "請求書郵便番号";
+            this.sprAddressBox2.PostTitleText = "請求書郵便番号";
             // 
             // masterSearch
             // 
@@ -1138,7 +1138,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         private System.Windows.Forms.TabPage TabClaim;
         private SprCommon.Controls.SprTextBox deliveryTime;
         private SprCommon.Controls.SprTextBox customerTel2;
-        private SprCommon.Controls.SprAddressBox sprAddressBox1;
+        private CloverusCommon.Controls.SprAddressBox sprAddressBox1;
         private SprCommon.Controls.SprTextBox emergencyContact4;
         private SprCommon.Controls.SprTextBox emergencyContact3;
         private SprCommon.Controls.SprTextBox emergencyContact2;
@@ -1183,7 +1183,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         private Controls.Form.ClvsRouteSelect noonDeliveryRoute;
         private SprCommon.Controls.SprDateText leavingDate;
         private SprCommon.Controls.SprDateTextArea sprDateTextArea1;
-        private SprCommon.Controls.SprAddressBox sprAddressBox2;
+        private CloverusCommon.Controls.SprAddressBox sprAddressBox2;
         private SprCommon.Controls.SprDropdown paymentMethod;
         private SprCommon.Controls.SprTreeItemsRadioButton selectFinancialInstitution;
         private SprCommon.Controls.SprTreeItemsRadioButton depositItem;

@@ -22,16 +22,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SprCommon;
 #endregion
 
-namespace SprCommon.Controls
+namespace CloverusCommon.Controls
 {
     public partial class SprAddressBox : UserControl
     {
-        public string TitleText
+        public string PostTitleText
         {
-            get { return LblTitle.Text; }
-            set { LblTitle.Text = value; }
+            get { return LblTitlePost.Text; }
+            set { LblTitlePost.Text = value; }
+        }
+        public string AddressTitleText
+        {
+            get { return LblTitleAddress.Text; }
+            set { LblTitleAddress.Text = value; }
         }
         public string TableColumnPost { get; set; }
         public string TableColumnPrefectures { get; set; }
@@ -54,7 +60,7 @@ namespace SprCommon.Controls
             var prefectures = string.Empty;
             var municipalities = string.Empty;
             var townArea = string.Empty;
-            var frm = new CloverusCommon.Forms.AddressSelector.Preview(postCode);
+            var frm = new Forms.AddressSelector.Preview(postCode);
             switch (frm.Count)
             {
                 case 0:

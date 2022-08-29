@@ -26,7 +26,6 @@ using Sql = CloverusCommon.Database.SqlServer.Sql;
 using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
 using SprCommon.Func;
 using SprCommon;
-
 #endregion
 
 namespace CloverusSys.MasterMaintenance.Customers
@@ -88,7 +87,7 @@ namespace CloverusSys.MasterMaintenance.Customers
                 var data = db.Select(Sql.M_CUSTOMER.GetForEditor(customerCode));
                 if (data.Rows.Count > 0)
                 {
-                    Com.DataRowToControl(data.Rows[0], this.Controls);
+                    CloverusCommon.Func.Com.DataRowToControl(data.Rows[0], this.Controls);
                 }
             }
         }
