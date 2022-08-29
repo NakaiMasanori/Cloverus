@@ -28,9 +28,25 @@ namespace SprCommon.Controls
 {
     public partial class SprYearMonth : UserControl
     {
+        #region コンストラクタ
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public SprYearMonth()
         {
             InitializeComponent();
         }
+        #endregion
+
+        #region プロパティ       
+        /// <summary>
+        /// タイトル
+        /// </summary>
+        public string TitleText
+        {
+            get { return LblTitle.Text; }
+            set { LblTitle.Text = value; }
+        }
+        #endregion
     }
 }
