@@ -29,25 +29,84 @@ namespace CloverusCommon.Controls
 {
     public partial class SprAddressBox : UserControl
     {
+        #region プロパティ
+        /// <summary>
+        /// 郵便番号のタイトル
+        /// </summary>
         public string PostTitleText
         {
             get { return LblTitlePost.Text; }
             set { LblTitlePost.Text = value; }
         }
+        /// <summary>
+        /// 住所のタイトル
+        /// </summary>
         public string AddressTitleText
         {
             get { return LblTitleAddress.Text; }
             set { LblTitleAddress.Text = value; }
         }
+        /// <summary>
+        /// 郵便番号
+        /// </summary>
+        public string TextValuePost
+        {
+            get { return TxtPostCode.Text; }
+            set { TxtPostCode.Text = value; }
+        }
+        /// <summary>
+        /// 都道府県
+        /// </summary>
+        public string TextValuePrefectures
+        {
+            get { return TxtPrefectures.Text; }
+            set { TxtPrefectures.Text = value; }
+        }
+        /// <summary>
+        /// 市区町村
+        /// </summary>
+        public string TextValueMunicipalities
+        {
+            get { return TxtMunicipalities.Text; }
+            set { TxtMunicipalities.Text = value; }
+        }
+        /// <summary>
+        /// 町域
+        /// </summary>
+        public string TextValueTownArea
+        {
+            get { return TxtTownArea.Text; }
+            set { TxtTownArea.Text = value; }
+        }
+        /// <summary>
+        /// 郵便番号のデータベースカラム
+        /// </summary>
         public string TableColumnPost { get; set; }
+        /// <summary>
+        /// 都道府県のデータベースカラム
+        /// </summary>
         public string TableColumnPrefectures { get; set; }
+        /// <summary>
+        /// 市区町村のデータベースカラム
+        /// </summary>
         public string TableColumnMunicipalities { get; set; }
+        /// <summary>
+        /// 町域のデータベースカラム
+        /// </summary>
         public string TableColumnTownArea { get; set; }
+        #endregion
+
+        #region コンストラクタ
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public SprAddressBox()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region イベント処理
         private void BtnPreviewAddress_Click(object sender, EventArgs e)
         {
             var postCode = TxtPostCode.Text.Replace("-", "");
@@ -85,7 +144,17 @@ namespace CloverusCommon.Controls
                 SetAdressData(prefectures, municipalities, townArea);
             }
         }
+        #endregion
 
+        #region private functions
+
+        #region 住所テーブルの住所データをコントロールに格納
+        /// <summary>
+        /// 住所テーブルの住所データをコントロールに格納
+        /// </summary>
+        /// <param name="prefectures"></param>
+        /// <param name="municipalities"></param>
+        /// <param name="townArea"></param>
         private void SetAdressData(string prefectures, string municipalities, string townArea)
         {
             if (!string.IsNullOrEmpty(TxtPrefectures.Text.Trim()))
@@ -101,6 +170,38 @@ namespace CloverusCommon.Controls
             //TxtTownArea.Text = townArea;
         }
 
+        #region データベースの値をコントロールにセット
+        /// <summary>
+        /// データベースの値をコントロールにセット
+        /// </summary>
+        /// <param name="row"></param>
+        public void SetFromDb(DataRow row)
+        {
+            if (!string.IsNullOrEmpty(TableColumnPost) && row.Table.Columns.Contains(TableColumnPost))
+            {
+                TextValuePost = row[TableColumnPost].ToString();
+            }
+            if (!string.IsNullOrEmpty(TableColumnPrefectures) && row.Table.Columns.Contains(TableColumnPrefectures))
+            {
+                TextValuePrefectures = row[TableColumnPrefectures].ToString();
+            }
+            if (!string.IsNullOrEmpty(TableColumnMunicipalities) && row.Table.Columns.Contains(TableColumnMunicipalities))
+            {
+                TextValueMunicipalities = row[TableColumnMunicipalities].ToString();
+            }
+            if (!string.IsNullOrEmpty(TableColumnTownArea) && row.Table.Columns.Contains(TableColumnTownArea))
+            {
+                TextValueTownArea = row[TableColumnTownArea].ToString();
+            }
+        }
+        #endregion
+
+        #region 郵便番号の入力値チェック
+        /// <summary>
+        /// 郵便番号の入力値チェック
+        /// </summary>
+        /// <param name="postCode"></param>
+        /// <returns></returns>
         private bool CheckPostCode(string postCode)
         {
             if (string.IsNullOrEmpty(postCode))
@@ -117,5 +218,9 @@ namespace CloverusCommon.Controls
             }
             return true;
         }
+        #endregion
+
+        #endregion
+        #endregion
     }
 }

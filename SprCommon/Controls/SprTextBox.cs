@@ -154,5 +154,19 @@ namespace SprCommon.Controls
         }
         #endregion
 
+        #region データベースの値をコントロールにセット
+        /// <summary>
+        /// データベースの値をコントロールにセット
+        /// </summary>
+        /// <param name="row"></param>
+        public void SetFromDb(DataRow row)
+        {
+            if (!string.IsNullOrEmpty(TableColumn) && row.Table.Columns.Contains(TableColumn))
+            {
+                TextValue = row[TableColumn].ToString();
+            }
+        }
+        #endregion
+
     }
 }

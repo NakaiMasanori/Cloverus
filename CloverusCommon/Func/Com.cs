@@ -27,18 +27,13 @@ namespace CloverusCommon.Func
                         {
                             var x = 0;
                         }
-                        if (!string.IsNullOrEmpty(textBox.TableColumn) && row.Table.Columns.Contains(textBox.TableColumn))
-                        {
-                            textBox.TextValue = row[textBox.TableColumn].ToString();
-                        }
+                        textBox.SetFromDb(row);
                         break;
                     case SprCommon.Controls.SprMultiTextBox textBox:
-                        if (!string.IsNullOrEmpty(textBox.TableColumn) && row.Table.Columns.Contains(textBox.TableColumn))
-                        {
-                            textBox.TextValue = row[textBox.TableColumn].ToString();
-                        }
+                        textBox.SetFromDb(row);
                         break;
                     case Controls.SprAddressBox addressBox:
+                        addressBox.SetFromDb(row);
                         break;
                     default:
                         break;
@@ -50,6 +45,5 @@ namespace CloverusCommon.Func
             }
         }
         #endregion
-
     }
 }
