@@ -34,10 +34,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.PnlData = new System.Windows.Forms.Panel();
             this.noon = new System.Windows.Forms.TabControl();
             this.TabBasic = new System.Windows.Forms.TabPage();
-            this.TabPayment = new System.Windows.Forms.TabPage();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TabClaim = new System.Windows.Forms.TabPage();
             this.leavingDate = new SprCommon.Controls.SprDateText();
             this.sprDateTextArea1 = new SprCommon.Controls.SprDateTextArea();
             this.firstOrderDate = new SprCommon.Controls.SprDateText();
@@ -72,6 +68,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerNameKana = new SprCommon.Controls.SprTextBox();
             this.customerName = new SprCommon.Controls.SprTextBox();
             this.brand = new SprCommon.Controls.SprTextBox();
+            this.TabPayment = new System.Windows.Forms.TabPage();
             this.registrationDate = new SprCommon.Controls.SprYearMonth();
             this.withdrawalStartDate = new SprCommon.Controls.SprYearMonth();
             this.paymentMethod = new SprCommon.Controls.SprDropdown();
@@ -79,6 +76,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprAddressBox2 = new CloverusCommon.Controls.ClvsAddressBox();
             this.masterSearch = new SprCommon.Controls.SprTextBox();
             this.paymentMethodRemarks = new SprCommon.Controls.SprMultiTextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.depositItem = new SprCommon.Controls.SprTreeItemsRadioButton();
             this.bankAccountHolderName = new SprCommon.Controls.SprTextBox();
             this.bankAccountHolderNameKana = new SprCommon.Controls.SprTextBox();
@@ -86,13 +84,15 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankCustomerNumber = new SprCommon.Controls.SprTextBox();
             this.accountNumber = new SprCommon.Controls.SprTextBox();
             this.bankCode = new SprCommon.Controls.SprTextBox();
-            this.sprTextBox37 = new SprCommon.Controls.SprTextBox();
-            this.billingAddress = new SprCommon.Controls.SprTextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.number = new SprCommon.Controls.SprTextBox();
             this.accountHolderNameKana = new SprCommon.Controls.SprTextBox();
             this.accountHolderName = new SprCommon.Controls.SprTextBox();
             this.customerNumber = new SprCommon.Controls.SprTextBox();
             this.symbol = new SprCommon.Controls.SprTextBox();
+            this.sprTextBox37 = new SprCommon.Controls.SprTextBox();
+            this.billingAddress = new SprCommon.Controls.SprTextBox();
+            this.TabClaim = new System.Windows.Forms.TabPage();
             this.mailingCode = new SprCommon.Controls.SprTextBox();
             this.mailingClassification = new SprCommon.Controls.SprTextBox();
             this.customerClassification = new SprCommon.Controls.SprDropdown();
@@ -194,75 +194,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.TabIndex = 0;
             this.TabBasic.Text = "基本情報";
             // 
-            // TabPayment
-            // 
-            this.TabPayment.BackColor = System.Drawing.SystemColors.Control;
-            this.TabPayment.Controls.Add(this.registrationDate);
-            this.TabPayment.Controls.Add(this.withdrawalStartDate);
-            this.TabPayment.Controls.Add(this.paymentMethod);
-            this.TabPayment.Controls.Add(this.selectFinancialInstitution);
-            this.TabPayment.Controls.Add(this.sprAddressBox2);
-            this.TabPayment.Controls.Add(this.masterSearch);
-            this.TabPayment.Controls.Add(this.paymentMethodRemarks);
-            this.TabPayment.Controls.Add(this.groupBox2);
-            this.TabPayment.Controls.Add(this.groupBox1);
-            this.TabPayment.Controls.Add(this.sprTextBox37);
-            this.TabPayment.Controls.Add(this.billingAddress);
-            this.TabPayment.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TabPayment.Location = new System.Drawing.Point(4, 32);
-            this.TabPayment.Name = "TabPayment";
-            this.TabPayment.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPayment.Size = new System.Drawing.Size(1106, 609);
-            this.TabPayment.TabIndex = 1;
-            this.TabPayment.Text = "支払方法他";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.depositItem);
-            this.groupBox2.Controls.Add(this.bankAccountHolderName);
-            this.groupBox2.Controls.Add(this.bankAccountHolderNameKana);
-            this.groupBox2.Controls.Add(this.bankBranchCode);
-            this.groupBox2.Controls.Add(this.bankCustomerNumber);
-            this.groupBox2.Controls.Add(this.accountNumber);
-            this.groupBox2.Controls.Add(this.bankCode);
-            this.groupBox2.Location = new System.Drawing.Point(568, 75);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(523, 252);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "銀行";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.number);
-            this.groupBox1.Controls.Add(this.accountHolderNameKana);
-            this.groupBox1.Controls.Add(this.accountHolderName);
-            this.groupBox1.Controls.Add(this.customerNumber);
-            this.groupBox1.Controls.Add(this.symbol);
-            this.groupBox1.Location = new System.Drawing.Point(14, 75);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(523, 252);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "郵貯";
-            // 
-            // TabClaim
-            // 
-            this.TabClaim.BackColor = System.Drawing.SystemColors.Control;
-            this.TabClaim.Controls.Add(this.mailingCode);
-            this.TabClaim.Controls.Add(this.mailingClassification);
-            this.TabClaim.Controls.Add(this.customerClassification);
-            this.TabClaim.Controls.Add(this.lastBillingBalance);
-            this.TabClaim.Controls.Add(this.depositConditions);
-            this.TabClaim.Controls.Add(this.paymentDay);
-            this.TabClaim.Controls.Add(this.depositRecycling);
-            this.TabClaim.Controls.Add(this.closingDate);
-            this.TabClaim.Location = new System.Drawing.Point(4, 32);
-            this.TabClaim.Name = "TabClaim";
-            this.TabClaim.Size = new System.Drawing.Size(1106, 609);
-            this.TabClaim.TabIndex = 2;
-            this.TabClaim.Text = "請求締関連";
-            // 
             // leavingDate
             // 
             this.leavingDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -270,8 +201,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.leavingDate.Name = "leavingDate";
             this.leavingDate.Size = new System.Drawing.Size(276, 27);
             this.leavingDate.TabIndex = 38;
-            this.leavingDate.TableColumn = null;
+            this.leavingDate.TableColumn = "CUSMA01031";
+            this.leavingDate.TextBoxWidth = 154;
+            this.leavingDate.TextValue = 20220829;
             this.leavingDate.TitleText = "離客年月日";
+            this.leavingDate.TitleWidth = 122;
             // 
             // sprDateTextArea1
             // 
@@ -290,8 +224,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.firstOrderDate.Name = "firstOrderDate";
             this.firstOrderDate.Size = new System.Drawing.Size(276, 27);
             this.firstOrderDate.TabIndex = 36;
-            this.firstOrderDate.TableColumn = null;
+            this.firstOrderDate.TableColumn = "CUSMA01027";
+            this.firstOrderDate.TextBoxWidth = 154;
+            this.firstOrderDate.TextValue = 20220829;
             this.firstOrderDate.TitleText = "初回注文日";
+            this.firstOrderDate.TitleWidth = 122;
             // 
             // SelRouteNight
             // 
@@ -751,6 +688,28 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.brand.TitleText = "ブランド";
             this.brand.TitleWidth = 122;
             // 
+            // TabPayment
+            // 
+            this.TabPayment.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPayment.Controls.Add(this.registrationDate);
+            this.TabPayment.Controls.Add(this.withdrawalStartDate);
+            this.TabPayment.Controls.Add(this.paymentMethod);
+            this.TabPayment.Controls.Add(this.selectFinancialInstitution);
+            this.TabPayment.Controls.Add(this.sprAddressBox2);
+            this.TabPayment.Controls.Add(this.masterSearch);
+            this.TabPayment.Controls.Add(this.paymentMethodRemarks);
+            this.TabPayment.Controls.Add(this.groupBox2);
+            this.TabPayment.Controls.Add(this.groupBox1);
+            this.TabPayment.Controls.Add(this.sprTextBox37);
+            this.TabPayment.Controls.Add(this.billingAddress);
+            this.TabPayment.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TabPayment.Location = new System.Drawing.Point(4, 32);
+            this.TabPayment.Name = "TabPayment";
+            this.TabPayment.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPayment.Size = new System.Drawing.Size(1106, 609);
+            this.TabPayment.TabIndex = 1;
+            this.TabPayment.Text = "支払方法他";
+            // 
             // registrationDate
             // 
             this.registrationDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -838,6 +797,22 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.paymentMethodRemarks.TextValue = "";
             this.paymentMethodRemarks.TitleText = "支払方法備考";
             this.paymentMethodRemarks.TitleWidth = 122;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.depositItem);
+            this.groupBox2.Controls.Add(this.bankAccountHolderName);
+            this.groupBox2.Controls.Add(this.bankAccountHolderNameKana);
+            this.groupBox2.Controls.Add(this.bankBranchCode);
+            this.groupBox2.Controls.Add(this.bankCustomerNumber);
+            this.groupBox2.Controls.Add(this.accountNumber);
+            this.groupBox2.Controls.Add(this.bankCode);
+            this.groupBox2.Location = new System.Drawing.Point(568, 75);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(523, 252);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "銀行";
             // 
             // depositItem
             // 
@@ -939,35 +914,19 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankCode.TitleText = "金融機関コード";
             this.bankCode.TitleWidth = 122;
             // 
-            // sprTextBox37
+            // groupBox1
             // 
-            this.sprTextBox37.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sprTextBox37.Location = new System.Drawing.Point(14, 424);
-            this.sprTextBox37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sprTextBox37.Name = "sprTextBox37";
-            this.sprTextBox37.Size = new System.Drawing.Size(523, 27);
-            this.sprTextBox37.TabIndex = 8;
-            this.sprTextBox37.TableColumn = null;
-            this.sprTextBox37.TextBoxWidth = 401;
-            this.sprTextBox37.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.sprTextBox37.TextValue = "";
-            this.sprTextBox37.TitleText = "項目名４５６７";
-            this.sprTextBox37.TitleWidth = 122;
-            // 
-            // billingAddress
-            // 
-            this.billingAddress.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.billingAddress.Location = new System.Drawing.Point(14, 394);
-            this.billingAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.billingAddress.Name = "billingAddress";
-            this.billingAddress.Size = new System.Drawing.Size(523, 27);
-            this.billingAddress.TabIndex = 7;
-            this.billingAddress.TableColumn = "CUSMA01049";
-            this.billingAddress.TextBoxWidth = 401;
-            this.billingAddress.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.billingAddress.TextValue = "";
-            this.billingAddress.TitleText = "請求書宛名";
-            this.billingAddress.TitleWidth = 122;
+            this.groupBox1.Controls.Add(this.number);
+            this.groupBox1.Controls.Add(this.accountHolderNameKana);
+            this.groupBox1.Controls.Add(this.accountHolderName);
+            this.groupBox1.Controls.Add(this.customerNumber);
+            this.groupBox1.Controls.Add(this.symbol);
+            this.groupBox1.Location = new System.Drawing.Point(14, 75);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(523, 252);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "郵貯";
             // 
             // number
             // 
@@ -1053,6 +1012,53 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.symbol.TextValue = "";
             this.symbol.TitleText = "記号";
             this.symbol.TitleWidth = 122;
+            // 
+            // sprTextBox37
+            // 
+            this.sprTextBox37.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprTextBox37.Location = new System.Drawing.Point(14, 424);
+            this.sprTextBox37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.sprTextBox37.Name = "sprTextBox37";
+            this.sprTextBox37.Size = new System.Drawing.Size(523, 27);
+            this.sprTextBox37.TabIndex = 8;
+            this.sprTextBox37.TableColumn = null;
+            this.sprTextBox37.TextBoxWidth = 401;
+            this.sprTextBox37.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.sprTextBox37.TextValue = "";
+            this.sprTextBox37.TitleText = "項目名４５６７";
+            this.sprTextBox37.TitleWidth = 122;
+            // 
+            // billingAddress
+            // 
+            this.billingAddress.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.billingAddress.Location = new System.Drawing.Point(14, 394);
+            this.billingAddress.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.billingAddress.Name = "billingAddress";
+            this.billingAddress.Size = new System.Drawing.Size(523, 27);
+            this.billingAddress.TabIndex = 7;
+            this.billingAddress.TableColumn = "CUSMA01049";
+            this.billingAddress.TextBoxWidth = 401;
+            this.billingAddress.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.billingAddress.TextValue = "";
+            this.billingAddress.TitleText = "請求書宛名";
+            this.billingAddress.TitleWidth = 122;
+            // 
+            // TabClaim
+            // 
+            this.TabClaim.BackColor = System.Drawing.SystemColors.Control;
+            this.TabClaim.Controls.Add(this.mailingCode);
+            this.TabClaim.Controls.Add(this.mailingClassification);
+            this.TabClaim.Controls.Add(this.customerClassification);
+            this.TabClaim.Controls.Add(this.lastBillingBalance);
+            this.TabClaim.Controls.Add(this.depositConditions);
+            this.TabClaim.Controls.Add(this.paymentDay);
+            this.TabClaim.Controls.Add(this.depositRecycling);
+            this.TabClaim.Controls.Add(this.closingDate);
+            this.TabClaim.Location = new System.Drawing.Point(4, 32);
+            this.TabClaim.Name = "TabClaim";
+            this.TabClaim.Size = new System.Drawing.Size(1106, 609);
+            this.TabClaim.TabIndex = 2;
+            this.TabClaim.Text = "請求締関連";
             // 
             // mailingCode
             // 

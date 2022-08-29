@@ -55,6 +55,58 @@ namespace SprCommon.Controls
             get { return LblTitle.Text; }
             set { LblTitle.Text = value; }
         }
+        /// <summary>
+        /// タイトル部の幅
+        /// </summary>
+        public int TitleWidth
+        {
+            get { return LblTitle.Width; }
+            set { LblTitle.Width = value; }
+        }
+        /// <summary>
+        /// 値
+        /// </summary>
+        public int TextValue
+        {
+            get
+            {
+                var val = DatePicker.Value;
+                return val.Year * 10000 + val.Month * 100 + val.Day;
+            }
+            set
+            {
+                var val = value.ToString();
+                if (!string.IsNullOrEmpty(val) && value > 0)
+                {
+                    DatePicker.Value = new DateTime(int.Parse(val.Substring(0, 4)), int.Parse(val.Substring(4, 2)), int.Parse(val.Substring(6, 2)));
+                }
+            }
+        }
+        /// <summary>
+        /// テキストボックス部の幅
+        /// </summary>
+        public int TextBoxWidth
+        {
+            get { return DatePicker.Width; }
+            set { DatePicker.Width = value; }
+        }
         #endregion
+
+        #region public functions
+        #region データベースの値をコントロールにセット
+        /// <summary>
+        /// データベースの値をコントロールにセット
+        /// </summary>
+        /// <param name="row"></param>
+        public void SetFromDb(DataRow row)
+        {
+            if (!string.IsNullOrEmpty(TableColumn) && row.Table.Columns.Contains(TableColumn))
+            {
+                TextValue = row[TableColumn] != null ? int.Parse(row[TableColumn].ToString()) : 0;
+            }
+        }
+        #endregion
+        #endregion
+
     }
 }

@@ -154,6 +154,7 @@ namespace SprCommon.Controls
         }
         #endregion
 
+        #region public functions
         #region データベースの値をコントロールにセット
         /// <summary>
         /// データベースの値をコントロールにセット
@@ -166,6 +167,7 @@ namespace SprCommon.Controls
                 TextValue = row[TableColumn].ToString();
             }
         }
+        #endregion
         #endregion
 
     }

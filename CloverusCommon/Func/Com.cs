@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
 using CloverusCommon.Database.SqlServer;
+using SprCommon.Controls;
 
 namespace CloverusCommon.Func
 {
@@ -38,6 +39,9 @@ namespace CloverusCommon.Func
                         break;
                     case Controls.ClvsRouteSelect routeSelect:
                         routeSelect.SetFromDb(row, db);
+                        break;
+                    case SprDateText dateBox:
+                        dateBox.SetFromDb(row);
                         break;
                     default:
                         break;
