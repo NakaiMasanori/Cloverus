@@ -105,6 +105,12 @@ namespace SprCommon.Func
                             textBox.TextValue = row[textBox.TableColumn].ToString();
                         }
                         break;
+                    case Controls.SprMultiTextBox textBox:
+                        if (!string.IsNullOrEmpty(textBox.TableColumn) && row.Table.Columns.Contains(textBox.TableColumn))
+                        {
+                            textBox.TextValue = row[textBox.TableColumn].ToString();
+                        }
+                        break;
                     default:
                         break;
                 }

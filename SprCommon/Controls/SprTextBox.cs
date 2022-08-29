@@ -97,7 +97,6 @@ namespace SprCommon.Controls
             get { return TxtData.ImeMode; }
             set { TxtData.ImeMode = value; }
         }
-
         #endregion
 
         #region イベント発生処理

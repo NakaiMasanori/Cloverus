@@ -38,7 +38,15 @@ namespace SprCommon.Controls
         }
         #endregion
 
-        #region プロパティ       
+        #region プロパティ
+        /// <summary>
+        /// コントロールと紐づくデータベースのカラム
+        /// </summary>
+        public string TableColumn
+        {
+            get;
+            set;
+        }
         /// <summary>
         /// タイトル
         /// </summary>
@@ -46,6 +54,38 @@ namespace SprCommon.Controls
         {
             get { return LblTitle.Text; }
             set { LblTitle.Text = value; }
+        }
+        /// <summary>
+        /// タイトル部の幅
+        /// </summary>
+        public int TitleWidth
+        {
+            get { return LblTitle.Width; }
+            set { LblTitle.Width = value; }
+        }
+        /// <summary>
+        /// 値
+        /// </summary>
+        public string TextValue
+        {
+            get { return TxtData.Text; }
+            set { TxtData.Text = value; }
+        }
+        /// <summary>
+        /// テキストボックス部の幅
+        /// </summary>
+        public int TextBoxWidth
+        {
+            get { return TxtData.Width; }
+            set { TxtData.Width = value; }
+        }
+        /// <summary>
+        /// IMEモード
+        /// </summary>
+        public ImeMode TextImeMode
+        {
+            get { return TxtData.ImeMode; }
+            set { TxtData.ImeMode = value; }
         }
         #endregion
     }
