@@ -75,6 +75,18 @@
     <Compile Include="Controls\SprDialogButtonsOkCancel.Designer.cs">
       <DependentUpon>SprDialogButtonsOkCancel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SprDialogButtonsOkOnly.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprDialogButtonsOkOnly.Designer.cs">
+      <DependentUpon>SprDialogButtonsOkOnly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SprDialogButtonsYesNo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprDialogButtonsYesNo.Designer.cs">
+      <DependentUpon>SprDialogButtonsYesNo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SprDropdown.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -109,7 +121,10 @@
     <Compile Include="Database\SqlServer\SqlBase.cs" />
     <Compile Include="EnumExtensions.cs" />
     <Compile Include="Func\Com.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sentence.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Controls\SprCheckBox.resx">
@@ -126,6 +141,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDialogButtonsOkCancel.resx">
       <DependentUpon>SprDialogButtonsOkCancel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprDialogButtonsOkOnly.resx">
+      <DependentUpon>SprDialogButtonsOkOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprDialogButtonsYesNo.resx">
+      <DependentUpon>SprDialogButtonsYesNo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDropdown.resx">
       <DependentUpon>SprDropdown.cs</DependentUpon>

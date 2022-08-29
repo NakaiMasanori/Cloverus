@@ -59,6 +59,30 @@ namespace SprCommon.Func
 
         #region 画面制御
 
+        public static void InitializeControls(Control.ControlCollection controls)
+        {
+            foreach (Control control in controls)
+            {
+                switch (control)
+                {
+                    case TextBox textBox:
+                        textBox.GotFocus += TextBox_GotFocus;
+                        break;
+                    default:
+                        break;
+                }
+                if (control.Controls != null)
+                {
+                    InitializeControls(control.Controls);
+                }
+            }
+        }
+
+        private static void TextBox_GotFocus(object sender, EventArgs e)
+        {
+            ((TextBox)sender).SelectAll();
+        }
+
         #region データベースから読み込んだ値を画面のコントロールへ反映する
         /// <summary>
         /// データベースから読み込んだ値を画面のコントロールへ反映する

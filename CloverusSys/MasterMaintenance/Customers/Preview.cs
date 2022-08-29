@@ -26,6 +26,7 @@ using System.Windows.Forms;
 using static CloverusSys.Base.BaseForm;
 using Sql = CloverusCommon.Database.SqlServer.Sql;
 using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
+using SprCommon;
 #endregion
 
 namespace CloverusSys.MasterMaintenance.Customers
@@ -77,7 +78,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// </summary>
         private void PreviewKokyaku()
         {
-            using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.CloverusSys))
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
             {
                 DgvCustomer.DataSource = db.Select(Sql.M_CUSTOMER.GetPreviewForMenu(Keyword));
             }

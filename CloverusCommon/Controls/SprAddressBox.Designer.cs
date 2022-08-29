@@ -58,7 +58,7 @@
             // 
             this.BtnPreviewAddress.Location = new System.Drawing.Point(259, 0);
             this.BtnPreviewAddress.Name = "BtnPreviewAddress";
-            this.BtnPreviewAddress.Size = new System.Drawing.Size(75, 27);
+            this.BtnPreviewAddress.Size = new System.Drawing.Size(92, 27);
             this.BtnPreviewAddress.TabIndex = 2;
             this.BtnPreviewAddress.Text = "住所表示";
             this.BtnPreviewAddress.UseVisualStyleBackColor = true;

@@ -25,6 +25,8 @@ using System.Windows.Forms;
 using Sql = CloverusCommon.Database.SqlServer.Sql;
 using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
 using SprCommon.Func;
+using SprCommon;
+
 #endregion
 
 namespace CloverusSys.MasterMaintenance.Customers
@@ -41,6 +43,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         public Edit(int customerCode)
         {
             InitializeComponent();
+            Com.InitializeControls(this.Controls);
             customerCode = 8;
             ViewData(customerCode);
         }
@@ -80,7 +83,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// <param name="customerCode"></param>
         private void ViewData(int customerCode)
         {
-            using (var db = new SqlBase(SqlBase.TransactionUse.No, CloverusCommon.Log.ApplicationType.CloverusSys))
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
             {
                 var data = db.Select(Sql.M_CUSTOMER.GetForEditor(customerCode));
                 if (data.Rows.Count > 0)

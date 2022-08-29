@@ -21,7 +21,7 @@ using System.Text;
 using System.Threading.Tasks;
 #endregion
 
-namespace CloverusCommon
+namespace SprCommon
 {
     public class Sentence
     {
@@ -38,6 +38,18 @@ namespace CloverusCommon
             /// </summary>
             [Display(Order = (int)Log.LogType.Critical, Description = "例外が発生しました。アプリケーションを強制終了します（内容：{0}）")]
             ExceptionExit,
+
+            /// <summary>
+            /// 不正な郵便番号
+            /// </summary>
+            [Display(Order = (int)Log.LogType.Error, Description = "正しい郵便番号を入力してください")]
+            InvalidPostalCode,
+
+            /// <summary>
+            /// 住所変更確認
+            /// </summary>
+            [Display(Order = (int)Log.LogType.Question, Description = "住所が入力済みです。変更してよろしいですか？")]
+            ChangeAddress,
         }
     }
 }

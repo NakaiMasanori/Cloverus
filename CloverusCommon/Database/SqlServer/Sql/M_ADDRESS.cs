@@ -14,18 +14,23 @@ namespace CloverusCommon.Database.SqlServer.Sql
         private const string CHIHO_DANTAI_CODE = "CHIHO_DANTAI_CODE";
         private const string POST_CODE_OLD = "POST_CODE_OLD";
         private const string POST_CODE = "POST_CODE";
-        public const string PREFECTURES_KANA = "PREFECTURES_KANA";
-        public const string MUNICIPALITIES_KANA = "MUNICIPALITIES_KANA";
-        public const string TOWN_AREA_KANA = "TOWN_AREA_KANA";
-        public const string PREFECTURES_NAME = "PREFECTURES_NAME";
-        public const string MUNICIPALITIES_NAME = "MUNICIPALITIES_NAME";
-        public const string TOWN_AREA_NAME = "TOWN_AREA_NAME";
+        private const string PREFECTURES_KANA = "PREFECTURES_KANA";
+        private const string MUNICIPALITIES_KANA = "MUNICIPALITIES_KANA";
+        private const string TOWN_AREA_KANA = "TOWN_AREA_KANA";
+        private const string PREFECTURES_NAME = "PREFECTURES_NAME";
+        private const string MUNICIPALITIES_NAME = "MUNICIPALITIES_NAME";
+        private const string TOWN_AREA_NAME = "TOWN_AREA_NAME";
         private const string AREA_MULTI = "AREA_MULTI";
         private const string AREA_KOAZA = "AREA_KOAZA";
         private const string AREA_BANCHI_BY_CHOUME = "AREA_BANCHI_BY_CHOUME";
         private const string AREA_POST_MULTI = "AREA_POST_MULTI";
         private const string UPDATE_MODE = "UPDATE_MODE";
         private const string CHANGE_REASON = "CHANGE_REASON";
+
+        public const string TITLE_POST_CODE = "郵便番号";
+        public const string TITLE_PREFECTURES = "都道府県";
+        public const string TITLE_MUNICIPALITIES = "市区町村";
+        public const string TITLE_TOWN_AREA = "町域";
         #endregion
 
         #region public static function
@@ -41,10 +46,10 @@ namespace CloverusCommon.Database.SqlServer.Sql
         {
             var sql = new StringBuilder();
             sql.Append($"SELECT ");
-            sql.Append($"  {POST_CODE} AS 郵便番号");
-            sql.Append($" ,{PREFECTURES_NAME} AS 都道府県 ");
-            sql.Append($" ,{PREFECTURES_NAME} AS 市区町村 ");
-            sql.Append($" ,{MUNICIPALITIES_NAME} AS 町域 ");
+            sql.Append($"  {POST_CODE} AS {TITLE_POST_CODE}");
+            sql.Append($" ,{PREFECTURES_NAME} AS {TITLE_PREFECTURES} ");
+            sql.Append($" ,{MUNICIPALITIES_NAME} AS {TITLE_MUNICIPALITIES} ");
+            sql.Append($" ,{TOWN_AREA_NAME} AS {TITLE_TOWN_AREA} ");
             sql.Append($"FROM {TABLE_NAME} ");
             sql.Append($"WHERE {POST_CODE} = '{postCode}' ");
             return sql.ToString();

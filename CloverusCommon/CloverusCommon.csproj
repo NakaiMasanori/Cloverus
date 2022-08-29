@@ -93,10 +93,7 @@
     <Compile Include="Forms\Base\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Log.cs" />
-    <Compile Include="Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Sentence.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SprCommon\SprCommon.csproj">

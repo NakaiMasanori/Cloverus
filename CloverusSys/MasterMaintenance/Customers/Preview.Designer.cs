@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlCondition = new System.Windows.Forms.Panel();
             this.TxtKeyword = new SprCommon.Controls.SprTextBox();
             this.PnlButtons = new System.Windows.Forms.Panel();
@@ -79,10 +79,11 @@
             // DialogButtons
             // 
             this.DialogButtons.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.DialogButtons.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DialogButtons.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.DialogButtons.Location = new System.Drawing.Point(0, 0);
             this.DialogButtons.Name = "DialogButtons";
-            this.DialogButtons.Size = new System.Drawing.Size(768, 25);
+            this.DialogButtons.Size = new System.Drawing.Size(800, 37);
             this.DialogButtons.TabIndex = 0;
             // 
             // PnlResult
@@ -100,18 +101,19 @@
             this.DgvCustomer.AllowUserToDeleteRows = false;
             this.DgvCustomer.AllowUserToResizeColumns = false;
             this.DgvCustomer.AllowUserToResizeRows = false;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.DgvCustomer.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvCustomer.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DgvCustomer.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DgvCustomer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DgvCustomer.GridColor = System.Drawing.SystemColors.Control;
             this.DgvCustomer.Location = new System.Drawing.Point(0, 0);
             this.DgvCustomer.Name = "DgvCustomer";
@@ -119,7 +121,7 @@
             this.DgvCustomer.RowHeadersVisible = false;
             this.DgvCustomer.RowTemplate.Height = 21;
             this.DgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvCustomer.Size = new System.Drawing.Size(699, 268);
+            this.DgvCustomer.Size = new System.Drawing.Size(800, 383);
             this.DgvCustomer.TabIndex = 1;
             // 
             // Preview
