@@ -41,11 +41,11 @@
             // 
             this.LblTitle.BackColor = System.Drawing.Color.Navy;
             this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitle.ForeColor = System.Drawing.Color.White;
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 27);
+            this.LblTitle.Size = new System.Drawing.Size(122, 30);
             this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -55,7 +55,7 @@
             this.numericUpDown1.Dock = System.Windows.Forms.DockStyle.Left;
             this.numericUpDown1.Location = new System.Drawing.Point(122, 0);
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(80, 27);
+            this.numericUpDown1.Size = new System.Drawing.Size(80, 30);
             this.numericUpDown1.TabIndex = 3;
             this.numericUpDown1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -64,7 +64,7 @@
             this.LblFrom.Dock = System.Windows.Forms.DockStyle.Left;
             this.LblFrom.Location = new System.Drawing.Point(202, 0);
             this.LblFrom.Name = "LblFrom";
-            this.LblFrom.Size = new System.Drawing.Size(31, 27);
+            this.LblFrom.Size = new System.Drawing.Size(31, 30);
             this.LblFrom.TabIndex = 10;
             this.LblFrom.Text = "年";
             this.LblFrom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -74,7 +74,7 @@
             this.numericUpDown2.Dock = System.Windows.Forms.DockStyle.Left;
             this.numericUpDown2.Location = new System.Drawing.Point(233, 0);
             this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(60, 27);
+            this.numericUpDown2.Size = new System.Drawing.Size(60, 30);
             this.numericUpDown2.TabIndex = 11;
             this.numericUpDown2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -83,7 +83,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Left;
             this.label1.Location = new System.Drawing.Point(293, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(31, 27);
+            this.label1.Size = new System.Drawing.Size(31, 30);
             this.label1.TabIndex = 12;
             this.label1.Text = "月";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -96,9 +96,9 @@
             this.Controls.Add(this.LblFrom);
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.LblTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprYearMonth";
-            this.Size = new System.Drawing.Size(549, 27);
+            this.Size = new System.Drawing.Size(549, 30);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             this.ResumeLayout(false);

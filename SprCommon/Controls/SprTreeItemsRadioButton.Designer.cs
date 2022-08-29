@@ -38,11 +38,11 @@
             // 
             this.LblTitle.BackColor = System.Drawing.Color.Navy;
             this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitle.ForeColor = System.Drawing.Color.White;
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 27);
+            this.LblTitle.Size = new System.Drawing.Size(122, 30);
             this.LblTitle.TabIndex = 4;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -53,7 +53,7 @@
             this.radioButton1.Location = new System.Drawing.Point(122, 0);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.radioButton1.Size = new System.Drawing.Size(110, 27);
+            this.radioButton1.Size = new System.Drawing.Size(110, 30);
             this.radioButton1.TabIndex = 5;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "radioButton1";
@@ -65,7 +65,7 @@
             this.radioButton2.Location = new System.Drawing.Point(232, 0);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.radioButton2.Size = new System.Drawing.Size(110, 27);
+            this.radioButton2.Size = new System.Drawing.Size(110, 30);
             this.radioButton2.TabIndex = 6;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "radioButton2";
@@ -77,7 +77,7 @@
             this.radioButton3.Location = new System.Drawing.Point(342, 0);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.radioButton3.Size = new System.Drawing.Size(126, 27);
+            this.radioButton3.Size = new System.Drawing.Size(126, 30);
             this.radioButton3.TabIndex = 7;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "radioButton3";
@@ -90,9 +90,9 @@
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.LblTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprTreeItemsRadioButton";
-            this.Size = new System.Drawing.Size(468, 27);
+            this.Size = new System.Drawing.Size(468, 30);
             this.ResumeLayout(false);
 
         }
