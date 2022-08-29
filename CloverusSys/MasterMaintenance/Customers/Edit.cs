@@ -43,7 +43,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         {
             InitializeComponent();
             Com.InitializeControls(this.Controls);
-            customerCode = 8;
+            customerCode = 1;
             ViewData(customerCode);
         }
         #endregion

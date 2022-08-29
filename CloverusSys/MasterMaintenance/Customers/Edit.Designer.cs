@@ -253,7 +253,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.reasonForLeaving.Size = new System.Drawing.Size(523, 57);
             this.reasonForLeaving.TabIndex = 33;
             this.reasonForLeaving.TableColumn = null;
+            this.reasonForLeaving.TextBoxWidth = 401;
+            this.reasonForLeaving.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.reasonForLeaving.TextValue = "";
             this.reasonForLeaving.TitleText = "離客理由";
+            this.reasonForLeaving.TitleWidth = 122;
             // 
             // remarks
             // 
@@ -262,7 +266,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.remarks.Size = new System.Drawing.Size(523, 98);
             this.remarks.TabIndex = 32;
             this.remarks.TableColumn = "CUSMA01056";
+            this.remarks.TextBoxWidth = 401;
+            this.remarks.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.remarks.TextValue = "";
             this.remarks.TitleText = "備考";
+            this.remarks.TitleWidth = 122;
             // 
             // firstFreeNumberOfTimes
             // 
@@ -301,7 +309,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.fasting.Size = new System.Drawing.Size(523, 57);
             this.fasting.TabIndex = 24;
             this.fasting.TableColumn = null;
+            this.fasting.TextBoxWidth = 401;
+            this.fasting.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.fasting.TextValue = "";
             this.fasting.TitleText = "禁食";
+            this.fasting.TitleWidth = 122;
             // 
             // absence
             // 
@@ -310,7 +322,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.absence.Size = new System.Drawing.Size(523, 57);
             this.absence.TabIndex = 23;
             this.absence.TableColumn = null;
+            this.absence.TextBoxWidth = 401;
+            this.absence.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.absence.TextValue = "";
             this.absence.TitleText = "不在時対応";
+            this.absence.TitleWidth = 122;
             // 
             // deliveryNotice
             // 
@@ -319,7 +335,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.deliveryNotice.Size = new System.Drawing.Size(523, 57);
             this.deliveryNotice.TabIndex = 22;
             this.deliveryNotice.TableColumn = null;
+            this.deliveryNotice.TextBoxWidth = 401;
+            this.deliveryNotice.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.deliveryNotice.TextValue = "";
             this.deliveryNotice.TitleText = "配達注意";
+            this.deliveryNotice.TitleWidth = 122;
             // 
             // ordererOther
             // 
@@ -451,13 +471,21 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // sprAddressBox1
             // 
+            this.sprAddressBox1.AddressTitleText = "項目名４５６７";
             this.sprAddressBox1.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.sprAddressBox1.Location = new System.Drawing.Point(14, 136);
             this.sprAddressBox1.Name = "sprAddressBox1";
+            this.sprAddressBox1.PostTitleText = "顧客郵便番号";
             this.sprAddressBox1.Size = new System.Drawing.Size(525, 118);
             this.sprAddressBox1.TabIndex = 4;
+            this.sprAddressBox1.TableColumnMunicipalities = "CUSMA01008";
             this.sprAddressBox1.TableColumnPost = "CUSMA01006";
-            this.sprAddressBox1.PostTitleText = "顧客郵便番号";
+            this.sprAddressBox1.TableColumnPrefectures = "CUSMA01007";
+            this.sprAddressBox1.TableColumnTownArea = "CUSMA01009";
+            this.sprAddressBox1.TextValueMunicipalities = "";
+            this.sprAddressBox1.TextValuePost = "";
+            this.sprAddressBox1.TextValuePrefectures = "";
+            this.sprAddressBox1.TextValueTownArea = "";
             // 
             // officeTel
             // 
@@ -704,13 +732,21 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // sprAddressBox2
             // 
+            this.sprAddressBox2.AddressTitleText = "項目名４５６７";
             this.sprAddressBox2.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.sprAddressBox2.Location = new System.Drawing.Point(14, 454);
             this.sprAddressBox2.Name = "sprAddressBox2";
+            this.sprAddressBox2.PostTitleText = "請求書郵便番号";
             this.sprAddressBox2.Size = new System.Drawing.Size(468, 118);
             this.sprAddressBox2.TabIndex = 15;
+            this.sprAddressBox2.TableColumnMunicipalities = null;
             this.sprAddressBox2.TableColumnPost = "CUSMA01051";
-            this.sprAddressBox2.PostTitleText = "請求書郵便番号";
+            this.sprAddressBox2.TableColumnPrefectures = null;
+            this.sprAddressBox2.TableColumnTownArea = null;
+            this.sprAddressBox2.TextValueMunicipalities = "";
+            this.sprAddressBox2.TextValuePost = "";
+            this.sprAddressBox2.TextValuePrefectures = "";
+            this.sprAddressBox2.TextValueTownArea = "";
             // 
             // masterSearch
             // 
@@ -734,7 +770,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.paymentMethodRemarks.Size = new System.Drawing.Size(523, 87);
             this.paymentMethodRemarks.TabIndex = 13;
             this.paymentMethodRemarks.TableColumn = "CUSMA01055";
+            this.paymentMethodRemarks.TextBoxWidth = 401;
+            this.paymentMethodRemarks.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.paymentMethodRemarks.TextValue = "";
             this.paymentMethodRemarks.TitleText = "支払方法備考";
+            this.paymentMethodRemarks.TitleWidth = 122;
             // 
             // groupBox2
             // 
@@ -898,7 +938,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // number
             // 
-            this.number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.number.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.number.Location = new System.Drawing.Point(8, 60);
@@ -915,7 +955,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // accountHolderNameKana
             // 
-            this.accountHolderNameKana.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.accountHolderNameKana.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.accountHolderNameKana.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.accountHolderNameKana.Location = new System.Drawing.Point(9, 150);
@@ -932,7 +972,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // accountHolderName
             // 
-            this.accountHolderName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.accountHolderName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.accountHolderName.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.accountHolderName.Location = new System.Drawing.Point(9, 120);
@@ -949,7 +989,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // customerNumber
             // 
-            this.customerNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.customerNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customerNumber.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.customerNumber.Location = new System.Drawing.Point(8, 90);
@@ -966,7 +1006,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // symbol
             // 
-            this.symbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+            this.symbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.symbol.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.symbol.Location = new System.Drawing.Point(8, 30);
