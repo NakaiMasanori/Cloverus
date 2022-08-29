@@ -13,7 +13,6 @@
 //*****************************************************************************
 
 #region using defines
-using CloverusCommon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +27,7 @@ using System.Xml.Schema;
 using SprCommon;
 #endregion
 
-namespace CloverusSys.Base
+namespace CloverusCommon.Forms.Base
 {
     public partial class BaseForm : Form
     {

@@ -23,7 +23,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 #endregion
 
-namespace CloverusCommon
+namespace SprCommon
 {
     public class Messages
     {

@@ -21,7 +21,7 @@ using System.ComponentModel.DataAnnotations;
 using System.IO;
 #endregion
 
-namespace CloverusCommon
+namespace SprCommon
 {
     public static class Log
     {
