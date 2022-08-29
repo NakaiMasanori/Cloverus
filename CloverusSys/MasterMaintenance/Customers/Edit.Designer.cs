@@ -445,7 +445,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprAddressBox1.Name = "sprAddressBox1";
             this.sprAddressBox1.Size = new System.Drawing.Size(525, 118);
             this.sprAddressBox1.TabIndex = 4;
-            this.sprAddressBox1.TableColumn = "CUSMA01006";
+            this.sprAddressBox1.TableColumnPost = "CUSMA01006";
             this.sprAddressBox1.TitleText = "顧客郵便番号";
             // 
             // officeTel
@@ -695,7 +695,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprAddressBox2.Name = "sprAddressBox2";
             this.sprAddressBox2.Size = new System.Drawing.Size(468, 118);
             this.sprAddressBox2.TabIndex = 15;
-            this.sprAddressBox2.TableColumn = null;
+            this.sprAddressBox2.TableColumnPost = null;
             this.sprAddressBox2.TitleText = "請求書郵便番号";
             // 
             // masterSearch
@@ -882,7 +882,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // number
             // 
-            this.number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.number.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.number.Location = new System.Drawing.Point(8, 60);
@@ -899,7 +899,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // accountHolderNameKana
             // 
-            this.accountHolderNameKana.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.accountHolderNameKana.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.accountHolderNameKana.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.accountHolderNameKana.Location = new System.Drawing.Point(9, 150);
@@ -916,7 +916,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // accountHolderName
             // 
-            this.accountHolderName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.accountHolderName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.accountHolderName.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.accountHolderName.Location = new System.Drawing.Point(9, 120);
@@ -933,7 +933,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // customerNumber
             // 
-            this.customerNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.customerNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.customerNumber.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.customerNumber.Location = new System.Drawing.Point(8, 90);
@@ -950,7 +950,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // symbol
             // 
-            this.symbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.symbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.symbol.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.symbol.Location = new System.Drawing.Point(8, 30);

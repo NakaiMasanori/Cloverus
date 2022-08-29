@@ -28,6 +28,15 @@ namespace SprCommon.Controls
 {
     public partial class SprAddressBox : UserControl
     {
+        public string TitleText
+        {
+            get { return LblTitle.Text; }
+            set { LblTitle.Text = value; }
+        }
+        public string TableColumnPost { get; set; }
+        public string TableColumnPrefectures { get; set; }
+        public string TableColumnMunicipalities { get; set; }
+        public string TableColumnTownArea { get; set; }
         public SprAddressBox()
         {
             InitializeComponent();
