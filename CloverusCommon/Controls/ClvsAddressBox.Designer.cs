@@ -1,6 +1,6 @@
 ﻿namespace CloverusCommon.Controls
 {
-    partial class SprAddressBox
+    partial class ClvsAddressBox
     {
         /// <summary> 
         /// 必要なデザイナー変数です。

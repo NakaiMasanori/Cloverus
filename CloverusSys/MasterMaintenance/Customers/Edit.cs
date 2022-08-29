@@ -43,7 +43,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         {
             InitializeComponent();
             Com.InitializeControls(this.Controls);
-            customerCode = 1;
+            customerCode = 3;
             ViewData(customerCode);
         }
         #endregion
@@ -87,7 +87,7 @@ namespace CloverusSys.MasterMaintenance.Customers
                 var data = db.Select(Sql.M_CUSTOMER.GetForEditor(customerCode));
                 if (data.Rows.Count > 0)
                 {
-                    CloverusCommon.Func.Com.DataRowToControl(data.Rows[0], this.Controls);
+                    CloverusCommon.Func.Com.DataRowToControl(data.Rows[0], this.Controls, db);
                 }
             }
         }

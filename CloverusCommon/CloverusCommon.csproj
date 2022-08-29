@@ -71,16 +71,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\SprAddressBox.cs">
+    <Compile Include="Controls\ClvsAddressBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\SprAddressBox.Designer.cs">
-      <DependentUpon>SprAddressBox.cs</DependentUpon>
+    <Compile Include="Controls\ClvsAddressBox.Designer.cs">
+      <DependentUpon>ClvsAddressBox.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
     <Compile Include="Database\SqlServer\Sql\M_ADDRESS.cs" />
     <Compile Include="Database\SqlServer\Sql\M_CUSTOMER.cs" />
+    <Compile Include="Database\SqlServer\Sql\M_ROUTE.cs" />
     <Compile Include="Forms\AddressSelector\Preview.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +93,12 @@
     </Compile>
     <Compile Include="Forms\Base\BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ClvsRouteSelect.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ClvsRouteSelect.Designer.cs">
+      <DependentUpon>ClvsRouteSelect.cs</DependentUpon>
     </Compile>
     <Compile Include="Func\Com.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -110,14 +117,17 @@
     <None Include="app.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Controls\SprAddressBox.resx">
-      <DependentUpon>SprAddressBox.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\ClvsAddressBox.resx">
+      <DependentUpon>ClvsAddressBox.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddressSelector\Preview.resx">
       <DependentUpon>Preview.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Base\BaseForm.resx">
       <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ClvsRouteSelect.resx">
+      <DependentUpon>ClvsRouteSelect.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
