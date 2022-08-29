@@ -32,5 +32,11 @@ namespace SprCommon.Controls
         {
             InitializeComponent();
         }
+
+        private void BtnPreviewAddress_Click(object sender, EventArgs e)
+        {
+            var frm = new CloverusCommon.Forms.AddressSelector.Preview(TxtPostCode.Text);
+            frm.ShowDialog();
+        }
     }
 }

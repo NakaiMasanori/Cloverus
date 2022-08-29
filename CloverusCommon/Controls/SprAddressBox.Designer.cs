@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.PnlPost = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.TxtData = new System.Windows.Forms.TextBox();
+            this.BtnPreviewAddress = new System.Windows.Forms.Button();
+            this.TxtPostCode = new System.Windows.Forms.TextBox();
             this.LblTitle = new System.Windows.Forms.Label();
             this.PnlSplit = new System.Windows.Forms.Panel();
             this.PnlAddress = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtTownArea = new System.Windows.Forms.TextBox();
+            this.TxtMunicipalities = new System.Windows.Forms.TextBox();
+            this.TxtPrefectures = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.PnlPost.SuspendLayout();
             this.PnlAddress.SuspendLayout();
@@ -44,8 +44,8 @@
             // 
             // PnlPost
             // 
-            this.PnlPost.Controls.Add(this.button1);
-            this.PnlPost.Controls.Add(this.TxtData);
+            this.PnlPost.Controls.Add(this.BtnPreviewAddress);
+            this.PnlPost.Controls.Add(this.TxtPostCode);
             this.PnlPost.Controls.Add(this.LblTitle);
             this.PnlPost.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlPost.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -54,23 +54,24 @@
             this.PnlPost.Size = new System.Drawing.Size(468, 27);
             this.PnlPost.TabIndex = 4;
             // 
-            // button1
+            // BtnPreviewAddress
             // 
-            this.button1.Location = new System.Drawing.Point(259, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 27);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "住所表示";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnPreviewAddress.Location = new System.Drawing.Point(259, 0);
+            this.BtnPreviewAddress.Name = "BtnPreviewAddress";
+            this.BtnPreviewAddress.Size = new System.Drawing.Size(75, 27);
+            this.BtnPreviewAddress.TabIndex = 2;
+            this.BtnPreviewAddress.Text = "住所表示";
+            this.BtnPreviewAddress.UseVisualStyleBackColor = true;
+            this.BtnPreviewAddress.Click += new System.EventHandler(this.BtnPreviewAddress_Click);
             // 
-            // TxtData
+            // TxtPostCode
             // 
-            this.TxtData.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TxtData.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtData.Location = new System.Drawing.Point(122, 0);
-            this.TxtData.Name = "TxtData";
-            this.TxtData.Size = new System.Drawing.Size(135, 27);
-            this.TxtData.TabIndex = 1;
+            this.TxtPostCode.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TxtPostCode.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtPostCode.Location = new System.Drawing.Point(122, 0);
+            this.TxtPostCode.Name = "TxtPostCode";
+            this.TxtPostCode.Size = new System.Drawing.Size(135, 27);
+            this.TxtPostCode.TabIndex = 1;
             // 
             // LblTitle
             // 
@@ -95,9 +96,9 @@
             // 
             // PnlAddress
             // 
-            this.PnlAddress.Controls.Add(this.textBox3);
-            this.PnlAddress.Controls.Add(this.textBox2);
-            this.PnlAddress.Controls.Add(this.textBox1);
+            this.PnlAddress.Controls.Add(this.TxtTownArea);
+            this.PnlAddress.Controls.Add(this.TxtMunicipalities);
+            this.PnlAddress.Controls.Add(this.TxtPrefectures);
             this.PnlAddress.Controls.Add(this.label1);
             this.PnlAddress.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlAddress.Location = new System.Drawing.Point(0, 31);
@@ -105,32 +106,32 @@
             this.PnlAddress.Size = new System.Drawing.Size(468, 87);
             this.PnlAddress.TabIndex = 6;
             // 
-            // textBox3
+            // TxtTownArea
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtTownArea.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(122, 60);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(345, 27);
-            this.textBox3.TabIndex = 3;
+            this.TxtTownArea.Location = new System.Drawing.Point(122, 60);
+            this.TxtTownArea.Name = "TxtTownArea";
+            this.TxtTownArea.Size = new System.Drawing.Size(345, 27);
+            this.TxtTownArea.TabIndex = 3;
             // 
-            // textBox2
+            // TxtMunicipalities
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtMunicipalities.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(122, 30);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(345, 27);
-            this.textBox2.TabIndex = 2;
+            this.TxtMunicipalities.Location = new System.Drawing.Point(122, 30);
+            this.TxtMunicipalities.Name = "TxtMunicipalities";
+            this.TxtMunicipalities.Size = new System.Drawing.Size(345, 27);
+            this.TxtMunicipalities.TabIndex = 2;
             // 
-            // textBox1
+            // TxtPrefectures
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.TxtPrefectures.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(122, 0);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(345, 27);
-            this.textBox1.TabIndex = 1;
+            this.TxtPrefectures.Location = new System.Drawing.Point(122, 0);
+            this.TxtPrefectures.Name = "TxtPrefectures";
+            this.TxtPrefectures.Size = new System.Drawing.Size(345, 27);
+            this.TxtPrefectures.TabIndex = 1;
             // 
             // label1
             // 
@@ -164,14 +165,14 @@
         #endregion
 
         private System.Windows.Forms.Panel PnlPost;
-        private System.Windows.Forms.TextBox TxtData;
+        private System.Windows.Forms.TextBox TxtPostCode;
         private System.Windows.Forms.Label LblTitle;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnPreviewAddress;
         private System.Windows.Forms.Panel PnlSplit;
         private System.Windows.Forms.Panel PnlAddress;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtTownArea;
+        private System.Windows.Forms.TextBox TxtMunicipalities;
+        private System.Windows.Forms.TextBox TxtPrefectures;
         private System.Windows.Forms.Label label1;
     }
 }

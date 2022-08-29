@@ -59,8 +59,8 @@ namespace CloverusSys.MasterMaintenance.Customers
                 switch (e.KeyCode)
                 {
                     case Keys.F3:
-                        var frmSearch = new Preview();
-                        frmSearch.ShowDialog();
+                        var frm = new Preview();
+                        frm.ShowDialog();
                         break;
                 }
             }
