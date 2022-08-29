@@ -201,6 +201,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.leavingDate.Name = "leavingDate";
             this.leavingDate.Size = new System.Drawing.Size(276, 27);
             this.leavingDate.TabIndex = 38;
+            this.leavingDate.TableColumn = null;
             this.leavingDate.TitleText = "離客年月日";
             // 
             // sprDateTextArea1
@@ -210,6 +211,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprDateTextArea1.Name = "sprDateTextArea1";
             this.sprDateTextArea1.Size = new System.Drawing.Size(468, 27);
             this.sprDateTextArea1.TabIndex = 37;
+            this.sprDateTextArea1.TableColumn = null;
             this.sprDateTextArea1.TitleText = "減額型期間";
             // 
             // firstOrderDate
@@ -219,6 +221,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.firstOrderDate.Name = "firstOrderDate";
             this.firstOrderDate.Size = new System.Drawing.Size(276, 27);
             this.firstOrderDate.TabIndex = 36;
+            this.firstOrderDate.TableColumn = null;
             this.firstOrderDate.TitleText = "初回注文日";
             // 
             // nightDeliveryRoute
@@ -229,6 +232,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.nightDeliveryRoute.Name = "nightDeliveryRoute";
             this.nightDeliveryRoute.Size = new System.Drawing.Size(523, 27);
             this.nightDeliveryRoute.TabIndex = 35;
+            this.nightDeliveryRoute.TableColumn = null;
             this.nightDeliveryRoute.TitleText = "夜：配送ルート";
             // 
             // noonDeliveryRoute
@@ -239,6 +243,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.noonDeliveryRoute.Name = "noonDeliveryRoute";
             this.noonDeliveryRoute.Size = new System.Drawing.Size(523, 27);
             this.noonDeliveryRoute.TabIndex = 34;
+            this.noonDeliveryRoute.TableColumn = null;
             this.noonDeliveryRoute.TitleText = "昼：配送ルート";
             // 
             // reasonForLeaving
@@ -247,6 +252,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.reasonForLeaving.Name = "reasonForLeaving";
             this.reasonForLeaving.Size = new System.Drawing.Size(523, 57);
             this.reasonForLeaving.TabIndex = 33;
+            this.reasonForLeaving.TableColumn = null;
             this.reasonForLeaving.TitleText = "離客理由";
             // 
             // remarks
@@ -255,6 +261,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.remarks.Name = "remarks";
             this.remarks.Size = new System.Drawing.Size(523, 98);
             this.remarks.TabIndex = 32;
+            this.remarks.TableColumn = "CUSMA01056";
             this.remarks.TitleText = "備考";
             // 
             // firstFreeNumberOfTimes
@@ -293,6 +300,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.fasting.Name = "fasting";
             this.fasting.Size = new System.Drawing.Size(523, 57);
             this.fasting.TabIndex = 24;
+            this.fasting.TableColumn = null;
             this.fasting.TitleText = "禁食";
             // 
             // absence
@@ -301,6 +309,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.absence.Name = "absence";
             this.absence.Size = new System.Drawing.Size(523, 57);
             this.absence.TabIndex = 23;
+            this.absence.TableColumn = null;
             this.absence.TitleText = "不在時対応";
             // 
             // deliveryNotice
@@ -309,6 +318,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.deliveryNotice.Name = "deliveryNotice";
             this.deliveryNotice.Size = new System.Drawing.Size(523, 57);
             this.deliveryNotice.TabIndex = 22;
+            this.deliveryNotice.TableColumn = null;
             this.deliveryNotice.TitleText = "配達注意";
             // 
             // ordererOther
@@ -371,7 +381,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact3.Name = "emergencyContact3";
             this.emergencyContact3.Size = new System.Drawing.Size(257, 27);
             this.emergencyContact3.TabIndex = 12;
-            this.emergencyContact3.TableColumn = null;
+            this.emergencyContact3.TableColumn = "CUSMA01014";
             this.emergencyContact3.TextBoxWidth = 135;
             this.emergencyContact3.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact3.TextValue = "";
@@ -380,13 +390,14 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // emergencyContact2
             // 
+            this.emergencyContact2.BackColor = System.Drawing.SystemColors.Control;
             this.emergencyContact2.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.emergencyContact2.Location = new System.Drawing.Point(281, 317);
             this.emergencyContact2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.emergencyContact2.Name = "emergencyContact2";
             this.emergencyContact2.Size = new System.Drawing.Size(257, 27);
             this.emergencyContact2.TabIndex = 10;
-            this.emergencyContact2.TableColumn = null;
+            this.emergencyContact2.TableColumn = "CUSMA01013";
             this.emergencyContact2.TextBoxWidth = 135;
             this.emergencyContact2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact2.TextValue = "";
@@ -501,7 +512,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.office.Name = "office";
             this.office.Size = new System.Drawing.Size(523, 27);
             this.office.TabIndex = 15;
-            this.office.TableColumn = null;
+            this.office.TableColumn = "CUSMA01016";
             this.office.TextBoxWidth = 401;
             this.office.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.office.TextValue = "";
@@ -531,7 +542,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName3.Name = "emergencyContactName3";
             this.emergencyContactName3.Size = new System.Drawing.Size(257, 27);
             this.emergencyContactName3.TabIndex = 11;
-            this.emergencyContactName3.TableColumn = null;
+            this.emergencyContactName3.TableColumn = "CUSMA01060";
             this.emergencyContactName3.TextBoxWidth = 135;
             this.emergencyContactName3.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName3.TextValue = "";
@@ -546,7 +557,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName2.Name = "emergencyContactName2";
             this.emergencyContactName2.Size = new System.Drawing.Size(257, 27);
             this.emergencyContactName2.TabIndex = 9;
-            this.emergencyContactName2.TableColumn = null;
+            this.emergencyContactName2.TableColumn = "CUSMA01059";
             this.emergencyContactName2.TextBoxWidth = 135;
             this.emergencyContactName2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName2.TextValue = "";
@@ -657,6 +668,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.registrationDate.Name = "registrationDate";
             this.registrationDate.Size = new System.Drawing.Size(523, 27);
             this.registrationDate.TabIndex = 19;
+            this.registrationDate.TableColumn = null;
             this.registrationDate.TitleText = "登録年月";
             // 
             // withdrawalStartDate
@@ -666,6 +678,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.withdrawalStartDate.Name = "withdrawalStartDate";
             this.withdrawalStartDate.Size = new System.Drawing.Size(523, 27);
             this.withdrawalStartDate.TabIndex = 18;
+            this.withdrawalStartDate.TableColumn = null;
             this.withdrawalStartDate.TitleText = "引落開始日";
             // 
             // paymentMethod
@@ -686,6 +699,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.selectFinancialInstitution.Name = "selectFinancialInstitution";
             this.selectFinancialInstitution.Size = new System.Drawing.Size(468, 27);
             this.selectFinancialInstitution.TabIndex = 16;
+            this.selectFinancialInstitution.TableColumn = null;
             this.selectFinancialInstitution.TitleText = "金融機関選択";
             // 
             // sprAddressBox2
@@ -695,7 +709,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprAddressBox2.Name = "sprAddressBox2";
             this.sprAddressBox2.Size = new System.Drawing.Size(468, 118);
             this.sprAddressBox2.TabIndex = 15;
-            this.sprAddressBox2.TableColumn = null;
+            this.sprAddressBox2.TableColumn = "CUSMA01051";
             this.sprAddressBox2.TitleText = "請求書郵便番号";
             // 
             // masterSearch
@@ -719,6 +733,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.paymentMethodRemarks.Name = "paymentMethodRemarks";
             this.paymentMethodRemarks.Size = new System.Drawing.Size(523, 87);
             this.paymentMethodRemarks.TabIndex = 13;
+            this.paymentMethodRemarks.TableColumn = "CUSMA01055";
             this.paymentMethodRemarks.TitleText = "支払方法備考";
             // 
             // groupBox2
@@ -744,6 +759,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.depositItem.Name = "depositItem";
             this.depositItem.Size = new System.Drawing.Size(468, 27);
             this.depositItem.TabIndex = 10;
+            this.depositItem.TableColumn = null;
             this.depositItem.TitleText = "預金種目";
             // 
             // bankAccountHolderName
@@ -754,7 +770,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankAccountHolderName.Name = "bankAccountHolderName";
             this.bankAccountHolderName.Size = new System.Drawing.Size(507, 27);
             this.bankAccountHolderName.TabIndex = 9;
-            this.bankAccountHolderName.TableColumn = null;
+            this.bankAccountHolderName.TableColumn = "CUSMA01045";
             this.bankAccountHolderName.TextBoxWidth = 385;
             this.bankAccountHolderName.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankAccountHolderName.TextValue = "";
@@ -769,7 +785,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankAccountHolderNameKana.Name = "bankAccountHolderNameKana";
             this.bankAccountHolderNameKana.Size = new System.Drawing.Size(507, 27);
             this.bankAccountHolderNameKana.TabIndex = 8;
-            this.bankAccountHolderNameKana.TableColumn = null;
+            this.bankAccountHolderNameKana.TableColumn = "CUSMA01046";
             this.bankAccountHolderNameKana.TextBoxWidth = 385;
             this.bankAccountHolderNameKana.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankAccountHolderNameKana.TextValue = "";
@@ -799,7 +815,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankCustomerNumber.Name = "bankCustomerNumber";
             this.bankCustomerNumber.Size = new System.Drawing.Size(507, 27);
             this.bankCustomerNumber.TabIndex = 6;
-            this.bankCustomerNumber.TableColumn = null;
+            this.bankCustomerNumber.TableColumn = "CUSMA01044";
             this.bankCustomerNumber.TextBoxWidth = 385;
             this.bankCustomerNumber.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankCustomerNumber.TextValue = "";
@@ -814,7 +830,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.accountNumber.Name = "accountNumber";
             this.accountNumber.Size = new System.Drawing.Size(507, 27);
             this.accountNumber.TabIndex = 5;
-            this.accountNumber.TableColumn = null;
+            this.accountNumber.TableColumn = "CUSMA01043";
             this.accountNumber.TextBoxWidth = 385;
             this.accountNumber.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.accountNumber.TextValue = "";
@@ -859,7 +875,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.billingAddress.Name = "billingAddress";
             this.billingAddress.Size = new System.Drawing.Size(523, 27);
             this.billingAddress.TabIndex = 7;
-            this.billingAddress.TableColumn = null;
+            this.billingAddress.TableColumn = "CUSMA01049";
             this.billingAddress.TextBoxWidth = 401;
             this.billingAddress.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.billingAddress.TextValue = "";
@@ -990,7 +1006,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.mailingCode.Name = "mailingCode";
             this.mailingCode.Size = new System.Drawing.Size(468, 27);
             this.mailingCode.TabIndex = 7;
-            this.mailingCode.TableColumn = null;
+            this.mailingCode.TableColumn = "CUSMA01096";
             this.mailingCode.TextBoxWidth = 346;
             this.mailingCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.mailingCode.TextValue = "";
@@ -1031,7 +1047,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.lastBillingBalance.Name = "lastBillingBalance";
             this.lastBillingBalance.Size = new System.Drawing.Size(468, 27);
             this.lastBillingBalance.TabIndex = 4;
-            this.lastBillingBalance.TableColumn = null;
+            this.lastBillingBalance.TableColumn = "CUSMA01069";
             this.lastBillingBalance.TextBoxWidth = 346;
             this.lastBillingBalance.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lastBillingBalance.TextValue = "";
