@@ -38,7 +38,7 @@ namespace SprCommon.Controls
         }
         #endregion
 
-        #region プロパティ
+        #region プロパティ 
         /// <summary>
         /// コントロールと紐づくデータベースのカラム
         /// </summary>
