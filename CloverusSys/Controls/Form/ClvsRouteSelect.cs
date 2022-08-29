@@ -28,9 +28,25 @@ namespace CloverusSys.Controls.Form
 {
     public partial class ClvsRouteSelect : UserControl
     {
+        #region コンストラクタ
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public ClvsRouteSelect()
         {
             InitializeComponent();
         }
+        #endregion
+
+        #region プロパティ       
+        /// <summary>
+        /// タイトル
+        /// </summary>
+        public string TitleText
+        {
+            get { return LblTitle.Text; }
+            set { LblTitle.Text = value; }
+        }
+        #endregion
     }
 }

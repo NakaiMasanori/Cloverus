@@ -28,9 +28,33 @@ namespace SprCommon.Controls
 {
     public partial class SprDropdown : UserControl
     {
+        #region コンストラクタ
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
         public SprDropdown()
         {
             InitializeComponent();
         }
+        #endregion
+
+        #region プロパティ           
+        /// <summary>
+        /// コントロールと紐づくデータベースのカラム
+        /// </summary>
+        public string TableColumn
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// タイトル
+        /// </summary>
+        public string TitleText
+        {
+            get { return LblTitle.Text; }
+            set { LblTitle.Text = value; }
+        }
+        #endregion
     }
 }
