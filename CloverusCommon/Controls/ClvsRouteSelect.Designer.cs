@@ -1,4 +1,4 @@
-﻿namespace CloverusSys.Controls.Form
+﻿namespace CloverusCommon.Controls
 {
     partial class ClvsRouteSelect
     {
@@ -42,6 +42,7 @@
             this.TxtData.Size = new System.Drawing.Size(53, 27);
             this.TxtData.TabIndex = 3;
             this.TxtData.Text = "1234";
+            this.TxtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // LblTitle
             // 

@@ -34,11 +34,15 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.PnlData = new System.Windows.Forms.Panel();
             this.noon = new System.Windows.Forms.TabControl();
             this.TabBasic = new System.Windows.Forms.TabPage();
+            this.TabPayment = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TabClaim = new System.Windows.Forms.TabPage();
             this.leavingDate = new SprCommon.Controls.SprDateText();
             this.sprDateTextArea1 = new SprCommon.Controls.SprDateTextArea();
             this.firstOrderDate = new SprCommon.Controls.SprDateText();
-            this.nightDeliveryRoute = new CloverusSys.Controls.Form.ClvsRouteSelect();
-            this.noonDeliveryRoute = new CloverusSys.Controls.Form.ClvsRouteSelect();
+            this.SelRouteNight = new CloverusCommon.Controls.ClvsRouteSelect();
+            this.SelRouteDay = new CloverusCommon.Controls.ClvsRouteSelect();
             this.reasonForLeaving = new SprCommon.Controls.SprMultiTextBox();
             this.remarks = new SprCommon.Controls.SprMultiTextBox();
             this.firstFreeNumberOfTimes = new SprCommon.Controls.SprTextBox();
@@ -55,7 +59,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact1 = new SprCommon.Controls.SprTextBox();
             this.deliveryTime = new SprCommon.Controls.SprTextBox();
             this.customerTel2 = new SprCommon.Controls.SprTextBox();
-            this.sprAddressBox1 = new CloverusCommon.Controls.SprAddressBox();
+            this.sprAddressBox1 = new CloverusCommon.Controls.ClvsAddressBox();
             this.officeTel = new SprCommon.Controls.SprTextBox();
             this.ordererTel = new SprCommon.Controls.SprTextBox();
             this.careManager = new SprCommon.Controls.SprTextBox();
@@ -68,15 +72,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerNameKana = new SprCommon.Controls.SprTextBox();
             this.customerName = new SprCommon.Controls.SprTextBox();
             this.brand = new SprCommon.Controls.SprTextBox();
-            this.TabPayment = new System.Windows.Forms.TabPage();
             this.registrationDate = new SprCommon.Controls.SprYearMonth();
             this.withdrawalStartDate = new SprCommon.Controls.SprYearMonth();
             this.paymentMethod = new SprCommon.Controls.SprDropdown();
             this.selectFinancialInstitution = new SprCommon.Controls.SprTreeItemsRadioButton();
-            this.sprAddressBox2 = new CloverusCommon.Controls.SprAddressBox();
+            this.sprAddressBox2 = new CloverusCommon.Controls.ClvsAddressBox();
             this.masterSearch = new SprCommon.Controls.SprTextBox();
             this.paymentMethodRemarks = new SprCommon.Controls.SprMultiTextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.depositItem = new SprCommon.Controls.SprTreeItemsRadioButton();
             this.bankAccountHolderName = new SprCommon.Controls.SprTextBox();
             this.bankAccountHolderNameKana = new SprCommon.Controls.SprTextBox();
@@ -86,13 +88,11 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankCode = new SprCommon.Controls.SprTextBox();
             this.sprTextBox37 = new SprCommon.Controls.SprTextBox();
             this.billingAddress = new SprCommon.Controls.SprTextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.number = new SprCommon.Controls.SprTextBox();
             this.accountHolderNameKana = new SprCommon.Controls.SprTextBox();
             this.accountHolderName = new SprCommon.Controls.SprTextBox();
             this.customerNumber = new SprCommon.Controls.SprTextBox();
             this.symbol = new SprCommon.Controls.SprTextBox();
-            this.TabClaim = new System.Windows.Forms.TabPage();
             this.mailingCode = new SprCommon.Controls.SprTextBox();
             this.mailingClassification = new SprCommon.Controls.SprTextBox();
             this.customerClassification = new SprCommon.Controls.SprDropdown();
@@ -115,7 +115,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.PnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeader.Location = new System.Drawing.Point(0, 0);
             this.PnlHeader.Name = "PnlHeader";
-            this.PnlHeader.Size = new System.Drawing.Size(1114, 76);
+            this.PnlHeader.Size = new System.Drawing.Size(1114, 70);
             this.PnlHeader.TabIndex = 0;
             // 
             // PnlFooter
@@ -130,9 +130,9 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.PnlData.Controls.Add(this.noon);
             this.PnlData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlData.Location = new System.Drawing.Point(0, 76);
+            this.PnlData.Location = new System.Drawing.Point(0, 70);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(1114, 639);
+            this.PnlData.Size = new System.Drawing.Size(1114, 645);
             this.PnlData.TabIndex = 21;
             // 
             // noon
@@ -146,7 +146,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.noon.Multiline = true;
             this.noon.Name = "noon";
             this.noon.SelectedIndex = 0;
-            this.noon.Size = new System.Drawing.Size(1114, 639);
+            this.noon.Size = new System.Drawing.Size(1114, 645);
             this.noon.TabIndex = 0;
             // 
             // TabBasic
@@ -156,8 +156,8 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.Controls.Add(this.leavingDate);
             this.TabBasic.Controls.Add(this.sprDateTextArea1);
             this.TabBasic.Controls.Add(this.firstOrderDate);
-            this.TabBasic.Controls.Add(this.nightDeliveryRoute);
-            this.TabBasic.Controls.Add(this.noonDeliveryRoute);
+            this.TabBasic.Controls.Add(this.SelRouteNight);
+            this.TabBasic.Controls.Add(this.SelRouteDay);
             this.TabBasic.Controls.Add(this.reasonForLeaving);
             this.TabBasic.Controls.Add(this.remarks);
             this.TabBasic.Controls.Add(this.firstFreeNumberOfTimes);
@@ -190,9 +190,78 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.Location = new System.Drawing.Point(4, 32);
             this.TabBasic.Name = "TabBasic";
             this.TabBasic.Padding = new System.Windows.Forms.Padding(3);
-            this.TabBasic.Size = new System.Drawing.Size(1106, 603);
+            this.TabBasic.Size = new System.Drawing.Size(1106, 609);
             this.TabBasic.TabIndex = 0;
             this.TabBasic.Text = "基本情報";
+            // 
+            // TabPayment
+            // 
+            this.TabPayment.BackColor = System.Drawing.SystemColors.Control;
+            this.TabPayment.Controls.Add(this.registrationDate);
+            this.TabPayment.Controls.Add(this.withdrawalStartDate);
+            this.TabPayment.Controls.Add(this.paymentMethod);
+            this.TabPayment.Controls.Add(this.selectFinancialInstitution);
+            this.TabPayment.Controls.Add(this.sprAddressBox2);
+            this.TabPayment.Controls.Add(this.masterSearch);
+            this.TabPayment.Controls.Add(this.paymentMethodRemarks);
+            this.TabPayment.Controls.Add(this.groupBox2);
+            this.TabPayment.Controls.Add(this.groupBox1);
+            this.TabPayment.Controls.Add(this.sprTextBox37);
+            this.TabPayment.Controls.Add(this.billingAddress);
+            this.TabPayment.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TabPayment.Location = new System.Drawing.Point(4, 32);
+            this.TabPayment.Name = "TabPayment";
+            this.TabPayment.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPayment.Size = new System.Drawing.Size(1106, 609);
+            this.TabPayment.TabIndex = 1;
+            this.TabPayment.Text = "支払方法他";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.depositItem);
+            this.groupBox2.Controls.Add(this.bankAccountHolderName);
+            this.groupBox2.Controls.Add(this.bankAccountHolderNameKana);
+            this.groupBox2.Controls.Add(this.bankBranchCode);
+            this.groupBox2.Controls.Add(this.bankCustomerNumber);
+            this.groupBox2.Controls.Add(this.accountNumber);
+            this.groupBox2.Controls.Add(this.bankCode);
+            this.groupBox2.Location = new System.Drawing.Point(568, 75);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(523, 252);
+            this.groupBox2.TabIndex = 8;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "銀行";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.number);
+            this.groupBox1.Controls.Add(this.accountHolderNameKana);
+            this.groupBox1.Controls.Add(this.accountHolderName);
+            this.groupBox1.Controls.Add(this.customerNumber);
+            this.groupBox1.Controls.Add(this.symbol);
+            this.groupBox1.Location = new System.Drawing.Point(14, 75);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(523, 252);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "郵貯";
+            // 
+            // TabClaim
+            // 
+            this.TabClaim.BackColor = System.Drawing.SystemColors.Control;
+            this.TabClaim.Controls.Add(this.mailingCode);
+            this.TabClaim.Controls.Add(this.mailingClassification);
+            this.TabClaim.Controls.Add(this.customerClassification);
+            this.TabClaim.Controls.Add(this.lastBillingBalance);
+            this.TabClaim.Controls.Add(this.depositConditions);
+            this.TabClaim.Controls.Add(this.paymentDay);
+            this.TabClaim.Controls.Add(this.depositRecycling);
+            this.TabClaim.Controls.Add(this.closingDate);
+            this.TabClaim.Location = new System.Drawing.Point(4, 32);
+            this.TabClaim.Name = "TabClaim";
+            this.TabClaim.Size = new System.Drawing.Size(1106, 609);
+            this.TabClaim.TabIndex = 2;
+            this.TabClaim.Text = "請求締関連";
             // 
             // leavingDate
             // 
@@ -224,30 +293,41 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.firstOrderDate.TableColumn = null;
             this.firstOrderDate.TitleText = "初回注文日";
             // 
-            // nightDeliveryRoute
+            // SelRouteNight
             // 
-            this.nightDeliveryRoute.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.nightDeliveryRoute.Location = new System.Drawing.Point(568, 257);
-            this.nightDeliveryRoute.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.nightDeliveryRoute.Name = "nightDeliveryRoute";
-            this.nightDeliveryRoute.Size = new System.Drawing.Size(523, 27);
-            this.nightDeliveryRoute.TabIndex = 35;
-            this.nightDeliveryRoute.TableColumn = null;
-            this.nightDeliveryRoute.TitleText = "夜：配送ルート";
+            this.SelRouteNight.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SelRouteNight.LabelValue = "昼①";
+            this.SelRouteNight.Location = new System.Drawing.Point(568, 257);
+            this.SelRouteNight.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SelRouteNight.Name = "SelRouteNight";
+            this.SelRouteNight.Route = CloverusCommon.Database.SqlServer.Sql.M_ROUTE.RouteType.NightTime;
+            this.SelRouteNight.Size = new System.Drawing.Size(523, 27);
+            this.SelRouteNight.TabIndex = 35;
+            this.SelRouteNight.TableColumn = "CUSMA01026";
+            this.SelRouteNight.TextBoxWidth = 53;
+            this.SelRouteNight.TextValue = "";
+            this.SelRouteNight.TitleText = "夜：配送ルート";
+            this.SelRouteNight.TitleWidth = 122;
             // 
-            // noonDeliveryRoute
+            // SelRouteDay
             // 
-            this.noonDeliveryRoute.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.noonDeliveryRoute.Location = new System.Drawing.Point(568, 227);
-            this.noonDeliveryRoute.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.noonDeliveryRoute.Name = "noonDeliveryRoute";
-            this.noonDeliveryRoute.Size = new System.Drawing.Size(523, 27);
-            this.noonDeliveryRoute.TabIndex = 34;
-            this.noonDeliveryRoute.TableColumn = null;
-            this.noonDeliveryRoute.TitleText = "昼：配送ルート";
+            this.SelRouteDay.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SelRouteDay.LabelValue = "昼①";
+            this.SelRouteDay.Location = new System.Drawing.Point(568, 227);
+            this.SelRouteDay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.SelRouteDay.Name = "SelRouteDay";
+            this.SelRouteDay.Route = CloverusCommon.Database.SqlServer.Sql.M_ROUTE.RouteType.DayTime;
+            this.SelRouteDay.Size = new System.Drawing.Size(523, 27);
+            this.SelRouteDay.TabIndex = 34;
+            this.SelRouteDay.TableColumn = "CUSMA01025";
+            this.SelRouteDay.TextBoxWidth = 53;
+            this.SelRouteDay.TextValue = "";
+            this.SelRouteDay.TitleText = "昼：配送ルート";
+            this.SelRouteDay.TitleWidth = 122;
             // 
             // reasonForLeaving
             // 
+            this.reasonForLeaving.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.reasonForLeaving.Location = new System.Drawing.Point(568, 437);
             this.reasonForLeaving.Name = "reasonForLeaving";
             this.reasonForLeaving.Size = new System.Drawing.Size(523, 57);
@@ -261,6 +341,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // remarks
             // 
+            this.remarks.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.remarks.Location = new System.Drawing.Point(568, 497);
             this.remarks.Name = "remarks";
             this.remarks.Size = new System.Drawing.Size(523, 98);
@@ -304,6 +385,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // fasting
             // 
+            this.fasting.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.fasting.Location = new System.Drawing.Point(568, 167);
             this.fasting.Name = "fasting";
             this.fasting.Size = new System.Drawing.Size(523, 57);
@@ -317,6 +399,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // absence
             // 
+            this.absence.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.absence.Location = new System.Drawing.Point(568, 106);
             this.absence.Name = "absence";
             this.absence.Size = new System.Drawing.Size(523, 57);
@@ -330,6 +413,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // deliveryNotice
             // 
+            this.deliveryNotice.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.deliveryNotice.Location = new System.Drawing.Point(568, 46);
             this.deliveryNotice.Name = "deliveryNotice";
             this.deliveryNotice.Size = new System.Drawing.Size(523, 57);
@@ -667,28 +751,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.brand.TitleText = "ブランド";
             this.brand.TitleWidth = 122;
             // 
-            // TabPayment
-            // 
-            this.TabPayment.BackColor = System.Drawing.SystemColors.Control;
-            this.TabPayment.Controls.Add(this.registrationDate);
-            this.TabPayment.Controls.Add(this.withdrawalStartDate);
-            this.TabPayment.Controls.Add(this.paymentMethod);
-            this.TabPayment.Controls.Add(this.selectFinancialInstitution);
-            this.TabPayment.Controls.Add(this.sprAddressBox2);
-            this.TabPayment.Controls.Add(this.masterSearch);
-            this.TabPayment.Controls.Add(this.paymentMethodRemarks);
-            this.TabPayment.Controls.Add(this.groupBox2);
-            this.TabPayment.Controls.Add(this.sprTextBox37);
-            this.TabPayment.Controls.Add(this.billingAddress);
-            this.TabPayment.Controls.Add(this.groupBox1);
-            this.TabPayment.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TabPayment.Location = new System.Drawing.Point(4, 32);
-            this.TabPayment.Name = "TabPayment";
-            this.TabPayment.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPayment.Size = new System.Drawing.Size(1106, 603);
-            this.TabPayment.TabIndex = 1;
-            this.TabPayment.Text = "支払方法他";
-            // 
             // registrationDate
             // 
             this.registrationDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -765,6 +827,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // paymentMethodRemarks
             // 
+            this.paymentMethodRemarks.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.paymentMethodRemarks.Location = new System.Drawing.Point(568, 334);
             this.paymentMethodRemarks.Name = "paymentMethodRemarks";
             this.paymentMethodRemarks.Size = new System.Drawing.Size(523, 87);
@@ -775,22 +838,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.paymentMethodRemarks.TextValue = "";
             this.paymentMethodRemarks.TitleText = "支払方法備考";
             this.paymentMethodRemarks.TitleWidth = 122;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.depositItem);
-            this.groupBox2.Controls.Add(this.bankAccountHolderName);
-            this.groupBox2.Controls.Add(this.bankAccountHolderNameKana);
-            this.groupBox2.Controls.Add(this.bankBranchCode);
-            this.groupBox2.Controls.Add(this.bankCustomerNumber);
-            this.groupBox2.Controls.Add(this.accountNumber);
-            this.groupBox2.Controls.Add(this.bankCode);
-            this.groupBox2.Location = new System.Drawing.Point(568, 75);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(523, 252);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "銀行";
             // 
             // depositItem
             // 
@@ -922,20 +969,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.billingAddress.TitleText = "請求書宛名";
             this.billingAddress.TitleWidth = 122;
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.number);
-            this.groupBox1.Controls.Add(this.accountHolderNameKana);
-            this.groupBox1.Controls.Add(this.accountHolderName);
-            this.groupBox1.Controls.Add(this.customerNumber);
-            this.groupBox1.Controls.Add(this.symbol);
-            this.groupBox1.Location = new System.Drawing.Point(14, 75);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(523, 252);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "郵貯";
-            // 
             // number
             // 
             this.number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -1020,23 +1053,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.symbol.TextValue = "";
             this.symbol.TitleText = "記号";
             this.symbol.TitleWidth = 122;
-            // 
-            // TabClaim
-            // 
-            this.TabClaim.BackColor = System.Drawing.SystemColors.Control;
-            this.TabClaim.Controls.Add(this.mailingCode);
-            this.TabClaim.Controls.Add(this.mailingClassification);
-            this.TabClaim.Controls.Add(this.customerClassification);
-            this.TabClaim.Controls.Add(this.lastBillingBalance);
-            this.TabClaim.Controls.Add(this.depositConditions);
-            this.TabClaim.Controls.Add(this.paymentDay);
-            this.TabClaim.Controls.Add(this.depositRecycling);
-            this.TabClaim.Controls.Add(this.closingDate);
-            this.TabClaim.Location = new System.Drawing.Point(4, 32);
-            this.TabClaim.Name = "TabClaim";
-            this.TabClaim.Size = new System.Drawing.Size(1106, 603);
-            this.TabClaim.TabIndex = 2;
-            this.TabClaim.Text = "請求締関連";
             // 
             // mailingCode
             // 
@@ -1194,7 +1210,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         private System.Windows.Forms.TabPage TabClaim;
         private SprCommon.Controls.SprTextBox deliveryTime;
         private SprCommon.Controls.SprTextBox customerTel2;
-        private CloverusCommon.Controls.SprAddressBox sprAddressBox1;
+        private CloverusCommon.Controls.ClvsAddressBox sprAddressBox1;
         private SprCommon.Controls.SprTextBox emergencyContact4;
         private SprCommon.Controls.SprTextBox emergencyContact3;
         private SprCommon.Controls.SprTextBox emergencyContact2;
@@ -1235,11 +1251,11 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprDropdown depositRecycling;
         private SprCommon.Controls.SprTextBox closingDate;
         private SprCommon.Controls.SprDateText firstOrderDate;
-        private Controls.Form.ClvsRouteSelect nightDeliveryRoute;
-        private Controls.Form.ClvsRouteSelect noonDeliveryRoute;
+        private CloverusCommon.Controls.ClvsRouteSelect SelRouteNight;
+        private CloverusCommon.Controls.ClvsRouteSelect SelRouteDay;
         private SprCommon.Controls.SprDateText leavingDate;
         private SprCommon.Controls.SprDateTextArea sprDateTextArea1;
-        private CloverusCommon.Controls.SprAddressBox sprAddressBox2;
+        private CloverusCommon.Controls.ClvsAddressBox sprAddressBox2;
         private SprCommon.Controls.SprDropdown paymentMethod;
         private SprCommon.Controls.SprTreeItemsRadioButton selectFinancialInstitution;
         private SprCommon.Controls.SprTreeItemsRadioButton depositItem;

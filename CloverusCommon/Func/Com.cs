@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data;
+using CloverusCommon.Database.SqlServer;
 
 namespace CloverusCommon.Func
 {
@@ -16,7 +17,7 @@ namespace CloverusCommon.Func
         /// </summary>
         /// <param name="row"></param>
         /// <param name="controls"></param>
-        public static void DataRowToControl(DataRow row, Control.ControlCollection controls)
+        public static void DataRowToControl(DataRow row, Control.ControlCollection controls, SqlBase db)
         {
             foreach (Control control in controls)
             {
@@ -32,15 +33,18 @@ namespace CloverusCommon.Func
                     case SprCommon.Controls.SprMultiTextBox textBox:
                         textBox.SetFromDb(row);
                         break;
-                    case Controls.SprAddressBox addressBox:
+                    case Controls.ClvsAddressBox addressBox:
                         addressBox.SetFromDb(row);
+                        break;
+                    case Controls.ClvsRouteSelect routeSelect:
+                        routeSelect.SetFromDb(row, db);
                         break;
                     default:
                         break;
                 }
                 if (control.Controls != null)
                 {
-                    DataRowToControl(row, control.Controls);
+                    DataRowToControl(row, control.Controls, db);
                 }
             }
         }

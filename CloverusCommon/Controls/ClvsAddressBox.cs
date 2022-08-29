@@ -27,7 +27,7 @@ using SprCommon;
 
 namespace CloverusCommon.Controls
 {
-    public partial class SprAddressBox : UserControl
+    public partial class ClvsAddressBox : UserControl
     {
         #region プロパティ
         /// <summary>
@@ -100,7 +100,7 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public SprAddressBox()
+        public ClvsAddressBox()
         {
             InitializeComponent();
         }
