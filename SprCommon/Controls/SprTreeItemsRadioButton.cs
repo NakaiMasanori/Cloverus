@@ -35,6 +35,10 @@ namespace SprCommon.Controls
         public SprTreeItemsRadioButton()
         {
             InitializeComponent();
+            //foreach (var item in _valueItems)
+            //{
+
+            //}
         }
         #endregion
 
@@ -54,6 +58,99 @@ namespace SprCommon.Controls
         {
             get { return LblTitle.Text; }
             set { LblTitle.Text = value; }
+        }
+        /// <summary>
+        /// タイトル部の幅
+        /// </summary>
+        public int TitleWidth
+        {
+            get { return LblTitle.Width; }
+            set { LblTitle.Width = value; }
+        }
+        /// <summary>
+        /// ラジオボタン（左）の値
+        /// </summary>
+        public int RadioLeftValue
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// ラジオボタン（左）のテキスト
+        /// </summary>
+        public string RadioLeftText
+        {
+            get { return RdoLeft.Text; }
+            set { RdoLeft.Text = value; }
+        }
+        /// <summary>
+        /// ラジオボタン（中央）の値
+        /// </summary>
+        public int RadioCenterValue
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// ラジオボタン（中央）のテキスト
+        /// </summary>
+        public string RadioCenterText
+        {
+            get { return RdoCenter.Text; }
+            set { RdoCenter.Text = value; }
+        }
+        /// <summary>
+        /// ラジオボタン（右）の値
+        /// </summary>
+        public int RadioRightValue
+        {
+            get;
+            set;
+        }
+        /// <summary>
+        /// ラジオボタン（右）のテキスト
+        /// </summary>
+        public string RadioRightText
+        {
+            get { return RdoRight.Text; }
+            set { RdoRight.Text = value; }
+        }
+        /// <summary>
+        /// 使用する要素の数
+        /// </summary>
+        public int ItemsCount
+        {
+            set
+            {
+                switch (value)
+                {
+                    case 1:
+                        RdoCenter.Visible = false;
+                        RdoRight.Visible = false;
+                        break;
+                    case 2:
+                        RdoRight.Visible = false;
+                        break;
+                }
+            }
+        }
+        /// <summary>
+        /// 選択値
+        /// </summary>
+        public int SelectedValue
+        {
+            get
+            {
+                if (RdoRight.Visible && RdoRight.Checked)
+                {
+                    return RadioRightValue;
+                }
+                if (RdoCenter.Visible && RdoCenter.Checked)
+                {
+                    return RadioCenterValue;
+                }
+                return RadioLeftValue;
+            }
         }
         #endregion
     }

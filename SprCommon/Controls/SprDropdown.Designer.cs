@@ -41,7 +41,7 @@
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 30);
+            this.LblTitle.Size = new System.Drawing.Size(122, 31);
             this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -63,7 +63,7 @@
             this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "SprDropdown";
-            this.Size = new System.Drawing.Size(468, 30);
+            this.Size = new System.Drawing.Size(468, 31);
             this.ResumeLayout(false);
 
         }

@@ -29,9 +29,11 @@
         private void InitializeComponent()
         {
             this.LblTitle = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.RdoLeft = new System.Windows.Forms.RadioButton();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.RdoCenter = new System.Windows.Forms.RadioButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.RdoRight = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // LblTitle
@@ -47,61 +49,85 @@
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // radioButton1
+            // RdoLeft
             // 
-            this.radioButton1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton1.Location = new System.Drawing.Point(122, 0);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.radioButton1.Size = new System.Drawing.Size(110, 30);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RdoLeft.AutoSize = true;
+            this.RdoLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RdoLeft.Location = new System.Drawing.Point(122, 0);
+            this.RdoLeft.Name = "RdoLeft";
+            this.RdoLeft.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.RdoLeft.Size = new System.Drawing.Size(127, 30);
+            this.RdoLeft.TabIndex = 5;
+            this.RdoLeft.TabStop = true;
+            this.RdoLeft.Text = "radioButton1";
+            this.RdoLeft.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // panel1
             // 
-            this.radioButton2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.radioButton2.Location = new System.Drawing.Point(232, 0);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.radioButton2.Size = new System.Drawing.Size(110, 30);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(249, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(16, 30);
+            this.panel1.TabIndex = 6;
             // 
-            // radioButton3
+            // RdoCenter
             // 
-            this.radioButton3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.radioButton3.Location = new System.Drawing.Point(342, 0);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.radioButton3.Size = new System.Drawing.Size(126, 30);
-            this.radioButton3.TabIndex = 7;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.RdoCenter.AutoSize = true;
+            this.RdoCenter.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RdoCenter.Location = new System.Drawing.Point(265, 0);
+            this.RdoCenter.Name = "RdoCenter";
+            this.RdoCenter.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.RdoCenter.Size = new System.Drawing.Size(127, 30);
+            this.RdoCenter.TabIndex = 8;
+            this.RdoCenter.TabStop = true;
+            this.RdoCenter.Text = "radioButton2";
+            this.RdoCenter.UseVisualStyleBackColor = true;
+            // 
+            // panel2
+            // 
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel2.Location = new System.Drawing.Point(392, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(16, 30);
+            this.panel2.TabIndex = 9;
+            // 
+            // RdoRight
+            // 
+            this.RdoRight.AutoSize = true;
+            this.RdoRight.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.RdoRight.Location = new System.Drawing.Point(408, 0);
+            this.RdoRight.Name = "RdoRight";
+            this.RdoRight.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
+            this.RdoRight.Size = new System.Drawing.Size(60, 30);
+            this.RdoRight.TabIndex = 10;
+            this.RdoRight.TabStop = true;
+            this.RdoRight.Text = "radioButton3";
+            this.RdoRight.UseVisualStyleBackColor = true;
             // 
             // SprTreeItemsRadioButton
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.RdoRight);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.RdoCenter);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.RdoLeft);
             this.Controls.Add(this.LblTitle);
             this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprTreeItemsRadioButton";
             this.Size = new System.Drawing.Size(468, 30);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label LblTitle;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton RdoLeft;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RadioButton RdoCenter;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton RdoRight;
     }
 }
