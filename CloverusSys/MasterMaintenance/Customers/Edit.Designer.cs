@@ -34,7 +34,8 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.PnlData = new System.Windows.Forms.Panel();
             this.noon = new System.Windows.Forms.TabControl();
             this.TabBasic = new System.Windows.Forms.TabPage();
-            this.clvsDropdown1 = new CloverusCommon.Controls.ClvsDropdown();
+            this.customerCategory = new CloverusCommon.Controls.ClvsDropdown();
+            this.ordererSelection = new CloverusCommon.Controls.ClvsDropdown();
             this.sprTreeItemsRadioButton3 = new SprCommon.Controls.SprTreeItemsRadioButton();
             this.sprCheckBox1 = new SprCommon.Controls.SprCheckBox();
             this.leavingDate = new SprCommon.Controls.SprDateText();
@@ -49,7 +50,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.absence = new SprCommon.Controls.SprMultiTextBox();
             this.deliveryNotice = new SprCommon.Controls.SprMultiTextBox();
             this.ordererOther = new SprCommon.Controls.SprTextBox();
-            this.customerCategory = new SprCommon.Controls.SprDropdown();
             this.emergencyContact4 = new SprCommon.Controls.SprTextBox();
             this.emergencyContact3 = new SprCommon.Controls.SprTextBox();
             this.emergencyContact2 = new SprCommon.Controls.SprTextBox();
@@ -69,7 +69,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerNameKana = new SprCommon.Controls.SprTextBox();
             this.customerName = new SprCommon.Controls.SprTextBox();
             this.TabPayment = new System.Windows.Forms.TabPage();
-            this.sprDropdown1 = new SprCommon.Controls.SprDropdown();
+            this.paymentMethod = new CloverusCommon.Controls.ClvsDropdown();
             this.sprTreeItemsRadioButton1 = new SprCommon.Controls.SprTreeItemsRadioButton();
             this.clvsSendNameBox1 = new CloverusCommon.Controls.ClvsSendNameBox();
             this.registrationDate = new SprCommon.Controls.SprYearMonth();
@@ -92,14 +92,20 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerNumber = new SprCommon.Controls.SprTextBox();
             this.symbol = new SprCommon.Controls.SprTextBox();
             this.TabClaim = new System.Windows.Forms.TabPage();
+            this.customerClassification = new CloverusCommon.Controls.ClvsDropdown();
+            this.depositConditions = new CloverusCommon.Controls.ClvsDropdown();
+            this.depositRecycling = new CloverusCommon.Controls.ClvsDropdown();
             this.mailingCode = new SprCommon.Controls.SprTextBox();
             this.mailingClassification = new SprCommon.Controls.SprTextBox();
-            this.customerClassification = new SprCommon.Controls.SprDropdown();
             this.lastBillingBalance = new SprCommon.Controls.SprTextBox();
-            this.depositConditions = new SprCommon.Controls.SprDropdown();
             this.paymentDay = new SprCommon.Controls.SprTextBox();
-            this.depositRecycling = new SprCommon.Controls.SprDropdown();
             this.closingDate = new SprCommon.Controls.SprTextBox();
+            this.clvsDropdown2 = new CloverusCommon.Controls.ClvsDropdown();
+            this.clvsDropdown1 = new CloverusCommon.Controls.ClvsDropdown();
+            this.clvsDropdown3 = new CloverusCommon.Controls.ClvsDropdown();
+            this.clvsDropdown4 = new CloverusCommon.Controls.ClvsDropdown();
+            this.clvsDropdown5 = new CloverusCommon.Controls.ClvsDropdown();
+            this.clvsDropdown6 = new CloverusCommon.Controls.ClvsDropdown();
             this.PnlData.SuspendLayout();
             this.noon.SuspendLayout();
             this.TabBasic.SuspendLayout();
@@ -152,7 +158,8 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.TabBasic.BackColor = System.Drawing.SystemColors.Control;
             this.TabBasic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TabBasic.Controls.Add(this.clvsDropdown1);
+            this.TabBasic.Controls.Add(this.customerCategory);
+            this.TabBasic.Controls.Add(this.ordererSelection);
             this.TabBasic.Controls.Add(this.sprTreeItemsRadioButton3);
             this.TabBasic.Controls.Add(this.sprCheckBox1);
             this.TabBasic.Controls.Add(this.leavingDate);
@@ -167,7 +174,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.Controls.Add(this.absence);
             this.TabBasic.Controls.Add(this.deliveryNotice);
             this.TabBasic.Controls.Add(this.ordererOther);
-            this.TabBasic.Controls.Add(this.customerCategory);
             this.TabBasic.Controls.Add(this.emergencyContact4);
             this.TabBasic.Controls.Add(this.emergencyContact3);
             this.TabBasic.Controls.Add(this.emergencyContact2);
@@ -193,16 +199,29 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.TabIndex = 0;
             this.TabBasic.Text = "基本情報";
             // 
-            // clvsDropdown1
+            // customerCategory
             // 
-            this.clvsDropdown1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.clvsDropdown1.Location = new System.Drawing.Point(14, 494);
-            this.clvsDropdown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.clvsDropdown1.Name = "clvsDropdown1";
-            this.clvsDropdown1.Size = new System.Drawing.Size(257, 31);
-            this.clvsDropdown1.TabIndex = 41;
-            this.clvsDropdown1.TableColumn = "CUSMA01018";
-            this.clvsDropdown1.TitleText = "注文者選択";
+            this.customerCategory.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.customerCategory.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.customerCategory.Location = new System.Drawing.Point(14, 13);
+            this.customerCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.customerCategory.Name = "customerCategory";
+            this.customerCategory.Size = new System.Drawing.Size(257, 31);
+            this.customerCategory.TabIndex = 0;
+            this.customerCategory.TableColumn = "CUSMA01080";
+            this.customerCategory.TitleText = "顧客区分";
+            // 
+            // ordererSelection
+            // 
+            this.ordererSelection.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ordererSelection.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.ordererSelection.Location = new System.Drawing.Point(14, 494);
+            this.ordererSelection.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ordererSelection.Name = "ordererSelection";
+            this.ordererSelection.Size = new System.Drawing.Size(257, 31);
+            this.ordererSelection.TabIndex = 41;
+            this.ordererSelection.TableColumn = "CUSMA01018";
+            this.ordererSelection.TitleText = "注文者選択";
             // 
             // sprTreeItemsRadioButton3
             // 
@@ -218,7 +237,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTreeItemsRadioButton3.RadioRightValue = 0;
             this.sprTreeItemsRadioButton3.Size = new System.Drawing.Size(468, 30);
             this.sprTreeItemsRadioButton3.TabIndex = 40;
-            this.sprTreeItemsRadioButton3.TableColumn = null;
+            this.sprTreeItemsRadioButton3.TableColumn = "CUSMA01005";
             this.sprTreeItemsRadioButton3.TitleText = "ブランド";
             this.sprTreeItemsRadioButton3.TitleWidth = 122;
             this.sprTreeItemsRadioButton3.Value = 1;
@@ -231,14 +250,14 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprCheckBox1.Name = "sprCheckBox1";
             this.sprCheckBox1.Size = new System.Drawing.Size(265, 30);
             this.sprCheckBox1.TabIndex = 39;
-            this.sprCheckBox1.TableColumn = null;
+            this.sprCheckBox1.TableColumn = "CUSMA01028";
             this.sprCheckBox1.TitleText = "減額型";
             this.sprCheckBox1.TitleWidth = 122;
             this.sprCheckBox1.Value = false;
             // 
             // leavingDate
             // 
-            this.leavingDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.leavingDate.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.leavingDate.Location = new System.Drawing.Point(568, 398);
             this.leavingDate.Name = "leavingDate";
             this.leavingDate.Size = new System.Drawing.Size(306, 30);
@@ -251,7 +270,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // sprDateTextArea1
             // 
-            this.sprDateTextArea1.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprDateTextArea1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.sprDateTextArea1.Location = new System.Drawing.Point(568, 334);
             this.sprDateTextArea1.Name = "sprDateTextArea1";
             this.sprDateTextArea1.Size = new System.Drawing.Size(523, 30);
@@ -261,7 +280,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // firstOrderDate
             // 
-            this.firstOrderDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.firstOrderDate.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.firstOrderDate.Location = new System.Drawing.Point(568, 270);
             this.firstOrderDate.Name = "firstOrderDate";
             this.firstOrderDate.Size = new System.Drawing.Size(306, 30);
@@ -276,7 +295,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.SelRouteDay.DayText = "昼コスモ用";
             this.SelRouteDay.DayValue = "1234";
-            this.SelRouteDay.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.SelRouteDay.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.SelRouteDay.Location = new System.Drawing.Point(568, 238);
             this.SelRouteDay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SelRouteDay.Name = "SelRouteDay";
@@ -296,7 +315,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.reasonForLeaving.Name = "reasonForLeaving";
             this.reasonForLeaving.Size = new System.Drawing.Size(523, 62);
             this.reasonForLeaving.TabIndex = 33;
-            this.reasonForLeaving.TableColumn = null;
+            this.reasonForLeaving.TableColumn = "CUSMA01032";
             this.reasonForLeaving.TextBoxWidth = 401;
             this.reasonForLeaving.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.reasonForLeaving.TitleText = "離客理由";
@@ -319,13 +338,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // firstFreeNumberOfTimes
             // 
-            this.firstFreeNumberOfTimes.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.firstFreeNumberOfTimes.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.firstFreeNumberOfTimes.Location = new System.Drawing.Point(568, 366);
             this.firstFreeNumberOfTimes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.firstFreeNumberOfTimes.Name = "firstFreeNumberOfTimes";
             this.firstFreeNumberOfTimes.Size = new System.Drawing.Size(468, 30);
             this.firstFreeNumberOfTimes.TabIndex = 30;
-            this.firstFreeNumberOfTimes.TableColumn = null;
+            this.firstFreeNumberOfTimes.TableColumn = "CUSMA01030";
             this.firstFreeNumberOfTimes.TextBoxWidth = 346;
             this.firstFreeNumberOfTimes.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.firstFreeNumberOfTimes.TitleText = "初回無料回数";
@@ -334,13 +353,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // supportTypeNo
             // 
-            this.supportTypeNo.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.supportTypeNo.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.supportTypeNo.Location = new System.Drawing.Point(836, 302);
             this.supportTypeNo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.supportTypeNo.Name = "supportTypeNo";
             this.supportTypeNo.Size = new System.Drawing.Size(184, 30);
             this.supportTypeNo.TabIndex = 28;
-            this.supportTypeNo.TableColumn = null;
+            this.supportTypeNo.TableColumn = "CUSMA01029";
             this.supportTypeNo.TextBoxWidth = 74;
             this.supportTypeNo.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.supportTypeNo.TitleText = "支援型NO．";
@@ -354,7 +373,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.fasting.Name = "fasting";
             this.fasting.Size = new System.Drawing.Size(523, 62);
             this.fasting.TabIndex = 24;
-            this.fasting.TableColumn = null;
+            this.fasting.TableColumn = "CUSMA01081";
             this.fasting.TextBoxWidth = 401;
             this.fasting.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.fasting.TitleText = "禁食";
@@ -368,7 +387,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.absence.Name = "absence";
             this.absence.Size = new System.Drawing.Size(523, 62);
             this.absence.TabIndex = 23;
-            this.absence.TableColumn = null;
+            this.absence.TableColumn = "CUSMA01024";
             this.absence.TextBoxWidth = 401;
             this.absence.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.absence.TitleText = "不在時対応";
@@ -382,7 +401,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.deliveryNotice.Name = "deliveryNotice";
             this.deliveryNotice.Size = new System.Drawing.Size(523, 62);
             this.deliveryNotice.TabIndex = 22;
-            this.deliveryNotice.TableColumn = null;
+            this.deliveryNotice.TableColumn = "CUSMA01023";
             this.deliveryNotice.TextBoxWidth = 401;
             this.deliveryNotice.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.deliveryNotice.TitleText = "配達注意";
@@ -397,23 +416,12 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.ordererOther.Name = "ordererOther";
             this.ordererOther.Size = new System.Drawing.Size(257, 30);
             this.ordererOther.TabIndex = 18;
-            this.ordererOther.TableColumn = null;
+            this.ordererOther.TableColumn = "CUSMA01019";
             this.ordererOther.TextBoxWidth = 135;
             this.ordererOther.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ordererOther.TitleText = "注文者その他";
             this.ordererOther.TitleWidth = 122;
             this.ordererOther.Value = "";
-            // 
-            // customerCategory
-            // 
-            this.customerCategory.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.customerCategory.Location = new System.Drawing.Point(14, 13);
-            this.customerCategory.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.customerCategory.Name = "customerCategory";
-            this.customerCategory.Size = new System.Drawing.Size(257, 31);
-            this.customerCategory.TabIndex = 0;
-            this.customerCategory.TableColumn = null;
-            this.customerCategory.TitleText = "顧客区分";
             // 
             // emergencyContact4
             // 
@@ -423,7 +431,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact4.Name = "emergencyContact4";
             this.emergencyContact4.Size = new System.Drawing.Size(257, 30);
             this.emergencyContact4.TabIndex = 14;
-            this.emergencyContact4.TableColumn = null;
+            this.emergencyContact4.TableColumn = "CUSMA01015";
             this.emergencyContact4.TextBoxWidth = 135;
             this.emergencyContact4.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact4.TitleText = "緊急連絡先４";
@@ -469,7 +477,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact1.Name = "emergencyContact1";
             this.emergencyContact1.Size = new System.Drawing.Size(257, 30);
             this.emergencyContact1.TabIndex = 8;
-            this.emergencyContact1.TableColumn = null;
+            this.emergencyContact1.TableColumn = "CUSMA01012";
             this.emergencyContact1.TextBoxWidth = 135;
             this.emergencyContact1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact1.TitleText = "緊急連絡先１";
@@ -484,7 +492,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.deliveryTime.Name = "deliveryTime";
             this.deliveryTime.Size = new System.Drawing.Size(523, 30);
             this.deliveryTime.TabIndex = 21;
-            this.deliveryTime.TableColumn = null;
+            this.deliveryTime.TableColumn = "CUSMA01092";
             this.deliveryTime.TextBoxWidth = 401;
             this.deliveryTime.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.deliveryTime.TitleText = "配達時間";
@@ -499,7 +507,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerTel2.Name = "customerTel2";
             this.customerTel2.Size = new System.Drawing.Size(257, 30);
             this.customerTel2.TabIndex = 6;
-            this.customerTel2.TableColumn = null;
+            this.customerTel2.TableColumn = "CUSMA01011";
             this.customerTel2.TextBoxWidth = 135;
             this.customerTel2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.customerTel2.TitleText = "顧客TEL２";
@@ -508,10 +516,10 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // sprAddressBox1
             // 
-            this.sprAddressBox1.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprAddressBox1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.sprAddressBox1.Location = new System.Drawing.Point(14, 142);
             this.sprAddressBox1.Name = "sprAddressBox1";
-            this.sprAddressBox1.Size = new System.Drawing.Size(525, 126);
+            this.sprAddressBox1.Size = new System.Drawing.Size(523, 126);
             this.sprAddressBox1.TabIndex = 4;
             this.sprAddressBox1.TableColumnMunicipalities = "CUSMA01008";
             this.sprAddressBox1.TableColumnPost = "CUSMA01006";
@@ -532,7 +540,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.officeTel.Name = "officeTel";
             this.officeTel.Size = new System.Drawing.Size(257, 30);
             this.officeTel.TabIndex = 20;
-            this.officeTel.TableColumn = null;
+            this.officeTel.TableColumn = "CUSMA01021";
             this.officeTel.TextBoxWidth = 135;
             this.officeTel.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.officeTel.TitleText = "事業所TEL";
@@ -547,7 +555,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.ordererTel.Name = "ordererTel";
             this.ordererTel.Size = new System.Drawing.Size(257, 30);
             this.ordererTel.TabIndex = 19;
-            this.ordererTel.TableColumn = null;
+            this.ordererTel.TableColumn = "CUSMA01020";
             this.ordererTel.TextBoxWidth = 135;
             this.ordererTel.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ordererTel.TitleText = "注文者TEL";
@@ -562,7 +570,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.careManager.Name = "careManager";
             this.careManager.Size = new System.Drawing.Size(523, 30);
             this.careManager.TabIndex = 16;
-            this.careManager.TableColumn = null;
+            this.careManager.TableColumn = "CUSMA01017";
             this.careManager.TextBoxWidth = 401;
             this.careManager.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.careManager.TitleText = "ケアマネジャー";
@@ -592,7 +600,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName4.Name = "emergencyContactName4";
             this.emergencyContactName4.Size = new System.Drawing.Size(257, 30);
             this.emergencyContactName4.TabIndex = 13;
-            this.emergencyContactName4.TableColumn = null;
+            this.emergencyContactName4.TableColumn = "CUSMA01060";
             this.emergencyContactName4.TextBoxWidth = 135;
             this.emergencyContactName4.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName4.TitleText = "緊急連絡先名４";
@@ -607,7 +615,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName3.Name = "emergencyContactName3";
             this.emergencyContactName3.Size = new System.Drawing.Size(257, 30);
             this.emergencyContactName3.TabIndex = 11;
-            this.emergencyContactName3.TableColumn = "CUSMA01060";
+            this.emergencyContactName3.TableColumn = "CUSMA01059";
             this.emergencyContactName3.TextBoxWidth = 135;
             this.emergencyContactName3.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName3.TitleText = "緊急連絡先名３";
@@ -622,7 +630,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName2.Name = "emergencyContactName2";
             this.emergencyContactName2.Size = new System.Drawing.Size(257, 30);
             this.emergencyContactName2.TabIndex = 9;
-            this.emergencyContactName2.TableColumn = "CUSMA01059";
+            this.emergencyContactName2.TableColumn = "CUSMA01058";
             this.emergencyContactName2.TextBoxWidth = 135;
             this.emergencyContactName2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName2.TitleText = "緊急連絡先名２";
@@ -637,7 +645,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName1.Name = "emergencyContactName1";
             this.emergencyContactName1.Size = new System.Drawing.Size(257, 30);
             this.emergencyContactName1.TabIndex = 7;
-            this.emergencyContactName1.TableColumn = null;
+            this.emergencyContactName1.TableColumn = "CUSMA01999";
             this.emergencyContactName1.TextBoxWidth = 135;
             this.emergencyContactName1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName1.TitleText = "緊急連絡先名１";
@@ -692,7 +700,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // TabPayment
             // 
             this.TabPayment.BackColor = System.Drawing.SystemColors.Control;
-            this.TabPayment.Controls.Add(this.sprDropdown1);
+            this.TabPayment.Controls.Add(this.paymentMethod);
             this.TabPayment.Controls.Add(this.sprTreeItemsRadioButton1);
             this.TabPayment.Controls.Add(this.clvsSendNameBox1);
             this.TabPayment.Controls.Add(this.registrationDate);
@@ -710,22 +718,23 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabPayment.TabIndex = 1;
             this.TabPayment.Text = "支払方法他";
             // 
-            // sprDropdown1
+            // paymentMethod
             // 
-            this.sprDropdown1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sprDropdown1.Location = new System.Drawing.Point(14, 15);
-            this.sprDropdown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.sprDropdown1.Name = "sprDropdown1";
-            this.sprDropdown1.Size = new System.Drawing.Size(468, 31);
-            this.sprDropdown1.TabIndex = 22;
-            this.sprDropdown1.TableColumn = null;
-            this.sprDropdown1.TitleText = "支払方法";
+            this.paymentMethod.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.paymentMethod.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.paymentMethod.Location = new System.Drawing.Point(14, 15);
+            this.paymentMethod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.paymentMethod.Name = "paymentMethod";
+            this.paymentMethod.Size = new System.Drawing.Size(468, 31);
+            this.paymentMethod.TabIndex = 22;
+            this.paymentMethod.TableColumn = "CUSMA01033";
+            this.paymentMethod.TitleText = "支払方法";
             // 
             // sprTreeItemsRadioButton1
             // 
             this.sprTreeItemsRadioButton1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.sprTreeItemsRadioButton1.ItemsCount = 3;
-            this.sprTreeItemsRadioButton1.Location = new System.Drawing.Point(14, 47);
+            this.sprTreeItemsRadioButton1.Location = new System.Drawing.Point(14, 48);
             this.sprTreeItemsRadioButton1.Name = "sprTreeItemsRadioButton1";
             this.sprTreeItemsRadioButton1.RadioCenterText = "郵貯";
             this.sprTreeItemsRadioButton1.RadioCenterValue = 0;
@@ -735,54 +744,54 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTreeItemsRadioButton1.RadioRightValue = 0;
             this.sprTreeItemsRadioButton1.Size = new System.Drawing.Size(525, 30);
             this.sprTreeItemsRadioButton1.TabIndex = 21;
-            this.sprTreeItemsRadioButton1.TableColumn = null;
+            this.sprTreeItemsRadioButton1.TableColumn = "CUSMA01034";
             this.sprTreeItemsRadioButton1.TitleText = "金融機関選択";
             this.sprTreeItemsRadioButton1.TitleWidth = 123;
             this.sprTreeItemsRadioButton1.Value = 0;
             // 
             // clvsSendNameBox1
             // 
-            this.clvsSendNameBox1.Location = new System.Drawing.Point(14, 403);
+            this.clvsSendNameBox1.Location = new System.Drawing.Point(14, 406);
             this.clvsSendNameBox1.Name = "clvsSendNameBox1";
             this.clvsSendNameBox1.Size = new System.Drawing.Size(525, 62);
             this.clvsSendNameBox1.TabIndex = 20;
-            this.clvsSendNameBox1.TableColumnLower = null;
-            this.clvsSendNameBox1.TableColumnUpper = null;
+            this.clvsSendNameBox1.TableColumnLower = "CUSMA01049";
+            this.clvsSendNameBox1.TableColumnUpper = "CUSMA01050";
             this.clvsSendNameBox1.TextValueLower = "";
             this.clvsSendNameBox1.TextValueUpper = "";
             this.clvsSendNameBox1.TitleText = "請求書宛名";
             // 
             // registrationDate
             // 
-            this.registrationDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.registrationDate.Location = new System.Drawing.Point(14, 373);
+            this.registrationDate.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.registrationDate.Location = new System.Drawing.Point(14, 374);
             this.registrationDate.Name = "registrationDate";
-            this.registrationDate.Size = new System.Drawing.Size(523, 27);
+            this.registrationDate.Size = new System.Drawing.Size(523, 30);
             this.registrationDate.TabIndex = 19;
-            this.registrationDate.TableColumn = null;
+            this.registrationDate.TableColumn = "CUSMA01048";
             this.registrationDate.TitleText = "登録年月";
             // 
             // withdrawalStartDate
             // 
-            this.withdrawalStartDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.withdrawalStartDate.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.withdrawalStartDate.Location = new System.Drawing.Point(14, 342);
             this.withdrawalStartDate.Name = "withdrawalStartDate";
-            this.withdrawalStartDate.Size = new System.Drawing.Size(523, 27);
+            this.withdrawalStartDate.Size = new System.Drawing.Size(523, 30);
             this.withdrawalStartDate.TabIndex = 18;
-            this.withdrawalStartDate.TableColumn = null;
+            this.withdrawalStartDate.TableColumn = "CUSMA01047";
             this.withdrawalStartDate.TitleText = "引落開始日";
             // 
             // sprAddressBox2
             // 
-            this.sprAddressBox2.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sprAddressBox2.Location = new System.Drawing.Point(14, 467);
+            this.sprAddressBox2.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprAddressBox2.Location = new System.Drawing.Point(14, 470);
             this.sprAddressBox2.Name = "sprAddressBox2";
             this.sprAddressBox2.Size = new System.Drawing.Size(525, 126);
             this.sprAddressBox2.TabIndex = 15;
-            this.sprAddressBox2.TableColumnMunicipalities = null;
+            this.sprAddressBox2.TableColumnMunicipalities = "CUSMA01053";
             this.sprAddressBox2.TableColumnPost = "CUSMA01051";
-            this.sprAddressBox2.TableColumnPrefectures = null;
-            this.sprAddressBox2.TableColumnTownArea = null;
+            this.sprAddressBox2.TableColumnPrefectures = "CUSMA01052";
+            this.sprAddressBox2.TableColumnTownArea = "CUSMA01054";
             this.sprAddressBox2.TitleTextAddress = "請求書住所";
             this.sprAddressBox2.TitleTextPost = "請求書郵便番号";
             this.sprAddressBox2.ValueMunicipalities = "";
@@ -792,13 +801,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // masterSearch
             // 
-            this.masterSearch.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.masterSearch.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.masterSearch.Location = new System.Drawing.Point(568, 435);
             this.masterSearch.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.masterSearch.Name = "masterSearch";
             this.masterSearch.Size = new System.Drawing.Size(523, 30);
             this.masterSearch.TabIndex = 14;
-            this.masterSearch.TableColumn = null;
+            this.masterSearch.TableColumn = "CUSMA01057";
             this.masterSearch.TextBoxWidth = 401;
             this.masterSearch.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.masterSearch.TitleText = "ﾏｽﾀｰ検索時表示";
@@ -849,7 +858,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.sprTreeItemsRadioButton2.RadioRightValue = 2;
             this.sprTreeItemsRadioButton2.Size = new System.Drawing.Size(507, 30);
             this.sprTreeItemsRadioButton2.TabIndex = 24;
-            this.sprTreeItemsRadioButton2.TableColumn = null;
+            this.sprTreeItemsRadioButton2.TableColumn = "CUSMA01042";
             this.sprTreeItemsRadioButton2.TitleText = "預金種目";
             this.sprTreeItemsRadioButton2.TitleWidth = 123;
             this.sprTreeItemsRadioButton2.Value = 0;
@@ -892,7 +901,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankBranchCode.Name = "bankBranchCode";
             this.bankBranchCode.Size = new System.Drawing.Size(507, 30);
             this.bankBranchCode.TabIndex = 7;
-            this.bankBranchCode.TableColumn = null;
+            this.bankBranchCode.TableColumn = "CUSMA01041";
             this.bankBranchCode.TextBoxWidth = 385;
             this.bankBranchCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankBranchCode.TitleText = "金融機関支店ｺｰﾄﾞ";
@@ -937,7 +946,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankCode.Name = "bankCode";
             this.bankCode.Size = new System.Drawing.Size(507, 30);
             this.bankCode.TabIndex = 3;
-            this.bankCode.TableColumn = null;
+            this.bankCode.TableColumn = "CUSMA01040";
             this.bankCode.TextBoxWidth = 385;
             this.bankCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankCode.TitleText = "金融機関コード";
@@ -951,7 +960,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.groupBox1.Controls.Add(this.accountHolderName);
             this.groupBox1.Controls.Add(this.customerNumber);
             this.groupBox1.Controls.Add(this.symbol);
-            this.groupBox1.Location = new System.Drawing.Point(14, 77);
+            this.groupBox1.Location = new System.Drawing.Point(14, 80);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(525, 260);
             this.groupBox1.TabIndex = 3;
@@ -962,13 +971,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.number.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.number.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.number.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.number.Location = new System.Drawing.Point(8, 62);
             this.number.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.number.Name = "number";
             this.number.Size = new System.Drawing.Size(509, 30);
             this.number.TabIndex = 7;
-            this.number.TableColumn = null;
+            this.number.TableColumn = "CUSMA01036";
             this.number.TextBoxWidth = 387;
             this.number.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.number.TitleText = "番号";
@@ -979,13 +988,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.accountHolderNameKana.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.accountHolderNameKana.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.accountHolderNameKana.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.accountHolderNameKana.Location = new System.Drawing.Point(8, 158);
             this.accountHolderNameKana.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accountHolderNameKana.Name = "accountHolderNameKana";
             this.accountHolderNameKana.Size = new System.Drawing.Size(509, 30);
             this.accountHolderNameKana.TabIndex = 6;
-            this.accountHolderNameKana.TableColumn = null;
+            this.accountHolderNameKana.TableColumn = "CUSMA01039";
             this.accountHolderNameKana.TextBoxWidth = 387;
             this.accountHolderNameKana.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.accountHolderNameKana.TitleText = "口座名義人カナ";
@@ -996,13 +1005,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.accountHolderName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.accountHolderName.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.accountHolderName.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.accountHolderName.Location = new System.Drawing.Point(8, 126);
             this.accountHolderName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.accountHolderName.Name = "accountHolderName";
             this.accountHolderName.Size = new System.Drawing.Size(509, 30);
             this.accountHolderName.TabIndex = 5;
-            this.accountHolderName.TableColumn = null;
+            this.accountHolderName.TableColumn = "CUSMA01038";
             this.accountHolderName.TextBoxWidth = 387;
             this.accountHolderName.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.accountHolderName.TitleText = "口座名義人名";
@@ -1013,13 +1022,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.customerNumber.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customerNumber.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.customerNumber.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.customerNumber.Location = new System.Drawing.Point(8, 94);
             this.customerNumber.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.customerNumber.Name = "customerNumber";
             this.customerNumber.Size = new System.Drawing.Size(509, 30);
             this.customerNumber.TabIndex = 4;
-            this.customerNumber.TableColumn = null;
+            this.customerNumber.TableColumn = "CUSMA01037";
             this.customerNumber.TextBoxWidth = 387;
             this.customerNumber.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.customerNumber.TitleText = "顧客番号";
@@ -1030,13 +1039,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.symbol.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.symbol.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.symbol.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.symbol.Location = new System.Drawing.Point(8, 30);
             this.symbol.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.symbol.Name = "symbol";
             this.symbol.Size = new System.Drawing.Size(509, 30);
             this.symbol.TabIndex = 3;
-            this.symbol.TableColumn = null;
+            this.symbol.TableColumn = "CUSMA01035";
             this.symbol.TextBoxWidth = 387;
             this.symbol.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.symbol.TitleText = "記号";
@@ -1046,13 +1055,13 @@ namespace CloverusSys.MasterMaintenance.Customers
             // TabClaim
             // 
             this.TabClaim.BackColor = System.Drawing.SystemColors.Control;
+            this.TabClaim.Controls.Add(this.customerClassification);
+            this.TabClaim.Controls.Add(this.depositConditions);
+            this.TabClaim.Controls.Add(this.depositRecycling);
             this.TabClaim.Controls.Add(this.mailingCode);
             this.TabClaim.Controls.Add(this.mailingClassification);
-            this.TabClaim.Controls.Add(this.customerClassification);
             this.TabClaim.Controls.Add(this.lastBillingBalance);
-            this.TabClaim.Controls.Add(this.depositConditions);
             this.TabClaim.Controls.Add(this.paymentDay);
-            this.TabClaim.Controls.Add(this.depositRecycling);
             this.TabClaim.Controls.Add(this.closingDate);
             this.TabClaim.Location = new System.Drawing.Point(4, 32);
             this.TabClaim.Name = "TabClaim";
@@ -1060,15 +1069,51 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabClaim.TabIndex = 2;
             this.TabClaim.Text = "請求締関連";
             // 
+            // customerClassification
+            // 
+            this.customerClassification.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.customerClassification.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.customerClassification.Location = new System.Drawing.Point(14, 177);
+            this.customerClassification.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.customerClassification.Name = "customerClassification";
+            this.customerClassification.Size = new System.Drawing.Size(468, 31);
+            this.customerClassification.TabIndex = 5;
+            this.customerClassification.TableColumn = "CUSMA01083";
+            this.customerClassification.TitleText = "顧客分類";
+            // 
+            // depositConditions
+            // 
+            this.depositConditions.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.depositConditions.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.depositConditions.Location = new System.Drawing.Point(14, 112);
+            this.depositConditions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.depositConditions.Name = "depositConditions";
+            this.depositConditions.Size = new System.Drawing.Size(468, 31);
+            this.depositConditions.TabIndex = 3;
+            this.depositConditions.TableColumn = "CUSMA01066";
+            this.depositConditions.TitleText = "入金条件";
+            // 
+            // depositRecycling
+            // 
+            this.depositRecycling.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.depositRecycling.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.depositRecycling.Location = new System.Drawing.Point(14, 47);
+            this.depositRecycling.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.depositRecycling.Name = "depositRecycling";
+            this.depositRecycling.Size = new System.Drawing.Size(468, 32);
+            this.depositRecycling.TabIndex = 1;
+            this.depositRecycling.TableColumn = "CUSMA01065";
+            this.depositRecycling.TitleText = "入金リサイクル";
+            // 
             // mailingCode
             // 
-            this.mailingCode.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.mailingCode.Location = new System.Drawing.Point(14, 236);
+            this.mailingCode.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.mailingCode.Location = new System.Drawing.Point(14, 242);
             this.mailingCode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mailingCode.Name = "mailingCode";
             this.mailingCode.Size = new System.Drawing.Size(468, 30);
             this.mailingCode.TabIndex = 7;
-            this.mailingCode.TableColumn = "CUSMA01096";
+            this.mailingCode.TableColumn = "CUSMA01095";
             this.mailingCode.TextBoxWidth = 346;
             this.mailingCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.mailingCode.TitleText = "郵送記号";
@@ -1077,96 +1122,135 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // mailingClassification
             // 
-            this.mailingClassification.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.mailingClassification.Location = new System.Drawing.Point(14, 204);
+            this.mailingClassification.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.mailingClassification.Location = new System.Drawing.Point(14, 210);
             this.mailingClassification.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.mailingClassification.Name = "mailingClassification";
             this.mailingClassification.Size = new System.Drawing.Size(468, 30);
             this.mailingClassification.TabIndex = 6;
-            this.mailingClassification.TableColumn = null;
+            this.mailingClassification.TableColumn = "CUSMA01094";
             this.mailingClassification.TextBoxWidth = 346;
             this.mailingClassification.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.mailingClassification.TitleText = "郵送区分";
             this.mailingClassification.TitleWidth = 122;
             this.mailingClassification.Value = "";
             // 
-            // customerClassification
-            // 
-            this.customerClassification.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.customerClassification.Location = new System.Drawing.Point(14, 173);
-            this.customerClassification.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.customerClassification.Name = "customerClassification";
-            this.customerClassification.Size = new System.Drawing.Size(468, 28);
-            this.customerClassification.TabIndex = 5;
-            this.customerClassification.TableColumn = null;
-            this.customerClassification.TitleText = "顧客分類";
-            // 
             // lastBillingBalance
             // 
-            this.lastBillingBalance.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.lastBillingBalance.Location = new System.Drawing.Point(14, 141);
+            this.lastBillingBalance.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lastBillingBalance.Location = new System.Drawing.Point(14, 145);
             this.lastBillingBalance.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lastBillingBalance.Name = "lastBillingBalance";
             this.lastBillingBalance.Size = new System.Drawing.Size(468, 30);
             this.lastBillingBalance.TabIndex = 4;
-            this.lastBillingBalance.TableColumn = "CUSMA01069";
+            this.lastBillingBalance.TableColumn = "CUSMA01067";
             this.lastBillingBalance.TextBoxWidth = 346;
             this.lastBillingBalance.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lastBillingBalance.TitleText = "前回請求残高";
             this.lastBillingBalance.TitleWidth = 122;
             this.lastBillingBalance.Value = "";
             // 
-            // depositConditions
-            // 
-            this.depositConditions.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.depositConditions.Location = new System.Drawing.Point(14, 110);
-            this.depositConditions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.depositConditions.Name = "depositConditions";
-            this.depositConditions.Size = new System.Drawing.Size(468, 28);
-            this.depositConditions.TabIndex = 3;
-            this.depositConditions.TableColumn = null;
-            this.depositConditions.TitleText = "入金条件";
-            // 
             // paymentDay
             // 
-            this.paymentDay.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.paymentDay.Location = new System.Drawing.Point(14, 78);
+            this.paymentDay.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.paymentDay.Location = new System.Drawing.Point(14, 80);
             this.paymentDay.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.paymentDay.Name = "paymentDay";
             this.paymentDay.Size = new System.Drawing.Size(468, 30);
             this.paymentDay.TabIndex = 2;
-            this.paymentDay.TableColumn = null;
+            this.paymentDay.TableColumn = "CUSMA01064";
             this.paymentDay.TextBoxWidth = 346;
             this.paymentDay.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.paymentDay.TitleText = "入金日";
             this.paymentDay.TitleWidth = 122;
             this.paymentDay.Value = "";
             // 
-            // depositRecycling
-            // 
-            this.depositRecycling.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.depositRecycling.Location = new System.Drawing.Point(14, 47);
-            this.depositRecycling.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.depositRecycling.Name = "depositRecycling";
-            this.depositRecycling.Size = new System.Drawing.Size(468, 28);
-            this.depositRecycling.TabIndex = 1;
-            this.depositRecycling.TableColumn = null;
-            this.depositRecycling.TitleText = "入金リサイクル";
-            // 
             // closingDate
             // 
-            this.closingDate.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.closingDate.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.closingDate.Location = new System.Drawing.Point(14, 15);
             this.closingDate.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.closingDate.Name = "closingDate";
             this.closingDate.Size = new System.Drawing.Size(468, 30);
             this.closingDate.TabIndex = 0;
-            this.closingDate.TableColumn = null;
+            this.closingDate.TableColumn = "CUSMA01063";
             this.closingDate.TextBoxWidth = 346;
             this.closingDate.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.closingDate.TitleText = "締日";
             this.closingDate.TitleWidth = 122;
             this.closingDate.Value = "";
+            // 
+            // clvsDropdown2
+            // 
+            this.clvsDropdown2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clvsDropdown2.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsDropdown2.Location = new System.Drawing.Point(14, 13);
+            this.clvsDropdown2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clvsDropdown2.Name = "clvsDropdown2";
+            this.clvsDropdown2.Size = new System.Drawing.Size(257, 31);
+            this.clvsDropdown2.TabIndex = 0;
+            this.clvsDropdown2.TableColumn = "CUSMA01080";
+            this.clvsDropdown2.TitleText = "顧客区分";
+            // 
+            // clvsDropdown1
+            // 
+            this.clvsDropdown1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clvsDropdown1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsDropdown1.Location = new System.Drawing.Point(14, 494);
+            this.clvsDropdown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clvsDropdown1.Name = "clvsDropdown1";
+            this.clvsDropdown1.Size = new System.Drawing.Size(257, 31);
+            this.clvsDropdown1.TabIndex = 41;
+            this.clvsDropdown1.TableColumn = "CUSMA01018";
+            this.clvsDropdown1.TitleText = "注文者選択";
+            // 
+            // clvsDropdown3
+            // 
+            this.clvsDropdown3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clvsDropdown3.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsDropdown3.Location = new System.Drawing.Point(14, 15);
+            this.clvsDropdown3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clvsDropdown3.Name = "clvsDropdown3";
+            this.clvsDropdown3.Size = new System.Drawing.Size(468, 31);
+            this.clvsDropdown3.TabIndex = 22;
+            this.clvsDropdown3.TableColumn = "CUSMA01033";
+            this.clvsDropdown3.TitleText = "支払方法";
+            // 
+            // clvsDropdown4
+            // 
+            this.clvsDropdown4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clvsDropdown4.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsDropdown4.Location = new System.Drawing.Point(14, 47);
+            this.clvsDropdown4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clvsDropdown4.Name = "clvsDropdown4";
+            this.clvsDropdown4.Size = new System.Drawing.Size(468, 32);
+            this.clvsDropdown4.TabIndex = 1;
+            this.clvsDropdown4.TableColumn = "CUSMA01065";
+            this.clvsDropdown4.TitleText = "入金リサイクル";
+            // 
+            // clvsDropdown5
+            // 
+            this.clvsDropdown5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clvsDropdown5.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsDropdown5.Location = new System.Drawing.Point(14, 112);
+            this.clvsDropdown5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clvsDropdown5.Name = "clvsDropdown5";
+            this.clvsDropdown5.Size = new System.Drawing.Size(468, 31);
+            this.clvsDropdown5.TabIndex = 3;
+            this.clvsDropdown5.TableColumn = "CUSMA01066";
+            this.clvsDropdown5.TitleText = "入金条件";
+            // 
+            // clvsDropdown6
+            // 
+            this.clvsDropdown6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.clvsDropdown6.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsDropdown6.Location = new System.Drawing.Point(14, 177);
+            this.clvsDropdown6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clvsDropdown6.Name = "clvsDropdown6";
+            this.clvsDropdown6.Size = new System.Drawing.Size(468, 31);
+            this.clvsDropdown6.TabIndex = 5;
+            this.clvsDropdown6.TableColumn = "CUSMA01083";
+            this.clvsDropdown6.TitleText = "顧客分類";
             // 
             // Edit
             // 
@@ -1220,7 +1304,6 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprTextBox emergencyContact3;
         private SprCommon.Controls.SprTextBox emergencyContact2;
         private SprCommon.Controls.SprTextBox emergencyContact1;
-        private SprCommon.Controls.SprDropdown customerCategory;
         private SprCommon.Controls.SprTextBox ordererOther;
         private SprCommon.Controls.SprMultiTextBox deliveryNotice;
         private SprCommon.Controls.SprMultiTextBox fasting;
@@ -1246,11 +1329,8 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprTextBox customerNumber;
         private SprCommon.Controls.SprTextBox mailingCode;
         private SprCommon.Controls.SprTextBox mailingClassification;
-        private SprCommon.Controls.SprDropdown customerClassification;
         private SprCommon.Controls.SprTextBox lastBillingBalance;
-        private SprCommon.Controls.SprDropdown depositConditions;
         private SprCommon.Controls.SprTextBox paymentDay;
-        private SprCommon.Controls.SprDropdown depositRecycling;
         private SprCommon.Controls.SprTextBox closingDate;
         private SprCommon.Controls.SprDateText firstOrderDate;
         private CloverusCommon.Controls.ClvsRouteSelect SelRouteDay;
@@ -1262,9 +1342,19 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprCheckBox sprCheckBox1;
         private CloverusCommon.Controls.ClvsSendNameBox clvsSendNameBox1;
         private SprCommon.Controls.SprTreeItemsRadioButton sprTreeItemsRadioButton1;
-        private SprCommon.Controls.SprDropdown sprDropdown1;
         private SprCommon.Controls.SprTreeItemsRadioButton sprTreeItemsRadioButton2;
         private SprCommon.Controls.SprTreeItemsRadioButton sprTreeItemsRadioButton3;
+        private CloverusCommon.Controls.ClvsDropdown ordererSelection;
+        private CloverusCommon.Controls.ClvsDropdown customerCategory;
+        private CloverusCommon.Controls.ClvsDropdown paymentMethod;
+        private CloverusCommon.Controls.ClvsDropdown depositRecycling;
+        private CloverusCommon.Controls.ClvsDropdown customerClassification;
+        private CloverusCommon.Controls.ClvsDropdown depositConditions;
+        private CloverusCommon.Controls.ClvsDropdown clvsDropdown2;
         private CloverusCommon.Controls.ClvsDropdown clvsDropdown1;
+        private CloverusCommon.Controls.ClvsDropdown clvsDropdown3;
+        private CloverusCommon.Controls.ClvsDropdown clvsDropdown4;
+        private CloverusCommon.Controls.ClvsDropdown clvsDropdown5;
+        private CloverusCommon.Controls.ClvsDropdown clvsDropdown6;
     }
 }
