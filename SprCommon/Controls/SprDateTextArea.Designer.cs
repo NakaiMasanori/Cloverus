@@ -39,11 +39,11 @@
             // 
             this.LblTitle.BackColor = System.Drawing.Color.Navy;
             this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitle.ForeColor = System.Drawing.Color.White;
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 27);
+            this.LblTitle.Size = new System.Drawing.Size(122, 30);
             this.LblTitle.TabIndex = 4;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -57,7 +57,7 @@
             this.checkBox1.Location = new System.Drawing.Point(122, 0);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Padding = new System.Windows.Forms.Padding(4, 0, 2, 0);
-            this.checkBox1.Size = new System.Drawing.Size(21, 27);
+            this.checkBox1.Size = new System.Drawing.Size(21, 30);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
@@ -65,12 +65,12 @@
             // 
             this.dateTimePicker1.CustomFormat = "yyyy/MM/dd（ddd）";
             this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.dateTimePicker1.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.dateTimePicker1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dateTimePicker1.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.dateTimePicker1.Location = new System.Drawing.Point(321, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(147, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(147, 30);
             this.dateTimePicker1.TabIndex = 10;
             // 
             // LblFrom
@@ -78,7 +78,7 @@
             this.LblFrom.Dock = System.Windows.Forms.DockStyle.Left;
             this.LblFrom.Location = new System.Drawing.Point(290, 0);
             this.LblFrom.Name = "LblFrom";
-            this.LblFrom.Size = new System.Drawing.Size(31, 27);
+            this.LblFrom.Size = new System.Drawing.Size(31, 30);
             this.LblFrom.TabIndex = 9;
             this.LblFrom.Text = "～";
             this.LblFrom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -87,12 +87,12 @@
             // 
             this.DatePicker.CustomFormat = "yyyy/MM/dd（ddd）";
             this.DatePicker.Dock = System.Windows.Forms.DockStyle.Left;
-            this.DatePicker.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.DatePicker.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DatePicker.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.DatePicker.Location = new System.Drawing.Point(143, 0);
             this.DatePicker.Name = "DatePicker";
-            this.DatePicker.Size = new System.Drawing.Size(147, 27);
+            this.DatePicker.Size = new System.Drawing.Size(147, 30);
             this.DatePicker.TabIndex = 8;
             // 
             // SprDateTextArea
@@ -103,9 +103,9 @@
             this.Controls.Add(this.DatePicker);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.LblTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprDateTextArea";
-            this.Size = new System.Drawing.Size(468, 27);
+            this.Size = new System.Drawing.Size(468, 30);
             this.ResumeLayout(false);
             this.PerformLayout();
 
