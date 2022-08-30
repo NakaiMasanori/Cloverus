@@ -66,7 +66,7 @@ namespace SprCommon.Controls
         /// <summary>
         /// 値
         /// </summary>
-        public int TextValue
+        public int Value
         {
             get
             {
@@ -102,7 +102,7 @@ namespace SprCommon.Controls
         {
             if (!string.IsNullOrEmpty(TableColumn) && row.Table.Columns.Contains(TableColumn))
             {
-                TextValue = row[TableColumn] != null ? int.Parse(row[TableColumn].ToString()) : 0;
+                Value = row[TableColumn] != null ? int.Parse(row[TableColumn].ToString()) : 0;
             }
         }
         #endregion

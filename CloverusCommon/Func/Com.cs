@@ -24,14 +24,14 @@ namespace CloverusCommon.Func
             {
                 switch (control)
                 {
-                    case SprCommon.Controls.SprTextBox textBox:
+                    case SprTextBox textBox:
                         if (textBox.Name == "TxtName")
                         {
                             var x = 0;
                         }
                         textBox.SetFromDb(row);
                         break;
-                    case SprCommon.Controls.SprMultiTextBox textBox:
+                    case SprMultiTextBox textBox:
                         textBox.SetFromDb(row);
                         break;
                     case Controls.ClvsAddressBox addressBox:

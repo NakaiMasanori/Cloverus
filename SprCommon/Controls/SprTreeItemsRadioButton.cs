@@ -118,10 +118,13 @@ namespace SprCommon.Controls
         /// <summary>
         /// 使用する要素の数
         /// </summary>
+        private int _itemsCount = 3;
         public int ItemsCount
         {
+            get { return _itemsCount; }
             set
             {
+                _itemsCount = value;
                 switch (value)
                 {
                     case 1:
@@ -137,7 +140,7 @@ namespace SprCommon.Controls
         /// <summary>
         /// 選択値
         /// </summary>
-        public int SelectedValue
+        public int Value
         {
             get
             {
@@ -150,6 +153,24 @@ namespace SprCommon.Controls
                     return RadioCenterValue;
                 }
                 return RadioLeftValue;
+            }
+            set
+            {
+                if (value == RadioLeftValue)
+                {
+                    RdoLeft.Checked = true;
+                    return;
+                }
+                if (value == RadioCenterValue)
+                {
+                    RdoCenter.Checked = true;
+                    return;
+                }
+                if (value == RadioRightValue)
+                {
+                    RdoRight.Checked = true;
+                    return;
+                }
             }
         }
         #endregion
