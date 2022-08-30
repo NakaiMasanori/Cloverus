@@ -221,8 +221,8 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.clvsDropdown7.Name = "clvsDropdown7";
             this.clvsDropdown7.Size = new System.Drawing.Size(927, 44);
             this.clvsDropdown7.TabIndex = 42;
-            this.clvsDropdown7.TableColumn = null;
-            this.clvsDropdown7.TitleText = "項目名４５６７";
+            this.clvsDropdown7.TableColumn = "CUSMA01081";
+            this.clvsDropdown7.TitleText = "顧客区分";
             this.clvsDropdown7.Value = "";
             // 
             // sprTreeItemsRadioButton3
