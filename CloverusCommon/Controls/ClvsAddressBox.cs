@@ -33,7 +33,7 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// 郵便番号のタイトル
         /// </summary>
-        public string PostTitleText
+        public string TitleTextPost
         {
             get { return LblTitlePost.Text; }
             set { LblTitlePost.Text = value; }
@@ -41,7 +41,7 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// 住所のタイトル
         /// </summary>
-        public string AddressTitleText
+        public string TitleTextAddress
         {
             get { return LblTitleAddress.Text; }
             set { LblTitleAddress.Text = value; }
@@ -49,7 +49,7 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// 郵便番号
         /// </summary>
-        public string TextValuePost
+        public string ValuePost
         {
             get { return TxtPostCode.Text; }
             set { TxtPostCode.Text = value; }
@@ -57,7 +57,7 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// 都道府県
         /// </summary>
-        public string TextValuePrefectures
+        public string ValuePrefectures
         {
             get { return TxtPrefectures.Text; }
             set { TxtPrefectures.Text = value; }
@@ -65,7 +65,7 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// 市区町村
         /// </summary>
-        public string TextValueMunicipalities
+        public string ValueMunicipalities
         {
             get { return TxtMunicipalities.Text; }
             set { TxtMunicipalities.Text = value; }
@@ -73,7 +73,7 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// 町域
         /// </summary>
-        public string TextValueTownArea
+        public string ValueTownArea
         {
             get { return TxtTownArea.Text; }
             set { TxtTownArea.Text = value; }
@@ -179,19 +179,19 @@ namespace CloverusCommon.Controls
         {
             if (!string.IsNullOrEmpty(TableColumnPost) && row.Table.Columns.Contains(TableColumnPost))
             {
-                TextValuePost = row[TableColumnPost].ToString();
+                ValuePost = row[TableColumnPost].ToString();
             }
             if (!string.IsNullOrEmpty(TableColumnPrefectures) && row.Table.Columns.Contains(TableColumnPrefectures))
             {
-                TextValuePrefectures = row[TableColumnPrefectures].ToString();
+                ValuePrefectures = row[TableColumnPrefectures].ToString();
             }
             if (!string.IsNullOrEmpty(TableColumnMunicipalities) && row.Table.Columns.Contains(TableColumnMunicipalities))
             {
-                TextValueMunicipalities = row[TableColumnMunicipalities].ToString();
+                ValueMunicipalities = row[TableColumnMunicipalities].ToString();
             }
             if (!string.IsNullOrEmpty(TableColumnTownArea) && row.Table.Columns.Contains(TableColumnTownArea))
             {
-                TextValueTownArea = row[TableColumnTownArea].ToString();
+                ValueTownArea = row[TableColumnTownArea].ToString();
             }
         }
         #endregion

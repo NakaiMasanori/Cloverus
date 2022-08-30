@@ -63,7 +63,7 @@
             this.TxtKeyword.TableColumn = null;
             this.TxtKeyword.TextBoxWidth = 646;
             this.TxtKeyword.TextImeMode = System.Windows.Forms.ImeMode.On;
-            this.TxtKeyword.TextValue = "";
+            this.TxtKeyword.Value = "";
             this.TxtKeyword.TitleText = "キーワード(検索＝F3)";
             this.TxtKeyword.TitleWidth = 154;
             // 

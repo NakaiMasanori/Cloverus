@@ -39,7 +39,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// </summary>
         public string Keyword
         {
-            get { return this.TxtKeyword.TextValue.Trim(); }
+            get { return this.TxtKeyword.Value.Trim(); }
         }
         #endregion
 

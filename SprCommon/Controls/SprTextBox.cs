@@ -76,7 +76,7 @@ namespace SprCommon.Controls
         /// <summary>
         /// 値
         /// </summary>
-        public string TextValue
+        public string Value
         {
             get { return TxtData.Text; }
             set { TxtData.Text = value; }
@@ -164,7 +164,7 @@ namespace SprCommon.Controls
         {
             if (!string.IsNullOrEmpty(TableColumn) && row.Table.Columns.Contains(TableColumn))
             {
-                TextValue = row[TableColumn].ToString();
+                Value = row[TableColumn].ToString();
             }
         }
         #endregion
