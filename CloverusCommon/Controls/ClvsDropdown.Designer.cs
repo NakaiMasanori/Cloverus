@@ -41,30 +41,33 @@
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 31);
+            this.LblTitle.Size = new System.Drawing.Size(122, 29);
             this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // DrpDown
             // 
+            this.DrpDown.BackColor = System.Drawing.SystemColors.Window;
             this.DrpDown.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DrpDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DrpDown.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.DrpDown.FormattingEnabled = true;
             this.DrpDown.Location = new System.Drawing.Point(122, 0);
             this.DrpDown.Name = "DrpDown";
-            this.DrpDown.Size = new System.Drawing.Size(346, 31);
+            this.DrpDown.Size = new System.Drawing.Size(344, 31);
             this.DrpDown.TabIndex = 3;
             // 
             // ClvsDropdown
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.DrpDown);
             this.Controls.Add(this.LblTitle);
             this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ClvsDropdown";
-            this.Size = new System.Drawing.Size(468, 31);
+            this.Size = new System.Drawing.Size(466, 29);
             this.ResumeLayout(false);
 
         }
