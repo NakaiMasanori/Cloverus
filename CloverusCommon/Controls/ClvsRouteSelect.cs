@@ -24,6 +24,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
 using CloverusCommon.Database.SqlServer.Sql;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 #endregion
 
 namespace CloverusCommon.Controls
@@ -113,7 +114,7 @@ namespace CloverusCommon.Controls
         /// <param name="row"></param>
         public void SetFromDb(DataRow row, SqlBase db)
         {
-            if (!string.IsNullOrEmpty(TableColumnDay) && row.Table.Columns.Contains(TableColumnDay))
+            if (!string.IsNullOrEmpty(TableColumnDay))
             {
                 DayValue = row[TableColumnDay].ToString();
                 var dt = db.Select(M_ROUTE.GetName(M_ROUTE.RouteType.DayTime, DayValue));
@@ -125,8 +126,11 @@ namespace CloverusCommon.Controls
                 {
                     DayText = string.Empty;
                 }
+            }
+            if (!string.IsNullOrEmpty(TableColumnNight) && row.Table.Columns.Contains(TableColumnNight))
+            {
                 NightValue = row[TableColumnNight].ToString();
-                dt = db.Select(M_ROUTE.GetName(M_ROUTE.RouteType.NightTime, NightValue));
+                var dt = db.Select(M_ROUTE.GetName(M_ROUTE.RouteType.NightTime, NightValue));
                 if (dt != null && dt.Rows.Count > 0)
                 {
                     NightText = dt.Rows[0][M_ROUTE.ROUTE_NAME].ToString();

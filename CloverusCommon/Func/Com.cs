@@ -40,6 +40,9 @@ namespace CloverusCommon.Func
                     case Controls.ClvsRouteSelect routeSelect:
                         routeSelect.SetFromDb(row, db);
                         break;
+                    case Controls.ClvsDropdown dropDown:
+                        dropDown.SetFromDb(row);
+                        break;
                     case SprDateText dateBox:
                         dateBox.SetFromDb(row);
                         break;

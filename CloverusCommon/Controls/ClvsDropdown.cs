@@ -13,6 +13,7 @@
 //*****************************************************************************
 
 #region using defines
+using CloverusCommon.Database.SqlServer.Sql;
 using SprCommon;
 using SprCommon.Database.SqlServer;
 using System;
@@ -59,8 +60,18 @@ namespace CloverusCommon.Controls
             get { return LblTitle.Text; }
             set { LblTitle.Text = value; }
         }
+        /// <summary>
+        /// 値
+        /// </summary>
+        public string Value
+        {
+
+            get { return DrpDown.SelectedValue.ToString(); }
+            set { DrpDown.SelectedValue = value; }
+        }
         #endregion
 
+        #region 要素の初期化
         public void InitializeDropdown()
         {
             if (TableColumn != null)
@@ -73,5 +84,21 @@ namespace CloverusCommon.Controls
                 }
             }
         }
+        #endregion
+
+        #region データベースの値をコントロールにセット
+        /// <summary>
+        /// データベースの値をコントロールにセット
+        /// </summary>
+        /// <param name="row"></param>
+        public void SetFromDb(DataRow row)
+        {
+            if (!string.IsNullOrEmpty(TableColumn))
+            {
+                Value = row[TableColumn].ToString();
+            }
+        }
+        #endregion
+
     }
 }
