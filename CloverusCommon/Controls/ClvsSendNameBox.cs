@@ -22,23 +22,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SprCommon;
 #endregion
 
-namespace SprCommon.Controls
+namespace CloverusCommon.Controls
 {
-    public partial class SprCheckBox : UserControl
+    public partial class ClvsSendNameBox : UserControl
     {
         #region プロパティ
         /// <summary>
-        /// コントロールと紐づくデータベースのカラム
-        /// </summary>
-        public string TableColumn
-        {
-            get;
-            set;
-        }
-        /// <summary>
-        /// タイトル
+        /// 郵便番号のタイトル
         /// </summary>
         public string TitleText
         {
@@ -46,36 +39,36 @@ namespace SprCommon.Controls
             set { LblTitle.Text = value; }
         }
         /// <summary>
-        /// タイトル部の幅
+        /// 宛名(1)
         /// </summary>
-        public int TitleWidth
+        public string TextValueUpper
         {
-            get { return LblTitle.Width; }
-            set { LblTitle.Width = value; }
+            get { return TxtUpper.Text; }
+            set { TxtUpper.Text = value; }
         }
         /// <summary>
-        /// チェックボックスのテキスト
+        /// 宛名(2)
         /// </summary>
-        public string CheckBoxText
+        public string TextValueLower
         {
-            get { return ChkBox.Text; }
-            set { ChkBox.Text = value; }
+            get { return TxtLower.Text; }
+            set { TxtLower.Text = value; }
         }
         /// <summary>
-        /// チェックボックスのチェック
+        /// 宛名(1)のデータベースカラム
         /// </summary>
-        public bool Value
-        {
-            get { return ChkBox.Checked; }
-            set { ChkBox.Checked = value; }
-        }
+        public string TableColumnUpper { get; set; }
+        /// <summary>
+        /// 宛名(2)のデータベースカラム
+        /// </summary>
+        public string TableColumnLower { get; set; }
         #endregion
 
         #region コンストラクタ
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        public SprCheckBox()
+        public ClvsSendNameBox()
         {
             InitializeComponent();
         }

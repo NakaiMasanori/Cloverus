@@ -45,7 +45,12 @@ namespace CloverusCommon.Controls
         /// <summary>
         /// コントロールと紐づくデータベースのカラム
         /// </summary>
-        public string TableColumn
+        public string TableColumnDay
+        {
+            get;
+            set;
+        }
+        public string TableColumnNight
         {
             get;
             set;
@@ -67,36 +72,36 @@ namespace CloverusCommon.Controls
             set { LblTitle.Width = value; }
         }
         /// <summary>
-        /// 値
+        /// 値(昼)
         /// </summary>
-        public string TextValue
+        public string DayValue
         {
-            get { return TxtData.Text; }
-            set { TxtData.Text = value; }
+            get { return TxtDay.Text; }
+            set { TxtDay.Text = value; }
         }
         /// <summary>
-        /// テキストボックス部の幅
+        /// 値(夜)
         /// </summary>
-        public int TextBoxWidth
+        public string NightValue
         {
-            get { return TxtData.Width; }
-            set { TxtData.Width = value; }
+            get { return TxtNight.Text; }
+            set { TxtNight.Text = value; }
         }
         /// <summary>
-        /// 名称
+        /// 名称(昼)
         /// </summary>
-        public string LabelValue
+        public string DayText
         {
-            get { return LblRouteName.Text; }
-            set { LblRouteName.Text = value; }
+            get { return LblNameDay.Text; }
+            set { LblNameDay.Text = value; }
         }
         /// <summary>
-        /// 昼、夜区分
+        /// 名称(夜)
         /// </summary>
-        public M_ROUTE.RouteType Route
+        public string NightText
         {
-            get;
-            set;
+            get { return LblNameNight.Text; }
+            set { LblNameNight.Text = value; }
         }
 
         #endregion
@@ -108,17 +113,27 @@ namespace CloverusCommon.Controls
         /// <param name="row"></param>
         public void SetFromDb(DataRow row, SqlBase db)
         {
-            if (!string.IsNullOrEmpty(TableColumn) && row.Table.Columns.Contains(TableColumn))
+            if (!string.IsNullOrEmpty(TableColumnDay) && row.Table.Columns.Contains(TableColumnDay))
             {
-                TextValue = row[TableColumn].ToString();
-                var dt = db.Select(M_ROUTE.GetName(Route, TextValue));
+                DayValue = row[TableColumnDay].ToString();
+                var dt = db.Select(M_ROUTE.GetName(M_ROUTE.RouteType.DayTime, DayValue));
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    LabelValue = dt.Rows[0][M_ROUTE.ROUTE_NAME].ToString();
+                    DayText = dt.Rows[0][M_ROUTE.ROUTE_NAME].ToString();
                 }
                 else
                 {
-                    LabelValue = string.Empty;
+                    DayText = string.Empty;
+                }
+                NightValue = row[TableColumnNight].ToString();
+                dt = db.Select(M_ROUTE.GetName(M_ROUTE.RouteType.NightTime, NightValue));
+                if (dt != null && dt.Rows.Count > 0)
+                {
+                    NightText = dt.Rows[0][M_ROUTE.ROUTE_NAME].ToString();
+                }
+                else
+                {
+                    NightText = string.Empty;
                 }
             }
         }

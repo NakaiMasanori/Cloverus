@@ -47,14 +47,15 @@
             // 
             // DatePicker
             // 
-            this.DatePicker.CustomFormat = "yyyy/MM/dd（ddd）";
+            this.DatePicker.CustomFormat = "yyyy/MM/dd(ddd)";
             this.DatePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DatePicker.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.DatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DatePicker.ImeMode = System.Windows.Forms.ImeMode.Off;
             this.DatePicker.Location = new System.Drawing.Point(122, 0);
             this.DatePicker.Name = "DatePicker";
-            this.DatePicker.Size = new System.Drawing.Size(346, 30);
+            this.DatePicker.ShowCheckBox = true;
+            this.DatePicker.Size = new System.Drawing.Size(184, 30);
             this.DatePicker.TabIndex = 3;
             // 
             // SprDateText
@@ -64,7 +65,7 @@
             this.Controls.Add(this.LblTitle);
             this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprDateText";
-            this.Size = new System.Drawing.Size(468, 30);
+            this.Size = new System.Drawing.Size(306, 30);
             this.ResumeLayout(false);
 
         }
