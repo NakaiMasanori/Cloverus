@@ -83,10 +83,17 @@
     <Compile Include="Controls\ClvsSendNameBox.Designer.cs">
       <DependentUpon>ClvsSendNameBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\ClvsDropdown.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ClvsDropdown.Designer.cs">
+      <DependentUpon>ClvsDropdown.cs</DependentUpon>
+    </Compile>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
     <Compile Include="Database\SqlServer\Sql\M_ADDRESS.cs" />
     <Compile Include="Database\SqlServer\Sql\M_CUSTOMER.cs" />
+    <Compile Include="Database\SqlServer\Sql\M_OTHER.cs" />
     <Compile Include="Database\SqlServer\Sql\M_ROUTE.cs" />
     <Compile Include="Forms\AddressSelector\Preview.cs">
       <SubType>Form</SubType>
@@ -128,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\ClvsSendNameBox.resx">
       <DependentUpon>ClvsSendNameBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ClvsDropdown.resx">
+      <DependentUpon>ClvsDropdown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\AddressSelector\Preview.resx">
       <DependentUpon>Preview.cs</DependentUpon>

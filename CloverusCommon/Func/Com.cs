@@ -53,5 +53,33 @@ namespace CloverusCommon.Func
             }
         }
         #endregion
+
+
+        public static void InitializeControls(Control.ControlCollection controls)
+        {
+            foreach (Control control in controls)
+            {
+                switch (control)
+                {
+                    case TextBox textBox:
+                        textBox.GotFocus += TextBox_GotFocus;
+                        break;
+                    case Controls.ClvsDropdown dropDown:
+                        dropDown.InitializeDropdown();
+                        break;
+                    default:
+                        break;
+                }
+                if (control.Controls != null)
+                {
+                    InitializeControls(control.Controls);
+                }
+            }
+        }
+
+        private static void TextBox_GotFocus(object sender, EventArgs e)
+        {
+            ((TextBox)sender).SelectAll();
+        }
     }
 }

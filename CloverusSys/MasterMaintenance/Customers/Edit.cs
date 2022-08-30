@@ -42,7 +42,10 @@ namespace CloverusSys.MasterMaintenance.Customers
         public Edit(int customerCode)
         {
             InitializeComponent();
-            Com.InitializeControls(this.Controls);
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
+            {
+                CloverusCommon.Func.Com.InitializeControls(this.Controls);
+            }
             customerCode = 3;
             ViewData(customerCode);
         }

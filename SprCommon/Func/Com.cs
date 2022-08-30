@@ -22,6 +22,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.VisualBasic;
+using SprCommon.Database.SqlServer;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 #endregion
 
@@ -59,29 +60,32 @@ namespace SprCommon.Func
 
         #region 画面制御
 
-        public static void InitializeControls(Control.ControlCollection controls)
-        {
-            foreach (Control control in controls)
-            {
-                switch (control)
-                {
-                    case TextBox textBox:
-                        textBox.GotFocus += TextBox_GotFocus;
-                        break;
-                    default:
-                        break;
-                }
-                if (control.Controls != null)
-                {
-                    InitializeControls(control.Controls);
-                }
-            }
-        }
+        //public static void InitializeControls(Control.ControlCollection controls)
+        //{
+        //    foreach (Control control in controls)
+        //    {
+        //        switch (control)
+        //        {
+        //            case TextBox textBox:
+        //                textBox.GotFocus += TextBox_GotFocus;
+        //                break;
+        //            case Controls.SprDropdown dropDown:
+        //                //dropDown.InitializeDropdown();
+        //                break;
+        //            default:
+        //                break;
+        //        }
+        //        if (control.Controls != null)
+        //        {
+        //            InitializeControls(control.Controls);
+        //        }
+        //    }
+        //}
 
-        private static void TextBox_GotFocus(object sender, EventArgs e)
-        {
-            ((TextBox)sender).SelectAll();
-        }
+        //private static void TextBox_GotFocus(object sender, EventArgs e)
+        //{
+        //    ((TextBox)sender).SelectAll();
+        //}
 
         #endregion
 
