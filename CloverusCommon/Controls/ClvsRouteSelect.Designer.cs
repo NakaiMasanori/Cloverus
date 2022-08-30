@@ -41,11 +41,11 @@
             // 
             this.LblTitle.BackColor = System.Drawing.Color.Navy;
             this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitle.ForeColor = System.Drawing.Color.White;
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 30);
+            this.LblTitle.Size = new System.Drawing.Size(238, 43);
             this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -54,9 +54,10 @@
             // 
             this.LblDay.BackColor = System.Drawing.Color.Gold;
             this.LblDay.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblDay.Location = new System.Drawing.Point(122, 0);
+            this.LblDay.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblDay.Location = new System.Drawing.Point(238, 0);
             this.LblDay.Name = "LblDay";
-            this.LblDay.Size = new System.Drawing.Size(29, 30);
+            this.LblDay.Size = new System.Drawing.Size(45, 43);
             this.LblDay.TabIndex = 3;
             this.LblDay.Text = "昼";
             this.LblDay.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -64,10 +65,10 @@
             // LblNameDay
             // 
             this.LblNameDay.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblNameDay.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.LblNameDay.Location = new System.Drawing.Point(204, 0);
+            this.LblNameDay.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblNameDay.Location = new System.Drawing.Point(363, 0);
             this.LblNameDay.Name = "LblNameDay";
-            this.LblNameDay.Size = new System.Drawing.Size(96, 30);
+            this.LblNameDay.Size = new System.Drawing.Size(187, 43);
             this.LblNameDay.TabIndex = 6;
             this.LblNameDay.Text = "昼コスモ用";
             this.LblNameDay.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -75,10 +76,10 @@
             // TxtDay
             // 
             this.TxtDay.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TxtDay.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtDay.Location = new System.Drawing.Point(151, 0);
+            this.TxtDay.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtDay.Location = new System.Drawing.Point(283, 0);
             this.TxtDay.Name = "TxtDay";
-            this.TxtDay.Size = new System.Drawing.Size(53, 30);
+            this.TxtDay.Size = new System.Drawing.Size(80, 43);
             this.TxtDay.TabIndex = 5;
             this.TxtDay.Text = "1234";
             this.TxtDay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -86,10 +87,10 @@
             // LblNameNight
             // 
             this.LblNameNight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.LblNameNight.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.LblNameNight.Location = new System.Drawing.Point(382, 0);
+            this.LblNameNight.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblNameNight.Location = new System.Drawing.Point(675, 0);
             this.LblNameNight.Name = "LblNameNight";
-            this.LblNameNight.Size = new System.Drawing.Size(86, 30);
+            this.LblNameNight.Size = new System.Drawing.Size(252, 43);
             this.LblNameNight.TabIndex = 10;
             this.LblNameNight.Text = "昼コスモ用";
             this.LblNameNight.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -97,10 +98,10 @@
             // TxtNight
             // 
             this.TxtNight.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TxtNight.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtNight.Location = new System.Drawing.Point(329, 0);
+            this.TxtNight.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtNight.Location = new System.Drawing.Point(595, 0);
             this.TxtNight.Name = "TxtNight";
-            this.TxtNight.Size = new System.Drawing.Size(53, 30);
+            this.TxtNight.Size = new System.Drawing.Size(80, 43);
             this.TxtNight.TabIndex = 9;
             this.TxtNight.Text = "1234";
             this.TxtNight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -109,9 +110,10 @@
             // 
             this.lblNight.BackColor = System.Drawing.Color.LightSteelBlue;
             this.lblNight.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lblNight.Location = new System.Drawing.Point(300, 0);
+            this.lblNight.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.lblNight.Location = new System.Drawing.Point(550, 0);
             this.lblNight.Name = "lblNight";
-            this.lblNight.Size = new System.Drawing.Size(29, 30);
+            this.lblNight.Size = new System.Drawing.Size(45, 43);
             this.lblNight.TabIndex = 8;
             this.lblNight.Text = "夜";
             this.lblNight.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -126,10 +128,10 @@
             this.Controls.Add(this.TxtDay);
             this.Controls.Add(this.LblDay);
             this.Controls.Add(this.LblTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "ClvsRouteSelect";
-            this.Size = new System.Drawing.Size(468, 30);
+            this.Size = new System.Drawing.Size(927, 43);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -82,14 +82,6 @@ namespace SprCommon.Controls
             set { TxtData.Text = value; }
         }
         /// <summary>
-        /// テキストボックス部の幅
-        /// </summary>
-        public int TextBoxWidth
-        {
-            get { return TxtData.Width; }
-            set { TxtData.Width = value; }
-        }
-        /// <summary>
         /// IMEモード
         /// </summary>
         public ImeMode TextImeMode
