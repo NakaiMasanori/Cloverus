@@ -36,11 +36,11 @@
             // 
             this.LblTitle.BackColor = System.Drawing.Color.Navy;
             this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitle.ForeColor = System.Drawing.Color.White;
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 30);
+            this.LblTitle.Size = new System.Drawing.Size(238, 44);
             this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -49,10 +49,10 @@
             // 
             this.ChkBox.AutoSize = true;
             this.ChkBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ChkBox.Location = new System.Drawing.Point(122, 0);
+            this.ChkBox.Location = new System.Drawing.Point(238, 0);
             this.ChkBox.Name = "ChkBox";
             this.ChkBox.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.ChkBox.Size = new System.Drawing.Size(346, 30);
+            this.ChkBox.Size = new System.Drawing.Size(689, 44);
             this.ChkBox.TabIndex = 3;
             this.ChkBox.Text = "checkBox1";
             this.ChkBox.UseVisualStyleBackColor = true;
@@ -62,9 +62,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.ChkBox);
             this.Controls.Add(this.LblTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprCheckBox";
-            this.Size = new System.Drawing.Size(468, 30);
+            this.Size = new System.Drawing.Size(927, 44);
             this.ResumeLayout(false);
             this.PerformLayout();
 

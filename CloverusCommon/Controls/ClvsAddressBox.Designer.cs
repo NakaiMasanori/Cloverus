@@ -48,17 +48,17 @@
             this.PnlTitle.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlTitle.Location = new System.Drawing.Point(0, 0);
             this.PnlTitle.Name = "PnlTitle";
-            this.PnlTitle.Size = new System.Drawing.Size(122, 126);
+            this.PnlTitle.Size = new System.Drawing.Size(238, 182);
             this.PnlTitle.TabIndex = 19;
             // 
             // LblTitleAddress
             // 
             this.LblTitleAddress.BackColor = System.Drawing.Color.Navy;
-            this.LblTitleAddress.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitleAddress.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitleAddress.ForeColor = System.Drawing.Color.White;
-            this.LblTitleAddress.Location = new System.Drawing.Point(0, 32);
+            this.LblTitleAddress.Location = new System.Drawing.Point(0, 46);
             this.LblTitleAddress.Name = "LblTitleAddress";
-            this.LblTitleAddress.Size = new System.Drawing.Size(122, 30);
+            this.LblTitleAddress.Size = new System.Drawing.Size(238, 43);
             this.LblTitleAddress.TabIndex = 20;
             this.LblTitleAddress.Text = "項目名４５６７";
             this.LblTitleAddress.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -67,11 +67,11 @@
             // 
             this.LblTitlePost.BackColor = System.Drawing.Color.Navy;
             this.LblTitlePost.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LblTitlePost.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitlePost.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitlePost.ForeColor = System.Drawing.Color.White;
             this.LblTitlePost.Location = new System.Drawing.Point(0, 0);
             this.LblTitlePost.Name = "LblTitlePost";
-            this.LblTitlePost.Size = new System.Drawing.Size(122, 30);
+            this.LblTitlePost.Size = new System.Drawing.Size(238, 43);
             this.LblTitlePost.TabIndex = 19;
             this.LblTitlePost.Text = "項目名４５６７";
             this.LblTitlePost.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -84,46 +84,46 @@
             this.PnlData.Controls.Add(this.BtnPreviewAddress);
             this.PnlData.Controls.Add(this.TxtPostCode);
             this.PnlData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PnlData.Location = new System.Drawing.Point(122, 0);
+            this.PnlData.Location = new System.Drawing.Point(238, 0);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(346, 126);
+            this.PnlData.Size = new System.Drawing.Size(689, 182);
             this.PnlData.TabIndex = 20;
             // 
             // TxtTownArea
             // 
             this.TxtTownArea.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtTownArea.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtTownArea.Location = new System.Drawing.Point(0, 96);
+            this.TxtTownArea.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtTownArea.Location = new System.Drawing.Point(0, 139);
             this.TxtTownArea.Name = "TxtTownArea";
-            this.TxtTownArea.Size = new System.Drawing.Size(346, 30);
+            this.TxtTownArea.Size = new System.Drawing.Size(689, 43);
             this.TxtTownArea.TabIndex = 21;
             // 
             // TxtMunicipalities
             // 
             this.TxtMunicipalities.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtMunicipalities.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtMunicipalities.Location = new System.Drawing.Point(0, 64);
+            this.TxtMunicipalities.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtMunicipalities.Location = new System.Drawing.Point(0, 92);
             this.TxtMunicipalities.Name = "TxtMunicipalities";
-            this.TxtMunicipalities.Size = new System.Drawing.Size(346, 30);
+            this.TxtMunicipalities.Size = new System.Drawing.Size(689, 43);
             this.TxtMunicipalities.TabIndex = 20;
             // 
             // TxtPrefectures
             // 
             this.TxtPrefectures.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtPrefectures.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtPrefectures.Location = new System.Drawing.Point(0, 32);
+            this.TxtPrefectures.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtPrefectures.Location = new System.Drawing.Point(0, 46);
             this.TxtPrefectures.Name = "TxtPrefectures";
-            this.TxtPrefectures.Size = new System.Drawing.Size(346, 30);
+            this.TxtPrefectures.Size = new System.Drawing.Size(689, 43);
             this.TxtPrefectures.TabIndex = 19;
             // 
             // BtnPreviewAddress
             // 
-            this.BtnPreviewAddress.Location = new System.Drawing.Point(152, 0);
+            this.BtnPreviewAddress.Location = new System.Drawing.Point(181, 0);
             this.BtnPreviewAddress.Name = "BtnPreviewAddress";
-            this.BtnPreviewAddress.Size = new System.Drawing.Size(92, 30);
+            this.BtnPreviewAddress.Size = new System.Drawing.Size(161, 43);
             this.BtnPreviewAddress.TabIndex = 18;
             this.BtnPreviewAddress.Text = "住所表示";
             this.BtnPreviewAddress.UseVisualStyleBackColor = true;
@@ -131,20 +131,21 @@
             // 
             // TxtPostCode
             // 
-            this.TxtPostCode.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtPostCode.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.TxtPostCode.Location = new System.Drawing.Point(0, 0);
             this.TxtPostCode.Name = "TxtPostCode";
-            this.TxtPostCode.Size = new System.Drawing.Size(135, 30);
+            this.TxtPostCode.Size = new System.Drawing.Size(155, 43);
             this.TxtPostCode.TabIndex = 17;
+            this.TxtPostCode.Text = "123-4567";
             // 
             // ClvsAddressBox
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.PnlData);
             this.Controls.Add(this.PnlTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "ClvsAddressBox";
-            this.Size = new System.Drawing.Size(468, 126);
+            this.Size = new System.Drawing.Size(927, 182);
             this.PnlTitle.ResumeLayout(false);
             this.PnlData.ResumeLayout(false);
             this.PnlData.PerformLayout();

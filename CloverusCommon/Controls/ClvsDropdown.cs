@@ -66,8 +66,8 @@ namespace CloverusCommon.Controls
         public string Value
         {
 
-            get { return DrpDown.SelectedValue.ToString(); }
-            set { DrpDown.SelectedValue = value; }
+            get { return DrpDown.DataSource != null ? DrpDown.SelectedValue.ToString() : ""; }
+            set { if (DrpDown.DataSource != null) { DrpDown.SelectedValue = value; } }
         }
         #endregion
 

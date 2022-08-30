@@ -34,24 +34,23 @@
             // 
             // TxtData
             // 
-            this.TxtData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtData.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.TxtData.Location = new System.Drawing.Point(122, 0);
+            this.TxtData.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TxtData.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtData.Location = new System.Drawing.Point(238, 0);
             this.TxtData.Multiline = true;
             this.TxtData.Name = "TxtData";
-            this.TxtData.Size = new System.Drawing.Size(346, 55);
+            this.TxtData.Size = new System.Drawing.Size(689, 44);
             this.TxtData.TabIndex = 3;
             // 
             // LblTitle
             // 
             this.LblTitle.BackColor = System.Drawing.Color.Navy;
-            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.LblTitle.Dock = System.Windows.Forms.DockStyle.Left;
+            this.LblTitle.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.LblTitle.ForeColor = System.Drawing.Color.White;
             this.LblTitle.Location = new System.Drawing.Point(0, 0);
             this.LblTitle.Name = "LblTitle";
-            this.LblTitle.Size = new System.Drawing.Size(122, 30);
+            this.LblTitle.Size = new System.Drawing.Size(238, 44);
             this.LblTitle.TabIndex = 2;
             this.LblTitle.Text = "項目名４５６７";
             this.LblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -61,9 +60,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.TxtData);
             this.Controls.Add(this.LblTitle);
-            this.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Font = new System.Drawing.Font("メイリオ", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Name = "SprMultiTextBox";
-            this.Size = new System.Drawing.Size(468, 55);
+            this.Size = new System.Drawing.Size(927, 44);
             this.ResumeLayout(false);
             this.PerformLayout();
 
