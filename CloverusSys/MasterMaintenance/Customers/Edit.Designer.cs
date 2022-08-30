@@ -34,6 +34,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.PnlData = new System.Windows.Forms.Panel();
             this.noon = new System.Windows.Forms.TabControl();
             this.TabBasic = new System.Windows.Forms.TabPage();
+            this.clvsDropdown1 = new CloverusCommon.Controls.ClvsDropdown();
             this.sprTreeItemsRadioButton3 = new SprCommon.Controls.SprTreeItemsRadioButton();
             this.sprCheckBox1 = new SprCommon.Controls.SprCheckBox();
             this.leavingDate = new SprCommon.Controls.SprDateText();
@@ -48,7 +49,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.absence = new SprCommon.Controls.SprMultiTextBox();
             this.deliveryNotice = new SprCommon.Controls.SprMultiTextBox();
             this.ordererOther = new SprCommon.Controls.SprTextBox();
-            this.ordererSelection = new SprCommon.Controls.SprDropdown();
             this.customerCategory = new SprCommon.Controls.SprDropdown();
             this.emergencyContact4 = new SprCommon.Controls.SprTextBox();
             this.emergencyContact3 = new SprCommon.Controls.SprTextBox();
@@ -152,6 +152,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             this.TabBasic.BackColor = System.Drawing.SystemColors.Control;
             this.TabBasic.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TabBasic.Controls.Add(this.clvsDropdown1);
             this.TabBasic.Controls.Add(this.sprTreeItemsRadioButton3);
             this.TabBasic.Controls.Add(this.sprCheckBox1);
             this.TabBasic.Controls.Add(this.leavingDate);
@@ -166,7 +167,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.Controls.Add(this.absence);
             this.TabBasic.Controls.Add(this.deliveryNotice);
             this.TabBasic.Controls.Add(this.ordererOther);
-            this.TabBasic.Controls.Add(this.ordererSelection);
             this.TabBasic.Controls.Add(this.customerCategory);
             this.TabBasic.Controls.Add(this.emergencyContact4);
             this.TabBasic.Controls.Add(this.emergencyContact3);
@@ -192,6 +192,17 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.TabBasic.Size = new System.Drawing.Size(1106, 609);
             this.TabBasic.TabIndex = 0;
             this.TabBasic.Text = "基本情報";
+            // 
+            // clvsDropdown1
+            // 
+            this.clvsDropdown1.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.clvsDropdown1.Location = new System.Drawing.Point(14, 494);
+            this.clvsDropdown1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clvsDropdown1.Name = "clvsDropdown1";
+            this.clvsDropdown1.Size = new System.Drawing.Size(257, 31);
+            this.clvsDropdown1.TabIndex = 41;
+            this.clvsDropdown1.TableColumn = "CUSMA01018";
+            this.clvsDropdown1.TitleText = "注文者選択";
             // 
             // sprTreeItemsRadioButton3
             // 
@@ -392,17 +403,6 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.ordererOther.TitleText = "注文者その他";
             this.ordererOther.TitleWidth = 122;
             this.ordererOther.Value = "";
-            // 
-            // ordererSelection
-            // 
-            this.ordererSelection.Font = new System.Drawing.Font("メイリオ", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.ordererSelection.Location = new System.Drawing.Point(14, 494);
-            this.ordererSelection.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ordererSelection.Name = "ordererSelection";
-            this.ordererSelection.Size = new System.Drawing.Size(257, 31);
-            this.ordererSelection.TabIndex = 17;
-            this.ordererSelection.TableColumn = null;
-            this.ordererSelection.TitleText = "注文者選択";
             // 
             // customerCategory
             // 
@@ -1222,7 +1222,6 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprTextBox emergencyContact1;
         private SprCommon.Controls.SprDropdown customerCategory;
         private SprCommon.Controls.SprTextBox ordererOther;
-        private SprCommon.Controls.SprDropdown ordererSelection;
         private SprCommon.Controls.SprMultiTextBox deliveryNotice;
         private SprCommon.Controls.SprMultiTextBox fasting;
         private SprCommon.Controls.SprMultiTextBox absence;
@@ -1266,5 +1265,6 @@ namespace CloverusSys.MasterMaintenance.Customers
         private SprCommon.Controls.SprDropdown sprDropdown1;
         private SprCommon.Controls.SprTreeItemsRadioButton sprTreeItemsRadioButton2;
         private SprCommon.Controls.SprTreeItemsRadioButton sprTreeItemsRadioButton3;
+        private CloverusCommon.Controls.ClvsDropdown clvsDropdown1;
     }
 }
