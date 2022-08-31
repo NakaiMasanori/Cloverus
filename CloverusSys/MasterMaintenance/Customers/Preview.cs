@@ -27,12 +27,21 @@ using static CloverusSys.Base.BaseForm;
 using Sql = CloverusCommon.Database.SqlServer.Sql;
 using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
 using SprCommon;
+using System.Reflection;
 #endregion
 
 namespace CloverusSys.MasterMaintenance.Customers
 {
     public partial class Preview : Base.BaseForm
     {
+        #region メンバ変数
+        private int _customerCode;
+        #endregion
+
+        #region 定数
+        private const int COLUMN_CUSTOMER_CODE = 0;
+        #endregion
+
         #region プロパティ
         /// <summary>
         /// 検索キーワード
@@ -40,6 +49,13 @@ namespace CloverusSys.MasterMaintenance.Customers
         public string Keyword
         {
             get { return this.TxtKeyword.Value.Trim(); }
+        }
+        /// <summary>
+        /// 顧客番号
+        /// </summary>
+        public int CustomerCode
+        {
+            get { return _customerCode; }
         }
         #endregion
 
@@ -151,6 +167,8 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// <param name="e"></param>
         private void DialogButtons_AcceptClick(object sender, EventArgs e)
         {
+            _customerCode = int.Parse(DgvCustomer.SelectedRows[0].Cells[COLUMN_CUSTOMER_CODE].Value.ToString());
+            this.DialogResult = DialogResult.OK;
             this.Close();
         }
         #endregion
@@ -163,6 +181,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// <param name="e"></param>
         private void DialogButtons_CancelClick(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.Cancel;
             this.Close();
         }
         #endregion
