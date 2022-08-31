@@ -13,7 +13,6 @@
 //*****************************************************************************
 
 #region using defines
-using CloverusCommon;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
