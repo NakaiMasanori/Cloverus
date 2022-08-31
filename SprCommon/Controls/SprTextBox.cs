@@ -89,6 +89,38 @@ namespace SprCommon.Controls
             get { return TxtData.ImeMode; }
             set { TxtData.ImeMode = value; }
         }
+        /// <summary>
+        /// タイトルの背景色
+        /// </summary>
+        public Color TitleBackColor
+        {
+            get { return LblTitle.BackColor; }
+            set { LblTitle.BackColor = value; }
+        }
+        /// <summary>
+        /// タイトルの文字色
+        /// </summary>
+        public Color TitleForeColor
+        {
+            get { return LblTitle.ForeColor; }
+            set { LblTitle.ForeColor = value; }
+        }
+        /// <summary>
+        /// テキストボックスの背景色
+        /// </summary>
+        public Color TextBackColor
+        {
+            get { return TxtData.BackColor; }
+            set { TxtData.BackColor = value; }
+        }
+        /// <summary>
+        /// テキストボックスの文字色
+        /// </summary>
+        public Color TextForeColor
+        {
+            get { return TxtData.ForeColor; }
+            set { TxtData.ForeColor = value; }
+        }
         #endregion
 
         #region イベント発生処理

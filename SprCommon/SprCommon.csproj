@@ -87,12 +87,6 @@
     <Compile Include="Controls\SprDialogButtonsYesNo.Designer.cs">
       <DependentUpon>SprDialogButtonsYesNo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\SprDropdown.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Controls\SprDropdown.Designer.cs">
-      <DependentUpon>SprDropdown.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controls\SprMultiTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -147,9 +141,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDialogButtonsYesNo.resx">
       <DependentUpon>SprDialogButtonsYesNo.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Controls\SprDropdown.resx">
-      <DependentUpon>SprDropdown.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprMultiTextBox.resx">
       <DependentUpon>SprMultiTextBox.cs</DependentUpon>

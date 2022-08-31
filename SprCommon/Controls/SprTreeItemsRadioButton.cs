@@ -173,6 +173,22 @@ namespace SprCommon.Controls
                 }
             }
         }
+        /// <summary>
+        /// タイトルの背景色
+        /// </summary>
+        public Color TitleBackColor
+        {
+            get { return LblTitle.BackColor; }
+            set { LblTitle.BackColor = value; }
+        }
+        /// <summary>
+        /// タイトルの文字色
+        /// </summary>
+        public Color TitleForeColor
+        {
+            get { return LblTitle.ForeColor; }
+            set { LblTitle.ForeColor = value; }
+        }
         #endregion
     }
 }

@@ -94,6 +94,38 @@ namespace CloverusCommon.Controls
         /// 町域のデータベースカラム
         /// </summary>
         public string TableColumnTownArea { get; set; }
+        /// <summary>
+        /// タイトルの背景色
+        /// </summary>
+        public Color TitlePostBackColor
+        {
+            get { return LblTitlePost.BackColor; }
+            set { LblTitlePost.BackColor = value; }
+        }
+        /// <summary>
+        /// タイトルの文字色
+        /// </summary>
+        public Color TitlePostForeColor
+        {
+            get { return LblTitlePost.ForeColor; }
+            set { LblTitlePost.ForeColor = value; }
+        }
+        /// <summary>
+        /// タイトルの背景色
+        /// </summary>
+        public Color TitleAddressBackColor
+        {
+            get { return LblTitleAddress.BackColor; }
+            set { LblTitleAddress.BackColor = value; }
+        }
+        /// <summary>
+        /// タイトルの文字色
+        /// </summary>
+        public Color TitleAddressForeColor
+        {
+            get { return LblTitleAddress.ForeColor; }
+            set { LblTitleAddress.ForeColor = value; }
+        }
         #endregion
 
         #region コンストラクタ

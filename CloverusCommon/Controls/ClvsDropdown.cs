@@ -69,6 +69,22 @@ namespace CloverusCommon.Controls
             get { return DrpDown.DataSource != null ? DrpDown.SelectedValue.ToString() : ""; }
             set { if (DrpDown.DataSource != null) { DrpDown.SelectedValue = value; } }
         }
+        /// <summary>
+        /// タイトルの背景色
+        /// </summary>
+        public Color TitleBackColor
+        {
+            get { return LblTitle.BackColor; }
+            set { LblTitle.BackColor = value; }
+        }
+        /// <summary>
+        /// タイトルの文字色
+        /// </summary>
+        public Color TitleForeColor
+        {
+            get { return LblTitle.ForeColor; }
+            set { LblTitle.ForeColor = value; }
+        }
         #endregion
 
         #region 要素の初期化

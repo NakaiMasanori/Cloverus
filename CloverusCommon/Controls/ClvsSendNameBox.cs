@@ -62,6 +62,22 @@ namespace CloverusCommon.Controls
         /// 宛名(2)のデータベースカラム
         /// </summary>
         public string TableColumnLower { get; set; }
+        /// <summary>
+        /// タイトルの背景色
+        /// </summary>
+        public Color TitleBackColor
+        {
+            get { return LblTitle.BackColor; }
+            set { LblTitle.BackColor = value; }
+        }
+        /// <summary>
+        /// タイトルの文字色
+        /// </summary>
+        public Color TitleForeColor
+        {
+            get { return LblTitle.ForeColor; }
+            set { LblTitle.ForeColor = value; }
+        }
         #endregion
 
         #region コンストラクタ
