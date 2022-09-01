@@ -397,7 +397,7 @@ namespace CloverusSys.Controls.MenuPanel
                     new MasterMaintenance.Customers.Edit(0).Show();
                     break;
                 case MenuItems.RootMaster:
-                    new MasterMaintenance.Route.Edit().Show();
+                    new MasterMaintenance.Route.Edit("0").Show();
                     break;
                 case MenuItems.SubRootMaster:
                     new MasterMaintenance.SubRoute.Edit().Show();
