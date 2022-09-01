@@ -13,29 +13,31 @@
 //*****************************************************************************
 
 #region using defines
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Sql = CloverusCommon.Database.SqlServer.Sql;
+using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
+using SprCommon.Func;
+using SprCommon;
 #endregion
 
-namespace CloverusSys.MasterMaintenance.SubRoot
+namespace CloverusSys.MasterMaintenance.Route
 {
     /// <summary>
-    /// サブルートマスター
+    /// ルートマスター
     /// </summary>
-    public partial class PreviewSubRoot : Base.BaseForm
+    public partial class Edit : Base.BaseForm
     {
-        #region コンストラクタ
-        /// <summary>
-        /// コンストラクタ
-        /// </summary>
-        public PreviewSubRoot()
+        public Edit()
         {
             InitializeComponent();
         }
-        #endregion
-
-        #region イベント
-        #endregion
-
-        #region private function
-        #endregion
     }
 }

@@ -65,7 +65,10 @@ namespace CloverusSys.MasterMaintenance.Customers
                 {
                     case Keys.F3:
                         var frm = new Preview();
-                        frm.ShowDialog();
+                        if (frm.ShowDialog() == DialogResult.OK)
+                        {
+                            ViewData(frm.CustomerCode);
+                        }
                         break;
                 }
             }

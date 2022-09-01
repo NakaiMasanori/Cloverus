@@ -96,6 +96,12 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterMaintenance\CustomerClassification\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\CustomerClassification\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterMaintenance\Customers\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,47 +114,47 @@
     <Compile Include="MasterMaintenance\Customers\Preview.Designer.cs">
       <DependentUpon>Preview.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.cs">
+    <Compile Include="MasterMaintenance\Delivery\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.Designer.cs">
-      <DependentUpon>PreviewDelivery.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\Delivery\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinance.cs">
+    <Compile Include="MasterMaintenance\FinanceBrunch\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinance.Designer.cs">
-      <DependentUpon>PreviewFinance.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\FinanceBrunch\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinanceBranch.cs">
+    <Compile Include="MasterMaintenance\Finance\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinanceBranch.Designer.cs">
-      <DependentUpon>PreviewFinanceBranch.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\Finance\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Mail\PreviewMail.cs">
+    <Compile Include="MasterMaintenance\MailingCode\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Mail\PreviewMail.Designer.cs">
-      <DependentUpon>PreviewMail.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\MailingCode\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\ProductType\PreviewProductType.cs">
+    <Compile Include="MasterMaintenance\ProductType\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\ProductType\PreviewProductType.Designer.cs">
-      <DependentUpon>PreviewProductType.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\ProductType\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Root\PreviewRoot.cs">
+    <Compile Include="MasterMaintenance\Route\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Root\PreviewRoot.Designer.cs">
-      <DependentUpon>PreviewRoot.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\Route\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\SubRoot\PreviewSubRoot.cs">
+    <Compile Include="MasterMaintenance\SubRoute\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\SubRoot\PreviewSubRoot.Designer.cs">
-      <DependentUpon>PreviewSubRoot.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\SubRoute\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -284,32 +290,35 @@
     <EmbeddedResource Include="FrmMenu.resx">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\CustomerClassification\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MasterMaintenance\Customers\Edit.resx">
       <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterMaintenance\Customers\Preview.resx">
       <DependentUpon>Preview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Delivery\PreviewDelivery.resx">
-      <DependentUpon>PreviewDelivery.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\Delivery\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Finance\PreviewFinance.resx">
-      <DependentUpon>PreviewFinance.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\FinanceBrunch\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Finance\PreviewFinanceBranch.resx">
-      <DependentUpon>PreviewFinanceBranch.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\Finance\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Mail\PreviewMail.resx">
-      <DependentUpon>PreviewMail.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\MailingCode\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\ProductType\PreviewProductType.resx">
-      <DependentUpon>PreviewProductType.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\ProductType\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Root\PreviewRoot.resx">
-      <DependentUpon>PreviewRoot.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\Route\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\SubRoot\PreviewSubRoot.resx">
-      <DependentUpon>PreviewSubRoot.cs</DependentUpon>
+    <EmbeddedResource Include="MasterMaintenance\SubRoute\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
