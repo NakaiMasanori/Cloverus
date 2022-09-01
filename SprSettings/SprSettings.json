@@ -1,0 +1,5 @@
+{
+  "Database": {
+    "ConnectionString": "Password=cps_pwd2000;Persist Security Info=True;User ID=sa;Initial Catalog=CLOVERUS;Data Source=PC-ASAHINA,1432"
+  }
+}

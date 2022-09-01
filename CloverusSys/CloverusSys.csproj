@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,14 +47,270 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Base\BaseForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Base\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Func.cs" />
+    <Compile Include="Controls\MenuPanel\ClvsMenuButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\ClvsMenuButton.Designer.cs">
+      <DependentUpon>ClvsMenuButton.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuAdministrativeTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuAdministrativeTask.Designer.cs">
+      <DependentUpon>MenuAdministrativeTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBasicBusiness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBasicBusiness.Designer.cs">
+      <DependentUpon>MenuBasicBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBillingBusiness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuBillingBusiness.Designer.cs">
+      <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuClosingBusiness.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuPanel\MenuClosingBusiness.Designer.cs">
+      <DependentUpon>MenuClosingBusiness.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyWorks\FrmClosing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyWorks\FrmClosing.Designer.cs">
+      <DependentUpon>FrmClosing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenu.Designer.cs">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Customers\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Customers\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Customers\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Customers\Preview.Designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.Designer.cs">
+      <DependentUpon>PreviewDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Finance\PreviewFinance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Finance\PreviewFinance.Designer.cs">
+      <DependentUpon>PreviewFinance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Finance\PreviewFinanceBranch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Finance\PreviewFinanceBranch.Designer.cs">
+      <DependentUpon>PreviewFinanceBranch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Mail\PreviewMail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Mail\PreviewMail.Designer.cs">
+      <DependentUpon>PreviewMail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\ProductType\PreviewProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\ProductType\PreviewProductType.Designer.cs">
+      <DependentUpon>PreviewProductType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Root\PreviewRoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Root\PreviewRoot.Designer.cs">
+      <DependentUpon>PreviewRoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\SubRoot\PreviewSubRoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\SubRoot\PreviewSubRoot.Designer.cs">
+      <DependentUpon>PreviewSubRoot.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VariousReports\Calorie\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Calorie\Preview.Designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Client\PreviewNyuukin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Client\PreviewNyuukin.Designer.cs">
+      <DependentUpon>PreviewNyuukin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Client\PreviewSeikyuu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Client\PreviewSeikyuu.Designer.cs">
+      <DependentUpon>PreviewSeikyuu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Client\PreviewUriageNyuukin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Client\PreviewUriageNyuukin.Designer.cs">
+      <DependentUpon>PreviewUriageNyuukin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Delivery\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Delivery\Preview.Designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Mousse\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Mousse\Preview.Designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Protein\Preview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Protein\Preview.Designer.cs">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetRoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetRoot.Designer.cs">
+      <DependentUpon>SpreadSheetRoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetSimulation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetSimulation.Designer.cs">
+      <DependentUpon>SpreadSheetSimulation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetTypeA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetTypeA.Designer.cs">
+      <DependentUpon>SpreadSheetTypeA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetTypeB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Rice\SpreadSheetTypeB.Designer.cs">
+      <DependentUpon>SpreadSheetTypeB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\SideDishes\SpreadSheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\SideDishes\SpreadSheet.Designer.cs">
+      <DependentUpon>SpreadSheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Type\SpreadSheetContainer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Type\SpreadSheetContainer.Designer.cs">
+      <DependentUpon>SpreadSheetContainer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\Type\SpreadSheetRoot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\Type\SpreadSheetRoot.Designer.cs">
+      <DependentUpon>SpreadSheetRoot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\PreviewCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\PreviewCheck.Designer.cs">
+      <DependentUpon>PreviewCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\SpreadSheetCount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\SpreadSheetCount.Designer.cs">
+      <DependentUpon>SpreadSheetCount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\PreviewMoneyConfirmation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\PreviewMoneyConfirmation.Designer.cs">
+      <DependentUpon>PreviewMoneyConfirmation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\SpreadSheetMoney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VariousReports\YoteiUriage\SpreadSheetMoney.Designer.cs">
+      <DependentUpon>SpreadSheetMoney.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Base\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\ClvsMenuButton.resx">
+      <DependentUpon>ClvsMenuButton.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuAdministrativeTask.resx">
+      <DependentUpon>MenuAdministrativeTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuBasicBusiness.resx">
+      <DependentUpon>MenuBasicBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuBillingBusiness.resx">
+      <DependentUpon>MenuBillingBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuPanel\MenuClosingBusiness.resx">
+      <DependentUpon>MenuClosingBusiness.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyWorks\FrmClosing.resx">
+      <DependentUpon>FrmClosing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenu.resx">
+      <DependentUpon>FrmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Customers\Edit.resx">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Customers\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Delivery\PreviewDelivery.resx">
+      <DependentUpon>PreviewDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Finance\PreviewFinance.resx">
+      <DependentUpon>PreviewFinance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Finance\PreviewFinanceBranch.resx">
+      <DependentUpon>PreviewFinanceBranch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Mail\PreviewMail.resx">
+      <DependentUpon>PreviewMail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\ProductType\PreviewProductType.resx">
+      <DependentUpon>PreviewProductType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\Root\PreviewRoot.resx">
+      <DependentUpon>PreviewRoot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterMaintenance\SubRoot\PreviewSubRoot.resx">
+      <DependentUpon>PreviewSubRoot.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +320,60 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="VariousReports\Calorie\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Client\PreviewNyuukin.resx">
+      <DependentUpon>PreviewNyuukin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Client\PreviewSeikyuu.resx">
+      <DependentUpon>PreviewSeikyuu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Client\PreviewUriageNyuukin.resx">
+      <DependentUpon>PreviewUriageNyuukin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Delivery\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Mousse\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Protein\Preview.resx">
+      <DependentUpon>Preview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Rice\SpreadSheetRoot.resx">
+      <DependentUpon>SpreadSheetRoot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Rice\SpreadSheetSimulation.resx">
+      <DependentUpon>SpreadSheetSimulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Rice\SpreadSheetTypeA.resx">
+      <DependentUpon>SpreadSheetTypeA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Rice\SpreadSheetTypeB.resx">
+      <DependentUpon>SpreadSheetTypeB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\SideDishes\SpreadSheet.resx">
+      <DependentUpon>SpreadSheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Type\SpreadSheetContainer.resx">
+      <DependentUpon>SpreadSheetContainer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\Type\SpreadSheetRoot.resx">
+      <DependentUpon>SpreadSheetRoot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\YoteiUriage\PreviewCheck.resx">
+      <DependentUpon>PreviewCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\YoteiUriage\SpreadSheetCount.resx">
+      <DependentUpon>SpreadSheetCount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\YoteiUriage\PreviewMoneyConfirmation.resx">
+      <DependentUpon>PreviewMoneyConfirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VariousReports\YoteiUriage\SpreadSheetMoney.resx">
+      <DependentUpon>SpreadSheetMoney.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -75,6 +386,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\CloverusCommon\CloverusCommon.csproj">
+      <Project>{16ee283a-c7a2-4171-bb02-2925f8b6480c}</Project>
+      <Name>CloverusCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SprCommon\SprCommon.csproj">
+      <Project>{9c36937c-373c-4931-be32-b1799bbc5bd9}</Project>
+      <Name>SprCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SprSettings\SprSettings.csproj">
+      <Project>{f5e25960-c859-40d5-bbd3-993e23b24a9b}</Project>
+      <Name>SprSettings</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
