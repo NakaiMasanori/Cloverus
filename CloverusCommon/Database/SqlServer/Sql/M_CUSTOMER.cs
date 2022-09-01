@@ -173,6 +173,7 @@ namespace CloverusCommon.Database.SqlServer.Sql
                 sql.Append($"WHERE ");
                 sql.Append(String.Join("AND ", conditions));
             }
+            sql.Append($" ORDER BY CUSMA01001 ");
             return sql.ToString();
         }
         #endregion

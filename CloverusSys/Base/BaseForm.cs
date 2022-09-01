@@ -70,11 +70,11 @@ namespace CloverusSys.Base
             // 隔行着色
             dgv.AlternatingRowsDefaultCellStyle.BackColor = Color.LightCyan;
             // フォントサイズ
-            var currentSize = (float)10.0;
+            var currentSize = (float)14.0;
             switch (fontSize)
             {
                 case FontSize.Large:
-                    currentSize = (float)12.0;
+                    currentSize = (float)20.0;
                     break;
                 case FontSize.Middle:
                     // 初期値のまま
