@@ -28,6 +28,7 @@ using Sql = CloverusCommon.Database.SqlServer.Sql;
 using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
 using SprCommon;
 using System.Reflection;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 #endregion
 
 namespace CloverusSys.MasterMaintenance.Customers
@@ -48,7 +49,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// </summary>
         public string Keyword
         {
-            get { return this.TxtKeyword.Value.Trim(); }
+            get { return this.TxtKeyword.Text; }
         }
         /// <summary>
         /// 顧客番号
@@ -77,13 +78,14 @@ namespace CloverusSys.MasterMaintenance.Customers
         {
             this.StartPosition = FormStartPosition.CenterParent;
             this.KeyPreview = true;
-            this.CancelButton = DialogButtons.CancelButton;
-            this.AcceptButton = DialogButtons.AcceptButton;
+            this.CancelButton = BtnCancel;
+            //this.AcceptButton = BtnAccept;
             InitializeGridView(DgvCustomer, FontSize.Middle);
-            this.TxtKeyword.ValueKeyDown += new KeyEventHandler(this.TxtKeyword_ValueKeyDown);
+            this.TxtKeyword.KeyDown += new KeyEventHandler(this.TxtKeyword_KeyDown);
             this.DgvCustomer.DataBindingComplete += new DataGridViewBindingCompleteEventHandler(this.DgvCustomer_DataBindingComplete);
-            this.DialogButtons.AcceptClick += new EventHandler(this.DialogButtons_AcceptClick);
-            this.DialogButtons.CancelClick += new EventHandler(this.DialogButtons_CancelClick);
+            this.BtnAccept.Click += new EventHandler(this.DialogButtons_AcceptClick);
+            this.BtnCancel.Click += new EventHandler(this.DialogButtons_CancelClick);
+            this.TxtCustomerCode.GotFocus += TxtCustomerCode_GotFocus;
             this.Shown += new EventHandler(this.Preview_Shown);
         }
         #endregion
@@ -97,6 +99,26 @@ namespace CloverusSys.MasterMaintenance.Customers
             using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
             {
                 DgvCustomer.DataSource = db.Select(Sql.M_CUSTOMER.GetPreviewForMenu(Keyword));
+            }
+            DgvCustomer.Focus();
+        }
+        #endregion
+
+        #region 選択している顧客番号を取得する
+        /// <summary>
+        /// 選択している顧客番号を取得する
+        /// </summary>
+        /// <param name="dgv"></param>
+        /// <returns></returns>
+        private string GetSelectedCode(DataGridView dgv)
+        {
+            if (dgv.SelectedRows.Count > 0)
+            {
+                return dgv.SelectedRows[0].Cells[COLUMN_CUSTOMER_CODE].Value.ToString();
+            }
+            else
+            {
+                return "0";
             }
         }
         #endregion
@@ -124,13 +146,13 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void TxtKeyword_ValueKeyDown(object sender, KeyEventArgs e)
+        private void TxtKeyword_KeyDown(object sender, KeyEventArgs e)
         {
             try
             {
                 switch (e.KeyCode)
                 {
-                    case Keys.F3:
+                    case Keys.Enter:
                         PreviewKokyaku();
                         break;
                 }
@@ -167,7 +189,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// <param name="e"></param>
         private void DialogButtons_AcceptClick(object sender, EventArgs e)
         {
-            _customerCode = int.Parse(DgvCustomer.SelectedRows[0].Cells[COLUMN_CUSTOMER_CODE].Value.ToString());
+            _customerCode = int.Parse(GetSelectedCode(DgvCustomer));
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -183,6 +205,30 @@ namespace CloverusSys.MasterMaintenance.Customers
         {
             this.DialogResult = DialogResult.Cancel;
             this.Close();
+        }
+        #endregion
+
+        #region 一覧の行選択
+        /// <summary>
+        /// 一覧の行選択
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DgvCustomer_SelectionChanged(object sender, EventArgs e)
+        {
+            TxtCustomerCode.Text = GetSelectedCode(DgvCustomer);
+        }
+        #endregion
+
+        #region 顧客番号テキストボックス
+        /// <summary>
+        /// 顧客番号テキストボックス
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private static void TxtCustomerCode_GotFocus(object sender, EventArgs e)
+        {
+            ((System.Windows.Forms.TextBox)sender).SelectAll();
         }
         #endregion
 
