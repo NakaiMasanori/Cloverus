@@ -31,14 +31,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.PnlCondition = new System.Windows.Forms.Panel();
+            this.TxtKeyword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.PnlButtons = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.TxtCustomerCode = new System.Windows.Forms.TextBox();
             this.BtnAccept = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
             this.PnlResult = new System.Windows.Forms.Panel();
             this.DgvCustomer = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtKeyword = new System.Windows.Forms.TextBox();
             this.PnlCondition.SuspendLayout();
             this.PnlButtons.SuspendLayout();
             this.PnlResult.SuspendLayout();
@@ -55,8 +56,31 @@
             this.PnlCondition.Size = new System.Drawing.Size(1008, 36);
             this.PnlCondition.TabIndex = 0;
             // 
+            // TxtKeyword
+            // 
+            this.TxtKeyword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.TxtKeyword.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
+            this.TxtKeyword.Location = new System.Drawing.Point(158, 0);
+            this.TxtKeyword.Name = "TxtKeyword";
+            this.TxtKeyword.Size = new System.Drawing.Size(850, 36);
+            this.TxtKeyword.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Navy;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.label1.Font = new System.Drawing.Font("メイリオ", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(158, 36);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "キーワード(F2)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // PnlButtons
             // 
+            this.PnlButtons.Controls.Add(this.label2);
             this.PnlButtons.Controls.Add(this.TxtCustomerCode);
             this.PnlButtons.Controls.Add(this.BtnAccept);
             this.PnlButtons.Controls.Add(this.BtnCancel);
@@ -67,9 +91,22 @@
             this.PnlButtons.Size = new System.Drawing.Size(1008, 48);
             this.PnlButtons.TabIndex = 2;
             // 
+            // label2
+            // 
+            this.label2.BackColor = System.Drawing.Color.Navy;
+            this.label2.Font = new System.Drawing.Font("メイリオ", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(1, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(158, 36);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "顧客番号(F1)";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // TxtCustomerCode
             // 
-            this.TxtCustomerCode.Location = new System.Drawing.Point(7, 6);
+            this.TxtCustomerCode.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.TxtCustomerCode.Location = new System.Drawing.Point(159, 6);
             this.TxtCustomerCode.Name = "TxtCustomerCode";
             this.TxtCustomerCode.Size = new System.Drawing.Size(100, 36);
             this.TxtCustomerCode.TabIndex = 5;
@@ -81,7 +118,7 @@
             this.BtnAccept.Name = "BtnAccept";
             this.BtnAccept.Size = new System.Drawing.Size(133, 36);
             this.BtnAccept.TabIndex = 3;
-            this.BtnAccept.Text = "決定";
+            this.BtnAccept.Text = "決定(F5)";
             this.BtnAccept.UseVisualStyleBackColor = true;
             // 
             // BtnCancel
@@ -91,7 +128,7 @@
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(133, 36);
             this.BtnCancel.TabIndex = 1;
-            this.BtnCancel.Text = "閉じる";
+            this.BtnCancel.Text = "閉じる(ESC)";
             this.BtnCancel.UseVisualStyleBackColor = true;
             // 
             // PnlResult
@@ -133,27 +170,6 @@
             this.DgvCustomer.TabIndex = 1;
             this.DgvCustomer.SelectionChanged += new System.EventHandler(this.DgvCustomer_SelectionChanged);
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.Navy;
-            this.label1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.label1.Font = new System.Drawing.Font("メイリオ", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(0, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 36);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "キーワード";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // TxtKeyword
-            // 
-            this.TxtKeyword.Dock = System.Windows.Forms.DockStyle.Top;
-            this.TxtKeyword.Location = new System.Drawing.Point(135, 0);
-            this.TxtKeyword.Name = "TxtKeyword";
-            this.TxtKeyword.Size = new System.Drawing.Size(873, 36);
-            this.TxtKeyword.TabIndex = 2;
-            // 
             // Preview
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -186,5 +202,6 @@
         private System.Windows.Forms.Button BtnCancel;
         private System.Windows.Forms.TextBox TxtKeyword;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
