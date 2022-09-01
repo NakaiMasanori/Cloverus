@@ -44,7 +44,7 @@ namespace CloverusCommon.Database.SqlServer.Sql
         private const string ROUTE_CODE = "CUSMA03001";
         public const string ROUTE_NAME = "CUSMA03002";
         public const string ROUTE_BIKO = "CUSMA03003";
-        public const string ROUTE_UPDATE_NUMBER = "CUSMA03999";
+        public const string ROUTE_UPDATE_NO = "CUSMA03999";
         #endregion
 
         #region public static function
@@ -82,7 +82,7 @@ namespace CloverusCommon.Database.SqlServer.Sql
             sql.Append($"       , {ROUTE_CODE} ");
             sql.Append($"       , {ROUTE_NAME} ");
             sql.Append($"       , {ROUTE_BIKO} ");
-            sql.Append($"       , {ROUTE_UPDATE_NUMBER} ");
+            sql.Append($"       , {ROUTE_UPDATE_NO} ");
             sql.Append($"FROM {TABLE_NAME} ");
             sql.Append($"WHERE {ROUTE_CODE} = '{code}' ");
             return sql.ToString();

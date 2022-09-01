@@ -400,7 +400,7 @@ namespace CloverusSys.Controls.MenuPanel
                     new MasterMaintenance.Route.Edit("0").Show();
                     break;
                 case MenuItems.SubRootMaster:
-                    new MasterMaintenance.SubRoute.Edit().Show();
+                    new MasterMaintenance.SubRoute.Edit(0).Show();
                     break;
                 case MenuItems.CustomerClassMaster:
                     new MasterMaintenance.CustomerClassification.Edit().Show();

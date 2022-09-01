@@ -91,6 +91,7 @@
     </Compile>
     <Compile Include="Database\SqlServer\ParameterItem.cs" />
     <Compile Include="Database\SqlServer\SqlBase.cs" />
+    <Compile Include="Database\SqlServer\Sql\CUS98MA06SUBROUTEM.cs" />
     <Compile Include="Database\SqlServer\Sql\M_ADDRESS.cs" />
     <Compile Include="Database\SqlServer\Sql\M_CUSTOMER.cs" />
     <Compile Include="Database\SqlServer\Sql\M_OTHER.cs" />
