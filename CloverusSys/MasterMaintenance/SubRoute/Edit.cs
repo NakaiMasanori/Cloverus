@@ -35,9 +35,39 @@ namespace CloverusSys.MasterMaintenance.SubRoute
     /// </summary>
     public partial class Edit : Base.BaseForm
     {
-        public Edit()
+        #region コンストラクタ
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="subNo"></param>
+        public Edit(int subNo)
         {
             InitializeComponent();
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
+            {
+                CloverusCommon.Func.Com.InitializeControls(this.Controls);
+            }
+            subNo = 4;
+            ViewData(subNo);
         }
+        #endregion
+
+        #region 画面表示
+        /// <summary>
+        /// 画面表示
+        /// </summary>
+        /// <param name="subNo"></param>
+        private void ViewData(int subNo)
+        {
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
+            {
+                var data = db.Select(Sql.CUS98MA06SUBROUTEM.GetForEditor(subNo));
+                if (data.Rows.Count > 0)
+                {
+                    CloverusCommon.Func.Com.DataRowToControl(data.Rows[0], this.Controls, db);
+                }
+            }
+        }
+        #endregion
     }
 }
