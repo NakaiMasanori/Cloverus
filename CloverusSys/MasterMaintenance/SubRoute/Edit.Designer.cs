@@ -1,6 +1,6 @@
-﻿namespace CloverusSys.MasterMaintenance.Finance
+﻿namespace CloverusSys.MasterMaintenance.SubRoute
 {
-    partial class PreviewFinanceBranch
+    partial class Edit
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // PreviewFinanceBranch
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "PreviewFinanceBranch";
-            this.Text = "金融機関支店マスター";
-            this.ResumeLayout(false);
-
+            this.Text = "Edit";
         }
 
         #endregion

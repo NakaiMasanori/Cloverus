@@ -108,47 +108,17 @@
     <Compile Include="MasterMaintenance\Customers\Preview.Designer.cs">
       <DependentUpon>Preview.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.cs">
+    <Compile Include="MasterMaintenance\Route\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Delivery\PreviewDelivery.Designer.cs">
-      <DependentUpon>PreviewDelivery.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\Route\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinance.cs">
+    <Compile Include="MasterMaintenance\SubRoute\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinance.Designer.cs">
-      <DependentUpon>PreviewFinance.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinanceBranch.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterMaintenance\Finance\PreviewFinanceBranch.Designer.cs">
-      <DependentUpon>PreviewFinanceBranch.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterMaintenance\Mail\PreviewMail.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterMaintenance\Mail\PreviewMail.Designer.cs">
-      <DependentUpon>PreviewMail.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterMaintenance\ProductType\PreviewProductType.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterMaintenance\ProductType\PreviewProductType.Designer.cs">
-      <DependentUpon>PreviewProductType.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterMaintenance\Root\PreviewRoot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterMaintenance\Root\PreviewRoot.Designer.cs">
-      <DependentUpon>PreviewRoot.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MasterMaintenance\SubRoot\PreviewSubRoot.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MasterMaintenance\SubRoot\PreviewSubRoot.Designer.cs">
-      <DependentUpon>PreviewSubRoot.cs</DependentUpon>
+    <Compile Include="MasterMaintenance\SubRoute\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -290,27 +260,6 @@
     <EmbeddedResource Include="MasterMaintenance\Customers\Preview.resx">
       <DependentUpon>Preview.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Delivery\PreviewDelivery.resx">
-      <DependentUpon>PreviewDelivery.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Finance\PreviewFinance.resx">
-      <DependentUpon>PreviewFinance.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Finance\PreviewFinanceBranch.resx">
-      <DependentUpon>PreviewFinanceBranch.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Mail\PreviewMail.resx">
-      <DependentUpon>PreviewMail.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\ProductType\PreviewProductType.resx">
-      <DependentUpon>PreviewProductType.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\Root\PreviewRoot.resx">
-      <DependentUpon>PreviewRoot.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterMaintenance\SubRoot\PreviewSubRoot.resx">
-      <DependentUpon>PreviewSubRoot.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -387,7 +336,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="MasterMaintenance\Delivery\" />
+    <Folder Include="MasterMaintenance\Finance\" />
+    <Folder Include="MasterMaintenance\Mail\" />
+    <Folder Include="MasterMaintenance\ProductType\" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CloverusCommon\CloverusCommon.csproj">
       <Project>{16ee283a-c7a2-4171-bb02-2925f8b6480c}</Project>

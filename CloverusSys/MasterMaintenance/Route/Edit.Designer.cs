@@ -1,6 +1,6 @@
-﻿namespace CloverusSys.MasterMaintenance.ProductType
+﻿namespace CloverusSys.MasterMaintenance.Route
 {
-    partial class PreviewProductType
+    partial class Edit
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // PreviewProductType
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "PreviewProductType";
-            this.Text = "商品種類マスター";
-            this.ResumeLayout(false);
-
+            this.Text = "Edit";
         }
 
         #endregion

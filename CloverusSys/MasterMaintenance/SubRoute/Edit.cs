@@ -13,29 +13,32 @@
 //*****************************************************************************
 
 #region using defines
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using Sql = CloverusCommon.Database.SqlServer.Sql;
+using SqlBase = CloverusCommon.Database.SqlServer.SqlBase;
+using SprCommon.Func;
+using SprCommon;
 #endregion
 
-namespace CloverusSys.MasterMaintenance.ProductType
+
+namespace CloverusSys.MasterMaintenance.SubRoute
 {
     /// <summary>
-    /// 商品種類マスター
+    /// サブルートマスター
     /// </summary>
-    public partial class PreviewProductType : Base.BaseForm
+    public partial class Edit : Base.BaseForm
     {
-        #region コンストラクタ
-        /// <summary>
-        /// コンストラクタ
-        /// </summary>
-        public PreviewProductType()
+        public Edit()
         {
             InitializeComponent();
         }
-        #endregion
-
-        #region イベント
-        #endregion
-
-        #region private function
-        #endregion
     }
 }
