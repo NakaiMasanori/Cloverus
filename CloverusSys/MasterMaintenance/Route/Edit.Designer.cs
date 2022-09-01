@@ -1,6 +1,6 @@
-﻿namespace CloverusSys.MasterMaintenance.SubRoot
+﻿namespace CloverusSys.MasterMaintenance.Route
 {
-    partial class PreviewSubRoot
+    partial class Edit
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // PreviewSubRoot
+            // Edit
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "PreviewSubRoot";
-            this.Text = "サブルートマスター";
+            this.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.Name = "Edit";
+            this.Text = "Edit";
             this.ResumeLayout(false);
 
         }
