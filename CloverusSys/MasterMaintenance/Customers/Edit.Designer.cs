@@ -30,7 +30,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         private void InitializeComponent()
         {
             this.PnlHeader = new System.Windows.Forms.Panel();
-            this.sprCodeName1 = new SprCommon.Controls.SprCodeName();
+            this.TxtCustomerCode = new SprCommon.Controls.SprCodeName();
             this.PnlFooter = new System.Windows.Forms.Panel();
             this.PnlData = new System.Windows.Forms.Panel();
             this.noon = new System.Windows.Forms.TabControl();
@@ -119,30 +119,31 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // PnlHeader
             // 
-            this.PnlHeader.Controls.Add(this.sprCodeName1);
+            this.PnlHeader.Controls.Add(this.TxtCustomerCode);
             this.PnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeader.Location = new System.Drawing.Point(0, 0);
             this.PnlHeader.Name = "PnlHeader";
             this.PnlHeader.Size = new System.Drawing.Size(1904, 70);
             this.PnlHeader.TabIndex = 0;
             // 
-            // sprCodeName1
+            // TxtCustomerCode
             // 
-            this.sprCodeName1.CodeValue = "";
-            this.sprCodeName1.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.sprCodeName1.Location = new System.Drawing.Point(18, 13);
-            this.sprCodeName1.Name = "sprCodeName1";
-            this.sprCodeName1.Size = new System.Drawing.Size(927, 43);
-            this.sprCodeName1.TabIndex = 0;
-            this.sprCodeName1.TableColumnCode = "CUSMA01001";
-            this.sprCodeName1.TableColumnName = "CUSMA01002";
-            this.sprCodeName1.TextBackColor = System.Drawing.SystemColors.Window;
-            this.sprCodeName1.TextForeColor = System.Drawing.SystemColors.WindowText;
-            this.sprCodeName1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.sprCodeName1.TitleBackColor = System.Drawing.Color.Navy;
-            this.sprCodeName1.TitleForeColor = System.Drawing.Color.White;
-            this.sprCodeName1.TitleText = "顧客番号";
-            this.sprCodeName1.TitleWidth = 238;
+            this.TxtCustomerCode.CodeValue = "";
+            this.TxtCustomerCode.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.TxtCustomerCode.Location = new System.Drawing.Point(18, 13);
+            this.TxtCustomerCode.Name = "TxtCustomerCode";
+            this.TxtCustomerCode.NameValue = "項目名４５６７８";
+            this.TxtCustomerCode.Size = new System.Drawing.Size(927, 43);
+            this.TxtCustomerCode.TabIndex = 0;
+            this.TxtCustomerCode.TableColumnCode = "CUSMA01001";
+            this.TxtCustomerCode.TableColumnName = "CUSMA01002";
+            this.TxtCustomerCode.TextBackColor = System.Drawing.SystemColors.Window;
+            this.TxtCustomerCode.TextForeColor = System.Drawing.SystemColors.WindowText;
+            this.TxtCustomerCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.TxtCustomerCode.TitleBackColor = System.Drawing.Color.Navy;
+            this.TxtCustomerCode.TitleForeColor = System.Drawing.Color.White;
+            this.TxtCustomerCode.TitleText = "顧客番号";
+            this.TxtCustomerCode.TitleWidth = 238;
             // 
             // PnlFooter
             // 
@@ -391,6 +392,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.firstFreeNumberOfTimes.TabIndex = 30;
             this.firstFreeNumberOfTimes.TableColumn = "CUSMA01030";
             this.firstFreeNumberOfTimes.TextBackColor = System.Drawing.SystemColors.Window;
+            this.firstFreeNumberOfTimes.TextEnabled = true;
             this.firstFreeNumberOfTimes.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.firstFreeNumberOfTimes.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.firstFreeNumberOfTimes.TitleBackColor = System.Drawing.Color.Navy;
@@ -409,6 +411,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.supportTypeNo.TabIndex = 28;
             this.supportTypeNo.TableColumn = "CUSMA01029";
             this.supportTypeNo.TextBackColor = System.Drawing.SystemColors.Window;
+            this.supportTypeNo.TextEnabled = true;
             this.supportTypeNo.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.supportTypeNo.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.supportTypeNo.TitleBackColor = System.Drawing.Color.Navy;
@@ -478,6 +481,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.ordererOther.TabIndex = 18;
             this.ordererOther.TableColumn = "CUSMA01019";
             this.ordererOther.TextBackColor = System.Drawing.SystemColors.Window;
+            this.ordererOther.TextEnabled = true;
             this.ordererOther.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.ordererOther.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ordererOther.TitleBackColor = System.Drawing.Color.Navy;
@@ -496,6 +500,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact4.TabIndex = 14;
             this.emergencyContact4.TableColumn = "CUSMA01015";
             this.emergencyContact4.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContact4.TextEnabled = true;
             this.emergencyContact4.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContact4.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact4.TitleBackColor = System.Drawing.Color.Navy;
@@ -514,6 +519,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact3.TabIndex = 12;
             this.emergencyContact3.TableColumn = "CUSMA01014";
             this.emergencyContact3.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContact3.TextEnabled = true;
             this.emergencyContact3.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContact3.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact3.TitleBackColor = System.Drawing.Color.Navy;
@@ -533,6 +539,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact2.TabIndex = 10;
             this.emergencyContact2.TableColumn = "CUSMA01013";
             this.emergencyContact2.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContact2.TextEnabled = true;
             this.emergencyContact2.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContact2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact2.TitleBackColor = System.Drawing.Color.Navy;
@@ -551,6 +558,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContact1.TabIndex = 8;
             this.emergencyContact1.TableColumn = "CUSMA01012";
             this.emergencyContact1.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContact1.TextEnabled = true;
             this.emergencyContact1.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContact1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContact1.TitleBackColor = System.Drawing.Color.Navy;
@@ -569,6 +577,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.deliveryTime.TabIndex = 21;
             this.deliveryTime.TableColumn = "CUSMA01092";
             this.deliveryTime.TextBackColor = System.Drawing.SystemColors.Window;
+            this.deliveryTime.TextEnabled = true;
             this.deliveryTime.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.deliveryTime.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.deliveryTime.TitleBackColor = System.Drawing.Color.Navy;
@@ -587,6 +596,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerTel2.TabIndex = 6;
             this.customerTel2.TableColumn = "CUSMA01011";
             this.customerTel2.TextBackColor = System.Drawing.SystemColors.Window;
+            this.customerTel2.TextEnabled = true;
             this.customerTel2.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.customerTel2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.customerTel2.TitleBackColor = System.Drawing.Color.Navy;
@@ -627,6 +637,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.officeTel.TabIndex = 20;
             this.officeTel.TableColumn = "CUSMA01021";
             this.officeTel.TextBackColor = System.Drawing.SystemColors.Window;
+            this.officeTel.TextEnabled = true;
             this.officeTel.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.officeTel.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.officeTel.TitleBackColor = System.Drawing.Color.Navy;
@@ -645,6 +656,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.ordererTel.TabIndex = 19;
             this.ordererTel.TableColumn = "CUSMA01020";
             this.ordererTel.TextBackColor = System.Drawing.SystemColors.Window;
+            this.ordererTel.TextEnabled = true;
             this.ordererTel.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.ordererTel.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ordererTel.TitleBackColor = System.Drawing.Color.Navy;
@@ -663,6 +675,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.careManager.TabIndex = 16;
             this.careManager.TableColumn = "CUSMA01017";
             this.careManager.TextBackColor = System.Drawing.SystemColors.Window;
+            this.careManager.TextEnabled = true;
             this.careManager.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.careManager.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.careManager.TitleBackColor = System.Drawing.Color.Navy;
@@ -681,6 +694,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.office.TabIndex = 15;
             this.office.TableColumn = "CUSMA01016";
             this.office.TextBackColor = System.Drawing.SystemColors.Window;
+            this.office.TextEnabled = true;
             this.office.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.office.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.office.TitleBackColor = System.Drawing.Color.Navy;
@@ -699,6 +713,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName4.TabIndex = 13;
             this.emergencyContactName4.TableColumn = "CUSMA01060";
             this.emergencyContactName4.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContactName4.TextEnabled = true;
             this.emergencyContactName4.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContactName4.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName4.TitleBackColor = System.Drawing.Color.Navy;
@@ -717,6 +732,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName3.TabIndex = 11;
             this.emergencyContactName3.TableColumn = "CUSMA01059";
             this.emergencyContactName3.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContactName3.TextEnabled = true;
             this.emergencyContactName3.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContactName3.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName3.TitleBackColor = System.Drawing.Color.Navy;
@@ -735,6 +751,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName2.TabIndex = 9;
             this.emergencyContactName2.TableColumn = "CUSMA01058";
             this.emergencyContactName2.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContactName2.TextEnabled = true;
             this.emergencyContactName2.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContactName2.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName2.TitleBackColor = System.Drawing.Color.Navy;
@@ -753,6 +770,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.emergencyContactName1.TabIndex = 7;
             this.emergencyContactName1.TableColumn = "CUSMA01999";
             this.emergencyContactName1.TextBackColor = System.Drawing.SystemColors.Window;
+            this.emergencyContactName1.TextEnabled = true;
             this.emergencyContactName1.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.emergencyContactName1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.emergencyContactName1.TitleBackColor = System.Drawing.Color.Navy;
@@ -771,6 +789,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerTel1.TabIndex = 5;
             this.customerTel1.TableColumn = "CUSMA01010";
             this.customerTel1.TextBackColor = System.Drawing.SystemColors.Window;
+            this.customerTel1.TextEnabled = true;
             this.customerTel1.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.customerTel1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.customerTel1.TitleBackColor = System.Drawing.Color.Navy;
@@ -789,6 +808,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerNameKana.TabIndex = 3;
             this.customerNameKana.TableColumn = "CUSMA01004";
             this.customerNameKana.TextBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.customerNameKana.TextEnabled = true;
             this.customerNameKana.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.customerNameKana.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.customerNameKana.TitleBackColor = System.Drawing.Color.Navy;
@@ -807,6 +827,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerName.TabIndex = 2;
             this.customerName.TableColumn = "CUSMA01002";
             this.customerName.TextBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.customerName.TextEnabled = true;
             this.customerName.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.customerName.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.customerName.TitleBackColor = System.Drawing.Color.Navy;
@@ -939,6 +960,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.masterSearch.TabIndex = 14;
             this.masterSearch.TableColumn = "CUSMA01057";
             this.masterSearch.TextBackColor = System.Drawing.SystemColors.Window;
+            this.masterSearch.TextEnabled = true;
             this.masterSearch.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.masterSearch.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.masterSearch.TitleBackColor = System.Drawing.Color.Navy;
@@ -1016,6 +1038,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankAccountHolderName.TabIndex = 9;
             this.bankAccountHolderName.TableColumn = "CUSMA01045";
             this.bankAccountHolderName.TextBackColor = System.Drawing.SystemColors.Window;
+            this.bankAccountHolderName.TextEnabled = true;
             this.bankAccountHolderName.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.bankAccountHolderName.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankAccountHolderName.TitleBackColor = System.Drawing.Color.Navy;
@@ -1036,6 +1059,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankAccountHolderNameKana.TabIndex = 8;
             this.bankAccountHolderNameKana.TableColumn = "CUSMA01046";
             this.bankAccountHolderNameKana.TextBackColor = System.Drawing.SystemColors.Window;
+            this.bankAccountHolderNameKana.TextEnabled = true;
             this.bankAccountHolderNameKana.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.bankAccountHolderNameKana.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankAccountHolderNameKana.TitleBackColor = System.Drawing.Color.Navy;
@@ -1056,6 +1080,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankBranchCode.TabIndex = 7;
             this.bankBranchCode.TableColumn = "CUSMA01041";
             this.bankBranchCode.TextBackColor = System.Drawing.SystemColors.Window;
+            this.bankBranchCode.TextEnabled = true;
             this.bankBranchCode.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.bankBranchCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankBranchCode.TitleBackColor = System.Drawing.Color.Navy;
@@ -1076,6 +1101,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankCustomerNumber.TabIndex = 6;
             this.bankCustomerNumber.TableColumn = "CUSMA01044";
             this.bankCustomerNumber.TextBackColor = System.Drawing.SystemColors.Window;
+            this.bankCustomerNumber.TextEnabled = true;
             this.bankCustomerNumber.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.bankCustomerNumber.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankCustomerNumber.TitleBackColor = System.Drawing.Color.Navy;
@@ -1096,6 +1122,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.accountNumber.TabIndex = 5;
             this.accountNumber.TableColumn = "CUSMA01043";
             this.accountNumber.TextBackColor = System.Drawing.SystemColors.Window;
+            this.accountNumber.TextEnabled = true;
             this.accountNumber.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.accountNumber.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.accountNumber.TitleBackColor = System.Drawing.Color.Navy;
@@ -1116,6 +1143,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.bankCode.TabIndex = 3;
             this.bankCode.TableColumn = "CUSMA01040";
             this.bankCode.TextBackColor = System.Drawing.SystemColors.Window;
+            this.bankCode.TextEnabled = true;
             this.bankCode.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.bankCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.bankCode.TitleBackColor = System.Drawing.Color.Navy;
@@ -1151,6 +1179,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.number.TabIndex = 7;
             this.number.TableColumn = "CUSMA01036";
             this.number.TextBackColor = System.Drawing.SystemColors.Window;
+            this.number.TextEnabled = true;
             this.number.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.number.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.number.TitleBackColor = System.Drawing.Color.Navy;
@@ -1171,6 +1200,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.accountHolderNameKana.TabIndex = 6;
             this.accountHolderNameKana.TableColumn = "CUSMA01039";
             this.accountHolderNameKana.TextBackColor = System.Drawing.SystemColors.Window;
+            this.accountHolderNameKana.TextEnabled = true;
             this.accountHolderNameKana.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.accountHolderNameKana.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.accountHolderNameKana.TitleBackColor = System.Drawing.Color.Navy;
@@ -1191,6 +1221,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.accountHolderName.TabIndex = 5;
             this.accountHolderName.TableColumn = "CUSMA01038";
             this.accountHolderName.TextBackColor = System.Drawing.SystemColors.Window;
+            this.accountHolderName.TextEnabled = true;
             this.accountHolderName.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.accountHolderName.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.accountHolderName.TitleBackColor = System.Drawing.Color.Navy;
@@ -1211,6 +1242,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.customerNumber.TabIndex = 4;
             this.customerNumber.TableColumn = "CUSMA01037";
             this.customerNumber.TextBackColor = System.Drawing.SystemColors.Window;
+            this.customerNumber.TextEnabled = true;
             this.customerNumber.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.customerNumber.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.customerNumber.TitleBackColor = System.Drawing.Color.Navy;
@@ -1231,6 +1263,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.symbol.TabIndex = 3;
             this.symbol.TableColumn = "CUSMA01035";
             this.symbol.TextBackColor = System.Drawing.SystemColors.Window;
+            this.symbol.TextEnabled = true;
             this.symbol.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.symbol.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.symbol.TitleBackColor = System.Drawing.Color.Navy;
@@ -1311,6 +1344,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.mailingCode.TabIndex = 7;
             this.mailingCode.TableColumn = "CUSMA01095";
             this.mailingCode.TextBackColor = System.Drawing.SystemColors.Window;
+            this.mailingCode.TextEnabled = true;
             this.mailingCode.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.mailingCode.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.mailingCode.TitleBackColor = System.Drawing.Color.Navy;
@@ -1329,6 +1363,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.mailingClassification.TabIndex = 6;
             this.mailingClassification.TableColumn = "CUSMA01094";
             this.mailingClassification.TextBackColor = System.Drawing.SystemColors.Window;
+            this.mailingClassification.TextEnabled = true;
             this.mailingClassification.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.mailingClassification.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.mailingClassification.TitleBackColor = System.Drawing.Color.Navy;
@@ -1347,6 +1382,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.lastBillingBalance.TabIndex = 4;
             this.lastBillingBalance.TableColumn = "CUSMA01067";
             this.lastBillingBalance.TextBackColor = System.Drawing.SystemColors.Window;
+            this.lastBillingBalance.TextEnabled = true;
             this.lastBillingBalance.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.lastBillingBalance.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.lastBillingBalance.TitleBackColor = System.Drawing.Color.Navy;
@@ -1365,6 +1401,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.paymentDay.TabIndex = 2;
             this.paymentDay.TableColumn = "CUSMA01064";
             this.paymentDay.TextBackColor = System.Drawing.SystemColors.Window;
+            this.paymentDay.TextEnabled = true;
             this.paymentDay.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.paymentDay.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.paymentDay.TitleBackColor = System.Drawing.Color.Navy;
@@ -1383,6 +1420,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.closingDate.TabIndex = 0;
             this.closingDate.TableColumn = "CUSMA01063";
             this.closingDate.TextBackColor = System.Drawing.SystemColors.Window;
+            this.closingDate.TextEnabled = true;
             this.closingDate.TextForeColor = System.Drawing.SystemColors.WindowText;
             this.closingDate.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.closingDate.TitleBackColor = System.Drawing.Color.Navy;
@@ -1586,6 +1624,6 @@ namespace CloverusSys.MasterMaintenance.Customers
         private CloverusCommon.Controls.ClvsDropdown clvsDropdown6;
         private CloverusCommon.Controls.ClvsDropdown clvsDropdown7;
         private CloverusCommon.Controls.ClvsDropdown clvsDropdown8;
-        private SprCommon.Controls.SprCodeName sprCodeName1;
+        private SprCommon.Controls.SprCodeName TxtCustomerCode;
     }
 }

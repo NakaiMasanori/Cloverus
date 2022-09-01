@@ -86,6 +86,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.BtnAccept.Click += new EventHandler(this.DialogButtons_AcceptClick);
             this.BtnCancel.Click += new EventHandler(this.DialogButtons_CancelClick);
             this.TxtCustomerCode.GotFocus += TxtCustomerCode_GotFocus;
+            this.KeyDown += new KeyEventHandler(this.Preview_KeyDown);
             this.Shown += new EventHandler(this.Preview_Shown);
         }
         #endregion
@@ -140,6 +141,36 @@ namespace CloverusSys.MasterMaintenance.Customers
         }
         #endregion
 
+        #region フォーム上でキー押下
+        /// <summary>
+        /// フォーム上でキー押下
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Preview_KeyDown(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.F2:
+                        TxtKeyword.Focus();
+                        break;
+                    case Keys.F1:
+                        TxtCustomerCode.Focus();
+                        break;
+                    case Keys.F5:
+                        BtnAccept.PerformClick();
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                PutLog(ex);
+            }
+        }
+        #endregion
+
         #region 検索キーワードでキー押下
         /// <summary>
         /// 検索キーワードでキー押下
@@ -177,7 +208,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             gv.Columns[0].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
             gv.Columns[1].Width = 240;
             gv.Columns[2].Width = 420;
-            TxtKeyword.Focus();
+            //TxtKeyword.Focus();
         }
         #endregion
 
@@ -189,7 +220,8 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// <param name="e"></param>
         private void DialogButtons_AcceptClick(object sender, EventArgs e)
         {
-            _customerCode = int.Parse(GetSelectedCode(DgvCustomer));
+            var code = string.IsNullOrEmpty(TxtCustomerCode.Text) ? "0" : TxtCustomerCode.Text;
+            int.TryParse(code, out _customerCode);
             this.DialogResult = DialogResult.OK;
             this.Close();
         }
@@ -228,7 +260,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         /// <param name="e"></param>
         private static void TxtCustomerCode_GotFocus(object sender, EventArgs e)
         {
-            ((System.Windows.Forms.TextBox)sender).SelectAll();
+            //((System.Windows.Forms.TextBox)sender).SelectAll();
         }
         #endregion
 
