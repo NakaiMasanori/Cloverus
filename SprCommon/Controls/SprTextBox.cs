@@ -121,6 +121,14 @@ namespace SprCommon.Controls
             get { return TxtData.ForeColor; }
             set { TxtData.ForeColor = value; }
         }
+        /// <summary>
+        /// テキストボックスの活性制御
+        /// </summary>
+        public bool TextEnabled
+        {
+            get { return TxtData.Enabled; }
+            set { TxtData.Enabled = value; }
+        }
         #endregion
 
         #region イベント発生処理
