@@ -431,3 +431,5 @@ CloverusSys/obj/Debug/DesignTimeResolveAssemblyReferences.cache
 CloverusSys/.vs/CloverusSys/FileContentIndex/20dbdcad-dc59-4ab5-bfe5-89ffa2ed0821.vsidx
 CloverusSys/.vs/CloverusSys/FileContentIndex/5a43fecd-4f02-4edd-b571-1e27024b34be.vsidx
 CloverusSys/.vs/CloverusSys/FileContentIndex/f8ef0ed9-d7a5-444f-9285-ecf4f859254a.vsidx
+*.vsidx
+*.resources
