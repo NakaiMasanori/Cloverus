@@ -43,6 +43,8 @@ namespace CloverusCommon.Database.SqlServer.Sql
         private const string ROUTE_TYPE = "CUSMA03004";
         private const string ROUTE_CODE = "CUSMA03001";
         public const string ROUTE_NAME = "CUSMA03002";
+        public const string ROUTE_BIKO = "CUSMA03003";
+        public const string ROUTE_UPDATE_NUMBER = "CUSMA03999";
         #endregion
 
         #region public static function
@@ -63,6 +65,26 @@ namespace CloverusCommon.Database.SqlServer.Sql
             sql.Append($"FROM {TABLE_NAME} ");
             sql.Append($"WHERE {ROUTE_TYPE} = {(int)routeType} ");
             sql.Append($"  AND {ROUTE_CODE} = '{routeCode}' ");
+            return sql.ToString();
+        }
+        #endregion
+
+        #region 編集画面表示
+        /// <summary>
+        /// 編集画面表示
+        /// </summary>
+        /// <param name="code"></param>
+        /// <returns></returns>
+        public static string GetForEditor(string code)
+        {
+            var sql = new StringBuilder();
+            sql.Append($"SELECT {ROUTE_TYPE} ");
+            sql.Append($"       , {ROUTE_CODE} ");
+            sql.Append($"       , {ROUTE_NAME} ");
+            sql.Append($"       , {ROUTE_BIKO} ");
+            sql.Append($"       , {ROUTE_UPDATE_NUMBER} ");
+            sql.Append($"FROM {TABLE_NAME} ");
+            sql.Append($"WHERE {ROUTE_CODE} = '{code}' ");
             return sql.ToString();
         }
         #endregion
