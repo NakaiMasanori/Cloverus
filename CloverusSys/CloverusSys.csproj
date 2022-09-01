@@ -96,6 +96,12 @@
     <Compile Include="FrmMenu.Designer.cs">
       <DependentUpon>FrmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MasterMaintenance\CustomerClassification\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\CustomerClassification\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterMaintenance\Customers\Edit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,36 @@
     </Compile>
     <Compile Include="MasterMaintenance\Customers\Preview.Designer.cs">
       <DependentUpon>Preview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Delivery\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Delivery\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\FinanceBrunch\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\FinanceBrunch\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\Finance\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\Finance\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\MailingCode\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\MailingCode\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasterMaintenance\ProductType\Edit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterMaintenance\ProductType\Edit.Designer.cs">
+      <DependentUpon>Edit.cs</DependentUpon>
     </Compile>
     <Compile Include="MasterMaintenance\Route\Edit.cs">
       <SubType>Form</SubType>
@@ -336,12 +372,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MasterMaintenance\Delivery\" />
-    <Folder Include="MasterMaintenance\Finance\" />
-    <Folder Include="MasterMaintenance\Mail\" />
-    <Folder Include="MasterMaintenance\ProductType\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CloverusCommon\CloverusCommon.csproj">
       <Project>{16ee283a-c7a2-4171-bb02-2925f8b6480c}</Project>

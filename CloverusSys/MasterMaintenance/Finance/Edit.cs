@@ -28,10 +28,10 @@ using SprCommon.Func;
 using SprCommon;
 #endregion
 
-namespace CloverusSys.MasterMaintenance.SubRoute
+namespace CloverusSys.MasterMaintenance.Finance
 {
     /// <summary>
-    /// サブルートマスター
+    /// 金融機関マスター
     /// </summary>
     public partial class Edit : Base.BaseForm
     {

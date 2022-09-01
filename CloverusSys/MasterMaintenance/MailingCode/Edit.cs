@@ -28,10 +28,10 @@ using SprCommon.Func;
 using SprCommon;
 #endregion
 
-namespace CloverusSys.MasterMaintenance.SubRoute
+namespace CloverusSys.MasterMaintenance.MailingCode
 {
     /// <summary>
-    /// サブルートマスター
+    /// 郵送記号マスター
     /// </summary>
     public partial class Edit : Base.BaseForm
     {
