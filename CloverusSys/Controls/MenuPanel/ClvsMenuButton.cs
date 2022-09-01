@@ -412,10 +412,10 @@ namespace CloverusSys.Controls.MenuPanel
                     new MasterMaintenance.MailingCode.Edit().Show();
                     break;
                 case MenuItems.FinancialInstitutionMaster:
-                    new MasterMaintenance.Finance.Edit().Show();
+                    new MasterMaintenance.Finance.Edit(0).Show();
                     break;
                 case MenuItems.FinancialInstitutionBranchMaster:
-                    new MasterMaintenance.FinanceBrunch.Edit().Show();
+                    new MasterMaintenance.FinanceBrunch.Edit("0").Show();
                     break;
                 case MenuItems.ShippingMaster:
                     new MasterMaintenance.Delivery.Edit().Show();

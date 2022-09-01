@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "dd31e8a8-5584-42d3-9602-be3ef66a1ab9": {
+      "ProjectGuid": "dd31e8a8-5584-42d3-9602-be3ef66a1ab9",
+      "DisplayName": "CloverusSys",
+      "ColorIndex": 0
+    },
+    "9c36937c-373c-4931-be32-b1799bbc5bd9": {
+      "ProjectGuid": "9c36937c-373c-4931-be32-b1799bbc5bd9",
+      "DisplayName": "SprCommon",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "その他のファイル",
+      "ColorIndex": -1
+    },
+    "16ee283a-c7a2-4171-bb02-2925f8b6480c": {
+      "ProjectGuid": "16ee283a-c7a2-4171-bb02-2925f8b6480c",
+      "DisplayName": "CloverusCommon",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

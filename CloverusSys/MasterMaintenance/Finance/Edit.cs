@@ -30,14 +30,40 @@ using SprCommon;
 
 namespace CloverusSys.MasterMaintenance.Finance
 {
+    
     /// <summary>
     /// 金融機関マスター
     /// </summary>
     public partial class Edit : Base.BaseForm
     {
-        public Edit()
+        #region コンストラクタ
+        public Edit(int financeCode)
         {
             InitializeComponent();
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.SMILEX1001))
+            {
+                CloverusCommon.Func.Com.InitializeControls(this.Controls);
+            }
+            financeCode = 1688;
+            ViewData(financeCode);
         }
+        #endregion
+
+        #region イベント
+        #endregion
+
+        #region 画面表示
+        private void ViewData(int financeCode)
+        {
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.SMILEX1001))
+            {
+                var data = db.Select(Sql.CUS98MA04KINYUM.GetForEditor(financeCode));
+                if (data.Rows.Count > 0)
+                {
+                    CloverusCommon.Func.Com.DataRowToControl(data.Rows[0], this.Controls, db);
+                }
+            }
+        }
+        #endregion
     }
 }

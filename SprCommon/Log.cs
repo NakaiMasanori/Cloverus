@@ -77,6 +77,7 @@ namespace SprCommon
             /// </summary>
             [Display(Description = "CloverusSys")]
             CloverusSys,
+            SMILEX1001,
         }
         // ログ作成先フォルダ
         private const string SUB_FOLDER = "Log";

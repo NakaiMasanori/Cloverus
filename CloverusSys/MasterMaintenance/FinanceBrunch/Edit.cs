@@ -35,9 +35,42 @@ namespace CloverusSys.MasterMaintenance.FinanceBrunch
         /// <summary>
         /// 金融機関支店マスター
         /// </summary>
-        public Edit()
+        #region コンストラクタ
+        public Edit(string financeBranchCode)
         {
             InitializeComponent();
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.SMILEX1001))
+            {
+                CloverusCommon.Func.Com.InitializeControls(this.Controls);
+            }
+            financeBranchCode = "024";
+            ViewData(financeBranchCode);
         }
+        #endregion
+
+        #region イベント
+        #endregion
+
+        #region private function
+
+        #region 画面表示
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="financeBranchCode"></param>
+        private void ViewData(string financeBranchCode)
+        {
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.SMILEX1001))
+            {
+                var data = db.Select(Sql.CUS98MA05KINYUSHITENM.GetForEditor(financeBranchCode));
+                if (data.Rows.Count > 0)
+                {
+                    CloverusCommon.Func.Com.DataRowToControl(data.Rows[0], this.Controls, db);
+                }
+            }
+        }
+        #endregion
+
+        #endregion
     }
 }
