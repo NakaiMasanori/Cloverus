@@ -394,8 +394,31 @@ namespace CloverusSys.Controls.MenuPanel
             switch (menuItem)
             {
                 case MenuItems.CustomerMaster:
-                    var frm = new MasterMaintenance.Customers.Edit(0);
-                    frm.Show();
+                    new MasterMaintenance.Customers.Edit(0).Show();
+                    break;
+                case MenuItems.RootMaster:
+                    new MasterMaintenance.Route.Edit().Show();
+                    break;
+                case MenuItems.SubRootMaster:
+                    new MasterMaintenance.SubRoute.Edit().Show();
+                    break;
+                case MenuItems.CustomerClassMaster:
+                    new MasterMaintenance.CustomerClassification.Edit().Show();
+                    break;
+                case MenuItems.KindMaster:
+                    new MasterMaintenance.ProductType.Edit().Show();
+                    break;
+                case MenuItems.MailingCodeMaster:
+                    new MasterMaintenance.MailingCode.Edit().Show();
+                    break;
+                case MenuItems.FinancialInstitutionMaster:
+                    new MasterMaintenance.Finance.Edit().Show();
+                    break;
+                case MenuItems.FinancialInstitutionBranchMaster:
+                    new MasterMaintenance.FinanceBrunch.Edit().Show();
+                    break;
+                case MenuItems.ShippingMaster:
+                    new MasterMaintenance.Delivery.Edit().Show();
                     break;
             }
         }
