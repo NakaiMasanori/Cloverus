@@ -51,6 +51,12 @@
     <Compile Include="Controls\SprCheckBox.Designer.cs">
       <DependentUpon>SprCheckBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controls\SprCodeName.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SprCodeName.Designer.cs">
+      <DependentUpon>SprCodeName.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\SprDateText.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -123,6 +129,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Controls\SprCheckBox.resx">
       <DependentUpon>SprCheckBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SprCodeName.resx">
+      <DependentUpon>SprCodeName.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Controls\SprDateText.resx">
       <DependentUpon>SprDateText.cs</DependentUpon>
