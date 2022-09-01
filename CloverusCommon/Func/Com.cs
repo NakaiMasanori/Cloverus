@@ -46,6 +46,9 @@ namespace CloverusCommon.Func
                     case SprDateText dateBox:
                         dateBox.SetFromDb(row);
                         break;
+                    case SprCodeName nameBox:
+                        nameBox.SetFromDb(row);
+                        break;
                     default:
                         break;
                 }

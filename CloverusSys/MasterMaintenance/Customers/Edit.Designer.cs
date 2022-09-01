@@ -30,6 +30,7 @@ namespace CloverusSys.MasterMaintenance.Customers
         private void InitializeComponent()
         {
             this.PnlHeader = new System.Windows.Forms.Panel();
+            this.sprCodeName1 = new SprCommon.Controls.SprCodeName();
             this.PnlFooter = new System.Windows.Forms.Panel();
             this.PnlData = new System.Windows.Forms.Panel();
             this.noon = new System.Windows.Forms.TabControl();
@@ -106,6 +107,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.clvsDropdown4 = new CloverusCommon.Controls.ClvsDropdown();
             this.clvsDropdown5 = new CloverusCommon.Controls.ClvsDropdown();
             this.clvsDropdown6 = new CloverusCommon.Controls.ClvsDropdown();
+            this.PnlHeader.SuspendLayout();
             this.PnlData.SuspendLayout();
             this.noon.SuspendLayout();
             this.TabBasic.SuspendLayout();
@@ -117,11 +119,30 @@ namespace CloverusSys.MasterMaintenance.Customers
             // 
             // PnlHeader
             // 
+            this.PnlHeader.Controls.Add(this.sprCodeName1);
             this.PnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.PnlHeader.Location = new System.Drawing.Point(0, 0);
             this.PnlHeader.Name = "PnlHeader";
             this.PnlHeader.Size = new System.Drawing.Size(1904, 70);
             this.PnlHeader.TabIndex = 0;
+            // 
+            // sprCodeName1
+            // 
+            this.sprCodeName1.CodeValue = "";
+            this.sprCodeName1.Font = new System.Drawing.Font("メイリオ", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.sprCodeName1.Location = new System.Drawing.Point(18, 13);
+            this.sprCodeName1.Name = "sprCodeName1";
+            this.sprCodeName1.Size = new System.Drawing.Size(927, 43);
+            this.sprCodeName1.TabIndex = 0;
+            this.sprCodeName1.TableColumnCode = "CUSMA01001";
+            this.sprCodeName1.TableColumnName = "CUSMA01002";
+            this.sprCodeName1.TextBackColor = System.Drawing.SystemColors.Window;
+            this.sprCodeName1.TextForeColor = System.Drawing.SystemColors.WindowText;
+            this.sprCodeName1.TextImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.sprCodeName1.TitleBackColor = System.Drawing.Color.Navy;
+            this.sprCodeName1.TitleForeColor = System.Drawing.Color.White;
+            this.sprCodeName1.TitleText = "顧客番号";
+            this.sprCodeName1.TitleWidth = 238;
             // 
             // PnlFooter
             // 
@@ -1475,6 +1496,7 @@ namespace CloverusSys.MasterMaintenance.Customers
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "顧客マスター";
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.FrmEdit_KeyDown);
+            this.PnlHeader.ResumeLayout(false);
             this.PnlData.ResumeLayout(false);
             this.noon.ResumeLayout(false);
             this.TabBasic.ResumeLayout(false);
@@ -1564,5 +1586,6 @@ namespace CloverusSys.MasterMaintenance.Customers
         private CloverusCommon.Controls.ClvsDropdown clvsDropdown6;
         private CloverusCommon.Controls.ClvsDropdown clvsDropdown7;
         private CloverusCommon.Controls.ClvsDropdown clvsDropdown8;
+        private SprCommon.Controls.SprCodeName sprCodeName1;
     }
 }
