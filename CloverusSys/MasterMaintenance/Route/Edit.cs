@@ -35,9 +35,39 @@ namespace CloverusSys.MasterMaintenance.Route
     /// </summary>
     public partial class Edit : Base.BaseForm
     {
-        public Edit()
+        #region コンストラクタ
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        /// <param name="routeCode"></param>
+        public Edit(string routeCode)
         {
             InitializeComponent();
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
+            {
+                CloverusCommon.Func.Com.InitializeControls(this.Controls);
+            }
+            routeCode = "0020";
+            ViewData(routeCode);
         }
+        #endregion
+
+        #region 画面表示
+        /// <summary>
+        /// 画面表示
+        /// </summary>
+        /// <param name="routeCode"></param>
+        private void ViewData(string routeCode)
+        {
+            using (var db = new SqlBase(SqlBase.TransactionUse.No, Log.ApplicationType.CloverusSys))
+            {
+                var data = db.Select(Sql.M_ROUTE.GetForEditor(routeCode));
+                if (data.Rows.Count > 0)
+                {
+                    CloverusCommon.Func.Com.DataRowToControl(data.Rows[0], this.Controls, db);
+                }
+            }
+        }
+        #endregion
     }
 }
